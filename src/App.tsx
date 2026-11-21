@@ -15,6 +15,7 @@ import PlantPlay from "./components/PlantPlay";
 import VerbPlay from "./components/VerbPlay";
 import DutchNumbersPlay from "./components/DutchNumbersPlay";
 import { activityStats,formatDuration } from "./lib/activityHistory";
+import { filterVisibleActivities } from "./lib/activityVisibility";
 import AnimatedLessonPlayer from "./components/AnimatedLessonPlayer";
 import { chessBeginnerLesson } from "./lessons/chessBeginner";
 
@@ -54,7 +55,7 @@ export default function App(){
  const allQuestions=useMemo(()=>packs.flatMap(p=>p.questions),[packs]);
  const catalog=useMemo(()=>getCatalog(packs),[packs]);
  const currentCategory=CATEGORIES.find(cat=>cat.id===categoryId)??CATEGORIES[0];
- const visibleCatalog=catalog.filter(entry=>!hiddenIds.includes(entry.id));
+ const visibleCatalog=filterVisibleActivities(catalog,hiddenIds);
  const categoryEntries=visibleCatalog.filter(entry=>entry.category===categoryId);
  const recentEntry=visibleCatalog.find(entry=>entry.kind+":"+entry.id===lastOpened);
  const dutchMath=isMathSubject(activity.subject);
