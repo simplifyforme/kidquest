@@ -16,7 +16,7 @@ export default function AnimatedChessBoard({
         const file=i%8,rank=8-Math.floor(i/8),square=letters[file]+rank;
         const marked=scene.highlight?.includes(square) || selected===square;
         const isTarget=scene.challenge?.validTargets.includes(square);
-        return <button type="button" key={square} className={"chess-square "+(((file+rank)%2===0)?"chess-dark":"chess-light")+
+        return <button type="button" key={square} className={"chess-square "+(((file+rank)%2===1)?"chess-dark":"chess-light")+
           (marked?" chess-mark":"")+(isTarget&&selected?" chess-target":"")} 
           onClick={()=>onSquare?.(square)} disabled={!onSquare}
           aria-label={"Case "+square}
