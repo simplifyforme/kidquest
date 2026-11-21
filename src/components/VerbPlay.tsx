@@ -1,0 +1,103 @@
+import { useRef,useState } from "react";
+import type {FormEvent} from "react";
+import {verbMissions,verbLessonNotes,normalizeVerbAnswer} from "../games/verbData";
+import type {VerbQuestion} from "../games/verbData";
+import type {GameCallbacks} from "./gameTypes";
+
+function HighlightedText({value}:{value:string}){
+ const pieces=value.split(/(<mark>.*?<\/mark>)/g);
+ return <>{pieces.map((piece,index)=>piece.startsWith("<mark>")&&piece.endsWith("</mark>")?
+  <mark key={index}>{piece.slice(6,-7)}</mark>:<span key={index}>{piece}</span>)}</>;
+}
+export default function VerbPlay({onClose,onAttempt,onComplete,onRoundStart}:GameCallbacks){
+ const [mission,setMission]=useState(0),[screen,setScreen]=useState<"intro"|"play"|"result">("intro");
+ const [round,setRound]=useState<VerbQuestion[]>(verbMissions[0].questions),[position,setPosition]=useState(0);
+ const [mistakes,setMistakes]=useState<VerbQuestion[]>([]),[neededHelp,setNeededHelp]=useState(false);
+ const [answered,setAnswered]=useState(false),[typed,setTyped]=useState("");
+ const [feedback,setFeedback]=useState(""),[wrongOptions,setWrongOptions]=useState<string[]>([]);
+ const [hintStep,setHintStep]=useState(0),[review,setReview]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState("");
+ const lock=useRef(false);
+ const current=verbMissions[mission],item=round[position];
+ function select(index:number){setMission(index);setRound(verbMissions[index].questions);setScreen("intro");setError("");setBusy(false);lock.current=false}
+ function start(questions=current.questions,onlyMistakes=false){
+  onRoundStart();setRound([...questions]);setPosition(0);setMistakes([]);setReview(onlyMistakes);
+  resetQuestion();setScreen("play");
+ }
+ function resetQuestion(){
+  setNeededHelp(false);setAnswered(false);setTyped("");setFeedback("");setWrongOptions([]);setHintStep(0);setBusy(false);setError("");lock.current=false;
+ }
+ async function finishQuestion(answerFromChild:boolean){
+  if(lock.current||answered||busy)return;
+  lock.current=true;setBusy(true);setError("");
+  const perfect=!neededHelp&&answerFromChild;
+  try{
+   await onAttempt("verbs-"+current.id+"-"+position+(review?"-retry":""),perfect);
+   if(!perfect)setMistakes(previous=>[...previous,item]);
+   setAnswered(true);setFeedback("✨ Bravo ! "+item.explanation);
+  }catch{setError("Sauvegarde impossible. Réessaie.");lock.current=false}
+  finally{setBusy(false)}
+ }
+ function check(value:string){
+  if(answered||busy||lock.current)return;
+  if(!normalizeVerbAnswer(value))return;
+  if(normalizeVerbAnswer(value)===normalizeVerbAnswer(item.answer)){
+   void finishQuestion(true);return;
+  }
+  setNeededHelp(true);
+  setFeedback("Essaie encore. "+item.hint);setHintStep(1);
+  if(item.options)setWrongOptions(a=>a.includes(value)?a:[...a,value]);
+ }
+ function showHint(){
+  if(answered||busy)return;
+  if(hintStep===0){setNeededHelp(true);setHintStep(1);setFeedback(item.hint)}
+  else void finishQuestion(false);
+ }
+ async function next(){
+  if(busy||!answered)return;
+  if(position+1<round.length){setPosition(i=>i+1);resetQuestion();return}
+  setBusy(true);setError("");
+  try{await onComplete(round.length-mistakes.length,round.length);setScreen("result")}
+  catch{setError("Le résultat n'a pas été enregistré. Réessaie.")}
+  finally{setBusy(false)}
+ }
+ function submit(event:FormEvent){event.preventDefault();check(typed)}
+ return <section className="imported-activity verbs-activity" lang="fr-BE">
+  <button type="button" className="back-link" onClick={onClose}>← Retour au Français</button>
+  <header className="game-hero verbs"><div className="game-hero-icon">🔎</div><div><span className="eyebrow">FRANÇAIS · GRAMMAIRE</span><h1>La chasse aux verbes</h1><p>Repère le verbe, retrouve son nom et range-le dans la bonne équipe.</p></div></header>
+  <div className="mini-game-menu" role="group" aria-label="Missions">
+   {verbMissions.map((g,i)=><button type="button" key={g.id} aria-pressed={i===mission} className={i===mission?"selected":""} onClick={()=>select(i)}>{g.name}</button>)}
+  </div>
+  <details className="game-tip"><summary>💡 Mon aide-mémoire</summary>
+   <div className="notes-list">{verbLessonNotes.map((note,i)=><p key={i}>{note}</p>)}</div>
+  </details>
+  {screen==="intro"&&<section className="imported-card"><span className="big-emoji">🕵️</span><h2>{current.title}</h2><p>{current.intro}</p><button className="primary" type="button" onClick={()=>start()}>C’est parti !</button></section>}
+  {screen==="play"&&item&&<section className="imported-card">
+    <div className="game-subtitle"><span>{review?"Révision · ":""}{current.title}</span><span>{position+1} / {round.length}</span></div>
+    <div className="quiz-track"><span style={{width:(position/round.length*100)+"%"}}/></div>
+    <h2>{item.question}</h2>
+    <p className="imported-question emphasized"><HighlightedText value={item.prompt}/></p>
+    {item.options?<div className="imported-options">
+      {item.options.map(option=><button type="button" key={option} disabled={answered||busy||wrongOptions.includes(option)} onClick={()=>check(option)}
+       className={wrongOptions.includes(option)?"wrong":answered&&option===item.answer?"right":""}>{option}</button>)}
+    </div>:<form className="imported-form" onSubmit={submit}>
+      <input aria-label="Ton infinitif" placeholder="Écris ton infinitif" autoComplete="off" spellCheck={false}
+       value={typed} onChange={e=>setTyped(e.target.value)} disabled={answered||busy}/>
+      <button type="submit" className="primary" disabled={answered||busy||!typed.trim()}>Valider</button>
+    </form>}
+    <p className={"imported-feedback "+(answered?"success":"")} role="status">{error||feedback}</p>
+    <div className="imported-actions">
+      {!answered&&<button type="button" className="secondary" disabled={busy} onClick={showHint}>💡 {hintStep===0?"Un indice":"Voir la réponse"}</button>}
+      {answered&&<button type="button" className="primary" disabled={busy} onClick={()=>{void next()}}>{position+1===round.length?"Voir mon résultat →":"Suivant →"}</button>}
+    </div>
+   </section>}
+  {screen==="result"&&<section className="imported-card imported-result">
+    <div className="big-emoji">{mistakes.length?"🌟":"🏅"}</div><h2>{mistakes.length?"Mission terminée !":"Mission réussie sans aide !"}</h2>
+    <p>{round.length-mistakes.length} sur {round.length} sans erreur ni indice.</p>
+    <p><strong>À retenir à voix haute :</strong> {current.memory}</p>
+    <div className="imported-actions">
+      {mistakes.length>0&&<button type="button" className="primary" onClick={()=>start(mistakes,true)}>Rejouer les questions à revoir</button>}
+      <button type="button" className="secondary" onClick={()=>select((mission+1)%verbMissions.length)}>{mission===verbMissions.length-1?"Retour à la première mission":"Mission suivante →"}</button>
+    </div>
+   </section>}
+ </section>;
+}
