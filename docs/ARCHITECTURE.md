@@ -38,3 +38,13 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 - Les modes ne sont activés que lorsqu'ils sont pédagogiquement adaptés : le curseur exige une réponse numérique, la banque de mots une réponse de plusieurs mots, et les associations trois réponses distinctes dans le pack. Tous les packs existants peuvent utiliser plusieurs méthodes sans modifier leur JSON.
 - Association/memory comptent une tentative et rapportent 10 points si toutes les paires ont été réussies sans erreur ; une erreur entraîne 0 point mais n'empêche pas de finir le jeu. Le suivi SQLite reste compatible.
 - Les futures questions téléchargées utilisent automatiquement les mêmes modes. N'ajouter du code que si un nouveau type d'exercice ou un nouveau moteur est requis.
+
+## Nouveau moteur 0.3.0 : leçons animées
+
+- `src/lessons/chessTypes.ts` : contrat `AnimatedLesson` / `ChessScene` (texte + pièces + séquence de déplacements + défi de compréhension). Ces données sont intégrées à la version Windows pour un fonctionnement hors ligne.
+- `src/lessons/chessBeginner.ts` : cours de 20 scènes débutant, six types de pièces, prise en diagonale, échec, mat, roque, promotion et pat, avec défis intermédiaires.
+- `src/components/AnimatedChessBoard.tsx` : plateau interactif avec coordonnées et animation CSS des pièces, contrôles accessibles au clavier.
+- `src/components/AnimatedLessonPlayer.tsx` : lecteur de scènes, lecture vocale système Windows via Web Speech API, surlignage mot par mot si l'API émet les événements `boundary`, replay et vérification des défis par clic sur une case.
+- `src/App.tsx` : nouvelle carte de leçon sur l'accueil et enregistrement des défis dans les tentatives SQLite (+10 si réussi au premier essai), sans toucher aux anciennes données.
+
+**Restrictions** : le choix d'une voix masculine et les événements mot par mot dépendent des voix installées et du moteur vocal Windows/WebView2. Aucun service de voix tiers ni serveur n'est requis. Les nouvelles leçons ne sont pas encore distribuées à distance via le manifeste des packs de quiz : le moteur et sa première leçon sont fournis avec le nouvel installateur 0.3.0.
