@@ -14,6 +14,12 @@ Application éducative Windows 11, **100 % utilisable hors ligne**, pour un enfa
 - Vérification manuelle / automatique des contenus, hors ligne sans blocage
 - Préparation des mises à jour signées de l'application via Tauri Updater
 
+## Guide obligatoire pour tous les développeurs et agents IA
+
+**Avant toute modification, lire [docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md) et [AGENTS.md](AGENTS.md).** Le journal contient la méthode de travail, l'architecture utile et l'historique de KidQuest, étape par étape.
+
+**Toute Pull Request doit ajouter une nouvelle entrée datée à la fin de `docs/DEVELOPMENT_LOG.md`.** Le workflow `require-development-log.yml` refuse une PR qui oublie ce fichier ou modifie son historique existant au lieu d'y ajouter une entrée. Le manifeste `site/manifest.json` généré automatiquement après la fusion d'un pack constitue l'exception documentée.
+
 ## Démarrage pour développement
 
 Node.js 22+ et npm :
