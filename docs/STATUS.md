@@ -44,3 +44,11 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Des tests unitaires couvrent les dix modes et la compatibilité avec les quatre cours intégrés.
 - L'installation de l'exécutable 0.2.0 reste nécessaire une fois pour accéder aux nouveaux moteurs. Les nouvelles questions continueront à arriver via GitHub sans réinstallation.
 - Validation visuelle et essais sur le vrai PC de l'enfant restent nécessaires.
+
+## Version 0.3.0 — cours d'échecs interactif animé
+
+- Nouvelle carte « Les échecs : mes premiers pas », 20 étapes, mouvements animés sur échiquier, explications lues à haute voix et défis où l'enfant clique sur la bonne case.
+- Cours utilisable hors ligne après installation, couvrant les 6 types de pièces, le déplacement/capture du pion, l'échec, l'échec et mat, le roque, la promotion et le pat.
+- Lecture avec les voix françaises disponibles sur le PC ; la sélection d'une voix masculine est tentée par son nom et **n'est pas garantie**. Le surlignage mot par mot dépend des événements `boundary` de la voix utilisée.
+- Les points des défis sont ajoutés via la structure de sauvegarde SQLite existante, sans migration des données ni modification du catalogue des packs de quiz.
+- Les nouvelles leçons animées restent à distribuer via des packs versionnés dans une évolution future. La première leçon est embarquée, donc 0.3.0 exige une nouvelle installation.
