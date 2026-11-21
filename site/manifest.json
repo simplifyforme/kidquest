@@ -89,6 +89,70 @@
           "mime": "image/jpeg"
         }
       ]
+    },
+    {
+      "id": "groenten-fruit-nl",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/pack.json",
+      "sha256": "77d927212b87104068b81ad9113f7319148933e9f499e3d6a35c7a7b0b9ebd64",
+      "assets": [
+        {
+          "file": "appel.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/appel.jpg",
+          "sha256": "e958b929e418d3b3daa72c3da7ca3ce80942c6f03d8de732f6a43fdbb6478f85",
+          "bytes": 30105,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "banaan.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/banaan.jpg",
+          "sha256": "70c5b3c338737e6576f28bfa9f247ff765b9c2bf6988ff04bfb43e3b037d9360",
+          "bytes": 15000,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "broccoli.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/broccoli.jpg",
+          "sha256": "ac11c4aa4e793ab6db7f03ba6f454e2abb064676b4dba18394ec80f3abff9990",
+          "bytes": 43772,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "komkommer.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/komkommer.jpg",
+          "sha256": "3dcaf7e0087d8c3c07e315b7a048ae15cd8bc313e8d23a36b900920554742ed5",
+          "bytes": 23793,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "peer.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/peer.jpg",
+          "sha256": "f2e8aaf62cf2bb87221cc50b8a64845b20cf975fd875980755d280fb754ef5c3",
+          "bytes": 24229,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "sinaasappel.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/sinaasappel.jpg",
+          "sha256": "aee7a3f72940b562f48ce3fca2028aed60c9908a5e33b96bd67956f7608c58c3",
+          "bytes": 27004,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "tomaat.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/tomaat.jpg",
+          "sha256": "9c6f7715f89834d964c713beb15fb66bcc99178b4fba8f2d75405e2747abcec1",
+          "bytes": 22055,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "wortel.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/groenten-fruit-nl/assets/wortel.jpg",
+          "sha256": "76af5d3fc21c8525dab4292225fa987b818d9a79add4ee03e90821c3731b9c0a",
+          "bytes": 18017,
+          "mime": "image/jpeg"
+        }
+      ]
     }
   ]
 }
