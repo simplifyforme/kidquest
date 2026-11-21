@@ -15,7 +15,7 @@ export function isValidQuestion(q:unknown):q is Question{
 export function isValidPack(p:unknown):p is ContentPack{
  if(!p||typeof p!=="object")return false;
  const x=p as Partial<ContentPack>;
- return typeof x.id==="string"&&/^[a-z0-9-]{1,60}$/.test(x.id)&&Number.isSafeInteger(x.version)&&x.version!>=1&&typeof x.title==="string"&&x.title.length<=100&&(x.category===undefined||["math","french","dutch","chess"].includes(x.category))&&(x.locale===undefined||["nl-BE","fr-BE"].includes(x.locale))&&Array.isArray(x.questions)&&x.questions.length>0&&x.questions.length<=500&&x.questions.every(isValidQuestion)&&new Set(x.questions.map(q=>q.id)).size===x.questions.length;
+ return typeof x.id==="string"&&/^[a-z0-9-]{1,60}$/.test(x.id)&&Number.isSafeInteger(x.version)&&x.version!>=1&&typeof x.title==="string"&&x.title.length<=100&&(x.category===undefined||["math","french","dutch","chess","nature"].includes(x.category))&&(x.locale===undefined||["nl-BE","fr-BE"].includes(x.locale))&&Array.isArray(x.questions)&&x.questions.length>0&&x.questions.length<=500&&x.questions.every(isValidQuestion)&&new Set(x.questions.map(q=>q.id)).size===x.questions.length;
 }
 export async function sha256(content:string):Promise<string>{
  const bytes=new TextEncoder().encode(content);const buf=await crypto.subtle.digest("SHA-256",bytes);
