@@ -98,9 +98,9 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 
 ## Version 0.8.0 — Matières et cartes reconfigurables sans réinstallation
 
-- Nouveau \`site/catalog.json\` : version du catalogue, catégories et métadonnées de présentation par activité (matière, titre, sous-titre, emoji et ordre).
+- Nouveau `site/catalog.json` : version du catalogue, catégories et métadonnées de présentation par activité (matière, titre, sous-titre, emoji et ordre).
 - Mise à jour automatique via le même manifeste GitHub et le même bouton « Vérifier les mises à jour » ; le manifeste inclut désormais le SHA-256 du catalogue, généré automatiquement.
-- Cache SQLite \`remote_catalog\` ajouté sans migration destructive : le dernier catalogue validé reste disponible hors ligne ; les catégories intégrées servent de secours.
+- Cache SQLite `remote_catalog` ajouté sans migration destructive : le dernier catalogue validé reste disponible hors ligne ; les catégories intégrées servent de secours.
 - Les activités existantes, leurs IDs, points, historique, sessions et réglages Visible/Masqué sont conservés. Les futurs contenus restent visibles par défaut.
 - Cette première activation nécessite l'installation Windows **0.8.0 une fois**. Ensuite les déplacements, titres et ordres de cours passent simplement par la modification du JSON distant, sans nouvel installateur.
 - Un nouveau moteur/jeu/animation en React/Three.js/Rust exige toujours un nouvel installateur. L'updater binaire signé reste désactivé.
