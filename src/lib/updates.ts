@@ -4,6 +4,7 @@ import type { ContentManifest,ContentPack,Question,Result,ManifestCatalog } from
 import type { RemoteCatalog } from "./catalogConfig";
 import { getPacks,installPack,getRemoteCatalog,installRemoteCatalog } from "./storage";
 import { isValidRemoteCatalog } from "./catalogConfig";
+import {ensureActivityAssets,validateActivityAssets,validQuestionMedia} from "./activityAssets";
 
 // Content distribution repository to be created and enabled separately.
 const MANIFEST_URL="https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/manifest.json";
@@ -12,7 +13,7 @@ const APP_UPDATE_ENABLED=false; // Enable only AFTER adding the signed updater p
 export function isValidQuestion(q:unknown):q is Question{
  if(!q||typeof q!=="object")return false;
  const x=q as Partial<Question>;
- return typeof x.id==="string"&&x.id.length<120&&typeof x.subject==="string"&&["math","numbers","french","dutch"].includes(x.subject)&&typeof x.prompt==="string"&&x.prompt.length<=500&&typeof x.correctAnswerId==="string"&&Array.isArray(x.answers)&&x.answers.length>=2&&x.answers.length<=6&&x.answers.every(a=>typeof a.id==="string"&&typeof a.label==="string"&&a.label.length<=200)&&x.answers.some(a=>a.id===x.correctAnswerId)&&typeof x.explanation==="string";
+ return typeof x.id==="string"&&x.id.length<120&&typeof x.subject==="string"&&["math","numbers","french","dutch"].includes(x.subject)&&typeof x.prompt==="string"&&x.prompt.length<=500&&typeof x.correctAnswerId==="string"&&Array.isArray(x.answers)&&x.answers.length>=2&&x.answers.length<=6&&x.answers.every(a=>typeof a.id==="string"&&typeof a.label==="string"&&a.label.length<=200)&&x.answers.some(a=>a.id===x.correctAnswerId)&&typeof x.explanation==="string"&&(x.media===undefined||validQuestionMedia(x.media));
 }
 export function isValidPack(p:unknown):p is ContentPack{
  if(!p||typeof p!=="object")return false;
@@ -44,6 +45,8 @@ export async function checkContentUpdates():Promise<Result>{
   const versions=new Map((await getPacks()).map(p=>[p.id,p.version]));
   let count=0;
   let catalogUpdated=false;
+  let bundleCount=0;
+  let mediaCount=0;
   const errors:string[]=[];
   try{
    for(const item of body.packs){
@@ -65,6 +68,36 @@ export async function checkContentUpdates():Promise<Result>{
    }
   }catch(e){errors.push("packs : "+(e instanceof Error?e.message:"réseau"))}
 
+  // Independent per-activity directories: pack.json + hashed assets (jpg/png/gif/video/audio).
+  // Install questions only AFTER all corresponding assets are verified and stored offline.
+  if(body.activities!==undefined){
+   try{
+    if(!Array.isArray(body.activities)||body.activities.length>100)throw Error("liste d’activités invalide");
+    for(const entry of body.activities){
+     if(typeof entry.id!=="string"||!/^[a-z0-9-]{1,60}$/.test(entry.id)||
+        !Number.isSafeInteger(entry.version)||entry.version<1||
+        typeof entry.url!=="string"||!sameOriginOrHttps(entry.url)||
+        !/^[a-f0-9]{64}$/i.test(entry.sha256)||
+        !validateActivityAssets(entry.id,entry.assets))throw Error("activité invalide");
+     if((versions.get(entry.id)||0)>=entry.version)continue;
+     const response=await fetch(entry.url,{cache:"no-store",signal:AbortSignal.timeout(12000)});
+     if(!response.ok)throw Error("questions indisponibles : "+entry.id);
+     const raw=await response.text();
+     if(new TextEncoder().encode(raw).length>1024*1024)throw Error("questions trop volumineuses");
+     if(await sha256(raw)!==entry.sha256.toLowerCase())throw Error("empreinte des questions incorrecte");
+     const data:unknown=JSON.parse(raw);
+     if(!isValidPack(data)||data.id!==entry.id||data.version!==entry.version)
+       throw Error("pack de l’activité invalide");
+     if(data.questions.some(q=>q.media&&!entry.assets.some(a=>a.file===q.media?.file)))
+       throw Error("média manquant dans le manifeste : "+entry.id);
+     mediaCount+=await ensureActivityAssets(entry.id,entry.assets);
+     await installPack(data);
+     versions.set(entry.id,entry.version);
+     bundleCount++;
+    }
+   }catch(e){errors.push("activités avec médias : "+(e instanceof Error?e.message:"réseau"))}
+  }
+
   // Optional catalog: old manifests still work, and pack errors cannot prevent
   // a verified catalog update from installing.
   if(body.catalog!==undefined){
@@ -84,9 +117,9 @@ export async function checkContentUpdates():Promise<Result>{
     }
    }catch(e){errors.push("organisation : "+(e instanceof Error?e.message:"réseau"))}
   }
-  const updated=count>0||catalogUpdated;
+  const updated=count>0||bundleCount>0||catalogUpdated;
   const changes=[
-   count?count+" nouveau(x) pack(s) installé(s)":"",catalogUpdated?"Organisation des matières mise à jour":""
+   count?count+" nouveau(x) pack(s) installé(s)":"",bundleCount?bundleCount+" activité(s) et "+mediaCount+" média(s) installés":"",catalogUpdated?"Organisation des matières mise à jour":""
   ].filter(Boolean).join(". ");
   const warning=errors.length?" Attention : "+errors.join(" ; ")+".":"";
   return updated?

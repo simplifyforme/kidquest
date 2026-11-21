@@ -361,3 +361,43 @@
 @media(max-width:760px){.visibility-groups{grid-template-columns:1fr}.number-settings{grid-template-columns:1fr}.game-hero{padding:15px}.game-hero-icon{font-size:37px}.imported-card{padding:16px}.imported-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:430px){.imported-options{grid-template-columns:1fr}.imported-question{font-size:18px}.game-hero h1{font-size:24px}.mini-game-menu button{flex:1}.star-pill{display:none}}
 @media(max-height:800px){.game-hero{min-height:105px;padding-top:12px;padding-bottom:12px}.imported-card{padding-top:15px;padding-bottom:17px}.imported-question{margin-bottom:10px!important}.imported-options button{min-height:47px}}
+
+
+/* KidQuest 0.9 — offline photograph, GIF, video and sound within remote activity questions. */
+.question-media{
+  margin:10px auto 13px;
+  width:min(100%,480px);
+  height:clamp(150px,27vh,260px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #e5e7f8;
+  background:#f6f7ff;
+  border-radius:19px;
+  overflow:hidden;
+}
+.question-media img,.question-media video{
+  display:block;
+  max-width:100%;
+  max-height:100%;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.question-media audio{width:90%;max-width:450px}
+.question-media-loading,.question-media-missing{
+  margin:10px auto;
+  width:min(100%,480px);
+  padding:25px 18px;
+  border-radius:14px;
+  text-align:center;
+  background:#f6f7ff;
+  color:#687297;
+  font-size:13px;
+}
+@media(max-height:850px){
+ .question-media{height:clamp(130px,24vh,195px);margin:7px auto 10px}
+}
+@media(max-width:700px){
+ .question-media{height:clamp(130px,23vh,210px);border-radius:14px}
+}

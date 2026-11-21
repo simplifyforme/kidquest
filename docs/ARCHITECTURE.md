@@ -109,3 +109,15 @@ Le fichier versionné `site/catalog.json` porte les métadonnées de présentati
 5. `src/App.tsx` recharge les packs et le catalogue validés après mise à jour, sans redémarrer le binaire ; l'accueil, les titres, l'ordre et les catégories sont recalculés.
 
 **Sécurité / limites** : l'empreinte contrôle les octets par rapport au manifeste GitHub, pas une signature indépendante du manifeste. Les préférences de masquage et l'historique restent indexés par les IDs inchangés. Le catalogue ne peut pas installer un nouveau moteur React ou Rust : ce cas nécessite un installateur signé ou manuel. Une nouvelle catégorie choisit une classe couleur existante ; une nouvelle couleur CSS nécessite un build.
+
+## Version 0.9.0 — Dossiers d'activités autonomes avec média hors ligne
+
+`docs/ACTIVITY_BUNDLES.md` est le guide de référence. Les nouvelles activités utilisent `site/activities/<activity-id>/pack.json` et un dossier séparé `assets/`, contenant leurs photos, GIF, vidéos et audio. Les autres exercices précédemment publiés dans `site/packs/` continuent à fonctionner.
+
+Le manifeste GitHub est étendu rétrocompatiblement par `activities[]`. Chaque activité contient `id`, `version`, URL et SHA-256 du `pack.json`, ainsi qu'une liste d'assets `{file,url,sha256,bytes,mime}`. `scripts/generate-manifest.mjs` calcule les empreintes à partir des vrais fichiers GitHub. Les workflows `windows.yml` et `pages.yml` préparent le dossier d'images animalières à partir de sources Wikimedia Commons CC0 documentées, puis publient le manifeste et les médias.
+
+Le client `src/lib/updates.ts` valide les chemins, types, taille, version, identité du pack et SHA-256. `src/lib/activityAssets.ts` vérifie les octets et évite le téléchargement d'un fichier déjà identique, avant de sauvegarder chaque média dans son dossier par les commandes Rust `save_activity_asset`, `read_activity_asset`, `activity_asset_exists`. Ces commandes sont confinées sous le répertoire AppLocalData de KidQuest, avec liste blanche d'extensions. Aucune permission large d'accès aux fichiers n'est accordée à la fenêtre.
+
+`src/components/QuestionMedia.tsx` lit les fichiers locaux et crée une URL Blob temporaire pour afficher une image, GIF animé, vidéo ou audio, sans accès réseau. `src/lib/exerciseModes.ts` force temporairement le mode QCM pour les questions possédant un média, afin que la photographie ne soit pas perdue dans un moteur de lettres/memory. Les identifiants de réponses, les points, les sessions et la visibilité parentale restent inchangés.
+
+**Limitation** : le système télécharge du contenu et des médias, mais ne peut pas introduire arbitrairement du code ou un nouveau moteur. L'installation unique de KidQuest 0.9.0 ajoute le support de média ; les futurs dossiers d'activités adaptés aux moteurs présents pourront ensuite être publiés par GitHub sans nouvelle installation.

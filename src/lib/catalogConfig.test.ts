@@ -9,7 +9,7 @@ const remote=publishedCatalog as RemoteCatalog;
 describe("versioned remote presentation catalog",()=>{
  it("accepts the published catalog and preserves the four established subjects",()=>{
   expect(isValidRemoteCatalog(remote)).toBe(true);
-  expect(remote.version).toBe(1);
+  expect(remote.version).toBe(2);
   expect(resolveCategories(remote).map(c=>c.id)).toEqual(["math","french","dutch","chess"]);
   const entries=getCatalog(builtinPacks,remote);
   expect(entries.find(e=>e.id==="plant-playground")?.category).toBe("dutch");

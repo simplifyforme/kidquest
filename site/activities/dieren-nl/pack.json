@@ -1,0 +1,265 @@
+{
+  "id": "dieren-nl",
+  "version": 1,
+  "title": "Dieren herkennen met foto's",
+  "category": "dutch",
+  "locale": "nl-BE",
+  "questions": [
+    {
+      "id": "animal-nl-kat",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "de kat"
+        },
+        {
+          "id": "a1",
+          "label": "het konijn"
+        },
+        {
+          "id": "a2",
+          "label": "de olifant"
+        },
+        {
+          "id": "a3",
+          "label": "het schaap"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Dit dier heet de kat.",
+      "emoji": "🐱",
+      "media": {
+        "type": "image",
+        "file": "kat.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-hond",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het paard"
+        },
+        {
+          "id": "a1",
+          "label": "het konijn"
+        },
+        {
+          "id": "a2",
+          "label": "de olifant"
+        },
+        {
+          "id": "a3",
+          "label": "de hond"
+        }
+      ],
+      "correctAnswerId": "a3",
+      "explanation": "Dit dier heet de hond.",
+      "emoji": "🐶",
+      "media": {
+        "type": "image",
+        "file": "hond.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-paard",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het konijn"
+        },
+        {
+          "id": "a1",
+          "label": "de olifant"
+        },
+        {
+          "id": "a2",
+          "label": "het paard"
+        },
+        {
+          "id": "a3",
+          "label": "de leeuw"
+        }
+      ],
+      "correctAnswerId": "a2",
+      "explanation": "Dit dier heet het paard.",
+      "emoji": "🐴",
+      "media": {
+        "type": "image",
+        "file": "paard.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-koe",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het paard"
+        },
+        {
+          "id": "a1",
+          "label": "de koe"
+        },
+        {
+          "id": "a2",
+          "label": "de hond"
+        },
+        {
+          "id": "a3",
+          "label": "de leeuw"
+        }
+      ],
+      "correctAnswerId": "a1",
+      "explanation": "Dit dier heet de koe.",
+      "emoji": "🐮",
+      "media": {
+        "type": "image",
+        "file": "koe.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-konijn",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het konijn"
+        },
+        {
+          "id": "a1",
+          "label": "de kat"
+        },
+        {
+          "id": "a2",
+          "label": "de koe"
+        },
+        {
+          "id": "a3",
+          "label": "de hond"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Dit dier heet het konijn.",
+      "emoji": "🐰",
+      "media": {
+        "type": "image",
+        "file": "konijn.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-olifant",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het konijn"
+        },
+        {
+          "id": "a1",
+          "label": "het schaap"
+        },
+        {
+          "id": "a2",
+          "label": "de kat"
+        },
+        {
+          "id": "a3",
+          "label": "de olifant"
+        }
+      ],
+      "correctAnswerId": "a3",
+      "explanation": "Dit dier heet de olifant.",
+      "emoji": "🐘",
+      "media": {
+        "type": "image",
+        "file": "olifant.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-schaap",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "het konijn"
+        },
+        {
+          "id": "a1",
+          "label": "de olifant"
+        },
+        {
+          "id": "a2",
+          "label": "het schaap"
+        },
+        {
+          "id": "a3",
+          "label": "het paard"
+        }
+      ],
+      "correctAnswerId": "a2",
+      "explanation": "Dit dier heet het schaap.",
+      "emoji": "🐑",
+      "media": {
+        "type": "image",
+        "file": "schaap.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    },
+    {
+      "id": "animal-nl-leeuw",
+      "subject": "dutch",
+      "skill": "dieren",
+      "prompt": "Welk dier zie je op de foto?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "de olifant"
+        },
+        {
+          "id": "a1",
+          "label": "de leeuw"
+        },
+        {
+          "id": "a2",
+          "label": "het paard"
+        },
+        {
+          "id": "a3",
+          "label": "het konijn"
+        }
+      ],
+      "correctAnswerId": "a1",
+      "explanation": "Dit dier heet de leeuw.",
+      "emoji": "🦁",
+      "media": {
+        "type": "image",
+        "file": "leeuw.jpg",
+        "alt": "Foto van een dier. Kies de juiste Nederlandse naam."
+      }
+    }
+  ]
+}

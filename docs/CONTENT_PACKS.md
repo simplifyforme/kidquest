@@ -63,3 +63,11 @@ Le SHA-256 doit être calculé sur les **octets exacts** du fichier JSON distrib
 - Fusionner via PR avec entrée datée dans `docs/DEVELOPMENT_LOG.md`. Le workflow `pages.yml` détecte le changement, recalcule l'empreinte SHA-256 du catalogue et publie le nouveau `site/manifest.json` automatiquement.
 - L'application 0.8.0+ récupère le catalogue au lancement ou via le bouton de mise à jour ; elle vérifie HTTPS, version, SHA-256 et schéma avant de l'utiliser et conserve la copie locale pour l'usage hors ligne.
 - Tous les packs JSON téléchargés, même nouvellement publiés, restent visibles par défaut sauf exclusion explicite depuis Paramètres. Les surcharges d'ID inconnu n'exécutent jamais un nouveau jeu ; nouveaux moteurs React nécessitent encore un nouvel installateur.
+
+## À partir de 0.9.0 : une activité = un dossier autonome
+
+Pour les nouveaux contenus, ne pas continuer à déposer des ressources éparses dans `site/packs/` : utiliser `site/activities/<id>/pack.json` et `site/activities/<id>/assets/`. Les anciens packs restent compatibles, mais toute nouvelle activité riche en images/GIF/vidéo/audio suit ce format.
+
+Le mécanisme de publication, le contrat `Question.media`, les limites des médias, le cache Windows, les règles de validation, et l'exemple « Dieren » sont documentés dans **[`docs/ACTIVITY_BUNDLES.md`](ACTIVITY_BUNDLES.md)**.
+
+À chaque modification, augmenter `pack.json.version` et ajouter une entrée datée append-only dans `docs/DEVELOPMENT_LOG.md`. `pages.yml` recalculera automatiquement le manifeste et publiera seulement les dossiers/ressources modifiés. Pas de nouvel installateur si le moteur requis est déjà présent dans KidQuest.

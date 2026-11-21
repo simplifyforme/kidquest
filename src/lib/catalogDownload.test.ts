@@ -6,7 +6,7 @@ describe("secure remote catalog distribution",()=>{
  const raw=JSON.stringify(publishedCatalog)+"\n";
  it("accepts a SHA-256 checked version of the catalog",async()=>{
   const descriptor={version:publishedCatalog.version,url:"https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",sha256:await sha256(raw)};
-  expect(await verifyRemoteCatalog(raw,descriptor)).toMatchObject({schemaVersion:1,version:1});
+  expect(await verifyRemoteCatalog(raw,descriptor)).toMatchObject({schemaVersion:1,version:publishedCatalog.version});
  });
  it("rejects tampered bytes even if the JSON is well formed",async()=>{
   const descriptor={version:1,url:"https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",sha256:await sha256(raw)};

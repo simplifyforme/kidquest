@@ -104,3 +104,12 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Les activités existantes, leurs IDs, points, historique, sessions et réglages Visible/Masqué sont conservés. Les futurs contenus restent visibles par défaut.
 - Cette première activation nécessite l'installation Windows **0.8.0 une fois**. Ensuite les déplacements, titres et ordres de cours passent simplement par la modification du JSON distant, sans nouvel installateur.
 - Un nouveau moteur/jeu/animation en React/Three.js/Rust exige toujours un nouvel installateur. L'updater binaire signé reste désactivé.
+
+## Version 0.9.0 — Dossiers indépendants d'activités et quiz d'animaux néerlandais
+
+- Le premier dossier `site/activities/dieren-nl/` contient le pack « Dieren herkennen met foto's », huit questions néerlandaises et les sources photographiques CC0, avec des photos répliquées dans `assets/` par GitHub Actions.
+- Les activités futures peuvent conserver leurs propres JPG, PNG, WebP, GIF, MP4, WebM, MP3, OGG et WAV. GitHub publie un manifeste complet des ressources ; KidQuest les télécharge, vérifie SHA-256, installe sous `activities/<id>/assets/` et les affiche hors ligne.
+- Les fichiers déjà présents avec un SHA-256 valide sont réutilisés. La sauvegarde du nouveau pack de questions est reportée jusqu'à l'arrivée de tous ses médias.
+- Les nouvelles activités sont visibles par défaut, peuvent être masquées depuis Paramètres et utilisent le score/historique des packs existants.
+- Une première installation Windows **0.9.0** est nécessaire pour le moteur multimédia ; les nouveaux contenus compatibles et leurs médias s'installent ensuite sans reconstruire l'application. Les anciens packs et jeux intégrés sont conservés.
+- Types et tailles sont restreints : pas de script distant, HTML/JS exécutable ni extension arbitraire. Les nouveaux moteurs programmés requièrent toujours un nouvel installateur.

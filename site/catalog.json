@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "categories": [
     {
       "id": "math",
@@ -62,6 +62,14 @@
       "id": "french-verb-hunt",
       "category": "french",
       "order": 80
+    },
+    {
+      "id": "dieren-nl",
+      "category": "dutch",
+      "title": "Dieren herkennen met foto’s",
+      "subtitle": "8 foto's · Welk dier zie je?",
+      "emoji": "🐾",
+      "order": 91
     }
   ]
 }
