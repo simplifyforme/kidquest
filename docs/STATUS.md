@@ -88,3 +88,10 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Importation via composants React natifs, sans exécution directe des scripts HTML. Les activités sont accessibles hors ligne après installation de KidQuest 0.7.0 et leurs performances sont enregistrées dans l'historique de sessions.
 - Paramètres : cases « Visible » / « Masqué » pour **toutes les activités**, y compris les futurs packs JSON. Nouveau contenu toujours visible par défaut ; masquer un contenu ne supprime ni les points ni l'historique.
 - Les anciens exercices, leçons 2D/3D, pack IDs et données SQLite sont conservés ; seule une table `hidden_activities` est ajoutée. Nouvelle installation de l'application nécessaire pour les nouveaux moteurs interactifs.
+
+## Version 0.7.1 — Cours sur les plantes dans Nederlands
+
+- « De plant · Speeltuin » apparaît dans **Nederlands**, avec les autres exercices de néerlandais ; suppression de la catégorie Natuur séparée de l'accueil.
+- Les jeux, points, anciens scores, durée et choix Visible/Masqué sont conservés, grâce au même identifiant de l'activité.
+- Les anciens packs téléchargés ayant la catégorie facultative `nature` restent compatibles : ils sont affichés sous Nederlands.
+- Nouvelle installation Windows 0.7.1 requise pour voir le changement d'organisation.
