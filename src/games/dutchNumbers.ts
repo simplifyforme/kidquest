@@ -28,18 +28,19 @@ export function makeDutchNumberSession(level:NumberLevel,direction:NumberDirecti
  const [min,max]=level==="easy"?[0,20]:level==="medium"?[21,100]:level==="hard"?[101,1000]:[0,1000];
  const seen=new Set<number>(),questions:NumberQuestion[]=[];
  for(let i=0;i<length;i++){
-  let n=random(min,max,rand),tries=0;
-  do{
-   n=random(min,max,rand);
-   if(practice==="tricky"&&(n%100<21||n%10===0))continue;
-   if(!seen.has(n))break;
-   tries++;
-  }while(tries<150);
-  // Avoid endless retries when too many questions are requested for the available range.
-  if(seen.has(n)){
-   const alternative=Array.from({length:max-min+1},(_,offset)=>min+offset)
-    .find(k=>!seen.has(k)&&(practice!=="tricky"||(k%100>=21&&k%10!==0)));
-   if(alternative!==undefined)n=alternative;
+  let n=random(min,max,rand),found=false;
+  for(let tries=0;tries<150;tries++){
+   const candidate=random(min,max,rand);
+   if(seen.has(candidate))continue;
+   if(practice==="tricky"&&(candidate%100<21||candidate%10===0))continue;
+   n=candidate;found=true;break;
+  }
+  // The 0–20 range has no tricky tens: fall back to normal without hanging.
+  if(!found){
+   const candidates=Array.from({length:max-min+1},(_,offset)=>min+offset);
+   const available=candidates.find(k=>!seen.has(k)&&(practice!=="tricky"||(k%100>=21&&k%10!==0)))
+    ??candidates.find(k=>!seen.has(k));
+   if(available!==undefined)n=available;
   }
   seen.add(n);
   questions.push({n,mode:direction==="mixed"?(i%2===0?"number":"words"):direction});
