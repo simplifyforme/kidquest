@@ -26,6 +26,8 @@ jobs:
           workspaces: src-tauri -> target
       - name: Install dependencies
         run: npm install
+      - name: Validate and regenerate content + catalog manifest
+        run: node scripts/generate-manifest.mjs
       - name: Typecheck and build frontend
         run: npm run build
       - name: Run tests
