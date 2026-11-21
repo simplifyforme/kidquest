@@ -2,7 +2,7 @@ export type ChessKind = "K" | "Q" | "R" | "B" | "N" | "P";
 export type ChessColor = "white" | "black";
 export type Square = string;
 export type ChessPiece = { id: string; kind: ChessKind; color: ChessColor; square: Square };
-export type ChessAction = { pieceId: string; to: Square; note?: string };
+export type ChessAction = { pieceId: string; to: Square; note?: string; promoteTo?: ChessKind };
 export type ChessScene = {
   id: string;
   title: string;
@@ -35,6 +35,7 @@ export function playActions(initial: ChessPiece[], actions: ChessAction[], upTo=
     const captured=result.findIndex(other=>other.square===action.to && other.color!==p.color);
     if(captured>=0) result.splice(captured,1);
     p.square=action.to;
+    if(action.promoteTo && ["Q","R","B","N"].includes(action.promoteTo))p.kind=action.promoteTo;
   }
   return result;
 }
