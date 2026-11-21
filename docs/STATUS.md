@@ -79,3 +79,12 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Début/fin mesurés pour chaque partie terminée, sur Windows dans la nouvelle table \`completed_sessions\`. Aucune partie abandonnée n'est comptabilisée.
 - Les points et anciennes tentatives ne changent pas ; les sessions antérieures à 0.6.0 n'ont pas de durée calculable et ne sont donc pas artificiellement ajoutées aux nouveaux compteurs.
 - Nouveau moteur d'historique compatible avec toutes les matières et les cours d'échecs 2D/3D.
+
+## Version 0.7.0 — Trois activités HTML adaptées et visibilité des cours
+
+- « De plant · Speeltuin » dans la nouvelle matière **Natuur** : 6 mini-jeux, 33 questions sur les plantes, besoins, fonctions, croissance, bulbes et tubercules, écriture et aide français.
+- « Getallenheld » dans **Wiskunde** : exercice autonome en néerlandais sur les nombres 0–1000, écriture chiffres/lettres, difficulté configurable, indices, révision des fautes.
+- « La chasse aux verbes » dans **Français** : 4 missions et 37 questions avec leçon de grammaire, verbe conjugué, infinitif, groupes, indices et révision.
+- Importation via composants React natifs, sans exécution directe des scripts HTML. Les activités sont accessibles hors ligne après installation de KidQuest 0.7.0 et leurs performances sont enregistrées dans l'historique de sessions.
+- Paramètres : cases « Visible » / « Masqué » pour **toutes les activités**, y compris les futurs packs JSON. Nouveau contenu toujours visible par défaut ; masquer un contenu ne supprime ni les points ni l'historique.
+- Les anciens exercices, leçons 2D/3D, pack IDs et données SQLite sont conservés ; seule une table `hidden_activities` est ajoutée. Nouvelle installation de l'application nécessaire pour les nouveaux moteurs interactifs.
