@@ -48,3 +48,10 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Ajouter un **moteur de jeu ou une nouvelle fonctionnalité native** ? Modifier l'application, compiler un nouvel installateur et conserver les contrats de progression existants.
 - Mises à jour de l'application via Tauri Updater : **encore désactivées**, ne pas prétendre qu'elles fonctionnent tant que les clés, la signature et la release publique ne sont pas configurées et testées.
 - Garder l'interface « Académie ludique », adaptée à un enfant de 8 ans, et l'expérience entièrement utilisable hors ligne pour les packs installés.
+
+## Ajout de missions dynamiques (à partir de 0.1.2)
+
+- Les missions visibles sont maintenant générées par `src/lib/activities.ts` à partir des packs chargés de SQLite et des packs intégrés.
+- **Un nouveau pack JSON** avec un `id` distinct et des questions de type existant crée une nouvelle carte **sans reconstruire l'application**. `title` devient le titre de la carte, et les questions sont filtrées par `packId` et matière.
+- Ne pas revenir à un tableau figé de quatre cartes, ni mélanger le contenu d'un nouveau pack avec la mission de base par défaut.
+- Un nouveau **moteur** de jeu interactif ou une nouvelle matière non prise en charge nécessite toujours une version de l'application.
