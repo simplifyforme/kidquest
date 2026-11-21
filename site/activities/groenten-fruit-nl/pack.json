@@ -1,0 +1,257 @@
+{
+  "id": "groenten-fruit-nl",
+  "version": 1,
+  "title": "Groenten en fruit herkennen",
+  "category": "dutch",
+  "locale": "nl-BE",
+  "questions": [
+    {
+      "id": "groenten-fruit-nl-appel",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welk stuk fruit zie je op de foto?",
+      "answers": [
+        {
+          "id": "banaan",
+          "label": "de banaan"
+        },
+        {
+          "id": "appel",
+          "label": "de appel"
+        },
+        {
+          "id": "sinaasappel",
+          "label": "de sinaasappel"
+        },
+        {
+          "id": "peer",
+          "label": "de peer"
+        }
+      ],
+      "correctAnswerId": "appel",
+      "explanation": "Op de foto zie je een appel. Het woord is « de appel ».",
+      "media": {
+        "type": "image",
+        "file": "appel.jpg",
+        "alt": "Foto van een stuk fruit."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-banaan",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welk stuk fruit zie je op de foto?",
+      "answers": [
+        {
+          "id": "peer",
+          "label": "de peer"
+        },
+        {
+          "id": "appel",
+          "label": "de appel"
+        },
+        {
+          "id": "sinaasappel",
+          "label": "de sinaasappel"
+        },
+        {
+          "id": "banaan",
+          "label": "de banaan"
+        }
+      ],
+      "correctAnswerId": "banaan",
+      "explanation": "Op de foto zie je een banaan. Het woord is « de banaan ».",
+      "media": {
+        "type": "image",
+        "file": "banaan.jpg",
+        "alt": "Foto van een stuk fruit."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-sinaasappel",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welk stuk fruit zie je op de foto?",
+      "answers": [
+        {
+          "id": "sinaasappel",
+          "label": "de sinaasappel"
+        },
+        {
+          "id": "banaan",
+          "label": "de banaan"
+        },
+        {
+          "id": "peer",
+          "label": "de peer"
+        },
+        {
+          "id": "appel",
+          "label": "de appel"
+        }
+      ],
+      "correctAnswerId": "sinaasappel",
+      "explanation": "Op de foto zie je een sinaasappel. Het woord is « de sinaasappel ».",
+      "media": {
+        "type": "image",
+        "file": "sinaasappel.jpg",
+        "alt": "Foto van een stuk fruit."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-peer",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welk stuk fruit zie je op de foto?",
+      "answers": [
+        {
+          "id": "sinaasappel",
+          "label": "de sinaasappel"
+        },
+        {
+          "id": "appel",
+          "label": "de appel"
+        },
+        {
+          "id": "peer",
+          "label": "de peer"
+        },
+        {
+          "id": "banaan",
+          "label": "de banaan"
+        }
+      ],
+      "correctAnswerId": "peer",
+      "explanation": "Op de foto zie je een peer. Het woord is « de peer ».",
+      "media": {
+        "type": "image",
+        "file": "peer.jpg",
+        "alt": "Foto van een stuk fruit."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-wortel",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welke groente zie je op de foto?",
+      "answers": [
+        {
+          "id": "broccoli",
+          "label": "de broccoli"
+        },
+        {
+          "id": "komkommer",
+          "label": "de komkommer"
+        },
+        {
+          "id": "wortel",
+          "label": "de wortel"
+        },
+        {
+          "id": "tomaat",
+          "label": "de tomaat"
+        }
+      ],
+      "correctAnswerId": "wortel",
+      "explanation": "Op de foto zie je een wortel. Het woord is « de wortel ».",
+      "media": {
+        "type": "image",
+        "file": "wortel.jpg",
+        "alt": "Foto van een groente."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-komkommer",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welke groente zie je op de foto?",
+      "answers": [
+        {
+          "id": "komkommer",
+          "label": "de komkommer"
+        },
+        {
+          "id": "wortel",
+          "label": "de wortel"
+        },
+        {
+          "id": "tomaat",
+          "label": "de tomaat"
+        },
+        {
+          "id": "broccoli",
+          "label": "de broccoli"
+        }
+      ],
+      "correctAnswerId": "komkommer",
+      "explanation": "Op de foto zie je een komkommer. Het woord is « de komkommer ».",
+      "media": {
+        "type": "image",
+        "file": "komkommer.jpg",
+        "alt": "Foto van een groente."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-tomaat",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welke groente zie je op de foto?",
+      "answers": [
+        {
+          "id": "broccoli",
+          "label": "de broccoli"
+        },
+        {
+          "id": "wortel",
+          "label": "de wortel"
+        },
+        {
+          "id": "komkommer",
+          "label": "de komkommer"
+        },
+        {
+          "id": "tomaat",
+          "label": "de tomaat"
+        }
+      ],
+      "correctAnswerId": "tomaat",
+      "explanation": "Op de foto zie je een tomaat. Het woord is « de tomaat ».",
+      "media": {
+        "type": "image",
+        "file": "tomaat.jpg",
+        "alt": "Foto van een groente."
+      }
+    },
+    {
+      "id": "groenten-fruit-nl-broccoli",
+      "subject": "dutch",
+      "skill": "groenten-en-fruit",
+      "prompt": "Welke groente zie je op de foto?",
+      "answers": [
+        {
+          "id": "komkommer",
+          "label": "de komkommer"
+        },
+        {
+          "id": "broccoli",
+          "label": "de broccoli"
+        },
+        {
+          "id": "tomaat",
+          "label": "de tomaat"
+        },
+        {
+          "id": "wortel",
+          "label": "de wortel"
+        }
+      ],
+      "correctAnswerId": "broccoli",
+      "explanation": "Op de foto zie je broccoli. Het woord is « de broccoli ».",
+      "media": {
+        "type": "image",
+        "file": "broccoli.jpg",
+        "alt": "Foto van een groente."
+      }
+    }
+  ]
+}
