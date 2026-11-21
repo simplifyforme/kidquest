@@ -5,6 +5,7 @@ import { builtinPacks } from "../data/builtin";
 export const DEFAULT_PROGRESS:Progress={points:0,correct:0,attempted:0,streak:0,bestStreak:0,lastPlayed:null};
 const storageKey="kidquest.progress.v1";
 const sessionStorageKey="kidquest.completed.sessions.v1";
+const hiddenStorageKey="kidquest.hidden.activities.v1";
 let dbPromise:Promise<import("@tauri-apps/plugin-sql").default>|null=null;
 async function database(){
  if(!dbPromise){
@@ -14,6 +15,7 @@ async function database(){
    await db.execute("CREATE TABLE IF NOT EXISTS packs (id TEXT PRIMARY KEY, version INTEGER NOT NULL, json TEXT NOT NULL)");
    await db.execute("CREATE TABLE IF NOT EXISTS completed_sessions (id TEXT PRIMARY KEY, activity_id TEXT NOT NULL, kind TEXT NOT NULL, started_at TEXT NOT NULL, completed_at TEXT NOT NULL, duration_seconds INTEGER NOT NULL, correct INTEGER NOT NULL, total INTEGER NOT NULL)");
    await db.execute("CREATE INDEX IF NOT EXISTS idx_completed_sessions_activity ON completed_sessions (activity_id, completed_at DESC)");
+   await db.execute("CREATE TABLE IF NOT EXISTS hidden_activities (activity_id TEXT PRIMARY KEY)");
    return db;
   }).catch(e=>{dbPromise=null;throw e});
  }
@@ -97,4 +99,33 @@ export async function saveCompletedSession(session:CompletedSession):Promise<voi
   [session.id,session.activityId,session.kind,session.startedAt,session.completedAt,
    Math.floor(session.durationSeconds),session.correct,session.total]
  );
+}
+
+/**
+ * Visibility is an opt-out preference: absence of an id means VISIBLE.
+ * Thus every newly downloaded or bundled activity is automatically visible.
+ * Records are kept if a pack disappears temporarily and reappears later.
+ */
+export async function getHiddenActivityIds():Promise<string[]>{
+ if(!isTauri()){
+  try{
+   const ids:unknown=JSON.parse(localStorage.getItem(hiddenStorageKey)||"[]");
+   return Array.isArray(ids)?ids.filter((id):id is string=>typeof id==="string"):[];
+  }catch{return []}
+ }
+ const db=await database();
+ const rows=await db.select<{activity_id:string}[]>("SELECT activity_id FROM hidden_activities");
+ return rows.map(row=>row.activity_id);
+}
+export async function setActivityVisible(activityId:string,visible:boolean):Promise<void>{
+ if(!activityId||activityId.length>128)throw new Error("Invalid activity ID");
+ if(!isTauri()){
+  const ids=new Set(await getHiddenActivityIds());
+  if(visible)ids.delete(activityId);else ids.add(activityId);
+  localStorage.setItem(hiddenStorageKey,JSON.stringify([...ids]));
+  return;
+ }
+ const db=await database();
+ if(visible)await db.execute("DELETE FROM hidden_activities WHERE activity_id=$1",[activityId]);
+ else await db.execute("INSERT OR IGNORE INTO hidden_activities(activity_id) VALUES ($1)",[activityId]);
 }
