@@ -55,3 +55,12 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - **Un nouveau pack JSON** avec un `id` distinct et des questions de type existant crée une nouvelle carte **sans reconstruire l'application**. `title` devient le titre de la carte, et les questions sont filtrées par `packId` et matière.
 - Ne pas revenir à un tableau figé de quatre cartes, ni mélanger le contenu d'un nouveau pack avec la mission de base par défaut.
 - Un nouveau **moteur** de jeu interactif ou une nouvelle matière non prise en charge nécessite toujours une version de l'application.
+
+## Moteur de réponses multimodal (version 0.2.0)
+
+- Respecter les dix modes définis dans \`src/lib/exerciseModes.ts\` et leur rendu dans \`src/components/ExercisePlay.tsx\`.
+- Les modes sont attribués **automatiquement** par \`planModes\`, jamais choisis par l'enfant. Préserver la variété d'une session à l'autre.
+- Les questions JSON existantes restent compatibles. Pour une nouvelle interaction, implémenter son rendu, sa condition d'éligibilité et ses tests ; ne pas imposer de nouveaux champs obligatoires aux packs existants.
+- Les réponses libres sont comparées après normalisation Unicode (casse, accents, ponctuation). Ne pas modifier silencieusement le contenu attendu d'une question.
+- Garder une seule tentative et une seule écriture SQLite par défi ; les puzzles de 3 paires ne comptent qu'une seule tentative et 10 points uniquement si tous les appariements réussissent sans erreur.
+- Chaque mode doit être utilisable au clavier, sans dépendre d'un serveur et avec retour visuel explicite.
