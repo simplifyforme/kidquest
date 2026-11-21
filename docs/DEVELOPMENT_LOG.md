@@ -313,3 +313,13 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** compilation et 54 tests réussis en local. Génération du manifeste, correspondance des huit JPEG et empreintes SHA-256 vérifiées localement.
 - **Traçabilité :** branche `feat/groenten-en-fruit-nl`. Le workflow de publication reconstruit le manifeste après fusion.
 - **Suite :** vérifier la CI et le téléchargement dans KidQuest sur Windows.
+
+### 2026-11-22 — Documentation — Vérification avant clôture d’une demande
+- **Type :** documentation du processus de livraison.
+- **Pourquoi :** un nouveau quiz peut être prêt sur sa branche alors que KidQuest ne peut le télécharger qu’après fusion et publication.
+- **Changements :** les consignes exigent de vérifier la fusion dans `main` avant d’annoncer la fin. Pour les mises à jour de contenu, elles exigent aussi de vérifier le manifeste public et l’accès aux médias du nouveau pack.
+- **Fichiers principaux :** `AGENTS.md` et `docs/DEVELOPMENT_LOG.md`.
+- **Décisions techniques :** utiliser la fusion automatique si elle est disponible avec les contrôles requis, sinon fusionner après validation.
+- **Données et compatibilité :** modification documentaire, aucune mise à jour de KidQuest nécessaire.
+- **Validation :** `git diff --check` en local et contrôle GitHub du journal avant fusion.
+- **Traçabilité :** branche `docs/verification-avant-cloture`.
