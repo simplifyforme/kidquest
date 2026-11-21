@@ -67,7 +67,7 @@ export default function PlantPlay({onClose,onAttempt,onComplete,onRoundStart}:Ga
   finally{setBusy(false)}
  }
  return <section className="imported-activity plant-activity" lang="nl-BE">
-  <button type="button" className="back-link" onClick={onClose}>← Terug naar Natuur</button>
+  <button type="button" className="back-link" onClick={onClose}>← Terug naar Nederlands</button>
   <header className="game-hero plant"><div className="game-hero-icon">🌱</div><div><span className="eyebrow">NATUUR · LEREN EN SPELEN</span><h1>De plant · Speeltuin</h1><p>Kies een spel en laat je tuin groeien.</p></div></header>
   <div className="mini-game-menu" role="group" aria-label="Spellen">
    {plantGames.map((g,i)=><button type="button" key={g.id} aria-pressed={gameIndex===i}
