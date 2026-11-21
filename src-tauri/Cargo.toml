@@ -1,6 +1,6 @@
 [package]
 name = "kidquest"
-version = "0.8.0"
+version = "0.9.0"
 description = "Plateforme éducative hors ligne pour enfants"
 authors = ["KidQuest Contributors"]
 edition = "2021"
