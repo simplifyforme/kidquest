@@ -10,26 +10,28 @@ import {getExerciseCopy} from "./exerciseLocale";
 const multiplication=multiplicationPack as ContentPack;
 
 describe("category-first catalog and Dutch maths",()=>{
- it("keeps exactly four child-friendly subject categories",()=>{
-  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs"]);
+ it("keeps child-friendly subject categories, including new nature activities",()=>{
+  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs","Natuur"]);
   const catalog=getCatalog(builtinPacks);
-  expect(countCategory(catalog,"math")).toBe(2);
-  expect(countCategory(catalog,"french")).toBe(1);
+  expect(countCategory(catalog,"math")).toBe(3);
+  expect(countCategory(catalog,"french")).toBe(2);
   expect(countCategory(catalog,"dutch")).toBe(1);
   expect(countCategory(catalog,"chess")).toBe(1);
+  expect(countCategory(catalog,"nature")).toBe(1);
   expect(catalog.find(e=>e.category==="chess")?.kind).toBe("lesson");
  });
  it("places every downloaded pack into the right category automatically",()=>{
   const full=[...builtinPacks,multiplication];
   const catalog=getCatalog(full);
-  expect(countCategory(catalog,"math")).toBe(3);
+  expect(countCategory(catalog,"math")).toBe(4);
   const entry=catalog.find(e=>e.id==="tables-multiplication-1-10");
   expect(entry?.title).toBe("Maaltafels van 1 tot 10");
   expect(entry?.category).toBe("math");
   expect(getCategoryForActivity(getActivities(full)[4],full)).toBe("math");
   expect(catalog.map(c=>c.id)).toEqual([
    "mathematiques","nombres","francais","neerlandais",
-   "tables-multiplication-1-10","chess-beginner"
+   "tables-multiplication-1-10","chess-beginner",
+   "plant-playground","dutch-numbers-1000","french-verb-hunt"
   ]);
  });
  it("retains all embedded math IDs and answer keys while translating everything",()=>{
