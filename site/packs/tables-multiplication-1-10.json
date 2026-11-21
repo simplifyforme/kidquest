@@ -1,0 +1,2707 @@
+{
+  "id": "tables-multiplication-1-10",
+  "version": 1,
+  "title": "Tables de multiplication 1 à 10",
+  "questions": [
+    {
+      "id": "multiplication-01-01",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "2"
+        },
+        {
+          "id": "b",
+          "label": "11"
+        },
+        {
+          "id": "c",
+          "label": "3"
+        },
+        {
+          "id": "d",
+          "label": "1"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1 × 1 = 1.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-02",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "3"
+        },
+        {
+          "id": "b",
+          "label": "2"
+        },
+        {
+          "id": "c",
+          "label": "4"
+        },
+        {
+          "id": "d",
+          "label": "12"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "1 × 2 = 2.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-03",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "4"
+        },
+        {
+          "id": "b",
+          "label": "6"
+        },
+        {
+          "id": "c",
+          "label": "13"
+        },
+        {
+          "id": "d",
+          "label": "3"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1 × 3 = 3.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-04",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "5"
+        },
+        {
+          "id": "b",
+          "label": "4"
+        },
+        {
+          "id": "c",
+          "label": "8"
+        },
+        {
+          "id": "d",
+          "label": "14"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "1 × 4 = 4.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-05",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "6"
+        },
+        {
+          "id": "b",
+          "label": "10"
+        },
+        {
+          "id": "c",
+          "label": "15"
+        },
+        {
+          "id": "d",
+          "label": "5"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1 × 5 = 5.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-06",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "7"
+        },
+        {
+          "id": "b",
+          "label": "6"
+        },
+        {
+          "id": "c",
+          "label": "12"
+        },
+        {
+          "id": "d",
+          "label": "16"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "1 × 6 = 6.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-07",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "8"
+        },
+        {
+          "id": "b",
+          "label": "14"
+        },
+        {
+          "id": "c",
+          "label": "17"
+        },
+        {
+          "id": "d",
+          "label": "7"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1 × 7 = 7.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-08",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "9"
+        },
+        {
+          "id": "b",
+          "label": "8"
+        },
+        {
+          "id": "c",
+          "label": "16"
+        },
+        {
+          "id": "d",
+          "label": "18"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "1 × 8 = 8.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-09",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "10"
+        },
+        {
+          "id": "b",
+          "label": "18"
+        },
+        {
+          "id": "c",
+          "label": "19"
+        },
+        {
+          "id": "d",
+          "label": "9"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "1 × 9 = 9.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-01-10",
+      "subject": "math",
+      "skill": "table-1",
+      "prompt": "Combien font 1 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "11"
+        },
+        {
+          "id": "b",
+          "label": "10"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "9"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "1 × 10 = 10.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-01",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "2"
+        },
+        {
+          "id": "b",
+          "label": "4"
+        },
+        {
+          "id": "c",
+          "label": "3"
+        },
+        {
+          "id": "d",
+          "label": "12"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "2 × 1 = 2.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-02",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "6"
+        },
+        {
+          "id": "b",
+          "label": "14"
+        },
+        {
+          "id": "c",
+          "label": "4"
+        },
+        {
+          "id": "d",
+          "label": "5"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "2 × 2 = 4.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-03",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "6"
+        },
+        {
+          "id": "b",
+          "label": "8"
+        },
+        {
+          "id": "c",
+          "label": "9"
+        },
+        {
+          "id": "d",
+          "label": "16"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "2 × 3 = 6.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-04",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "10"
+        },
+        {
+          "id": "b",
+          "label": "12"
+        },
+        {
+          "id": "c",
+          "label": "8"
+        },
+        {
+          "id": "d",
+          "label": "18"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "2 × 4 = 8.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-05",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "10"
+        },
+        {
+          "id": "b",
+          "label": "12"
+        },
+        {
+          "id": "c",
+          "label": "15"
+        },
+        {
+          "id": "d",
+          "label": "20"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "2 × 5 = 10.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-06",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "14"
+        },
+        {
+          "id": "b",
+          "label": "18"
+        },
+        {
+          "id": "c",
+          "label": "12"
+        },
+        {
+          "id": "d",
+          "label": "22"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "2 × 6 = 12.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-07",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "14"
+        },
+        {
+          "id": "b",
+          "label": "16"
+        },
+        {
+          "id": "c",
+          "label": "21"
+        },
+        {
+          "id": "d",
+          "label": "24"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "2 × 7 = 14.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-08",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "24"
+        },
+        {
+          "id": "c",
+          "label": "16"
+        },
+        {
+          "id": "d",
+          "label": "26"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "2 × 8 = 16.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-09",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "20"
+        },
+        {
+          "id": "c",
+          "label": "27"
+        },
+        {
+          "id": "d",
+          "label": "28"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "2 × 9 = 18.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-02-10",
+      "subject": "math",
+      "skill": "table-2",
+      "prompt": "Combien font 2 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "22"
+        },
+        {
+          "id": "b",
+          "label": "30"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "10"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "2 × 10 = 20.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-01",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "6"
+        },
+        {
+          "id": "b",
+          "label": "3"
+        },
+        {
+          "id": "c",
+          "label": "4"
+        },
+        {
+          "id": "d",
+          "label": "13"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "3 × 1 = 3.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-02",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "9"
+        },
+        {
+          "id": "b",
+          "label": "8"
+        },
+        {
+          "id": "c",
+          "label": "16"
+        },
+        {
+          "id": "d",
+          "label": "6"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "3 × 2 = 6.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-03",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "12"
+        },
+        {
+          "id": "b",
+          "label": "9"
+        },
+        {
+          "id": "c",
+          "label": "19"
+        },
+        {
+          "id": "d",
+          "label": "10"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "3 × 3 = 9.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-04",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "15"
+        },
+        {
+          "id": "b",
+          "label": "16"
+        },
+        {
+          "id": "c",
+          "label": "22"
+        },
+        {
+          "id": "d",
+          "label": "12"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "3 × 4 = 12.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-05",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "15"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "25"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "3 × 5 = 15.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-06",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "21"
+        },
+        {
+          "id": "b",
+          "label": "24"
+        },
+        {
+          "id": "c",
+          "label": "28"
+        },
+        {
+          "id": "d",
+          "label": "18"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "3 × 6 = 18.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-07",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "24"
+        },
+        {
+          "id": "b",
+          "label": "21"
+        },
+        {
+          "id": "c",
+          "label": "28"
+        },
+        {
+          "id": "d",
+          "label": "31"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "3 × 7 = 21.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-08",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "27"
+        },
+        {
+          "id": "b",
+          "label": "32"
+        },
+        {
+          "id": "c",
+          "label": "34"
+        },
+        {
+          "id": "d",
+          "label": "24"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "3 × 8 = 24.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-09",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "27"
+        },
+        {
+          "id": "c",
+          "label": "36"
+        },
+        {
+          "id": "d",
+          "label": "37"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "3 × 9 = 27.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-03-10",
+      "subject": "math",
+      "skill": "table-3",
+      "prompt": "Combien font 3 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "33"
+        },
+        {
+          "id": "b",
+          "label": "40"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "30"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "3 × 10 = 30.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-01",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "8"
+        },
+        {
+          "id": "b",
+          "label": "5"
+        },
+        {
+          "id": "c",
+          "label": "4"
+        },
+        {
+          "id": "d",
+          "label": "14"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "4 × 1 = 4.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-02",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "8"
+        },
+        {
+          "id": "b",
+          "label": "12"
+        },
+        {
+          "id": "c",
+          "label": "10"
+        },
+        {
+          "id": "d",
+          "label": "18"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "4 × 2 = 8.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-03",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "16"
+        },
+        {
+          "id": "b",
+          "label": "15"
+        },
+        {
+          "id": "c",
+          "label": "12"
+        },
+        {
+          "id": "d",
+          "label": "22"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "4 × 3 = 12.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-04",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "16"
+        },
+        {
+          "id": "b",
+          "label": "20"
+        },
+        {
+          "id": "c",
+          "label": "26"
+        },
+        {
+          "id": "d",
+          "label": "6"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "4 × 4 = 16.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-05",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "24"
+        },
+        {
+          "id": "b",
+          "label": "25"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "30"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "4 × 5 = 20.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-06",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "24"
+        },
+        {
+          "id": "b",
+          "label": "28"
+        },
+        {
+          "id": "c",
+          "label": "30"
+        },
+        {
+          "id": "d",
+          "label": "34"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "4 × 6 = 24.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-07",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "32"
+        },
+        {
+          "id": "b",
+          "label": "35"
+        },
+        {
+          "id": "c",
+          "label": "28"
+        },
+        {
+          "id": "d",
+          "label": "38"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "4 × 7 = 28.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-08",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "32"
+        },
+        {
+          "id": "b",
+          "label": "36"
+        },
+        {
+          "id": "c",
+          "label": "40"
+        },
+        {
+          "id": "d",
+          "label": "42"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "4 × 8 = 32.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-09",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "40"
+        },
+        {
+          "id": "b",
+          "label": "45"
+        },
+        {
+          "id": "c",
+          "label": "36"
+        },
+        {
+          "id": "d",
+          "label": "46"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "4 × 9 = 36.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-04-10",
+      "subject": "math",
+      "skill": "table-4",
+      "prompt": "Combien font 4 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "40"
+        },
+        {
+          "id": "b",
+          "label": "44"
+        },
+        {
+          "id": "c",
+          "label": "50"
+        },
+        {
+          "id": "d",
+          "label": "30"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "4 × 10 = 40.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-01",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "10"
+        },
+        {
+          "id": "b",
+          "label": "6"
+        },
+        {
+          "id": "c",
+          "label": "15"
+        },
+        {
+          "id": "d",
+          "label": "5"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "5 × 1 = 5.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-02",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "15"
+        },
+        {
+          "id": "b",
+          "label": "10"
+        },
+        {
+          "id": "c",
+          "label": "12"
+        },
+        {
+          "id": "d",
+          "label": "20"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "5 × 2 = 10.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-03",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "20"
+        },
+        {
+          "id": "b",
+          "label": "18"
+        },
+        {
+          "id": "c",
+          "label": "25"
+        },
+        {
+          "id": "d",
+          "label": "15"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "5 × 3 = 15.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-04",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "25"
+        },
+        {
+          "id": "b",
+          "label": "20"
+        },
+        {
+          "id": "c",
+          "label": "24"
+        },
+        {
+          "id": "d",
+          "label": "30"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "5 × 4 = 20.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-05",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "35"
+        },
+        {
+          "id": "c",
+          "label": "15"
+        },
+        {
+          "id": "d",
+          "label": "25"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "5 × 5 = 25.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-06",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "35"
+        },
+        {
+          "id": "b",
+          "label": "30"
+        },
+        {
+          "id": "c",
+          "label": "36"
+        },
+        {
+          "id": "d",
+          "label": "40"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "5 × 6 = 30.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-07",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "40"
+        },
+        {
+          "id": "b",
+          "label": "42"
+        },
+        {
+          "id": "c",
+          "label": "45"
+        },
+        {
+          "id": "d",
+          "label": "35"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "5 × 7 = 35.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-08",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "45"
+        },
+        {
+          "id": "b",
+          "label": "40"
+        },
+        {
+          "id": "c",
+          "label": "48"
+        },
+        {
+          "id": "d",
+          "label": "50"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "5 × 8 = 40.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-09",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "50"
+        },
+        {
+          "id": "b",
+          "label": "54"
+        },
+        {
+          "id": "c",
+          "label": "55"
+        },
+        {
+          "id": "d",
+          "label": "45"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "5 × 9 = 45.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-05-10",
+      "subject": "math",
+      "skill": "table-5",
+      "prompt": "Combien font 5 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "55"
+        },
+        {
+          "id": "b",
+          "label": "50"
+        },
+        {
+          "id": "c",
+          "label": "60"
+        },
+        {
+          "id": "d",
+          "label": "40"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "5 × 10 = 50.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-01",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "6"
+        },
+        {
+          "id": "b",
+          "label": "12"
+        },
+        {
+          "id": "c",
+          "label": "7"
+        },
+        {
+          "id": "d",
+          "label": "16"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "6 × 1 = 6.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-02",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "14"
+        },
+        {
+          "id": "c",
+          "label": "12"
+        },
+        {
+          "id": "d",
+          "label": "22"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "6 × 2 = 12.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-03",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "24"
+        },
+        {
+          "id": "c",
+          "label": "21"
+        },
+        {
+          "id": "d",
+          "label": "28"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "6 × 3 = 18.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-04",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "28"
+        },
+        {
+          "id": "c",
+          "label": "24"
+        },
+        {
+          "id": "d",
+          "label": "34"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "6 × 4 = 24.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-05",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "36"
+        },
+        {
+          "id": "c",
+          "label": "35"
+        },
+        {
+          "id": "d",
+          "label": "40"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "6 × 5 = 30.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-06",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "42"
+        },
+        {
+          "id": "b",
+          "label": "46"
+        },
+        {
+          "id": "c",
+          "label": "36"
+        },
+        {
+          "id": "d",
+          "label": "26"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "6 × 6 = 36.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-07",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "42"
+        },
+        {
+          "id": "b",
+          "label": "48"
+        },
+        {
+          "id": "c",
+          "label": "49"
+        },
+        {
+          "id": "d",
+          "label": "52"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "6 × 7 = 42.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-08",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "54"
+        },
+        {
+          "id": "b",
+          "label": "56"
+        },
+        {
+          "id": "c",
+          "label": "48"
+        },
+        {
+          "id": "d",
+          "label": "58"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "6 × 8 = 48.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-09",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "54"
+        },
+        {
+          "id": "b",
+          "label": "60"
+        },
+        {
+          "id": "c",
+          "label": "63"
+        },
+        {
+          "id": "d",
+          "label": "64"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "6 × 9 = 54.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-06-10",
+      "subject": "math",
+      "skill": "table-6",
+      "prompt": "Combien font 6 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "66"
+        },
+        {
+          "id": "b",
+          "label": "70"
+        },
+        {
+          "id": "c",
+          "label": "60"
+        },
+        {
+          "id": "d",
+          "label": "50"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "6 × 10 = 60.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-01",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "14"
+        },
+        {
+          "id": "b",
+          "label": "7"
+        },
+        {
+          "id": "c",
+          "label": "8"
+        },
+        {
+          "id": "d",
+          "label": "17"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "7 × 1 = 7.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-02",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "21"
+        },
+        {
+          "id": "b",
+          "label": "16"
+        },
+        {
+          "id": "c",
+          "label": "24"
+        },
+        {
+          "id": "d",
+          "label": "14"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "7 × 2 = 14.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-03",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "28"
+        },
+        {
+          "id": "b",
+          "label": "21"
+        },
+        {
+          "id": "c",
+          "label": "24"
+        },
+        {
+          "id": "d",
+          "label": "31"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "7 × 3 = 21.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-04",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "35"
+        },
+        {
+          "id": "b",
+          "label": "32"
+        },
+        {
+          "id": "c",
+          "label": "38"
+        },
+        {
+          "id": "d",
+          "label": "28"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "7 × 4 = 28.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-05",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "42"
+        },
+        {
+          "id": "b",
+          "label": "35"
+        },
+        {
+          "id": "c",
+          "label": "40"
+        },
+        {
+          "id": "d",
+          "label": "45"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "7 × 5 = 35.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-06",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "49"
+        },
+        {
+          "id": "b",
+          "label": "48"
+        },
+        {
+          "id": "c",
+          "label": "52"
+        },
+        {
+          "id": "d",
+          "label": "42"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "7 × 6 = 42.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-07",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "56"
+        },
+        {
+          "id": "b",
+          "label": "49"
+        },
+        {
+          "id": "c",
+          "label": "59"
+        },
+        {
+          "id": "d",
+          "label": "39"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "7 × 7 = 49.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-08",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "63"
+        },
+        {
+          "id": "b",
+          "label": "64"
+        },
+        {
+          "id": "c",
+          "label": "66"
+        },
+        {
+          "id": "d",
+          "label": "56"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "7 × 8 = 56.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-09",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "70"
+        },
+        {
+          "id": "b",
+          "label": "63"
+        },
+        {
+          "id": "c",
+          "label": "72"
+        },
+        {
+          "id": "d",
+          "label": "73"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "7 × 9 = 63.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-07-10",
+      "subject": "math",
+      "skill": "table-7",
+      "prompt": "Combien font 7 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "77"
+        },
+        {
+          "id": "b",
+          "label": "80"
+        },
+        {
+          "id": "c",
+          "label": "60"
+        },
+        {
+          "id": "d",
+          "label": "70"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "7 × 10 = 70.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-01",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "16"
+        },
+        {
+          "id": "b",
+          "label": "9"
+        },
+        {
+          "id": "c",
+          "label": "8"
+        },
+        {
+          "id": "d",
+          "label": "18"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "8 × 1 = 8.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-02",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "16"
+        },
+        {
+          "id": "b",
+          "label": "24"
+        },
+        {
+          "id": "c",
+          "label": "18"
+        },
+        {
+          "id": "d",
+          "label": "26"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "8 × 2 = 16.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-03",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "32"
+        },
+        {
+          "id": "b",
+          "label": "27"
+        },
+        {
+          "id": "c",
+          "label": "24"
+        },
+        {
+          "id": "d",
+          "label": "34"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "8 × 3 = 24.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-04",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "32"
+        },
+        {
+          "id": "b",
+          "label": "40"
+        },
+        {
+          "id": "c",
+          "label": "36"
+        },
+        {
+          "id": "d",
+          "label": "42"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "8 × 4 = 32.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-05",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "48"
+        },
+        {
+          "id": "b",
+          "label": "45"
+        },
+        {
+          "id": "c",
+          "label": "40"
+        },
+        {
+          "id": "d",
+          "label": "50"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "8 × 5 = 40.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-06",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "48"
+        },
+        {
+          "id": "b",
+          "label": "56"
+        },
+        {
+          "id": "c",
+          "label": "54"
+        },
+        {
+          "id": "d",
+          "label": "58"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "8 × 6 = 48.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-07",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "64"
+        },
+        {
+          "id": "b",
+          "label": "63"
+        },
+        {
+          "id": "c",
+          "label": "56"
+        },
+        {
+          "id": "d",
+          "label": "66"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "8 × 7 = 56.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-08",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "64"
+        },
+        {
+          "id": "b",
+          "label": "72"
+        },
+        {
+          "id": "c",
+          "label": "74"
+        },
+        {
+          "id": "d",
+          "label": "54"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "8 × 8 = 64.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-09",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "80"
+        },
+        {
+          "id": "b",
+          "label": "81"
+        },
+        {
+          "id": "c",
+          "label": "72"
+        },
+        {
+          "id": "d",
+          "label": "82"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "8 × 9 = 72.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-08-10",
+      "subject": "math",
+      "skill": "table-8",
+      "prompt": "Combien font 8 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "80"
+        },
+        {
+          "id": "b",
+          "label": "88"
+        },
+        {
+          "id": "c",
+          "label": "90"
+        },
+        {
+          "id": "d",
+          "label": "70"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "8 × 10 = 80.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-01",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "18"
+        },
+        {
+          "id": "b",
+          "label": "10"
+        },
+        {
+          "id": "c",
+          "label": "19"
+        },
+        {
+          "id": "d",
+          "label": "9"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "9 × 1 = 9.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-02",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "27"
+        },
+        {
+          "id": "b",
+          "label": "18"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "28"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "9 × 2 = 18.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-03",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "36"
+        },
+        {
+          "id": "b",
+          "label": "30"
+        },
+        {
+          "id": "c",
+          "label": "37"
+        },
+        {
+          "id": "d",
+          "label": "27"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "9 × 3 = 27.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-04",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "45"
+        },
+        {
+          "id": "b",
+          "label": "36"
+        },
+        {
+          "id": "c",
+          "label": "40"
+        },
+        {
+          "id": "d",
+          "label": "46"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "9 × 4 = 36.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-05",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "54"
+        },
+        {
+          "id": "b",
+          "label": "50"
+        },
+        {
+          "id": "c",
+          "label": "55"
+        },
+        {
+          "id": "d",
+          "label": "45"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "9 × 5 = 45.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-06",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "63"
+        },
+        {
+          "id": "b",
+          "label": "54"
+        },
+        {
+          "id": "c",
+          "label": "60"
+        },
+        {
+          "id": "d",
+          "label": "64"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "9 × 6 = 54.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-07",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "72"
+        },
+        {
+          "id": "b",
+          "label": "70"
+        },
+        {
+          "id": "c",
+          "label": "73"
+        },
+        {
+          "id": "d",
+          "label": "63"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "9 × 7 = 63.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-08",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "81"
+        },
+        {
+          "id": "b",
+          "label": "72"
+        },
+        {
+          "id": "c",
+          "label": "80"
+        },
+        {
+          "id": "d",
+          "label": "82"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "9 × 8 = 72.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-09",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "90"
+        },
+        {
+          "id": "b",
+          "label": "91"
+        },
+        {
+          "id": "c",
+          "label": "71"
+        },
+        {
+          "id": "d",
+          "label": "81"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "9 × 9 = 81.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-09-10",
+      "subject": "math",
+      "skill": "table-9",
+      "prompt": "Combien font 9 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "99"
+        },
+        {
+          "id": "b",
+          "label": "90"
+        },
+        {
+          "id": "c",
+          "label": "100"
+        },
+        {
+          "id": "d",
+          "label": "80"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "9 × 10 = 90.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-01",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 1 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "10"
+        },
+        {
+          "id": "b",
+          "label": "20"
+        },
+        {
+          "id": "c",
+          "label": "11"
+        },
+        {
+          "id": "d",
+          "label": "9"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "10 × 1 = 10.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-02",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 2 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "22"
+        },
+        {
+          "id": "c",
+          "label": "20"
+        },
+        {
+          "id": "d",
+          "label": "10"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "10 × 2 = 20.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-03",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 3 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "30"
+        },
+        {
+          "id": "b",
+          "label": "40"
+        },
+        {
+          "id": "c",
+          "label": "33"
+        },
+        {
+          "id": "d",
+          "label": "20"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "10 × 3 = 30.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-04",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 4 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "50"
+        },
+        {
+          "id": "b",
+          "label": "44"
+        },
+        {
+          "id": "c",
+          "label": "40"
+        },
+        {
+          "id": "d",
+          "label": "30"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "10 × 4 = 40.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-05",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 5 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "50"
+        },
+        {
+          "id": "b",
+          "label": "60"
+        },
+        {
+          "id": "c",
+          "label": "55"
+        },
+        {
+          "id": "d",
+          "label": "40"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "10 × 5 = 50.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-06",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 6 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "70"
+        },
+        {
+          "id": "b",
+          "label": "66"
+        },
+        {
+          "id": "c",
+          "label": "60"
+        },
+        {
+          "id": "d",
+          "label": "50"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "10 × 6 = 60.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-07",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 7 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "70"
+        },
+        {
+          "id": "b",
+          "label": "80"
+        },
+        {
+          "id": "c",
+          "label": "77"
+        },
+        {
+          "id": "d",
+          "label": "60"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "10 × 7 = 70.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-08",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 8 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "90"
+        },
+        {
+          "id": "b",
+          "label": "88"
+        },
+        {
+          "id": "c",
+          "label": "80"
+        },
+        {
+          "id": "d",
+          "label": "70"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "10 × 8 = 80.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-09",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 9 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "90"
+        },
+        {
+          "id": "b",
+          "label": "100"
+        },
+        {
+          "id": "c",
+          "label": "99"
+        },
+        {
+          "id": "d",
+          "label": "80"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "10 × 9 = 90.",
+      "emoji": "✖️"
+    },
+    {
+      "id": "multiplication-10-10",
+      "subject": "math",
+      "skill": "table-10",
+      "prompt": "Combien font 10 × 10 ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "110"
+        },
+        {
+          "id": "b",
+          "label": "90"
+        },
+        {
+          "id": "c",
+          "label": "100"
+        },
+        {
+          "id": "d",
+          "label": "101"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "10 × 10 = 100.",
+      "emoji": "✖️"
+    }
+  ]
+}
