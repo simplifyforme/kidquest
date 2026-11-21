@@ -1,0 +1,58 @@
+[
+  {
+    "file": "kat.jpg",
+    "commonsFile": "Cat photography.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cat_photography.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "hond.jpg",
+    "commonsFile": "Photo of a dog.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Photo_of_a_dog.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "paard.jpg",
+    "commonsFile": "Horse (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Horse_(Unsplash).jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "koe.jpg",
+    "commonsFile": "Cow photography.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cow_photography.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "konijn.jpg",
+    "commonsFile": "A rabbit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_rabbit.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "olifant.jpg",
+    "commonsFile": "Elephant animal.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Elephant_animal.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "schaap.jpg",
+    "commonsFile": "Sheep (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sheep_(Unsplash).jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  },
+  {
+    "file": "leeuw.jpg",
+    "commonsFile": "Lion (51648529490).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lion_(51648529490).jpg",
+    "license": "CC0 1.0",
+    "attribution": "Wikimedia Commons contributor, see source page"
+  }
+]
