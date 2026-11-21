@@ -30,7 +30,7 @@ export default function PlantPlay({onClose,onAttempt,onComplete,onRoundStart}:Ga
   lock.current=true;setBusy(true);setSaveError("");
   const success=mistakes===0;
   try{
-   await onAttempt("plant-"+game.id+"-"+index,success);
+   await onAttempt("plant-"+game.id+"-"+(game.items.indexOf(item)+1),success);
    if(success)setFirstTry(x=>x+1);
    setAnswered(true);setFeedback("Goed gedaan! Je krijgt een blaadje. 🍃");
   }catch{setSaveError("Opslaan is niet gelukt. Probeer opnieuw.");lock.current=false;}
