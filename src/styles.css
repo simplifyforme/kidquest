@@ -285,3 +285,79 @@
 @media (prefers-reduced-motion:reduce){
   .hero-mascot{animation:none}
 }
+
+
+/* KidQuest 0.7 — HTML-inspired native games + parent-controlled activity visibility */
+.category-card.nature,.category-hero.nature,.catalog-activity-card.nature{background:#e4f4df}
+.imported-activity{max-width:1020px;margin:auto}
+.game-hero{display:flex;align-items:center;gap:21px;border-radius:23px;padding:20px 28px;margin:9px 0 14px;min-height:124px}
+.game-hero.plant{background:#dff2dc;color:#1c4c32}
+.game-hero.verbs{background:#e4f4e8;color:#214b44}
+.game-hero.numbers{background:#e7eefe;color:#263d7b}
+.game-hero-icon{font-size:54px;line-height:1}
+.game-hero>div:nth-child(2){flex:1}
+.game-hero h1{font-size:clamp(25px,3vw,34px);line-height:1.12;margin:4px 0 5px}
+.game-hero p{font-size:13px;margin:0;line-height:1.4}
+.star-pill{border-radius:22px;background:white;padding:10px 15px;font-size:12px;font-weight:900;white-space:nowrap}
+.mini-game-menu{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 13px}
+.mini-game-menu button{border:1px solid #dee2ed;background:#fff;padding:9px 12px;min-height:42px;font-size:12px;font-weight:800;border-radius:13px;color:#485570}
+.mini-game-menu button.selected,.mini-game-menu button[aria-pressed=true]{background:#305d4b;color:white;border-color:#305d4b}
+.imported-card{background:white;border:1px solid #e9eaf3;border-radius:22px;padding:22px 28px;margin-bottom:13px;box-shadow:0 7px 22px #303e6310}
+.imported-card h2{font-size:clamp(19px,2.5vw,25px);margin:10px 0 15px}
+.imported-card>p{line-height:1.55;color:#48536d}
+.game-subtitle{display:flex;justify-content:space-between;gap:12px;color:#6c7891;font-weight:900;font-size:12px;margin-bottom:10px}
+.imported-card .quiz-track{margin-bottom:12px}
+.imported-hint{color:#6b7891;font-size:13px;margin-bottom:7px}
+.imported-question{font-size:clamp(19px,2.1vw,24px);font-weight:800;line-height:1.4;margin:8px 0 17px!important;color:#283455!important;overflow-wrap:anywhere}
+.imported-question.emphasized{background:#f6f5ef;padding:13px 16px;border-radius:13px}
+.imported-question mark{background:#ffe18a;border-radius:5px;padding:0 3px}
+.imported-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:9px;margin-top:12px}
+.imported-options button{border:2px solid #e7e7f2;background:#fafbff;color:#2e4264;border-radius:13px;font-weight:800;min-height:53px;padding:9px 12px;overflow-wrap:anywhere}
+.imported-options button:hover:not(:disabled){border-color:#907ce3;background:#f2efff}
+.imported-options button.wrong{border-color:#dfb469;background:#fff2db}
+.imported-options button.right{border-color:#4ac591;background:#def6e9}
+.imported-options button:disabled{opacity:.65}
+.imported-feedback{min-height:1.3em;font-weight:800;font-size:13px;color:#a26835;margin:12px 0 4px}
+.imported-feedback.success{color:#258457}
+.imported-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.imported-actions .primary,.imported-actions .secondary{font-size:13px;padding:11px 17px;min-height:45px}
+.imported-form{display:flex;flex-wrap:wrap;gap:12px;margin-top:15px}
+.imported-form input,.number-answer input{font:inherit;border:2px solid #d8def1;border-radius:13px;padding:10px 13px;font-size:18px;font-weight:700;min-height:48px;min-width:180px;max-width:100%;flex:1}
+.imported-form input:focus,.number-answer input:focus{outline:3px solid #9a8dfc;outline-offset:2px}
+.game-tip{background:white;border:1px solid #e9e9f4;border-radius:14px;padding:12px 16px;font-size:13px;margin:12px 0}
+.game-tip summary{cursor:pointer;font-weight:900;color:#516c71}
+.notes-list{display:grid;gap:9px;margin-top:12px}
+.notes-list p{margin:0;padding:11px 13px;background:#f2f8ef;border-radius:10px;line-height:1.6}
+.notes-list p:nth-child(even){background:#fff4d8}
+.order-slots{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0;padding:0;list-style-position:inside}
+.order-slots li{min-width:100px;flex:1;text-align:center;background:#f1f3fb;border:1px dashed #b0bada;border-radius:11px;padding:11px;font-size:12px;font-weight:900}
+.order-slots li.filled{background:#dff8e8;border-style:solid;border-color:#86caa6}
+.imported-result{text-align:center}
+.imported-result .big-emoji{font-size:clamp(29px,5vw,57px);margin:10px auto;overflow-wrap:anywhere}
+.imported-result>.imported-actions{justify-content:center}
+.number-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:15px 0}
+.number-settings label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:900}
+.number-settings select{border:2px solid #d9dff1;border-radius:11px;padding:12px;background:white;color:#29385c;font:inherit;min-width:0}
+.number-question{text-align:center;background:linear-gradient(120deg,#edf4ff,#faf3ff);border:1px solid #e2e5f8;border-radius:17px;padding:17px;margin:14px 0}
+.number-question p{font-size:13px;font-weight:900;color:#6c76a0}
+.number-question h2{font-size:clamp(27px,4vw,49px);overflow-wrap:anywhere;margin:0;color:#354d9a}
+.number-answer{display:flex;flex-direction:column;gap:9px;max-width:650px;margin:17px auto}
+.number-answer label{font-size:15px;font-weight:900;color:#4f5981}
+.number-answer input{width:100%;text-align:center}
+.mistake-list{text-align:left;max-width:500px;margin:14px auto}
+.mistake-list li{margin:6px 0}
+.visibility-section{margin-top:31px}
+.visibility-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.visibility-group{border:1px solid #e5e7f6;border-radius:16px;padding:13px 14px;background:white}
+.visibility-group h3{font-size:17px;margin:4px 0 10px}
+.visibility-entries{display:grid;gap:6px}
+.visibility-row{display:flex;align-items:center;gap:9px;background:#f7f8ff;border-radius:12px;padding:9px 10px;cursor:pointer}
+.visibility-icon{font-size:22px;width:26px;text-align:center}
+.visibility-name{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+.visibility-name b{font-size:12px;overflow-wrap:anywhere}
+.visibility-name small{font-size:10px;color:#8a91a8}
+.visibility-row input{appearance:auto;accent-color:#6353de;min-width:20px;min-height:20px;cursor:pointer}
+.visibility-state{min-width:48px;font-size:10px;font-weight:900;color:#6d68a4;text-align:right}
+@media(max-width:760px){.visibility-groups{grid-template-columns:1fr}.number-settings{grid-template-columns:1fr}.game-hero{padding:15px}.game-hero-icon{font-size:37px}.imported-card{padding:16px}.imported-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:430px){.imported-options{grid-template-columns:1fr}.imported-question{font-size:18px}.game-hero h1{font-size:24px}.mini-game-menu button{flex:1}.star-pill{display:none}}
+@media(max-height:800px){.game-hero{min-height:105px;padding-top:12px;padding-bottom:12px}.imported-card{padding-top:15px;padding-bottom:17px}.imported-question{margin-bottom:10px!important}.imported-options button{min-height:47px}}
