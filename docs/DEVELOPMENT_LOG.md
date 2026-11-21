@@ -205,3 +205,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** tests de filtrage et « visible par défaut » pour une activité future fictive, build Windows et CI de la Pull Request à confirmer.
 - **Traçabilité :** même branche et même PR que l'importation des jeux.
 - **Suite / points ouverts :** une authentification PIN du panneau parent pourrait être ajoutée ultérieurement ; aucune protection par PIN n'est revendiquée dans cette version.
+
+### 2026-11-21 — 0.7.0 — Ajustements des tests lors de l'import HTML
+- **Type :** correction et tests.
+- **Pourquoi :** la première CI a fait ressortir un espace résiduel après ponctuation lors de la vérification d’un infinitif, ainsi qu’une attente de test ne reflétant pas l’accent du mot `honderdéén` généré par le HTML source.
+- **Changements :** normalisation de l’infinitif en supprimant les espaces après la ponctuation finale ; attente de test alignée sur la conversion néerlandaise originale de 101, sans changer la règle pédagogique du HTML.
+- **Fichiers principaux :** `src/games/verbData.ts`, `src/games/importedGames.test.ts`.
+- **Données et compatibilité :** aucun effet sur le stockage, les points ou le catalogue ; préservation des formes écrites du HTML d'origine.
+- **Validation :** première CI : TypeScript réussi, deux tests en échec. Nouvelle CI à confirmer après correctif.
+- **Traçabilité :** même PR d'importation `feat/import-html-lessons-visibility-0-7`.
