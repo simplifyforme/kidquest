@@ -25,7 +25,9 @@ for(const folder of folders){
  const data=JSON.parse(bytes.toString("utf8"));
  if(data.id!==folder.name||!Number.isSafeInteger(data.version)||data.version<1||!Array.isArray(data.questions))
   throw Error("Invalid activity package "+folder.name);
- const files=(await readdir(join(path,"assets"),{withFileTypes:true})).filter(x=>x.isFile()).sort((a,b)=>a.name.localeCompare(b.name));
+ let files=[];
+ try{files=(await readdir(join(path,"assets"),{withFileTypes:true})).filter(x=>x.isFile()).sort((a,b)=>a.name.localeCompare(b.name))}
+ catch(e){if(e.code!=="ENOENT")throw e}
  const assets=[];
  let totalSize=0;
  for(const file of files){
