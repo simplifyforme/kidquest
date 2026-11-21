@@ -75,5 +75,5 @@ export const verbLessonNotes=[
  "Être et avoir sont deux auxiliaires particuliers que ce jeu met à part."
 ];
 export function normalizeVerbAnswer(value:string):string{
- return value.trim().toLocaleLowerCase("fr").replace(/[.!?]+$/,"");
+ return value.trim().toLocaleLowerCase("fr").replace(/[.!?]+$/,"").trim();
 }
