@@ -97,15 +97,15 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 
 ## Version 0.8.0 — Catalogue distant de présentation
 
-Le catalogue de matières **n'est plus figé dans React**. \`src/lib/catalog.ts\` conserve quatre catégories de secours intégrées, mais \`getCatalog(packs,remoteCatalog)\` applique des surcharges facultatives \`activities[]\`, et \`resolveCategories(remoteCatalog)\` ajoute ou adapte les catégories \`categories[]\`.
+Le catalogue de matières **n'est plus figé dans React**. `src/lib/catalog.ts` conserve quatre catégories de secours intégrées, mais `getCatalog(packs,remoteCatalog)` applique des surcharges facultatives `activities[]`, et `resolveCategories(remoteCatalog)` ajoute ou adapte les catégories `categories[]`.
 
-Le fichier versionné \`site/catalog.json\` porte les métadonnées de présentation (\`schemaVersion\`, \`version\`, \`categories\`, \`activities\`). Il ne contient **aucun code exécutable**, script, URL de moteur ou balisage HTML. \`src/lib/catalogConfig.ts\` réalise une validation stricte des IDs, longueurs, valeurs de couleurs et langues et nombre maximal de définitions. L'absence d'une surcharge conserve la valeur intégrée ou celle d'un pack JSON installé.
+Le fichier versionné `site/catalog.json` porte les métadonnées de présentation (`schemaVersion`, `version`, `categories`, `activities`). Il ne contient **aucun code exécutable**, script, URL de moteur ou balisage HTML. `src/lib/catalogConfig.ts` réalise une validation stricte des IDs, longueurs, valeurs de couleurs et langues et nombre maximal de définitions. L'absence d'une surcharge conserve la valeur intégrée ou celle d'un pack JSON installé.
 
 **Chaîne de mise à jour** :
-1. Modifier \`site/catalog.json\`, **incrémenter \`version\`**, conserver les IDs permanents et ajouter l'entrée obligatoire au journal.
-2. Après fusion sur \`main\`, GitHub Actions \`pages.yml\` lance \`scripts/generate-manifest.mjs\`, qui calcule le SHA-256 de \`site/catalog.json\` et ajoute le descripteur facultatif \`catalog\` au manifeste de packs \`site/manifest.json\`.
-3. KidQuest récupère le manifeste (au démarrage, puis via « Vérifier les mises à jour »). \`src/lib/updates.ts\` vérifie HTTPS, version, taille, empreinte SHA-256 exacte et schéma du catalogue avant installation.
-4. \`src/lib/storage.ts\` conserve seulement une version plus récente dans la nouvelle table SQLite additive \`remote_catalog\` (\`localStorage\` en navigateur). Le catalogue reste disponible **hors ligne** après fermeture/redémarrage. Un manifeste ancien sans \`catalog\` reste compatible.
-5. \`src/App.tsx\` recharge les packs et le catalogue validés après mise à jour, sans redémarrer le binaire ; l'accueil, les titres, l'ordre et les catégories sont recalculés.
+1. Modifier `site/catalog.json`, **incrémenter `version`**, conserver les IDs permanents et ajouter l'entrée obligatoire au journal.
+2. Après fusion sur `main`, GitHub Actions `pages.yml` lance `scripts/generate-manifest.mjs`, qui calcule le SHA-256 de `site/catalog.json` et ajoute le descripteur facultatif `catalog` au manifeste de packs `site/manifest.json`.
+3. KidQuest récupère le manifeste (au démarrage, puis via « Vérifier les mises à jour »). `src/lib/updates.ts` vérifie HTTPS, version, taille, empreinte SHA-256 exacte et schéma du catalogue avant installation.
+4. `src/lib/storage.ts` conserve seulement une version plus récente dans la nouvelle table SQLite additive `remote_catalog` (`localStorage` en navigateur). Le catalogue reste disponible **hors ligne** après fermeture/redémarrage. Un manifeste ancien sans `catalog` reste compatible.
+5. `src/App.tsx` recharge les packs et le catalogue validés après mise à jour, sans redémarrer le binaire ; l'accueil, les titres, l'ordre et les catégories sont recalculés.
 
 **Sécurité / limites** : l'empreinte contrôle les octets par rapport au manifeste GitHub, pas une signature indépendante du manifeste. Les préférences de masquage et l'historique restent indexés par les IDs inchangés. Le catalogue ne peut pas installer un nouveau moteur React ou Rust : ce cas nécessite un installateur signé ou manuel. Une nouvelle catégorie choisit une classe couleur existante ; une nouvelle couleur CSS nécessite un build.
