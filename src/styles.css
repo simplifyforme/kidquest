@@ -83,3 +83,42 @@
 .chess-3d-help{font-size:11px;color:#776b96;line-height:1.65;margin:11px 0}
 .chess-3d-warning{background:#fff4db;border:1px solid #eed194;color:#785b29;padding:11px;border-radius:11px;font-size:12px}
 @media(max-width:620px){.cartoon-3d-viewport{min-height:280px}.chess-view-switch button{font-size:11px;padding:8px}.chess-camera-controls button{font-size:10px}}
+
+
+/* KidQuest 0.5 — category-first content library and multilingual mathematics */
+.category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.category-card{min-height:268px;display:flex;flex-direction:column;align-items:flex-start;text-align:left;border:1px solid #e9e9f5;border-radius:26px;padding:22px;color:#293257;box-shadow:0 8px 22px #3539680b;transition:transform .18s,box-shadow .18s}
+.category-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px #3539681b}
+.category-card.math,.category-hero.math,.catalog-activity-card.math{background:#eaf2ff}
+.category-card.french,.category-hero.french,.catalog-activity-card.french{background:#f3eaff}
+.category-card.dutch,.category-hero.dutch,.catalog-activity-card.dutch{background:#e6f8f1}
+.category-card.chess,.category-hero.chess,.catalog-activity-card.chess{background:#fff0de}
+.category-emoji{display:grid;place-items:center;font-size:60px;flex:1;width:100%;min-height:100px}
+.category-card h3{font-size:21px;margin:8px 0 6px}.category-card p{font-size:12px;color:#6b7893;line-height:1.45;min-height:36px;margin-bottom:14px}
+.category-footer{margin-top:auto;width:100%;display:flex;justify-content:space-between;align-items:center;color:#6755ba;font-weight:900;font-size:12px}
+.catalog-page{max-width:1040px;margin:0 auto}
+.category-hero{display:flex;align-items:center;gap:26px;border-radius:29px;border:1px solid #dfe0f1;padding:32px 42px;margin:11px 0 34px}
+.category-hero-emoji{font-size:80px;line-height:1.2;filter:drop-shadow(0 7px 6px #6553a522)}
+.category-hero h1{margin:7px 0;font-size:clamp(28px,4vw,43px)}
+.category-hero p{font-size:15px;color:#66728f;margin:8px 0}
+.category-hero-count{display:inline-flex;background:#ffffffb7;padding:8px 14px;border-radius:30px;font-size:12px;color:#66549f;font-weight:900}
+.catalog-section{margin-top:27px}
+.catalog-section h2{font-size:23px;margin-bottom:18px}
+.catalog-activity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.catalog-activity-card{min-height:147px;display:flex;align-items:center;gap:17px;text-align:left;border:1px solid #e8e8f3;border-radius:22px;background:white;color:#2a3155;padding:19px 20px;box-shadow:0 7px 19px #363e690a;transition:transform .18s}
+.catalog-activity-card.course{background:#fff0dc}
+.catalog-activity-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px #34386018}
+.catalog-entry-emoji{font-size:40px;display:grid;place-items:center;flex:0 0 66px;width:66px;height:76px;border-radius:16px;background:#ffffffa6}
+.catalog-activity-card>div{min-width:0;flex:1}
+.catalog-type{font-size:10px;font-weight:900;letter-spacing:1px;color:#7463af}
+.catalog-activity-card h3{font-size:17px;margin:7px 0}
+.catalog-activity-card p{font-size:12px;color:#737a94;line-height:1.45;margin:0}
+.catalog-activity-card>svg{flex-shrink:0;color:#7166a3}
+.recent-section{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+.recent-card{display:flex;align-items:center;gap:16px;text-align:left;width:100%;border-radius:19px;border:1px solid #ddd8f9;background:#f3f0ff;padding:15px 21px;color:#40386a}
+.recent-card:hover{background:#eae5ff}
+.recent-emoji{font-size:30px}
+.recent-card>span:nth-child(2){flex:1;display:flex;flex-direction:column;gap:3px}
+.recent-card b{font-size:15px}.recent-card small{font-size:12px;color:#83789c}
+@media(max-width:950px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-activity-grid{grid-template-columns:1fr}.category-hero{padding:26px}}
+@media(max-width:590px){.category-grid{gap:11px}.category-card{padding:14px;min-height:222px;border-radius:20px}.category-emoji{font-size:45px;min-height:72px}.category-card h3{font-size:17px}.category-card p{font-size:11px}.category-hero{padding:18px;gap:13px}.category-hero-emoji{font-size:54px}.category-hero h1{font-size:27px}.catalog-activity-card{padding:13px;gap:10px;min-height:126px}.catalog-entry-emoji{flex-basis:55px;width:55px;height:65px;font-size:30px}.catalog-activity-card h3{font-size:15px}.catalog-section h2{font-size:20px}}

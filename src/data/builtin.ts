@@ -4,29 +4,29 @@ const q=(id:string,subject:Subject,skill:string,prompt:string,choices:string[],r
  id,subject,skill,prompt,answers:choices.map((label,i)=>({id:String(i),label})),correctAnswerId:String(right),explanation,emoji
 });
 export const builtinPacks:ContentPack[]=[
- {id:"mathematiques",version:1,title:"Les défis de calcul",questions:[
-  q("math-01","math","addition","Combien font 8 + 7 ?",["13","15","16","14"],1,"8 + 7 = 15.","➕"),
-  q("math-02","math","soustraction","Combien font 18 − 9 ?",["9","8","10","7"],0,"18 − 9 = 9.","➖"),
-  q("math-03","math","multiplication","Combien font 6 × 4 ?",["20","28","24","26"],2,"6 × 4 = 24.","✖️"),
-  q("math-04","math","addition","Combien font 27 + 15 ?",["32","42","43","41"],1,"27 + 15 = 42.","🧮"),
-  q("math-05","math","multiplication","Combien font 7 × 8 ?",["54","56","58","64"],1,"7 × 8 = 56.","⭐"),
-  q("math-06","math","soustraction","Combien font 50 − 17 ?",["43","37","33","23"],2,"50 − 17 = 33.","🎯"),
-  q("math-07","math","multiplication","Combien font 9 × 3 ?",["27","21","29","24"],0,"9 × 3 = 27.","🚀"),
-  q("math-08","math","addition","Combien font 36 + 28 ?",["54","62","64","66"],2,"36 + 28 = 64.","🔢"),
-  q("math-09","math","probleme","Lina a 12 billes et en gagne 6. Combien en a-t-elle ?",["16","18","20","22"],1,"12 + 6 = 18 billes.","🔮"),
-  q("math-10","math","probleme","24 bonbons sont partagés entre 4 enfants. Combien chacun reçoit-il ?",["4","5","8","6"],3,"24 ÷ 4 = 6 bonbons.","🍬")
+ {id:"mathematiques",version:2,title:"Rekenavonturen",category:"math",locale:"nl-BE",questions:[
+  q("math-01","math","addition","Hoeveel is 8 + 7 ?",["13","15","16","14"],1,"8 + 7 = 15.","➕"),
+  q("math-02","math","soustraction","Hoeveel is 18 − 9 ?",["9","8","10","7"],0,"18 − 9 = 9.","➖"),
+  q("math-03","math","multiplication","Hoeveel is 6 × 4 ?",["20","28","24","26"],2,"6 × 4 = 24.","✖️"),
+  q("math-04","math","addition","Hoeveel is 27 + 15 ?",["32","42","43","41"],1,"27 + 15 = 42.","🧮"),
+  q("math-05","math","multiplication","Hoeveel is 7 × 8 ?",["54","56","58","64"],1,"7 × 8 = 56.","⭐"),
+  q("math-06","math","soustraction","Hoeveel is 50 − 17 ?",["43","37","33","23"],2,"50 − 17 = 33.","🎯"),
+  q("math-07","math","multiplication","Hoeveel is 9 × 3 ?",["27","21","29","24"],0,"9 × 3 = 27.","🚀"),
+  q("math-08","math","addition","Hoeveel is 36 + 28 ?",["54","62","64","66"],2,"36 + 28 = 64.","🔢"),
+  q("math-09","math","probleme","Lina heeft 12 knikkers en krijgt er 6 bij. Hoeveel knikkers heeft ze nu ?",["16","18","20","22"],1,"12 + 6 = 18 knikkers.","🔮"),
+  q("math-10","math","probleme","24 snoepjes worden eerlijk verdeeld onder 4 kinderen. Hoeveel snoepjes krijgt elk kind ?",["4","5","8","6"],3,"24 ÷ 4 = 6 snoepjes per kind.","🍬")
  ]},
- {id:"nombres",version:1,title:"Les nombres en lettres",questions:[
-  q("num-01","numbers","francais","Comment écrit-on 14 en français ?",["quarante","quatorze","quatre","quinze"],1,"14 s'écrit quatorze.","🔤"),
-  q("num-02","numbers","francais","Quel nombre correspond à « soixante » ?",["16","70","60","80"],2,"Soixante = 60.","🔢"),
-  q("num-03","numbers","francais","Comment écrit-on 81 en français (Belgique) ?",["quatre-vingt-un","huitante et un","quatre-vingt-dix","octante"],0,"81 s'écrit quatre-vingt-un.","✏️"),
-  q("num-04","numbers","francais","Comment écrit-on 95 en français (Belgique) ?",["nonante-cinq","quatre-vingt-cinq","septante-cinq","quatre-vingt-quinze"],3,"95 s'écrit quatre-vingt-quinze.","📖"),
-  q("num-05","numbers","neerlandais","Comment dit-on 8 en néerlandais ?",["acht","tien","zes","vijf"],0,"8 = acht.","🇳🇱"),
-  q("num-06","numbers","neerlandais","Comment écrit-on 12 en néerlandais ?",["twintig","twaalf","twee","dertien"],1,"12 = twaalf.","🔤"),
-  q("num-07","numbers","neerlandais","Que signifie « twintig » ?",["12","30","20","2"],2,"Twintig signifie vingt.","💡"),
-  q("num-08","numbers","neerlandais","Comment écrit-on 21 en néerlandais ?",["twintigéén","tweeëntwintig","eenenveertig","eenentwintig"],3,"21 = eenentwintig (forme usuelle, sans accent).","🧠"),
-  q("num-09","numbers","neerlandais","Comment écrit-on 101 en néerlandais ?",["honderdeen","honderdtien","eenhonderdtien","duizendéén"],0,"101 = honderd(en)een ; honderdeen est accepté dans cette activité.","🎓"),
-  q("num-10","numbers","francais","Comment écrit-on 72 en français (Belgique) ?",["soixante-douze","septante-deux","soixante-deux","quatre-vingt-deux"],1,"En Belgique, on emploie souvent septante-deux.","🇧🇪")
+ {id:"nombres",version:2,title:"Getallen in woorden",category:"math",locale:"nl-BE",questions:[
+  q("num-01","numbers","neerlandais","Hoe schrijf je 14 in het Nederlands ?",["veertig","veertien","vier","vijftien"],1,"14 schrijf je als veertien.","🔤"),
+  q("num-02","numbers","neerlandais","Welk getal hoort bij « zestig » ?",["16","70","60","80"],2,"Zestig is 60.","🔢"),
+  q("num-03","numbers","neerlandais","Hoe schrijf je 81 in het Nederlands ?",["eenentachtig","eenenzeventig","eenennegentig","achtentachtig"],0,"81 schrijf je als eenentachtig.","✏️"),
+  q("num-04","numbers","neerlandais","Hoe schrijf je 95 in het Nederlands ?",["vijfentachtig","vijfenzeventig","negenenvijftig","vijfennegentig"],3,"95 schrijf je als vijfennegentig.","📖"),
+  q("num-05","numbers","neerlandais","Hoe schrijf je 8 in het Nederlands ?",["acht","tien","zes","vijf"],0,"8 schrijf je als acht.","🇳🇱"),
+  q("num-06","numbers","neerlandais","Hoe schrijf je 12 in het Nederlands ?",["twintig","twaalf","twee","dertien"],1,"12 schrijf je als twaalf.","🔤"),
+  q("num-07","numbers","neerlandais","Welk getal hoort bij « twintig » ?",["12","30","20","2"],2,"Twintig is 20.","💡"),
+  q("num-08","numbers","neerlandais","Hoe schrijf je 21 in het Nederlands ?",["twaalf","tweeëntwintig","eenenveertig","eenentwintig"],3,"21 schrijf je als eenentwintig.","🧠"),
+  q("num-09","numbers","neerlandais","Hoe schrijf je 101 in het Nederlands ?",["honderdeen","honderdtien","honderdelf","duizendéén"],0,"101 schrijf je als honderdeen.","🎓"),
+  q("num-10","numbers","neerlandais","Hoe schrijf je 72 in het Nederlands ?",["tweeënzestig","tweeënzeventig","tweeëntachtig","tweeënnegentig"],1,"72 schrijf je als tweeënzeventig.","🇧🇪")
  ]},
  {id:"francais",version:1,title:"Les mots malins",questions:[
   q("fr-01","french","orthographe","Quelle écriture est correcte ?",["un éléfant","un éléphant","un élefan","un éléfand"],1,"On écrit un éléphant.","🐘"),

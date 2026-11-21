@@ -81,3 +81,12 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Le moteur 3D doit permettre les clics sur les cases des défis et ne doit pas bloquer le fonctionnement de KidQuest si le PC ne prend pas WebGL en charge. L'interface doit proposer le mode 2D et mémoriser le choix localement.
 - Utiliser uniquement des primitives/modèles locaux intégrés ; aucun chargement d'assets 3D ou scripts arbitraires depuis Internet. Ne pas casser l'usage hors ligne ni le stockage SQLite existant.
 - Les cours d'échecs sont pédagogiques, pas un moteur de partie d'échecs complète : la validation de coup pour le jeu libre nécessite un moteur de règles dédié dans une future version.
+
+
+## Organisation des matières et maths NL (à partir de 0.5.0)
+
+- \`src/lib/catalog.ts\` est la source de vérité pour le catalogue des quatre matières : Wiskunde, Français, Nederlands, Échecs. L'accueil ne doit jamais revenir à une liste de toutes les cartes exercices ; chaque nouveau pack est automatiquement rangé par métadonnée facultative \`category\` ou par matière.
+- Les champs optionnels \`ContentPack.category\` (\`math\`, \`french\`, \`dutch\`, \`chess\`) et \`ContentPack.locale\` (\`nl-BE\`, \`fr-BE\`) doivent rester rétrocompatibles avec tous les JSON déjà installés. Ne pas renommer les IDs ni écraser les données SQLite.
+- Tous les exercices Wiskunde (\`subject=math\` et \`subject=numbers\`) et leurs interfaces/consignes doivent être en **néerlandais belge**, voix \`nl-BE\`. Le français et les autres matières restent inchangés. Traduire les réponses en toutes lettres avec leurs choix distracteurs, sans changer la bonne réponse logique.
+- Les dix modes de quiz utilisent \`src/lib/exerciseLocale.ts\` pour la traduction : éviter d'ajouter des textes français en dur dans le rendu maths. Toute nouvelle catégorie peut être ajoutée via le tableau \`CATEGORIES\` sans recoder les cartes.
+- Les missions de calcul et nombres en lettres intégrées sont versionnées en 2 ; le pack téléchargé \`tables-multiplication-1-10\` est versionné en 2. Le workflow GitHub \`pages.yml\` reconstruit le manifeste et ses SHA-256 après merge sur \`main\`.

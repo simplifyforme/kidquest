@@ -60,3 +60,13 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Bouton 3D / 2D, préférence locale et retour automatique à la 2D si WebGL n'est pas disponible.
 - Pas de fichiers 3D distants ; les modèles sont construits localement avec Three.js.
 - Installation Windows 0.4.0 requise une fois ; les exercices téléchargés et les points restent préservés.
+
+
+## Version 0.5.0 — accueil par matières et Wiskunde
+
+- L'accueil contient quatre matières au lieu de toutes les activités : Wiskunde, Français, Nederlands et Échecs, chacune avec une page de cours/exercices.
+- Un accès « Continuer mon aventure » se souvient du dernier contenu ouvert.
+- Tous les exercices intégrés de maths et nombres (20 questions) sont en néerlandais belge, y compris les réponses en toutes lettres, consignes et corrections. Les 100 multiplications du pack distant sont traduites en version 2 et distribuées via GitHub.
+- Les dix moteurs d'exercices sont désormais entièrement localisés en néerlandais lorsqu'ils présentent des questions mathématiques. Les matières français, néerlandais et échecs conservent leurs contenus.
+- Les packs existants restent compatibles ; les question IDs, les réponses valides et la progression SQLite sont conservés.
+- L'installation de KidQuest 0.5.0 est nécessaire pour la nouvelle organisation et l'interface mathématique localisée. La v2 des multiplications est téléchargée automatiquement après publication du manifeste.

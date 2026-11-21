@@ -3,15 +3,18 @@ import type { FormEvent } from "react";
 import { Check, Delete, RotateCcw, Volume2 } from "lucide-react";
 import type { Question } from "../types";
 import {
-  correctLabel, exerciseModeNames, isCorrectText, makeMissing,
+  correctLabel, isCorrectText, makeMissing,
   matchingPairs, normalizeAnswer, rotate
 } from "../lib/exerciseModes";
 import type { ExerciseMode } from "../lib/exerciseModes";
+import { getExerciseCopy } from "../lib/exerciseLocale";
+import type { QuizLocale } from "../lib/exerciseLocale";
 
 type Props = {
   question: Question;
   pool: Question[];
   mode: ExerciseMode;
+  locale?: QuizLocale;
   locked: boolean;
   onAnswer: (right: boolean, answerId: string) => void;
 };
@@ -29,7 +32,8 @@ function speak(text: string, dutch: boolean): void {
   window.speechSynthesis.speak(utterance);
 }
 
-export default function ExercisePlay({ question, pool, mode, locked, onAnswer }: Props) {
+export default function ExercisePlay({ question, pool, mode, locale="fr-BE", locked, onAnswer }: Props) {
+  const copy=getExerciseCopy(locale);
   const expected = correctLabel(question);
   const [typed, setTyped] = useState("");
   const [picked, setPicked] = useState<number[]>([]);
@@ -108,10 +112,10 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
   const constructed = picked.map(id => source.find(c => c.id === id)?.text ?? "");
   const display = mode === "words" ? constructed.join(" ") : constructed.join("");
 
-  return <section className="mode-content" aria-label={exerciseModeNames[mode]}>
+  return <section className="mode-content" aria-label={copy.modes[mode]}>
     <div className="mode-heading">
-      <span className="mode-chip">🎲 {exerciseModeNames[mode]}</span>
-      {mode !== "choice" && <span className="mode-help">À toi de jouer !</span>}
+      <span className="mode-chip">🎲 {copy.modes[mode]}</span>
+      {mode !== "choice" && <span className="mode-help">{copy.yourTurn}</span>}
     </div>
     {mode === "choice" && <div className="answer-grid">
       {question.answers.map((answer, index) =>
@@ -122,18 +126,18 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
     </div>}
 
     {mode === "write" && <form className="input-challenge" onSubmit={submitText}>
-      <label htmlFor="kidquest-typed">Écris la bonne réponse :</label>
+      <label htmlFor="kidquest-typed">{copy.writeLabel}</label>
       <input id="kidquest-typed" autoFocus autoComplete="off" spellCheck={false}
         inputMode={/^\d+$/.test(expected)?"numeric":"text"}
-        placeholder="Ta réponse ici…" value={typed} disabled={locked} onChange={e=>setTyped(e.target.value)} />
-      <button className="primary" type="submit" disabled={locked || !typed.trim()}><Check size={19}/> Vérifier</button>
+        placeholder={copy.answerPlaceholder} value={typed} disabled={locked} onChange={e=>setTyped(e.target.value)} />
+      <button className="primary" type="submit" disabled={locked || !typed.trim()}><Check size={19}/> {copy.check}</button>
     </form>}
 
     {mode === "truefalse" && <div className="judgement">
-      <p className="judgement-text">La réponse serait : <strong>« {offered.label} »</strong></p>
+      <p className="judgement-text">{copy.trueIntro} <strong>« {offered.label} »</strong></p>
       <div className="answer-grid">
-        <button className="answer choice-yes" disabled={locked} onClick={()=>onAnswer(showTrue,"true")}>✅ Vrai !</button>
-        <button className="answer choice-no" disabled={locked} onClick={()=>onAnswer(!showTrue,"false")}>❌ Faux !</button>
+        <button className="answer choice-yes" disabled={locked} onClick={()=>onAnswer(showTrue,"true")}>{copy.true}</button>
+        <button className="answer choice-no" disabled={locked} onClick={()=>onAnswer(!showTrue,"false")}>{copy.false}</button>
       </div>
     </div>}
 
@@ -145,8 +149,8 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
     </div>}
 
     {tokenMode && <div className="token-challenge">
-      <p className="question-instruction">{mode==="letters"?"Appuie sur les lettres dans le bon ordre.":"Choisis les mots pour former la réponse."}</p>
-      <div className="assembled-answer" aria-live="polite">{display || "❔ À toi de construire la réponse"}</div>
+      <p className="question-instruction">{mode==="letters"?copy.lettersInstruction:copy.wordsInstruction}</p>
+      <div className="assembled-answer" aria-live="polite">{display || copy.tokenPlaceholder}</div>
       <div className="token-grid">
         {source.map(tile=><button key={tile.id} type="button" className="letter-tile"
           disabled={locked || picked.includes(tile.id)}
@@ -154,11 +158,11 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
       </div>
       <div className="challenge-actions">
         <button type="button" className="secondary" disabled={locked || !picked.length}
-          onClick={()=>setPicked(v=>v.slice(0,-1))}><Delete size={17}/> Effacer</button>
+          onClick={()=>setPicked(v=>v.slice(0,-1))}><Delete size={17}/> {copy.erase}</button>
         <button type="button" className="secondary" disabled={locked || !picked.length}
-          onClick={()=>setPicked([])}><RotateCcw size={17}/> Recommencer</button>
+          onClick={()=>setPicked([])}><RotateCcw size={17}/> {copy.restart}</button>
         <button type="button" className="primary" disabled={locked || picked.length!==source.length}
-          onClick={()=>completeTokens(source,picked)}><Check size={17}/> Vérifier</button>
+          onClick={()=>completeTokens(source,picked)}><Check size={17}/> {copy.check}</button>
       </div>
     </div>}
 
@@ -166,15 +170,15 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
       event.preventDefault();
       if (!locked && typed.trim()) onAnswer(normalizeAnswer(typed)===normalizeAnswer(missing.hidden), "missing:"+typed.slice(0,60));
     }}>
-      <label htmlFor="missing-answer">Quelles lettres manquent dans la réponse ?</label>
+      <label htmlFor="missing-answer">{copy.missingLabel}</label>
       <div className="missing-word"><span>{missing.before}</span><span className="blank-letters">{"_".repeat(Array.from(missing.hidden).length)}</span><span>{missing.after}</span></div>
       <input id="missing-answer" autoComplete="off" spellCheck={false} value={typed}
-        onChange={e=>setTyped(e.target.value)} disabled={locked} placeholder="Lettres manquantes…" />
-      <button className="primary" type="submit" disabled={locked || !typed.trim()}><Check size={17}/> Vérifier</button>
+        onChange={e=>setTyped(e.target.value)} disabled={locked} placeholder={copy.missingPlaceholder} />
+      <button className="primary" type="submit" disabled={locked || !typed.trim()}><Check size={17}/> {copy.check}</button>
     </form>}
 
     {mode === "matching" && <div className="pair-challenge">
-      <p className="question-instruction">Sélectionne une question à gauche, puis sa réponse à droite. Trois associations à réussir !</p>
+      <p className="question-instruction">{copy.matchingInstruction}</p>
       <div className="pairs-columns">
         <div className="pair-column">
           {pairs.map(p=><button key={p.id} className={"pair-tile "+(activePrompt===p.id?"pair-active":"")+(matched.includes(p.id)?" pair-matched":"")}
@@ -185,34 +189,34 @@ export default function ExercisePlay({ question, pool, mode, locked, onAnswer }:
             disabled={locked || matched.includes(a.id) || !activePrompt} onClick={()=>selectPair(a.id)}>{a.label}</button>)}
         </div>
       </div>
-      <p className="board-status">{matched.length}/3 paires trouvées {mistakes>0?"· Réessaie, tu peux y arriver !":""}</p>
+      <p className="board-status">{matched.length}/3 {copy.matchingStatus} {mistakes>0?"· "+copy.retry:""}</p>
     </div>}
 
     {mode === "memory" && <div className="memory-challenge">
-      <p className="question-instruction">Retourne les cartes pour retrouver les trois paires question–réponse !</p>
+      <p className="question-instruction">{copy.memoryInstruction}</p>
       <div className="memory-board">
         {memoryCards.map((card,index)=>{
           const visible=memoryOpen.includes(index)||memorySolved.includes(card.pair);
           return <button key={index} className={"memory-tile "+(visible?"memory-visible":"")+(memorySolved.includes(card.pair)?" memory-solved":"")}
             disabled={locked || memoryWaiting || memorySolved.includes(card.pair)}
-            onClick={()=>turnCard(index)} aria-label={visible?card.label:"Carte cachée "+(index+1)}>
+            onClick={()=>turnCard(index)} aria-label={visible?card.label:copy.hiddenCard+" "+(index+1)}>
             {visible?card.label:"❔"}
           </button>;
         })}
       </div>
-      <p className="board-status">{memorySolved.length}/3 paires retrouvées {mistakes>0?"· Continue !":""}</p>
+      <p className="board-status">{memorySolved.length}/3 {copy.memoryStatus} {mistakes>0?"· "+copy.continue:""}</p>
     </div>}
 
     {mode === "numberline" && <div className="number-challenge">
-      <p className="question-instruction">Déplace le curseur jusqu'au bon résultat puis valide.</p>
+      <p className="question-instruction">{copy.numberInstruction}</p>
       <div className="chosen-number">{range}</div>
-      <input aria-label="Choisir un nombre de 0 à 100" type="range" min={0} max={100} step={1}
+      <input aria-label={copy.numberAria} type="range" min={0} max={100} step={1}
         value={range} disabled={locked} onChange={e=>setRange(Number(e.target.value))}/>
       <div className="range-labels"><span>0</span><span>50</span><span>100</span></div>
       <button className="primary" disabled={locked}
-        onClick={()=>onAnswer(range===Number(expected),"range:"+range)}><Check size={17}/> Valider {range}</button>
+        onClick={()=>onAnswer(range===Number(expected),"range:"+range)}><Check size={17}/> {copy.validate} {range}</button>
     </div>}
 
-    {mode === "write" && question.subject==="dutch" && <button type="button" className="listen-btn" onClick={()=>speak(question.prompt,true)}><Volume2 size={17}/> Écouter la question</button>}
+    {mode === "write" && question.subject==="dutch" && <button type="button" className="listen-btn" onClick={()=>speak(question.prompt,true)}><Volume2 size={17}/> {copy.listenQuestion}</button>}
   </section>;
 }
