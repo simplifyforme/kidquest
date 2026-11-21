@@ -48,3 +48,12 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 - `src/App.tsx` : nouvelle carte de leçon sur l'accueil et enregistrement des défis dans les tentatives SQLite (+10 si réussi au premier essai), sans toucher aux anciennes données.
 
 **Restrictions** : le choix d'une voix masculine et les événements mot par mot dépendent des voix installées et du moteur vocal Windows/WebView2. Aucun service de voix tiers ni serveur n'est requis. Les nouvelles leçons ne sont pas encore distribuées à distance via le manifeste des packs de quiz : le moteur et sa première leçon sont fournis avec le nouvel installateur 0.3.0.
+
+## Version 0.4.0 — Échiquier cartoon 3D avec option 2D
+
+- `src/components/CartoonChessBoard3D.tsx` : rendu Three.js local de l'échiquier et des six types de pièces en volumes cartoon, lumières, ombres, zoom et rotation de caméra à la souris.
+- `src/lib/chess3d.ts` : coordonnées communes entre les positions notation échiquéenne et l'espace 3D. Les blancs sont toujours en bas ; h1 est une case claire.
+- `src/components/AnimatedLessonPlayer.tsx` : interrupteur 3D / 2D (choix local mémorisé), vues inclinée et du dessus et retour automatique vers 2D en cas d'erreur WebGL. Le moteur de cours, les défis, la narration, les mouvements et le suivi SQLite restent communs.
+- Ressources construites à partir de primitives géométriques, **sans modèles 3D externes ni téléchargement réseau**. Three.js est empaqueté dans l'installateur et fonctionnera hors ligne.
+- L'interaction caméra 3D utilise la souris/le tactile. Pour la navigation par clavier entre les cases, préférer la vue 2D existante. Éviter d'imposer WebGL pour lancer KidQuest.
+- Les leçons animées restent intégrées dans l'installateur ; il n'existe pas encore de mise à jour distante automatique pour les nouvelles leçons.
