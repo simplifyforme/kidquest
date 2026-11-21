@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "categories": [
+    {
+      "id": "math",
+      "title": "Wiskunde",
+      "emoji": "🔢",
+      "subtitle": "Rekenen, getallen en maaltafels",
+      "colorClass": "math",
+      "language": "nl-BE",
+      "order": 0
+    },
+    {
+      "id": "french",
+      "title": "Français",
+      "emoji": "📖",
+      "subtitle": "Mots, vocabulaire et orthographe",
+      "colorClass": "french",
+      "language": "fr-BE",
+      "order": 1
+    },
+    {
+      "id": "dutch",
+      "title": "Nederlands",
+      "emoji": "🇳🇱",
+      "subtitle": "Découvre la langue, les mots et les plantes",
+      "colorClass": "dutch",
+      "language": "fr-BE",
+      "order": 2
+    },
+    {
+      "id": "chess",
+      "title": "Échecs",
+      "emoji": "♟️",
+      "subtitle": "Apprends les règles et les pièces",
+      "colorClass": "chess",
+      "language": "fr-BE",
+      "order": 3
+    }
+  ],
+  "activities": [
+    {
+      "id": "plant-playground",
+      "category": "dutch",
+      "title": "De plant · Speeltuin",
+      "subtitle": "6 spellen: plantendelen, groei en woorden",
+      "emoji": "🌱",
+      "order": 60
+    },
+    {
+      "id": "chess-beginner",
+      "category": "chess",
+      "order": 50
+    },
+    {
+      "id": "dutch-numbers-1000",
+      "category": "math",
+      "order": 70
+    },
+    {
+      "id": "french-verb-hunt",
+      "category": "french",
+      "order": 80
+    }
+  ]
+}
