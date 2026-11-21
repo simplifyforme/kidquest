@@ -1,11 +1,14 @@
 import { isTauri } from "@tauri-apps/api/core";
 import type { Attempt,CompletedSession,ContentPack,Progress } from "../types";
 import { builtinPacks } from "../data/builtin";
+import type { RemoteCatalog } from "./catalogConfig";
+import { isValidRemoteCatalog } from "./catalogConfig";
 
 export const DEFAULT_PROGRESS:Progress={points:0,correct:0,attempted:0,streak:0,bestStreak:0,lastPlayed:null};
 const storageKey="kidquest.progress.v1";
 const sessionStorageKey="kidquest.completed.sessions.v1";
 const hiddenStorageKey="kidquest.hidden.activities.v1";
+const remoteCatalogKey="kidquest.remote.catalog.v1";
 let dbPromise:Promise<import("@tauri-apps/plugin-sql").default>|null=null;
 async function database(){
  if(!dbPromise){
@@ -16,6 +19,7 @@ async function database(){
    await db.execute("CREATE TABLE IF NOT EXISTS completed_sessions (id TEXT PRIMARY KEY, activity_id TEXT NOT NULL, kind TEXT NOT NULL, started_at TEXT NOT NULL, completed_at TEXT NOT NULL, duration_seconds INTEGER NOT NULL, correct INTEGER NOT NULL, total INTEGER NOT NULL)");
    await db.execute("CREATE INDEX IF NOT EXISTS idx_completed_sessions_activity ON completed_sessions (activity_id, completed_at DESC)");
    await db.execute("CREATE TABLE IF NOT EXISTS hidden_activities (activity_id TEXT PRIMARY KEY)");
+   await db.execute("CREATE TABLE IF NOT EXISTS remote_catalog (id INTEGER PRIMARY KEY CHECK(id=1),version INTEGER NOT NULL,json TEXT NOT NULL)");
    return db;
   }).catch(e=>{dbPromise=null;throw e});
  }
@@ -128,4 +132,38 @@ export async function setActivityVisible(activityId:string,visible:boolean):Prom
  const db=await database();
  if(visible)await db.execute("DELETE FROM hidden_activities WHERE activity_id=$1",[activityId]);
  else await db.execute("INSERT OR IGNORE INTO hidden_activities(activity_id) VALUES ($1)",[activityId]);
+}
+
+
+/** Last verified remote catalog, available without Internet across launches. */
+export async function getRemoteCatalog():Promise<RemoteCatalog|null>{
+ if(!isTauri()){
+  try{const raw=localStorage.getItem(remoteCatalogKey);
+   if(!raw)return null;
+   const parsed:unknown=JSON.parse(raw);
+   return isValidRemoteCatalog(parsed)?parsed:null;
+  }catch{return null}
+ }
+ const db=await database();
+ const rows=await db.select<{json:string}[]>("SELECT json FROM remote_catalog WHERE id=1");
+ if(!rows.length)return null;
+ try{
+  const parsed:unknown=JSON.parse(rows[0].json);
+  return isValidRemoteCatalog(parsed)?parsed:null;
+ }catch{return null}
+}
+
+/** Only monotonic verified versions are persisted; no destructive migrations. */
+export async function installRemoteCatalog(catalog:RemoteCatalog):Promise<boolean>{
+ if(!isValidRemoteCatalog(catalog))throw Error("Catalogue invalide");
+ const previous=await getRemoteCatalog();
+ if(previous&&catalog.version<=previous.version)return false;
+ if(!isTauri()){
+  localStorage.setItem(remoteCatalogKey,JSON.stringify(catalog));
+  return true;
+ }
+ const db=await database();
+ await db.execute("INSERT INTO remote_catalog(id,version,json) VALUES (1,$1,$2) ON CONFLICT(id) DO UPDATE SET version=excluded.version,json=excluded.json WHERE excluded.version > remote_catalog.version",
+  [catalog.version,JSON.stringify(catalog)]);
+ return true;
 }
