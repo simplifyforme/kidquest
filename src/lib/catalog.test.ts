@@ -10,14 +10,14 @@ import {getExerciseCopy} from "./exerciseLocale";
 const multiplication=multiplicationPack as ContentPack;
 
 describe("category-first catalog and Dutch maths",()=>{
- it("keeps child-friendly subject categories, including new nature activities",()=>{
-  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs","Natuur"]);
+ it("keeps four categories and places plants within Nederlands",()=>{
+  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs"]);
   const catalog=getCatalog(builtinPacks);
   expect(countCategory(catalog,"math")).toBe(3);
   expect(countCategory(catalog,"french")).toBe(2);
-  expect(countCategory(catalog,"dutch")).toBe(1);
+  expect(countCategory(catalog,"dutch")).toBe(2);
   expect(countCategory(catalog,"chess")).toBe(1);
-  expect(countCategory(catalog,"nature")).toBe(1);
+  expect(catalog.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(catalog.find(e=>e.category==="chess")?.kind).toBe("lesson");
  });
  it("places every downloaded pack into the right category automatically",()=>{
