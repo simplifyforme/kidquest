@@ -275,3 +275,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** aucune migration ; mêmes images, SHA, formats et limites.
 - **Validation :** téléchargement de huit photos et génération du manifeste réussis ; première compilation TypeScript en échec (`TS18048`) corrigée ; nouveau workflow à contrôler.
 - **Traçabilité :** PR #19, workflow initial `44950765180`.
+
+### 2026-11-21 — 0.9.0 — Dossiers d’activités sans fichiers multimédias
+- **Type :** correction de robustesse du pipeline.
+- **Pourquoi :** certains exercices ne contiennent que des questions et n'ont donc pas nécessairement de dossier `assets/`.
+- **Changements :** le générateur du manifeste traite un dossier `assets/` absent comme une liste vide, sans bloquer la publication des activités uniquement textuelles.
+- **Fichiers principaux :** `scripts/generate-manifest.mjs`.
+- **Données et compatibilité :** aucun impact sur les anciens packs, les données SQLite ni le pack photographique.
+- **Validation :** nouvelle CI Windows à confirmer après cette correction.
+- **Traçabilité :** PR #19.
