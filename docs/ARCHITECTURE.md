@@ -87,3 +87,10 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 - `src/lib/catalog.ts` inclut `kind: "interactive"` et la matière `nature` « Natuur ». Les packs pédagogiques JSON existants restent dynamiques, et les futures catégories facultatives sont validées par `src/lib/updates.ts`.
 - `src/lib/storage.ts` ajoute la table `hidden_activities(activity_id PRIMARY KEY)` **sans migration destructive**. `getHiddenActivityIds` et `setActivityVisible` utilisent SQLite sur Windows, localStorage en développement navigateur. `src/lib/activityVisibility.ts` définit : **tout ID absent de la table est visible**. Le filtrage s'applique à l'accueil, aux listes par matière et à « Continuer mon aventure », mais pas aux entrées du panneau Paramètres ni à l'historique.
 - Paramètres permet de désactiver/réactiver chaque cours ou exercice via une case à cocher. Les contenus ajoutés ultérieurement, y compris les nouveaux packs téléchargés, sont visibles **par défaut** jusqu'à désactivation manuelle.
+
+## Version 0.7.1 — Natuur rattaché à Nederlands
+
+- Le mini-jeu **De plant · Speeltuin** appartient désormais à **Nederlands**, pas à une matière autonome Natuur. L'accueil revient à quatre catégories : Wiskunde, Français, Nederlands et Échecs.
+- Le retour du mini-jeu indique « Terug naar Nederlands ». Les six jeux sur les plantes et leurs 33 défis restent inchangés.
+- Pour maintenir la compatibilité, un ancien pack JSON téléchargé contenant `category: "nature"` est automatiquement rangé sous Nederlands par `getCategoryForActivity`, sans toucher au pack sauvegardé.
+- L'ID `plant-playground` et les paramètres locaux de visibilité ainsi que l'historique SQLite restent stables.
