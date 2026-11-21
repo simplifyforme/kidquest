@@ -53,8 +53,8 @@ export function getCatalog(packs:ContentPack[],remote:RemoteCatalog|null=null):C
   return {...entry,category:override.category??entry.category,title:override.title??entry.title,
    subtitle:override.subtitle??entry.subtitle,emoji:override.emoji??entry.emoji};
  }).sort((a,b)=>{
-  const ao=overrides.get(a.id)?.order??positions.get(a.id)??0;
-  const bo=overrides.get(b.id)?.order??positions.get(b.id)??0;
+  const ao=overrides.get(a.id)?.order??(10001+(positions.get(a.id)??0));
+  const bo=overrides.get(b.id)?.order??(10001+(positions.get(b.id)??0));
   return ao-bo;
  });
 }
