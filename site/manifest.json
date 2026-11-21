@@ -21,9 +21,9 @@
     }
   ],
   "catalog": {
-    "version": 3,
+    "version": 4,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "9f4d7b0bfd1df94d591424b05883bdc2a2325cf591e8d8d9658d1d65c4deab00"
+    "sha256": "515ed37eef4d7f91bccde1ad319ec979ba56f3f3170672542a5882dda96e2741"
   },
   "activities": [
     {
@@ -151,6 +151,91 @@
           "sha256": "76af5d3fc21c8525dab4292225fa987b818d9a79add4ee03e90821c3731b9c0a",
           "bytes": 18017,
           "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "kleuren-nl",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/pack.json",
+      "sha256": "18d326b1f3967c1709911225597962bccc108ab75a3459760dda7ae78df906f7",
+      "assets": [
+        {
+          "file": "blauw.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/blauw.png",
+          "sha256": "54ede085b768119313a0c7319915aaee448789700a090c445e325daa64593d5a",
+          "bytes": 2460,
+          "mime": "image/png"
+        },
+        {
+          "file": "bruin.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/bruin.png",
+          "sha256": "da4664477fc3710835880942fec4e387ee8edb4929fd963c19e6a9def8d4153b",
+          "bytes": 2459,
+          "mime": "image/png"
+        },
+        {
+          "file": "geel.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/geel.png",
+          "sha256": "5bcd38d7d0058c0e321c07e9f0db38c9570308e160204acd81fe83632b4f1d2d",
+          "bytes": 2461,
+          "mime": "image/png"
+        },
+        {
+          "file": "grijs.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/grijs.png",
+          "sha256": "e6fb40b097dfc57ffc9e1edc49d3b2d3b9be97b7716dadb6f7dc47bb9f6cf026",
+          "bytes": 2460,
+          "mime": "image/png"
+        },
+        {
+          "file": "groen.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/groen.png",
+          "sha256": "210b78d62ed9cce1daa17897906a682d67a3e28e90ebd13c01e17de847329a71",
+          "bytes": 2462,
+          "mime": "image/png"
+        },
+        {
+          "file": "oranje.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/oranje.png",
+          "sha256": "b06a71b55222e87acf0d75af0aa6955eb50932c63cc628b027fc516f6cdecf84",
+          "bytes": 2460,
+          "mime": "image/png"
+        },
+        {
+          "file": "paars.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/paars.png",
+          "sha256": "b2bed93ce5fd665a0bdc0376c8d2c44cc0ef9935cdf1df1feebd33229dde00ca",
+          "bytes": 2461,
+          "mime": "image/png"
+        },
+        {
+          "file": "rood.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/rood.png",
+          "sha256": "f3d67b9652d3bf4ea950537e47a2acd95f722f554f9e14230f13ce37a71bcb81",
+          "bytes": 2460,
+          "mime": "image/png"
+        },
+        {
+          "file": "roze.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/roze.png",
+          "sha256": "a140d105799d1b14093d3ad5e8ca3206d6e0b3735f046fe4fd231171c4d6193f",
+          "bytes": 2455,
+          "mime": "image/png"
+        },
+        {
+          "file": "wit.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/wit.png",
+          "sha256": "f6d40340ba83179d2b40c302d156badb58c4bd8385acb8cdefa2e28b048ccbb6",
+          "bytes": 2457,
+          "mime": "image/png"
+        },
+        {
+          "file": "zwart.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/kleuren-nl/assets/zwart.png",
+          "sha256": "9f574f98eb3f7ef16018285367b5293b729f3285a73d56240089dca2eb2a3c4c",
+          "bytes": 2460,
+          "mime": "image/png"
         }
       ]
     }
