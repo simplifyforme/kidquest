@@ -28,7 +28,7 @@ describe("cartoon chess 3D world mapping",()=>{
  });
  it("reuses each existing chess lesson scene without separate 3D rules",()=>{
    for(const scene of chessBeginnerLesson.scenes){
-     expect(scene.pieces.every(p=>worldToSquare(...Object.values(squareToWorld(p.square)) as [number,number])===p.square)).toBe(true);
+     expect(scene.pieces.every(p=>{const {x,z}=squareToWorld(p.square);return worldToSquare(x,z)===p.square;})).toBe(true);
      const final=playActions(scene.pieces,scene.actions);
      expect(final.every(p=>worldToSquare(squareToWorld(p.square).x,squareToWorld(p.square).z)===p.square)).toBe(true);
    }
