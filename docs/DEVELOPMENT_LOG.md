@@ -214,3 +214,14 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** aucun effet sur le stockage, les points ou le catalogue ; préservation des formes écrites du HTML d'origine.
 - **Validation :** première CI : TypeScript réussi, deux tests en échec. Nouvelle CI à confirmer après correctif.
 - **Traçabilité :** même PR d'importation `feat/import-html-lessons-visibility-0-7`.
+
+### 2026-11-21 — 0.7.1 — Le cours Natuur est déplacé dans Nederlands
+- **Type :** correction d'organisation des matières.
+- **Pourquoi :** l'utilisateur demande que les exercices « De plant · Speeltuin » en néerlandais fassent partie de la matière Nederlands, au lieu d'une catégorie Natuur indépendante.
+- **Changements :** suppression de la carte de matière Natuur sur l'accueil, rattachement du jeu « De plant · Speeltuin » à Nederlands, texte du bouton retour « Terug naar Nederlands », rétablissement de quatre catégories principales et adaptation des tests.
+- **Fichiers principaux :** `src/lib/catalog.ts`, `src/lib/catalog.test.ts`, `src/games/importedGames.test.ts`, `src/components/PlantPlay.tsx`, `src/App.tsx`, `package.json`, `src-tauri/Cargo.toml`, `src-tauri/tauri.conf.json`.
+- **Décisions techniques :** le jeu conserve son identifiant permanent `plant-playground` pour préserver les réglages Visible/Masqué et l'historique. Les anciens packs téléchargés contenant `category: "nature"` sont redirigés vers Nederlands par le catalogue, sans changement destructif du schéma JSON ni de SQLite. La catégorie de pack héritée reste acceptée lors de la validation.
+- **Données et compatibilité :** aucun changement des questions des plantes, des points, des résultats et des durées. Installation Windows 0.7.1 nécessaire pour voir l'organisation modifiée.
+- **Validation :** tests unitaires et compilation Windows GitHub Actions à vérifier dans la PR ; ajout d'un test couvrant les packs historiques `category: "nature"`.
+- **Traçabilité :** branche `fix/plant-under-nederlands-0-7-1`, Pull Request à ouvrir.
+- **Suite / points ouverts :** valider l'affichage sur le PC 13 pouces ; aucune nouvelle logique pédagogique requise.
