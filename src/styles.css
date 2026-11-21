@@ -122,3 +122,27 @@
 .recent-card b{font-size:15px}.recent-card small{font-size:12px;color:#83789c}
 @media(max-width:950px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-activity-grid{grid-template-columns:1fr}.category-hero{padding:26px}}
 @media(max-width:590px){.category-grid{gap:11px}.category-card{padding:14px;min-height:222px;border-radius:20px}.category-emoji{font-size:45px;min-height:72px}.category-card h3{font-size:17px}.category-card p{font-size:11px}.category-hero{padding:18px;gap:13px}.category-hero-emoji{font-size:54px}.category-hero h1{font-size:27px}.catalog-activity-card{padding:13px;gap:10px;min-height:126px}.catalog-entry-emoji{flex-basis:55px;width:55px;height:65px;font-size:30px}.catalog-activity-card h3{font-size:15px}.catalog-section h2{font-size:20px}}
+
+
+/* KidQuest 0.6 — per-activity completion history in Settings */
+.catalog-played{display:inline-block;color:#6a5ba1;background:#ffffffbd;border-radius:12px;font-size:11px;font-weight:900;margin-top:10px;padding:6px 9px}
+.history-section{margin:32px 0}.history-help{color:#727b99;font-size:13px;line-height:1.6;max-width:750px}
+.history-list{display:flex;flex-direction:column;gap:10px}
+.history-entry{border:1px solid #e3e4f4;background:white;border-radius:17px;overflow:hidden;box-shadow:0 5px 15px #333b6a0a}
+.history-entry>summary{display:flex;align-items:center;gap:13px;padding:15px 18px;list-style:none;cursor:pointer;min-height:73px}
+.history-entry>summary::-webkit-details-marker{display:none}
+.history-icon{font-size:27px;min-width:40px;text-align:center}
+.history-title{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.history-title>b{font-size:14px;color:#30385d}
+.history-title>small{font-size:11px;color:#8790a9}
+.history-expand{color:#7465ba;transition:transform .16s}
+.history-entry[open] .history-expand{transform:rotate(90deg)}
+.history-detail{padding:17px 20px 20px;border-top:1px solid #eaeafa;color:#676d91}
+.history-stats{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:13px;font-weight:900;font-size:12px}
+.history-stats span{background:#f3efff;color:#6857a9;border-radius:20px;padding:8px 11px}
+.history-table-wrap{max-width:100%;overflow-x:auto}
+.history-table{width:100%;border-collapse:collapse;min-width:380px;font-size:12px}
+.history-table th{text-align:left;color:#77799a;font-size:11px;padding:12px 9px;background:#f9f8ff}
+.history-table td{padding:12px 9px;border-bottom:1px solid #eeedf8}
+.history-table tr:last-child td{border-bottom:0}
+@media(max-width:590px){.history-entry>summary{padding:12px;gap:8px}.history-title>b{font-size:12px}.history-title>small{font-size:10px}.history-detail{padding:12px}.history-stats{gap:6px}}
