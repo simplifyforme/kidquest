@@ -16,6 +16,12 @@ Les détails complets et le modèle d'entrée sont dans **[`docs/DEVELOPMENT_LOG
 
 Tu travailles sur une application Windows 11 Tauri 2 / React 19 / TypeScript en français, **offline-first**, pour un enfant d'environ 8 ans.
 
+## Quand annoncer qu’une demande est terminée
+
+Pour toute demande qui modifie KidQuest, suivre la pull request jusqu’à sa fusion dans `main`. Si GitHub permet la fusion automatique et que les contrôles applicables sont requis, l’activer sur la PR. Sinon, fusionner après réussite des contrôles et des validations applicables. En cas d’échec de la CI, corriger le problème et vérifier la nouvelle exécution. Si un blocage subsiste, indiquer précisément ce qui reste en attente.
+
+Pour un pack ou une modification du catalogue, attendre aussi le workflow de publication après fusion et vérifier le résultat sur le manifeste public que KidQuest télécharge. Pour un pack multimédia, vérifier que les médias référencés sont accessibles. Annoncer la fin uniquement après ces vérifications.
+
 ## Architecture obligatoire
 - Les questions et leurs corrections sont indépendantes des vues.
 - Les contenus téléchargés sont des JSON **de données**, jamais du JavaScript exécutable.
