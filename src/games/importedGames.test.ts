@@ -63,7 +63,7 @@ describe("imported original HTML educational activities",()=>{
  });
  it("makes every new course visible by default while opt-outs remain hidden",()=>{
   const entries=getCatalog(builtinPacks);
-  expect(entries.find(e=>e.id==="plant-playground")?.category).toBe("nature");
+  expect(entries.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(entries.find(e=>e.id==="dutch-numbers-1000")?.category).toBe("math");
   expect(entries.find(e=>e.id==="french-verb-hunt")?.category).toBe("french");
   expect(filterVisibleActivities(entries,[])).toHaveLength(entries.length);

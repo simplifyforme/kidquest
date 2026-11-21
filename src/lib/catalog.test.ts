@@ -10,14 +10,14 @@ import {getExerciseCopy} from "./exerciseLocale";
 const multiplication=multiplicationPack as ContentPack;
 
 describe("category-first catalog and Dutch maths",()=>{
- it("keeps child-friendly subject categories, including new nature activities",()=>{
-  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs","Natuur"]);
+ it("keeps four categories and places plants within Nederlands",()=>{
+  expect(CATEGORIES.map(c=>c.title)).toEqual(["Wiskunde","Français","Nederlands","Échecs"]);
   const catalog=getCatalog(builtinPacks);
   expect(countCategory(catalog,"math")).toBe(3);
   expect(countCategory(catalog,"french")).toBe(2);
-  expect(countCategory(catalog,"dutch")).toBe(1);
+  expect(countCategory(catalog,"dutch")).toBe(2);
   expect(countCategory(catalog,"chess")).toBe(1);
-  expect(countCategory(catalog,"nature")).toBe(1);
+  expect(catalog.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(catalog.find(e=>e.category==="chess")?.kind).toBe("lesson");
  });
  it("places every downloaded pack into the right category automatically",()=>{
@@ -33,6 +33,13 @@ describe("category-first catalog and Dutch maths",()=>{
    "tables-multiplication-1-10","chess-beginner",
    "plant-playground","dutch-numbers-1000","french-verb-hunt"
   ]);
+ });
+ it("routes downloaded legacy nature content to Nederlands without changing its identifiers",()=>{
+  const legacy:ContentPack={id:"legacy-plant-nl",version:1,title:"Planten",category:"nature",locale:"nl-BE",questions:[{id:"legacy-plant-01",subject:"dutch",skill:"plants",prompt:"Wat heeft de plant nodig?",answers:[{id:"a",label:"water"},{id:"b",label:"steen"}],correctAnswerId:"a",explanation:"Water."}]};
+  const catalog=getCatalog([...builtinPacks,legacy]);
+  expect(catalog.find(e=>e.id===legacy.id)?.category).toBe("dutch");
+  expect(catalog.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
+  expect(legacy.category).toBe("nature");
  });
  it("retains all embedded math IDs and answer keys while translating everything",()=>{
   for(const pack of builtinPacks.filter(p=>p.id==="mathematiques"||p.id==="nombres")){
