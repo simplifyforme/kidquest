@@ -293,3 +293,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** aucune modification des questions ni du stockage ; les autres activités en français restent inchangées.
 - **Validation :** nouvelle compilation TypeScript et tests Windows à confirmer.
 - **Traçabilité :** PR #19.
+
+### 2026-11-21 — 0.9.0 — Adaptation des tests au nouveau catalogue version 2
+- **Type :** maintenance des tests de régression.
+- **Pourquoi :** le catalogue GitHub passe de la version 1 à la version 2 afin d'ajouter le pack Dieren ; deux tests datant de 0.8.0 comparaient encore le numéro figé 1 et échouaient alors que la nouvelle structure était valide.
+- **Changements :** nouvelle valeur attendue dans le test du catalogue, et comparaison contre `publishedCatalog.version` dans le test SHA-256 pour prendre en charge les futures versions.
+- **Fichiers principaux :** `src/lib/catalogConfig.test.ts`, `src/lib/catalogDownload.test.ts`.
+- **Données et compatibilité :** aucune modification des données ni du moteur de mise à jour.
+- **Validation :** deuxième CI : génération média et build TypeScript réussis, 52 tests sur 54 validés, deux échecs de numérotation détectés et corrigés ; nouveau workflow à confirmer.
+- **Traçabilité :** PR #19, workflow `44950982832`.
