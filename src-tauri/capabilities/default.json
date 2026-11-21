@@ -1,0 +1,19 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Permissions limitées à la fenêtre principale de KidQuest",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "sql:default",
+    "sql:allow-execute",
+    "sql:allow-select",
+    "process:allow-restart",
+    "updater:default",
+    "sql:allow-load",
+    "updater:allow-check",
+    "updater:allow-download-and-install"
+  ]
+}
