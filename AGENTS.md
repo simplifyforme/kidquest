@@ -90,3 +90,12 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Tous les exercices Wiskunde (\`subject=math\` et \`subject=numbers\`) et leurs interfaces/consignes doivent être en **néerlandais belge**, voix \`nl-BE\`. Le français et les autres matières restent inchangés. Traduire les réponses en toutes lettres avec leurs choix distracteurs, sans changer la bonne réponse logique.
 - Les dix modes de quiz utilisent \`src/lib/exerciseLocale.ts\` pour la traduction : éviter d'ajouter des textes français en dur dans le rendu maths. Toute nouvelle catégorie peut être ajoutée via le tableau \`CATEGORIES\` sans recoder les cartes.
 - Les missions de calcul et nombres en lettres intégrées sont versionnées en 2 ; le pack téléchargé \`tables-multiplication-1-10\` est versionné en 2. Le workflow GitHub \`pages.yml\` reconstruit le manifeste et ses SHA-256 après merge sur \`main\`.
+
+
+## Historique des activités terminées — version 0.6.0
+
+- Nouvelle table SQLite append-only \`completed_sessions\` (création idempotente, aucune suppression de données), alternative localStorage pour tests navigateur. Définition \`CompletedSession\` dans \`src/types.ts\`; opérations \`getCompletedSessions\` et \`saveCompletedSession\` dans \`src/lib/storage.ts\`.
+- Une session = une leçon ou un quiz **terminé**, identifié par un UUID unique, avec \`activityId\`, type, début, fin, durée en secondes, bonnes réponses et total. Les abandons ne sont pas comptés.
+- \`src/lib/activityHistory.ts\` calcule le nombre de réalisations, les scores et temps. Les compteurs apparaissent dans le catalogue, les tentatives détaillées dans Paramètres avec date, score et durée.
+- Ne **jamais** déduire une durée historique à partir des \`attempts\` des versions 0.1–0.5 : ces enregistrements n'ont pas d'heure de début de partie. Les scores et durées de session commencent à partir de 0.6.0 ; les anciens points et tentatives demeurent inchangés.
+- Lors du passage des diapositives en arrière, un défi d'échecs ne doit pas octroyer des points une seconde fois. Préserver la logique d'enregistrement unique et éviter les doublons lors d'un double clic sur « Terminer ».
