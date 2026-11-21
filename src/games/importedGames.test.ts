@@ -36,7 +36,7 @@ describe("imported original HTML educational activities",()=>{
   expect(numberToDutch(32)).toBe("tweeëndertig");
   expect(numberToDutch(42)).toBe("tweeënveertig");
   expect(numberToDutch(75)).toBe("vijfenzeventig");
-  expect(numberToDutch(101)).toBe("honderdeen");
+  expect(numberToDutch(101)).toBe("honderdéén");
   expect(numberToDutch(106)).toBe("honderdzes");
   expect(numberToDutch(342)).toBe("driehonderdtweeënveertig");
   expect(numberToDutch(1000)).toBe("duizend");
