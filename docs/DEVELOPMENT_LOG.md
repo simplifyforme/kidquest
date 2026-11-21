@@ -170,5 +170,5 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Fichiers principaux :** `docs/DEVELOPMENT_LOG.md`, `AGENTS.md`, `README.md`, `.github/workflows/require-development-log.yml`.
 - **Données et compatibilité :** aucun impact sur SQLite, les packs, l'installateur, ni sur les points. Pas de nouvelle installation nécessaire.
 - **Validation :** modification documentaire, vérification GitHub du workflow de contrôle à confirmer après création de la PR.
-- **Traçabilité :** branche `docs/mandatory-development-log`, PR à associer après ouverture.
+- **Traçabilité :** branche `docs/mandatory-development-log`, [PR #14](https://github.com/simplifyforme/kidquest/pull/14).
 - **Suite :** chaque agent doit ajouter **une nouvelle entrée à la fin de ce journal** dans **chaque** PR future ; ne jamais supprimer les entrées existantes.
