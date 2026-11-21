@@ -49,7 +49,7 @@ export default function App(){
   const now=new Date().toISOString();
   const next:Progress={...progress,points:progress.points+(right?10:0),attempted:progress.attempted+1,correct:progress.correct+(right?1:0),streak:right?progress.streak+1:0,bestStreak:Math.max(progress.bestStreak,right?progress.streak+1:0),lastPlayed:now};
   try{
-   await saveAnswer(next,{questionId:question.id,correct:right,answerId,date:now,packId:findPackId(question.id)});
+   await saveAnswer(next,{questionId:question.id,correct:right,answerId,date:now,packId:findPackId(question.id,packs)});
    setProgress(next);setSelected(answerId);if(right)setTotalCorrect(c=>c+1);
   }catch{
    setMessage({kind:"error",message:"Erreur de sauvegarde. Réessaie ta réponse."});
