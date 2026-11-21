@@ -45,7 +45,7 @@ Le dépôt est actuellement public. Ne jamais y commiter des secrets de signatur
 
 Deux circuits **séparés** :
 
-- **Contenu** : le manifeste `https://simplifyforme.github.io/kidquest-content/manifest.json` sera utilisé dès qu'un dépôt de contenus public sera publié. Les nouveaux packs sont enregistrés localement et survivent aux redémarrages.
+- **Contenu** : le manifeste `https://simplifyforme.github.io/kidquest/manifest.json` sera utilisé dès qu'un dépôt de contenus public sera publié. Les nouveaux packs sont enregistrés localement et survivent aux redémarrages.
 - **Application** : Tauri Updater est câblé dans le code, mais doit être **activé après génération et configuration d'une paire de clés de signature** et publication d'un manifeste d'updates accessible publiquement. L'installation de l'app depuis les artefacts Actions est déjà possible. Le dépôt privé, si choisi ultérieurement, ne doit pas être utilisé comme endpoint public sans mécanisme de distribution.
 
 Voir [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/CONTENT_PACKS.md](docs/CONTENT_PACKS.md) et [AGENTS.md](AGENTS.md).
