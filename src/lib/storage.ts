@@ -1,9 +1,10 @@
 import { isTauri } from "@tauri-apps/api/core";
-import type { Attempt,ContentPack,Progress } from "../types";
+import type { Attempt,CompletedSession,ContentPack,Progress } from "../types";
 import { builtinPacks } from "../data/builtin";
 
 export const DEFAULT_PROGRESS:Progress={points:0,correct:0,attempted:0,streak:0,bestStreak:0,lastPlayed:null};
 const storageKey="kidquest.progress.v1";
+const sessionStorageKey="kidquest.completed.sessions.v1";
 let dbPromise:Promise<import("@tauri-apps/plugin-sql").default>|null=null;
 async function database(){
  if(!dbPromise){
@@ -11,6 +12,8 @@ async function database(){
    await db.execute("CREATE TABLE IF NOT EXISTS progress (id INTEGER PRIMARY KEY CHECK(id=1), json TEXT NOT NULL)");
    await db.execute("CREATE TABLE IF NOT EXISTS attempts (id INTEGER PRIMARY KEY AUTOINCREMENT, question_id TEXT NOT NULL, correct INTEGER NOT NULL, answer_id TEXT NOT NULL, date TEXT NOT NULL, pack_id TEXT NOT NULL)");
    await db.execute("CREATE TABLE IF NOT EXISTS packs (id TEXT PRIMARY KEY, version INTEGER NOT NULL, json TEXT NOT NULL)");
+   await db.execute("CREATE TABLE IF NOT EXISTS completed_sessions (id TEXT PRIMARY KEY, activity_id TEXT NOT NULL, kind TEXT NOT NULL, started_at TEXT NOT NULL, completed_at TEXT NOT NULL, duration_seconds INTEGER NOT NULL, correct INTEGER NOT NULL, total INTEGER NOT NULL)");
+   await db.execute("CREATE INDEX IF NOT EXISTS idx_completed_sessions_activity ON completed_sessions (activity_id, completed_at DESC)");
    return db;
   }).catch(e=>{dbPromise=null;throw e});
  }
@@ -53,4 +56,45 @@ export async function installPack(pack:ContentPack):Promise<void>{
  }
  const db=await database();
  await db.execute("INSERT INTO packs(id,version,json) VALUES($1,$2,$3) ON CONFLICT(id) DO UPDATE SET version=excluded.version,json=excluded.json",[pack.id,pack.version,JSON.stringify(pack)]);
+}
+
+
+/** Append-only completion history. Never infer durations from historic question attempts. */
+export async function getCompletedSessions():Promise<CompletedSession[]>{
+ if(!isTauri()){
+  try{
+   const decoded=JSON.parse(localStorage.getItem(sessionStorageKey)||"[]") as CompletedSession[];
+   return decoded.sort((a,b)=>b.completedAt.localeCompare(a.completedAt));
+  }catch{return []}
+ }
+ const db=await database();
+ const rows=await db.select<{
+  id:string;activity_id:string;kind:"quiz"|"lesson";started_at:string;
+  completed_at:string;duration_seconds:number;correct:number;total:number;
+ }[]>("SELECT id,activity_id,kind,started_at,completed_at,duration_seconds,correct,total FROM completed_sessions ORDER BY completed_at DESC");
+ return rows.map(r=>({
+  id:r.id,activityId:r.activity_id,kind:r.kind,
+  startedAt:r.started_at,completedAt:r.completed_at,
+  durationSeconds:r.duration_seconds,correct:r.correct,total:r.total
+ }));
+}
+export async function saveCompletedSession(session:CompletedSession):Promise<void>{
+ if(!session.id||!session.activityId||!["quiz","lesson"].includes(session.kind)||
+    !Number.isFinite(session.durationSeconds)||session.durationSeconds<0||
+    !Number.isInteger(session.total)||session.total<1||
+    !Number.isInteger(session.correct)||session.correct<0||session.correct>session.total||
+    !Number.isFinite(Date.parse(session.startedAt))||!Number.isFinite(Date.parse(session.completedAt)))
+  throw new Error("Historique de l'activité invalide.");
+ if(!isTauri()){
+  const stored=await getCompletedSessions();
+  const next=stored.some(s=>s.id===session.id)?stored:[session,...stored];
+  localStorage.setItem(sessionStorageKey,JSON.stringify(next));
+  return;
+ }
+ const db=await database();
+ await db.execute(
+  "INSERT OR IGNORE INTO completed_sessions (id,activity_id,kind,started_at,completed_at,duration_seconds,correct,total) VALUES ($1,$2,$3,$4,$5,$6,$7,$8)",
+  [session.id,session.activityId,session.kind,session.startedAt,session.completedAt,
+   Math.floor(session.durationSeconds),session.correct,session.total]
+ );
 }
