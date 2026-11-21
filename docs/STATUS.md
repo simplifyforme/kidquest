@@ -35,3 +35,12 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Désormais, `src/lib/activities.ts` construit les missions à partir des packs intégrés et téléchargés. Un nouveau pack compatible apparaît comme une **nouvelle carte**, avec sa propre liste de questions, sans nouveau code ni nouvelle installation lors des prochaines publications de packs.
 - Pour activer **cette première amélioration du moteur de missions**, il faut installer une fois la version 0.1.2 (les mises à jour binaires automatiques sont encore désactivées). Les points et les packs enregistrés sous SQLite sont conservés.
 - Exemple attendu : quatre missions intégrées plus deux missions téléchargées (bonus néerlandais et verbes) = six cartes, 76 questions au total.
+
+## Version 0.2.0 — variété pédagogique
+
+- Dix modes implémentés : QCM, écriture libre, vrai/faux, duel, lettres mélangées, mots mélangés, lettres manquantes, associer 3 paires, memory et curseur numérique.
+- Les quatre matières intégrées et tous les packs téléchargés utilisent le même moteur adaptatif ; aucun changement au schéma JSON ni SQLite.
+- Le moteur détermine automatiquement le mode en fonction de la réponse et de la session ; l'enfant ne peut pas choisir la méthode.
+- Des tests unitaires couvrent les dix modes et la compatibilité avec les quatre cours intégrés.
+- L'installation de l'exécutable 0.2.0 reste nécessaire une fois pour accéder aux nouveaux moteurs. Les nouvelles questions continueront à arriver via GitHub sans réinstallation.
+- Validation visuelle et essais sur le vrai PC de l'enfant restent nécessaires.
