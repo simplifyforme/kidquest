@@ -127,7 +127,7 @@ export const chessBeginnerLesson: AnimatedLesson={
    narration:"Quand un pion arrive tout au bout de l'échiquier, il doit être remplacé par une dame, une tour, un fou ou un cavalier de sa couleur. On choisit souvent une dame, mais ce n'est pas obligatoire.",
    tip:"La promotion est possible même si ta dame est déjà sur l'échiquier.",
    pieces:[{id:"p",kind:"P",color:"white",square:"a7"}],
-   actions:[{pieceId:"p",to:"a8",note:"Le pion arrive sur la dernière rangée"}],highlight:["a8"]
+   actions:[{pieceId:"p",to:"a8",note:"Le pion devient une dame !",promoteTo:"Q"}],highlight:["a8"]
   },
   {
    id:"rules",title:"Les règles faciles pour jouer",
