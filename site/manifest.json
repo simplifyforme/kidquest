@@ -12,6 +12,12 @@
       "version": 1,
       "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/neerlandais-verbes-a1.json",
       "sha256": "bf27d812cffe1aca23f22aa77b98db6b52ae68899b005c6b063728552c925a7c"
+    },
+    {
+      "id": "tables-multiplication-1-10",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/tables-multiplication-1-10.json",
+      "sha256": "7a3736b839a15d08fad5099272ef9f67b9aff30f8dc92c49a4b068827a63fade"
     }
   ]
 }
