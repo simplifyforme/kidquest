@@ -1,0 +1,817 @@
+{
+  "id": "neerlandais-verbes-a1",
+  "version": 1,
+  "title": "Les verbes faciles en néerlandais",
+  "questions": [
+    {
+      "id": "nl-verbes-a1-01",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « zijn » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Être"
+        },
+        {
+          "id": "b",
+          "label": "Avoir"
+        },
+        {
+          "id": "c",
+          "label": "Aller"
+        },
+        {
+          "id": "d",
+          "label": "Parler"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Zijn signifie « être ».",
+      "emoji": "⭐"
+    },
+    {
+      "id": "nl-verbes-a1-02",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « hebben » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Être"
+        },
+        {
+          "id": "b",
+          "label": "Jouer"
+        },
+        {
+          "id": "c",
+          "label": "Avoir"
+        },
+        {
+          "id": "d",
+          "label": "Habiter"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Hebben signifie « avoir ».",
+      "emoji": "🎒"
+    },
+    {
+      "id": "nl-verbes-a1-03",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « gaan » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Avoir"
+        },
+        {
+          "id": "b",
+          "label": "Aller"
+        },
+        {
+          "id": "c",
+          "label": "Boire"
+        },
+        {
+          "id": "d",
+          "label": "Lire"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Gaan signifie « aller ».",
+      "emoji": "🚶"
+    },
+    {
+      "id": "nl-verbes-a1-04",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « wonen » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Manger"
+        },
+        {
+          "id": "b",
+          "label": "Jouer"
+        },
+        {
+          "id": "c",
+          "label": "Être"
+        },
+        {
+          "id": "d",
+          "label": "Habiter"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Wonen signifie « habiter ».",
+      "emoji": "🏠"
+    },
+    {
+      "id": "nl-verbes-a1-05",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « spelen » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Dormir"
+        },
+        {
+          "id": "b",
+          "label": "Parler"
+        },
+        {
+          "id": "c",
+          "label": "Jouer"
+        },
+        {
+          "id": "d",
+          "label": "Écrire"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Spelen signifie « jouer ».",
+      "emoji": "⚽"
+    },
+    {
+      "id": "nl-verbes-a1-06",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « eten » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Manger"
+        },
+        {
+          "id": "b",
+          "label": "Boire"
+        },
+        {
+          "id": "c",
+          "label": "Marcher"
+        },
+        {
+          "id": "d",
+          "label": "Lire"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Eten signifie « manger ».",
+      "emoji": "🍎"
+    },
+    {
+      "id": "nl-verbes-a1-07",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « drinken » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Dormir"
+        },
+        {
+          "id": "b",
+          "label": "Manger"
+        },
+        {
+          "id": "c",
+          "label": "Habiter"
+        },
+        {
+          "id": "d",
+          "label": "Boire"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Drinken signifie « boire ».",
+      "emoji": "🥛"
+    },
+    {
+      "id": "nl-verbes-a1-08",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « lezen » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Écrire"
+        },
+        {
+          "id": "b",
+          "label": "Lire"
+        },
+        {
+          "id": "c",
+          "label": "Parler"
+        },
+        {
+          "id": "d",
+          "label": "Nager"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Lezen signifie « lire ».",
+      "emoji": "📖"
+    },
+    {
+      "id": "nl-verbes-a1-09",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « schrijven » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Écrire"
+        },
+        {
+          "id": "b",
+          "label": "Lire"
+        },
+        {
+          "id": "c",
+          "label": "Jouer"
+        },
+        {
+          "id": "d",
+          "label": "Chanter"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Schrijven signifie « écrire ».",
+      "emoji": "✏️"
+    },
+    {
+      "id": "nl-verbes-a1-10",
+      "subject": "dutch",
+      "skill": "verbes-infinitif",
+      "prompt": "Que signifie « spreken » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Manger"
+        },
+        {
+          "id": "b",
+          "label": "Habiter"
+        },
+        {
+          "id": "c",
+          "label": "Parler"
+        },
+        {
+          "id": "d",
+          "label": "Dormir"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Spreken signifie « parler ».",
+      "emoji": "💬"
+    },
+    {
+      "id": "nl-verbes-a1-11",
+      "subject": "dutch",
+      "skill": "verbes-zijn",
+      "prompt": "Complète : « Ik ___ acht jaar. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "bent"
+        },
+        {
+          "id": "b",
+          "label": "ben"
+        },
+        {
+          "id": "c",
+          "label": "is"
+        },
+        {
+          "id": "d",
+          "label": "zijn"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ik ben = je suis. Pour dire l'âge : Ik ben acht jaar.",
+      "emoji": "🎂"
+    },
+    {
+      "id": "nl-verbes-a1-12",
+      "subject": "dutch",
+      "skill": "verbes-zijn",
+      "prompt": "Complète : « Jij ___ mijn vriend. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "ben"
+        },
+        {
+          "id": "b",
+          "label": "is"
+        },
+        {
+          "id": "c",
+          "label": "heb"
+        },
+        {
+          "id": "d",
+          "label": "bent"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Jij bent = tu es.",
+      "emoji": "🤝"
+    },
+    {
+      "id": "nl-verbes-a1-13",
+      "subject": "dutch",
+      "skill": "verbes-zijn",
+      "prompt": "Complète : « Zij ___ blij. » (Elle est contente.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "ben"
+        },
+        {
+          "id": "b",
+          "label": "bent"
+        },
+        {
+          "id": "c",
+          "label": "is"
+        },
+        {
+          "id": "d",
+          "label": "zijn"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Zij is = elle est.",
+      "emoji": "😊"
+    },
+    {
+      "id": "nl-verbes-a1-14",
+      "subject": "dutch",
+      "skill": "verbes-zijn",
+      "prompt": "Complète : « Wij ___ vrienden. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "zijn"
+        },
+        {
+          "id": "b",
+          "label": "ben"
+        },
+        {
+          "id": "c",
+          "label": "bent"
+        },
+        {
+          "id": "d",
+          "label": "is"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Wij zijn = nous sommes.",
+      "emoji": "👫"
+    },
+    {
+      "id": "nl-verbes-a1-15",
+      "subject": "dutch",
+      "skill": "verbes-zijn",
+      "prompt": "Que signifie « Ik ben moe » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "J'ai faim"
+        },
+        {
+          "id": "b",
+          "label": "Je suis content"
+        },
+        {
+          "id": "c",
+          "label": "Je vais à l'école"
+        },
+        {
+          "id": "d",
+          "label": "Je suis fatigué"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ik ben = je suis. Moe = fatigué.",
+      "emoji": "😴"
+    },
+    {
+      "id": "nl-verbes-a1-16",
+      "subject": "dutch",
+      "skill": "verbes-hebben",
+      "prompt": "Complète : « Ik ___ een boek. » (J'ai un livre.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "hebt"
+        },
+        {
+          "id": "b",
+          "label": "heb"
+        },
+        {
+          "id": "c",
+          "label": "heeft"
+        },
+        {
+          "id": "d",
+          "label": "ben"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ik heb = j'ai.",
+      "emoji": "📚"
+    },
+    {
+      "id": "nl-verbes-a1-17",
+      "subject": "dutch",
+      "skill": "verbes-hebben",
+      "prompt": "Complète : « Jij ___ een fiets. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "hebt"
+        },
+        {
+          "id": "b",
+          "label": "heb"
+        },
+        {
+          "id": "c",
+          "label": "heeft"
+        },
+        {
+          "id": "d",
+          "label": "bent"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Jij hebt = tu as.",
+      "emoji": "🚲"
+    },
+    {
+      "id": "nl-verbes-a1-18",
+      "subject": "dutch",
+      "skill": "verbes-hebben",
+      "prompt": "Complète : « Hij ___ een hond. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "heb"
+        },
+        {
+          "id": "b",
+          "label": "hebt"
+        },
+        {
+          "id": "c",
+          "label": "heeft"
+        },
+        {
+          "id": "d",
+          "label": "is"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Hij heeft = il a.",
+      "emoji": "🐶"
+    },
+    {
+      "id": "nl-verbes-a1-19",
+      "subject": "dutch",
+      "skill": "verbes-hebben",
+      "prompt": "Complète : « Wij ___ een bal. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "heeft"
+        },
+        {
+          "id": "b",
+          "label": "hebben"
+        },
+        {
+          "id": "c",
+          "label": "hebt"
+        },
+        {
+          "id": "d",
+          "label": "heb"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Wij hebben = nous avons.",
+      "emoji": "⚽"
+    },
+    {
+      "id": "nl-verbes-a1-20",
+      "subject": "dutch",
+      "skill": "verbes-hebben",
+      "prompt": "Que signifie « Ik heb een kat » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Je suis un chat"
+        },
+        {
+          "id": "b",
+          "label": "J'aime les chats"
+        },
+        {
+          "id": "c",
+          "label": "Je vois un chat"
+        },
+        {
+          "id": "d",
+          "label": "J'ai un chat"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ik heb = j'ai. Een kat = un chat.",
+      "emoji": "🐈"
+    },
+    {
+      "id": "nl-verbes-a1-21",
+      "subject": "dutch",
+      "skill": "verbes-gaan",
+      "prompt": "Complète : « Ik ___ naar school. » (Je vais à l'école.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "gaat"
+        },
+        {
+          "id": "b",
+          "label": "gaan"
+        },
+        {
+          "id": "c",
+          "label": "ga"
+        },
+        {
+          "id": "d",
+          "label": "ben"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Ik ga = je vais.",
+      "emoji": "🏫"
+    },
+    {
+      "id": "nl-verbes-a1-22",
+      "subject": "dutch",
+      "skill": "verbes-gaan",
+      "prompt": "Complète : « Hij ___ naar huis. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "gaat"
+        },
+        {
+          "id": "b",
+          "label": "ga"
+        },
+        {
+          "id": "c",
+          "label": "gaan"
+        },
+        {
+          "id": "d",
+          "label": "gaatje"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Hij gaat = il va. Naar huis = à la maison.",
+      "emoji": "🏡"
+    },
+    {
+      "id": "nl-verbes-a1-23",
+      "subject": "dutch",
+      "skill": "verbes-gaan",
+      "prompt": "Complète : « Wij ___ naar het park. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "ga"
+        },
+        {
+          "id": "b",
+          "label": "gaat"
+        },
+        {
+          "id": "c",
+          "label": "ben"
+        },
+        {
+          "id": "d",
+          "label": "gaan"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Wij gaan = nous allons.",
+      "emoji": "🌳"
+    },
+    {
+      "id": "nl-verbes-a1-24",
+      "subject": "dutch",
+      "skill": "verbes-wonen",
+      "prompt": "Complète : « Ik ___ in Brussel. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "woont"
+        },
+        {
+          "id": "b",
+          "label": "woon"
+        },
+        {
+          "id": "c",
+          "label": "wonen"
+        },
+        {
+          "id": "d",
+          "label": "heb"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ik woon = j'habite.",
+      "emoji": "🏙️"
+    },
+    {
+      "id": "nl-verbes-a1-25",
+      "subject": "dutch",
+      "skill": "verbes-wonen",
+      "prompt": "Complète : « Zij ___ in België. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "woont"
+        },
+        {
+          "id": "b",
+          "label": "woon"
+        },
+        {
+          "id": "c",
+          "label": "wonen"
+        },
+        {
+          "id": "d",
+          "label": "is"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Zij woont = elle habite.",
+      "emoji": "🇧🇪"
+    },
+    {
+      "id": "nl-verbes-a1-26",
+      "subject": "dutch",
+      "skill": "verbes-spelen",
+      "prompt": "Complète : « Ik ___ voetbal. » (Je joue au football.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "speelt"
+        },
+        {
+          "id": "b",
+          "label": "spelen"
+        },
+        {
+          "id": "c",
+          "label": "speel"
+        },
+        {
+          "id": "d",
+          "label": "heb"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Ik speel = je joue.",
+      "emoji": "⚽"
+    },
+    {
+      "id": "nl-verbes-a1-27",
+      "subject": "dutch",
+      "skill": "verbes-spelen",
+      "prompt": "Complète : « Wij ___ samen. » (Nous jouons ensemble.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "speel"
+        },
+        {
+          "id": "b",
+          "label": "spelen"
+        },
+        {
+          "id": "c",
+          "label": "speelt"
+        },
+        {
+          "id": "d",
+          "label": "ben"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Wij spelen = nous jouons.",
+      "emoji": "🧩"
+    },
+    {
+      "id": "nl-verbes-a1-28",
+      "subject": "dutch",
+      "skill": "verbes-eten",
+      "prompt": "Complète : « Ik ___ een appel. » (Je mange une pomme.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "eten"
+        },
+        {
+          "id": "b",
+          "label": "eetst"
+        },
+        {
+          "id": "c",
+          "label": "heb"
+        },
+        {
+          "id": "d",
+          "label": "eet"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Ik eet = je mange.",
+      "emoji": "🍏"
+    },
+    {
+      "id": "nl-verbes-a1-29",
+      "subject": "dutch",
+      "skill": "verbes-drinken",
+      "prompt": "Complète : « Ik ___ water. »",
+      "answers": [
+        {
+          "id": "a",
+          "label": "drinkt"
+        },
+        {
+          "id": "b",
+          "label": "drinken"
+        },
+        {
+          "id": "c",
+          "label": "drink"
+        },
+        {
+          "id": "d",
+          "label": "ben"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Ik drink = je bois.",
+      "emoji": "💧"
+    },
+    {
+      "id": "nl-verbes-a1-30",
+      "subject": "dutch",
+      "skill": "verbes-lezen",
+      "prompt": "Complète : « Ik ___ een boek. » (Je lis un livre.)",
+      "answers": [
+        {
+          "id": "a",
+          "label": "lees"
+        },
+        {
+          "id": "b",
+          "label": "leest"
+        },
+        {
+          "id": "c",
+          "label": "lezen"
+        },
+        {
+          "id": "d",
+          "label": "schrijf"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Ik lees = je lis.",
+      "emoji": "📗"
+    }
+  ]
+}
