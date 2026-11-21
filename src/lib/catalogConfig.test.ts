@@ -9,6 +9,7 @@ import dutchVerbs from "../../site/packs/neerlandais-verbes-a1.json";
 import multiplication from "../../site/packs/tables-multiplication-1-10.json";
 import animals from "../../site/activities/dieren-nl/pack.json";
 import produce from "../../site/activities/groenten-fruit-nl/pack.json";
+import colors from "../../site/activities/kleuren-nl/pack.json";
 import type {ContentPack} from "../types";
 
 const remote=publishedCatalog as RemoteCatalog;
@@ -21,7 +22,7 @@ describe("versioned remote presentation catalog",()=>{
   expect(entries.find(e=>e.id==="chess-beginner")?.kind).toBe("lesson");
  });
  it("assigns a distinct icon to every built-in and published activity",()=>{
-  const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce] as ContentPack[];
+  const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce,colors] as ContentPack[];
   const entries=getCatalog([...builtinPacks,...downloadedPacks],remote);
   const icons=new Map(remote.activities.map(entry=>[entry.id,entry.emoji]));
   for(const entry of entries){

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 3,
+  "version": 4,
   "categories": [
     {
       "id": "math",
@@ -105,6 +105,14 @@
     {
       "id": "groenten-fruit-nl",
       "emoji": "🥕"
+    },
+    {
+      "id": "kleuren-nl",
+      "category": "dutch",
+      "title": "Kleurenheld · Leer de kleuren",
+      "subtitle": "11 kleuren · kijken, onthouden en schrijven",
+      "emoji": "🎨",
+      "order": 93
     }
   ]
 }
