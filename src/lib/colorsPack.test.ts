@@ -28,6 +28,7 @@ describe("downloadable Dutch colours", () => {
    expect(eligibleModes(counterpart!, pack.questions)).toEqual(expect.arrayContaining(["write", "letters", "matching"]));
    expect(new Set(q.answers.map(a => a.label)).size).toBe(4);
    expect(q.media!.alt).not.toContain(correctLabel(q));
+   expect(q.prompt).toContain("Frans:");
   }
  });
 });

@@ -2,7 +2,7 @@
 
 Activité de Nederlands (`nl-BE`) pour apprendre 11 couleurs : rood, blauw, geel, groen, oranje, paars, roze, bruin, zwart, wit et grijs.
 
-- 11 questions visuelles : reconnaître la couleur d’une grande pastille, sans mot écrit sur l’image.
+- 11 questions visuelles : reconnaître la couleur d’une grande pastille, sans mot écrit sur l’image, avec un repère français dans la consigne. Ce repère permet aussi aux modes d’association textuels de réutiliser la question sans ambiguïté.
 - 11 questions de vocabulaire : retrouver le mot néerlandais depuis le français, avec les modes compatibles attribués automatiquement (saisie, lettres, associations, etc.).
 - Chaque correction relie le mot néerlandais à sa traduction française. Les noms de couleurs sont employés seuls, sans article, comme réponses à « Welke kleur? ».
 - Une partie KidQuest tire huit questions ; rejouer permet de rencontrer les autres couleurs et interactions.

@@ -344,3 +344,14 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** `npm run build`, `npm test` (57 tests réussis), `node scripts/generate-manifest.mjs` réussis ; contrôle visuel des 11 PNG et `git diff --check`. Tests du schéma, du classement, de l’icône, du maintien de l’image et des modes textuels. CI Windows et journal à vérifier sur la PR avant fusion.
 - **Traçabilité :** branche `feat/kleuren-nl`. Le workflow `pages.yml` régénère le manifeste après fusion ; son commit automatique est couvert par cette entrée.
 - **Suite / points ouverts :** vérifier publication et empreintes publiques après fusion, puis rendu réel sur Windows. La reconnaissance visuelle dépend de la perception des couleurs et de l’écran ; les questions de vocabulaire restent indépendantes de leur perception.
+
+### 2026-11-21 — Contenu uniquement — Repères français pour les couleurs
+- **Type :** ajustement pédagogique et compatibilité des modes.
+- **Pourquoi :** les modes d’association existants peuvent réutiliser les consignes d’autres questions du pack sans leur image. Une consigne identique « Quelle couleur ? » serait ambiguë dans ce contexte.
+- **Changements :** chaque consigne visuelle précise la couleur en français, sans fournir la réponse néerlandaise ; elle reste résoluble lorsqu’elle est reprise dans une association textuelle. Le nom néerlandais reste à retrouver.
+- **Fichiers principaux :** `site/activities/kleuren-nl/pack.json`, `site/activities/kleuren-nl/README.md`, `src/lib/colorsPack.test.ts`.
+- **Décisions techniques :** rendre les données compatibles avec les moteurs présents au lieu de changer le programme Windows ; version 1 conservée car ce pack est encore inédit et non fusionné.
+- **Données et compatibilité :** mêmes IDs et médias, aucune modification de stockage, pas de nouvel installateur.
+- **Validation :** compilation, 57 tests et génération du manifeste réussis après ajustement ; test de présence du repère français. Nouvelle CI requise sur la PR.
+- **Traçabilité :** PR #23 ; manifeste généré par Actions après fusion.
+- **Limites :** les pastilles sont accompagnées d’un indice français pour favoriser l’apprentissage.

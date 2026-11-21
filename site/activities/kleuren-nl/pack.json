@@ -9,7 +9,7 @@
       "id": "kleuren-nl-kijk-rood",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « rouge ».",
       "answers": [
         {
           "id": "rood",
@@ -67,7 +67,7 @@
       "id": "kleuren-nl-kijk-blauw",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « bleu ».",
       "answers": [
         {
           "id": "geel",
@@ -125,7 +125,7 @@
       "id": "kleuren-nl-kijk-geel",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « jaune ».",
       "answers": [
         {
           "id": "groen",
@@ -183,7 +183,7 @@
       "id": "kleuren-nl-kijk-groen",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « vert ».",
       "answers": [
         {
           "id": "oranje",
@@ -241,7 +241,7 @@
       "id": "kleuren-nl-kijk-oranje",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « orange ».",
       "answers": [
         {
           "id": "oranje",
@@ -299,7 +299,7 @@
       "id": "kleuren-nl-kijk-paars",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « violet ».",
       "answers": [
         {
           "id": "roze",
@@ -357,7 +357,7 @@
       "id": "kleuren-nl-kijk-roze",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « rose ».",
       "answers": [
         {
           "id": "bruin",
@@ -415,7 +415,7 @@
       "id": "kleuren-nl-kijk-bruin",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « brun ».",
       "answers": [
         {
           "id": "zwart",
@@ -473,7 +473,7 @@
       "id": "kleuren-nl-kijk-zwart",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « noir ».",
       "answers": [
         {
           "id": "zwart",
@@ -531,7 +531,7 @@
       "id": "kleuren-nl-kijk-wit",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « blanc ».",
       "answers": [
         {
           "id": "grijs",
@@ -589,7 +589,7 @@
       "id": "kleuren-nl-kijk-grijs",
       "subject": "dutch",
       "skill": "kleuren-herkennen",
-      "prompt": "Welke kleur heeft de cirkel?",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « gris ».",
       "answers": [
         {
           "id": "rood",
