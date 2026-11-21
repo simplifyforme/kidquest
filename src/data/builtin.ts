@@ -24,7 +24,7 @@ export const builtinPacks:ContentPack[]=[
   q("num-05","numbers","neerlandais","Comment dit-on 8 en néerlandais ?",["acht","tien","zes","vijf"],0,"8 = acht.","🇳🇱"),
   q("num-06","numbers","neerlandais","Comment écrit-on 12 en néerlandais ?",["twintig","twaalf","twee","dertien"],1,"12 = twaalf.","🔤"),
   q("num-07","numbers","neerlandais","Que signifie « twintig » ?",["12","30","20","2"],2,"Twintig signifie vingt.","💡"),
-  q("num-08","numbers","neerlandais","Comment écrit-on 21 en néerlandais ?",["twintigéén","tweeëntwintig","eenentwintig","eenentwintig"],3,"21 = eenentwintig (forme usuelle, sans accent).","🧠"),
+  q("num-08","numbers","neerlandais","Comment écrit-on 21 en néerlandais ?",["twintigéén","tweeëntwintig","eenenveertig","eenentwintig"],3,"21 = eenentwintig (forme usuelle, sans accent).","🧠"),
   q("num-09","numbers","neerlandais","Comment écrit-on 101 en néerlandais ?",["honderdeen","honderdtien","eenhonderdtien","duizendéén"],0,"101 = honderd(en)een ; honderdeen est accepté dans cette activité.","🎓"),
   q("num-10","numbers","francais","Comment écrit-on 72 en français (Belgique) ?",["soixante-douze","septante-deux","soixante-deux","quatre-vingt-deux"],1,"En Belgique, on emploie souvent septante-deux.","🇧🇪")
  ]},
