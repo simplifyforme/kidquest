@@ -67,3 +67,13 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 - \`site/packs/tables-multiplication-1-10.json\` version 2 : 100 questions de multiplication en néerlandais (IDs et bonnes réponses conservés), distribuées automatiquement via le manifeste GitHub recalculé après fusion. Une compatibilité hors ligne traduit aussi les libellés de l'ancien pack v1 en attendant le téléchargement de la v2.
 - \`src/lib/exerciseLocale.ts\` et \`src/components/ExercisePlay.tsx\` : libellés et consignes néerlandais des dix modes, de la validation, de la lecture vocale et des retours dans les quiz de \`math\` et \`numbers\`. Les autres matières restent en français. La voix des questions de maths est définie sur \`nl-BE\`, selon les voix disponibles sur le PC.
 - \`ContentPack.category\` et \`ContentPack.locale\` sont des métadonnées **optionnelles** et rétrocompatibles ; validation d'énumération dans \`src/lib/updates.ts\`. Les points et données SQLite ne sont pas migrés ou effacés.
+
+
+## Version 0.6.0 — suivi des réalisations par activité
+
+- \`src/lib/storage.ts\` crée une nouvelle table \`completed_sessions\` si absente, avec clés id de session, activité, type quiz/leçon, horodatages début/fin, durée, bonnes réponses et total. Les données SQLite antérieures sont conservées.
+- \`src/App.tsx\` crée un identifiant de session au lancement de l'activité ; l'enregistrement a lieu **uniquement à la fin**. La rubrique Paramètres affiche l'historique et les cartes catégories le nombre de fois où chaque activité est terminée.
+- \`src/components/AnimatedLessonPlayer.tsx\` signale la fin du cours et garde la comptabilisation des défis, sans recréditer les points en cas de retour sur une diapositive déjà validée.
+- \`src/lib/activityHistory.ts\` regroupe les données en compte, meilleur score, moyenne et durée minimale, indépendamment des données des packs téléchargés.
+- Compatibilité navigateur : localStorage, sans nouvelles API. Persistance Windows : nouvelle table SQL ajoutée, aucun schéma existant changé.
+- Les sessions historiques antérieures à la version 0.6.0 ne peuvent pas être reconstituées précisément (pas de durée mesurée). Les anciens scores cumulés restent présents.
