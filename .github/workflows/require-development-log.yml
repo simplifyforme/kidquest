@@ -1,0 +1,52 @@
+name: Require append-only development log
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  development-log:
+    name: Verify documented change
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Require a new append-only history entry
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+          import subprocess
+          import sys
+
+          log = Path("docs/DEVELOPMENT_LOG.md")
+          if not log.is_file():
+              sys.exit("❌ docs/DEVELOPMENT_LOG.md is required in every PR.")
+
+          current = log.read_bytes()
+          result = subprocess.run(
+              ["git", "show", os.environ["BASE_SHA"] + ":docs/DEVELOPMENT_LOG.md"],
+              stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, check=False
+          )
+          original = result.stdout if result.returncode == 0 else b""
+          if original and not current.startswith(original):
+              sys.exit("❌ Existing development log was modified or removed. Append new entries without rewriting history.")
+
+          added = current[len(original):].decode("utf-8")
+          headings = [line for line in added.splitlines() if line.startswith("### ") and " — " in line]
+          if not headings:
+              sys.exit("❌ Append at least one new dated '### YYYY-MM-DD — ...' entry to docs/DEVELOPMENT_LOG.md.")
+
+          print("✅ Append-only development log validated.")
+          for heading in headings:
+              print("  " + heading)
+          PY
