@@ -73,3 +73,11 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - La synthèse vocale utilise le moteur local du système via Web Speech API, si disponible ; privilégier une voix française masculine si Windows en fournit une. Ne jamais annoncer qu'une voix masculine ou des événements de synchronisation mot par mot sont garantis sur tous les PC.
 - Les `speechSynthesis.onboundary` permettent le surlignage d'un mot à la fois quand le moteur les fournit. L'enfant peut rejouer la narration et les mouvements. Les tentatives d'exercices sont persistées dans la même table SQLite existante, **sans migration destructrice**.
 - Pour ajouter des leçons téléchargeables à distance à l'avenir : introduire un manifeste versionné et un validateur de schéma strict, sans code arbitraire dans les packs ; ne pas prétendre que cela est déjà disponible en 0.3.0.
+
+## Rendu 3D de l'échiquier (0.4.0)
+
+- Réutiliser les données `ChessScene`, `ChessPiece` et les actions du cours existant. Ne pas dupliquer la validation pédagogique ou la sauvegarde des points entre les vues 2D et 3D.
+- Le rendu cartoon Three.js se trouve dans `src/components/CartoonChessBoard3D.tsx`. Les coordonnées du plateau et leur orientation sont définies dans `src/lib/chess3d.ts` et vérifiées par tests (a1 foncée, h1 claire, blancs en bas).
+- Le moteur 3D doit permettre les clics sur les cases des défis et ne doit pas bloquer le fonctionnement de KidQuest si le PC ne prend pas WebGL en charge. L'interface doit proposer le mode 2D et mémoriser le choix localement.
+- Utiliser uniquement des primitives/modèles locaux intégrés ; aucun chargement d'assets 3D ou scripts arbitraires depuis Internet. Ne pas casser l'usage hors ligne ni le stockage SQLite existant.
+- Les cours d'échecs sont pédagogiques, pas un moteur de partie d'échecs complète : la validation de coup pour le jeu libre nécessite un moteur de règles dédié dans une future version.
