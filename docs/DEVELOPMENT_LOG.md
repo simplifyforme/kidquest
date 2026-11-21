@@ -225,3 +225,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** tests unitaires et compilation Windows GitHub Actions à vérifier dans la PR ; ajout d'un test couvrant les packs historiques `category: "nature"`.
 - **Traçabilité :** branche `fix/plant-under-nederlands-0-7-1`, Pull Request à ouvrir.
 - **Suite / points ouverts :** valider l'affichage sur le PC 13 pouces ; aucune nouvelle logique pédagogique requise.
+
+### 2026-11-21 — 0.7.1 — Correction de condition UI après retrait de Natuur
+- **Type :** correction de compilation.
+- **Pourquoi :** la CI TypeScript a révélé une ancienne condition `categoryId==="nature"` dans la carte des ateliers interactifs, devenue impossible après suppression de cette catégorie.
+- **Changements :** suppression du test sur l'ancien ID de catégorie ; le jeu de plantes se trouve toujours sous Nederlands et le compteur reste disponible.
+- **Fichiers principaux :** `src/App.tsx`.
+- **Données et compatibilité :** aucun impact SQLite, identifiants, visibilité ou résultats.
+- **Validation :** premier contrôle TypeScript en échec (`TS2367`), nouvelle exécution CI nécessaire.
+- **Traçabilité :** PR #17.
