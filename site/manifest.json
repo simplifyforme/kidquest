@@ -6,6 +6,12 @@
       "version": 1,
       "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/neerlandais-debutant.json",
       "sha256": "d4374fea7626696614312a5ee071f4cc3b83997b96a628a95014a20783354ff5"
+    },
+    {
+      "id": "neerlandais-verbes-a1",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/neerlandais-verbes-a1.json",
+      "sha256": "bf27d812cffe1aca23f22aa77b98db6b52ae68899b005c6b063728552c925a7c"
     }
   ]
 }
