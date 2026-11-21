@@ -5,7 +5,7 @@ import { getPacks,getProgress,saveAnswer,DEFAULT_PROGRESS } from "./lib/storage"
 import { checkAppUpdate,checkContentUpdates,findPackId } from "./lib/updates";
 import { getActivities,getActivityQuestions,baseActivities } from "./lib/activities";
 import type { Activity } from "./lib/activities";
-import type { ContentPack,Progress,Question,Result,Subject } from "./types";
+import type { ContentPack,Progress,Question,Result } from "./types";
 
 type Screen="home"|"quiz"|"result"|"settings";
 const EMPTY:Progress={...DEFAULT_PROGRESS};
