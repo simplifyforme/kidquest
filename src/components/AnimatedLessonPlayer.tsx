@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, CheckCircle2, Play, RotateCcw, Volume2, VolumeX } from "lucide-react";
 import type { AnimatedLesson } from "../lessons/chessTypes";
 import { playActions } from "../lessons/chessTypes";
 import AnimatedChessBoard from "./AnimatedChessBoard";
+const CartoonChessBoard3D = lazy(()=>import("./CartoonChessBoard3D"));
 
 type Props = {
   lesson: AnimatedLesson;
@@ -28,6 +29,10 @@ function chooseFrenchVoice(voices: SpeechSynthesisVoice[]): {voice:SpeechSynthes
 
 export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
   const [index,setIndex]=useState(0);
+  const [boardMode,setBoardMode]=useState<"2d"|"3d">(()=>{try{return localStorage.getItem("kidquest.chess.view.v1")==="2d"?"2d":"3d"}catch{return "3d"}});
+  const [cameraView,setCameraView]=useState<"angled"|"top">("angled");
+  const [cameraReset,setCameraReset]=useState(0);
+  const [webglError,setWebglError]=useState(false);
   const [actionIndex,setActionIndex]=useState(0);
   const [playing,setPlaying]=useState(true);
   const [spokenIndex,setSpokenIndex]=useState(-1);
@@ -103,6 +108,10 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
   function advance(step:number){stopSpeaking();setIndex(i=>Math.max(0,Math.min(lesson.scenes.length-1,i+step)))}
   function replay(){setActionIndex(0);setPlaying(true)}
   const finished=index===lesson.scenes.length-1;
+  function changeBoardMode(mode:"2d"|"3d"){
+    setBoardMode(mode);
+    try{localStorage.setItem("kidquest.chess.view.v1",mode)}catch{/* storage optional */}
+  }
 
   return <section className="animated-lesson" aria-label={lesson.title}>
     <div className="lesson-topline">
@@ -145,7 +154,23 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
         </div>
       </div>
       <div className="lesson-board-area">
-        <AnimatedChessBoard pieces={pieces} scene={scene} selected={answer} onSquare={scene.challenge && answer===null&&!saving?attempt:undefined}/>
+        <div className="chess-view-controls" aria-label="Affichage de l’échiquier">
+          <div className="chess-view-switch" role="group" aria-label="Choisir le mode 2D ou 3D">
+            <button type="button" className={boardMode==="3d"?"chess-view-selected":""} disabled={webglError} aria-pressed={boardMode==="3d"} onClick={()=>changeBoardMode("3d")}>🧊 3D cartoon</button>
+            <button type="button" className={boardMode==="2d"?"chess-view-selected":""} aria-pressed={boardMode==="2d"} onClick={()=>changeBoardMode("2d")}>▦ 2D classique</button>
+          </div>
+          {boardMode==="3d"&&!webglError&&<div className="chess-camera-controls" role="group" aria-label="Caméra 3D">
+            <button type="button" onClick={()=>{setCameraView("angled");setCameraReset(n=>n+1)}}>↗ Vue inclinée</button>
+            <button type="button" onClick={()=>{setCameraView("top");setCameraReset(n=>n+1)}}>⬇ Vue du dessus</button>
+          </div>}
+        </div>
+        {boardMode==="3d"&&!webglError?<Suspense fallback={<div className="chess-loading">Préparation des pièces 3D…</div>}>
+          <CartoonChessBoard3D pieces={pieces} scene={scene} selected={answer}
+            onSquare={scene.challenge&&answer===null&&!saving?attempt:undefined}
+            onUnavailable={()=>{setWebglError(true);changeBoardMode("2d")}} view={cameraView} resetId={cameraReset}/>
+        </Suspense>:<AnimatedChessBoard pieces={pieces} scene={scene} selected={answer} onSquare={scene.challenge&&answer===null&&!saving?attempt:undefined}/>}
+        {webglError&&<p className="chess-3d-warning" role="status">La 3D n’est pas disponible sur ce PC. La leçon reste entièrement jouable en 2D.</p>}
+        {boardMode==="3d"&&!webglError&&<p className="chess-3d-help">🖱️ Glisse pour orienter la caméra · Molette pour zoomer · Clique sur les cases vertes pendant les défis. Pour utiliser le clavier, passe en 2D.</p>}
         <div className="chess-legend"><span>♔ Pièces blanches</span><span>♚ Pièces noires</span></div>
         <p className="lesson-action-note">{scene.actions[Math.max(0,actionIndex-1)]?.note??"Regarde le déplacement des pièces sur l'échiquier."}</p>
         <div className="lesson-achievement">🏅 {awarded} / {totalChallenges} défis réussis du premier coup</div>

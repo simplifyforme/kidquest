@@ -52,3 +52,11 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Lecture avec les voix françaises disponibles sur le PC ; la sélection d'une voix masculine est tentée par son nom et **n'est pas garantie**. Le surlignage mot par mot dépend des événements `boundary` de la voix utilisée.
 - Les points des défis sont ajoutés via la structure de sauvegarde SQLite existante, sans migration des données ni modification du catalogue des packs de quiz.
 - Les nouvelles leçons animées restent à distribuer via des packs versionnés dans une évolution future. La première leçon est embarquée, donc 0.3.0 exige une nouvelle installation.
+
+## Version 0.4.0 — Affichage d'échecs 3D cartoon
+
+- Échiquier 3D stylisé en volume avec les six types de pièces, animations de déplacement et sauts du cavalier, caméra orientable, zoom et vues prédéfinies.
+- Leçon d'échecs 0.3.0 réutilisée sans changement pédagogique ; défis et points identiques en 2D et 3D.
+- Bouton 3D / 2D, préférence locale et retour automatique à la 2D si WebGL n'est pas disponible.
+- Pas de fichiers 3D distants ; les modèles sont construits localement avec Three.js.
+- Installation Windows 0.4.0 requise une fois ; les exercices téléchargés et les points restent préservés.
