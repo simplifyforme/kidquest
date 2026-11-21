@@ -121,3 +121,8 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Les préférences parentales sont des **exclusions d'affichage**, jamais une liste blanche. `src/lib/storage.ts` stocke uniquement les IDs masqués dans une table additive `hidden_activities` (localStorage dans le navigateur), `src/lib/activityVisibility.ts` filtre les cartes et « Continuer mon aventure » ; **l'absence de préférence signifie visible**, même pour un contenu ajouté des mois plus tard. Ne pas effacer les exclusions après mises à jour.
 - Les activités masquées restent présentes dans Paramètres, réactivables sans supprimer les points ni l'historique. Les sessions des jeux importés utilisent les mêmes `saveAnswer` (+10 sans erreur/indice) et `saveCompletedSession` (nombre de réussites, durée) que les moteurs précédents ; ne pas compter les parties abandonnées.
 - Toujours ajouter une nouvelle entrée à **`docs/DEVELOPMENT_LOG.md`** à chaque modification, en respectant la règle append-only.
+
+## Catégories après 0.7.1 — plantes dans Nederlands
+
+- Il n'existe que **quatre matières** : Wiskunde, Français, Nederlands et Échecs. « De plant · Speeltuin » (ID `plant-playground`) est un **jeu de Nederlands**, non une catégorie Natuur distincte.
+- La valeur legacy `category: "nature"` des anciens packs téléchargés doit être mappée vers Nederlands pour éviter de les perdre. Ne pas supprimer ni réinitialiser les préférences de masquage liées à l'ID ni leurs historiques.
