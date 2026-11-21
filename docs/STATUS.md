@@ -28,3 +28,10 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Correctif : retirer l'enregistrement du plugin updater tant qu'il n'est pas configuré, en conservant la mise à jour des packs JSON.
 - Ne pas réintroduire `.plugin(tauri_plugin_updater::Builder::new().build())` avant d'avoir créé la clé publique, les endpoints et des releases signées.
 - Il faudra tester le lancement effectif sur Windows et, si l'application ne démarre toujours pas, collecter un journal de crash.
+
+## Correctif 0.1.2 — missions dynamiques
+
+- Après téléchargement, les exercices étaient bien installés mais les quatre cartes d'accueil étaient codées en dur et les questions des packs étaient mélangées au néerlandais de base.
+- Désormais, `src/lib/activities.ts` construit les missions à partir des packs intégrés et téléchargés. Un nouveau pack compatible apparaît comme une **nouvelle carte**, avec sa propre liste de questions, sans nouveau code ni nouvelle installation lors des prochaines publications de packs.
+- Pour activer **cette première amélioration du moteur de missions**, il faut installer une fois la version 0.1.2 (les mises à jour binaires automatiques sont encore désactivées). Les points et les packs enregistrés sous SQLite sont conservés.
+- Exemple attendu : quatre missions intégrées plus deux missions téléchargées (bonus néerlandais et verbes) = six cartes, 76 questions au total.
