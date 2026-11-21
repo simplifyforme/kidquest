@@ -25,7 +25,7 @@ Exemple :
 }
 ```
 
-Le manifeste publié à `https://simplifyforme.github.io/kidquest-content/manifest.json` aura ce format :
+Le manifeste publié à `https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/manifest.json` aura ce format :
 
 ```json
 {
@@ -33,7 +33,7 @@ Le manifeste publié à `https://simplifyforme.github.io/kidquest-content/manife
   "packs": [{
     "id": "neerlandais-bonjour",
     "version": 2,
-    "url": "https://simplifyforme.github.io/kidquest-content/packs/neerlandais-bonjour.json",
+    "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/neerlandais-bonjour.json",
     "sha256": "HASH_SHA256_DU_FICHIER_JSON"
   }]
 }

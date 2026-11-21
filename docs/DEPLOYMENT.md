@@ -11,7 +11,7 @@ Windows SmartScreen peut avertir si l'application n'a pas de certificat Authenti
 
 ## Automatisation des packs
 
-Créer un dépôt GitHub brut public `simplifyforme/kidquest` avec `manifest.json` et `packs/*.json`, puis activer Pages. L'URL est déjà présente dans `src/lib/updates.ts`. Un pack téléchargé et valide remplace sa version dans SQLite ; un échec réseau ne bloque pas les contenus locaux.
+Le dépôt public `simplifyforme/kidquest` contient les packs dans `site/packs/`. Le workflow « Publish exercise catalog » génère et publie automatiquement `site/manifest.json` avec les empreintes SHA-256 dès qu'un pack est modifié sur `main`. Aucun GitHub Pages ni serveur n'est nécessaire. L'application consulte `https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/manifest.json`. Un pack téléchargé valide est enregistré dans SQLite ; un échec réseau ne bloque jamais les contenus locaux.
 
 ## Activer les mises à jour Tauri signées
 
