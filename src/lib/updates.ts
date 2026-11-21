@@ -1,6 +1,7 @@
 import { isTauri } from "@tauri-apps/api/core";
 import { builtinPacks } from "../data/builtin";
-import type { ContentManifest,ContentPack,Question,Result } from "../types";
+import type { ContentManifest,ContentPack,Question,Result,ManifestCatalog } from "../types";
+import type { RemoteCatalog } from "./catalogConfig";
 import { getPacks,installPack,getRemoteCatalog,installRemoteCatalog } from "./storage";
 import { isValidRemoteCatalog } from "./catalogConfig";
 
@@ -21,6 +22,15 @@ export function isValidPack(p:unknown):p is ContentPack{
 export async function sha256(content:string):Promise<string>{
  const bytes=new TextEncoder().encode(content);const buf=await crypto.subtle.digest("SHA-256",bytes);
  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+/** Verify exact published bytes before parsing or persisting any remote metadata. */
+export async function verifyRemoteCatalog(raw:string,descriptor:ManifestCatalog):Promise<RemoteCatalog>{
+ if(new TextEncoder().encode(raw).length>65536)throw Error("catalogue trop volumineux");
+ if((await sha256(raw))!==descriptor.sha256.toLowerCase())throw Error("empreinte catalogue invalide");
+ const parsed:unknown=JSON.parse(raw);
+ if(!isValidRemoteCatalog(parsed)||parsed.version!==descriptor.version)
+  throw Error("format du catalogue invalide");
+ return parsed;
 }
 function sameOriginOrHttps(url:string):boolean{try{return new URL(url).protocol==="https:"}catch{return false}}
 export async function checkContentUpdates():Promise<Result>{
@@ -69,11 +79,7 @@ export async function checkContentUpdates():Promise<Result>{
      const answer=await fetch(descriptor.url,{cache:"no-store",signal:AbortSignal.timeout(12000)});
      if(!answer.ok)throw new Error("catalogue indisponible ("+answer.status+")");
      const raw=await answer.text();
-     if(new TextEncoder().encode(raw).length>65536)throw new Error("catalogue trop volumineux");
-     if((await sha256(raw))!==descriptor.sha256.toLowerCase())throw new Error("empreinte catalogue invalide");
-     const data:unknown=JSON.parse(raw);
-     if(!isValidRemoteCatalog(data)||data.version!==descriptor.version)
-       throw new Error("format du catalogue invalide");
+     const data=await verifyRemoteCatalog(raw,descriptor);
      catalogUpdated=await installRemoteCatalog(data);
     }
    }catch(e){errors.push("organisation : "+(e instanceof Error?e.message:"réseau"))}
