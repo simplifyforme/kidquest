@@ -1,0 +1,647 @@
+{
+  "id": "kleuren-nl",
+  "version": 1,
+  "title": "Kleurenheld · Leer de kleuren",
+  "category": "dutch",
+  "locale": "nl-BE",
+  "questions": [
+    {
+      "id": "kleuren-nl-kijk-rood",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « rouge ».",
+      "answers": [
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        }
+      ],
+      "correctAnswerId": "rood",
+      "explanation": "De cirkel is rood. Rood betekent « rouge » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "rood.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-rood",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « rouge » in het Nederlands?",
+      "answers": [
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        }
+      ],
+      "correctAnswerId": "rood",
+      "explanation": "« Rouge » is « rood » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-blauw",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « bleu ».",
+      "answers": [
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "zwart",
+          "label": "zwart"
+        }
+      ],
+      "correctAnswerId": "blauw",
+      "explanation": "De cirkel is blauw. Blauw betekent « bleu » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "blauw.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-blauw",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « bleu » in het Nederlands?",
+      "answers": [
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "zwart",
+          "label": "zwart"
+        }
+      ],
+      "correctAnswerId": "blauw",
+      "explanation": "« Bleu » is « blauw » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-geel",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « jaune ».",
+      "answers": [
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        }
+      ],
+      "correctAnswerId": "geel",
+      "explanation": "De cirkel is geel. Geel betekent « jaune » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "geel.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-geel",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « jaune » in het Nederlands?",
+      "answers": [
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        }
+      ],
+      "correctAnswerId": "geel",
+      "explanation": "« Jaune » is « geel » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-groen",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « vert ».",
+      "answers": [
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        }
+      ],
+      "correctAnswerId": "groen",
+      "explanation": "De cirkel is groen. Groen betekent « vert » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "groen.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-groen",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « vert » in het Nederlands?",
+      "answers": [
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        }
+      ],
+      "correctAnswerId": "groen",
+      "explanation": "« Vert » is « groen » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-oranje",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « orange ».",
+      "answers": [
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "rood",
+          "label": "rood"
+        }
+      ],
+      "correctAnswerId": "oranje",
+      "explanation": "De cirkel is oranje. Oranje betekent « orange » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "oranje.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-oranje",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « orange » in het Nederlands?",
+      "answers": [
+        {
+          "id": "oranje",
+          "label": "oranje"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "rood",
+          "label": "rood"
+        }
+      ],
+      "correctAnswerId": "oranje",
+      "explanation": "« Orange » is « oranje » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-paars",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « violet ».",
+      "answers": [
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        }
+      ],
+      "correctAnswerId": "paars",
+      "explanation": "De cirkel is paars. Paars betekent « violet » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "paars.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-paars",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « violet » in het Nederlands?",
+      "answers": [
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        }
+      ],
+      "correctAnswerId": "paars",
+      "explanation": "« Violet » is « paars » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-roze",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « rose ».",
+      "answers": [
+        {
+          "id": "bruin",
+          "label": "bruin"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        }
+      ],
+      "correctAnswerId": "roze",
+      "explanation": "De cirkel is roze. Roze betekent « rose » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "roze.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-roze",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « rose » in het Nederlands?",
+      "answers": [
+        {
+          "id": "bruin",
+          "label": "bruin"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        }
+      ],
+      "correctAnswerId": "roze",
+      "explanation": "« Rose » is « roze » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-bruin",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « brun ».",
+      "answers": [
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        }
+      ],
+      "correctAnswerId": "bruin",
+      "explanation": "De cirkel is bruin. Bruin betekent « brun » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "bruin.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-bruin",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « brun » in het Nederlands?",
+      "answers": [
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "bruin",
+          "label": "bruin"
+        }
+      ],
+      "correctAnswerId": "bruin",
+      "explanation": "« Brun » is « bruin » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-zwart",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « noir ».",
+      "answers": [
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "oranje",
+          "label": "oranje"
+        }
+      ],
+      "correctAnswerId": "zwart",
+      "explanation": "De cirkel is zwart. Zwart betekent « noir » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "zwart.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-zwart",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « noir » in het Nederlands?",
+      "answers": [
+        {
+          "id": "zwart",
+          "label": "zwart"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "blauw",
+          "label": "blauw"
+        },
+        {
+          "id": "oranje",
+          "label": "oranje"
+        }
+      ],
+      "correctAnswerId": "zwart",
+      "explanation": "« Noir » is « zwart » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-wit",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « blanc ».",
+      "answers": [
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        }
+      ],
+      "correctAnswerId": "wit",
+      "explanation": "De cirkel is wit. Wit betekent « blanc » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "wit.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-wit",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « blanc » in het Nederlands?",
+      "answers": [
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "wit",
+          "label": "wit"
+        },
+        {
+          "id": "geel",
+          "label": "geel"
+        },
+        {
+          "id": "paars",
+          "label": "paars"
+        }
+      ],
+      "correctAnswerId": "wit",
+      "explanation": "« Blanc » is « wit » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    },
+    {
+      "id": "kleuren-nl-kijk-grijs",
+      "subject": "dutch",
+      "skill": "kleuren-herkennen",
+      "prompt": "Welke kleur heeft de cirkel? Frans: « gris ».",
+      "answers": [
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        }
+      ],
+      "correctAnswerId": "grijs",
+      "explanation": "De cirkel is grijs. Grijs betekent « gris » in het Frans.",
+      "media": {
+        "type": "image",
+        "file": "grijs.png",
+        "alt": "Een gekleurde cirkel met een donkere rand op een lichte achtergrond."
+      }
+    },
+    {
+      "id": "kleuren-nl-woord-grijs",
+      "subject": "dutch",
+      "skill": "kleuren-schrijven",
+      "prompt": "Hoe zeg je « gris » in het Nederlands?",
+      "answers": [
+        {
+          "id": "rood",
+          "label": "rood"
+        },
+        {
+          "id": "groen",
+          "label": "groen"
+        },
+        {
+          "id": "grijs",
+          "label": "grijs"
+        },
+        {
+          "id": "roze",
+          "label": "roze"
+        }
+      ],
+      "correctAnswerId": "grijs",
+      "explanation": "« Gris » is « grijs » in het Nederlands. Goed onthouden!",
+      "emoji": "🎨"
+    }
+  ]
+}
