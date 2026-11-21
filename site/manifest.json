@@ -15,9 +15,9 @@
     },
     {
       "id": "tables-multiplication-1-10",
-      "version": 1,
+      "version": 2,
       "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/packs/tables-multiplication-1-10.json",
-      "sha256": "7a3736b839a15d08fad5099272ef9f67b9aff30f8dc92c49a4b068827a63fade"
+      "sha256": "8938835c53993ce9a7bbcc7235985ce8e197a691cd4d7a60788538d6e6a6361e"
     }
   ]
 }
