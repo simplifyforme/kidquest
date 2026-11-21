@@ -62,6 +62,6 @@ export async function checkAppUpdate():Promise<Result>{
   return {kind:"success",message:"Nouvelle version installée."};
  }catch{return {kind:"error",message:"Impossible d'installer la mise à jour de l'application."}}
 }
-export function findPackId(questionId:string):string{
- return builtinPacks.find(p=>p.questions.some(q=>q.id===questionId))?.id||"downloaded";
+export function findPackId(questionId:string,packs:ContentPack[]=builtinPacks):string{
+ return packs.find(p=>p.questions.some(q=>q.id===questionId))?.id||"unknown";
 }
