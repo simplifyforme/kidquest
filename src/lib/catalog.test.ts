@@ -34,6 +34,13 @@ describe("category-first catalog and Dutch maths",()=>{
    "plant-playground","dutch-numbers-1000","french-verb-hunt"
   ]);
  });
+ it("routes downloaded legacy nature content to Nederlands without changing its identifiers",()=>{
+  const legacy:ContentPack={id:"legacy-plant-nl",version:1,title:"Planten",category:"nature",locale:"nl-BE",questions:[{id:"legacy-plant-01",subject:"dutch",skill:"plants",prompt:"Wat heeft de plant nodig?",answers:[{id:"a",label:"water"},{id:"b",label:"steen"}],correctAnswerId:"a",explanation:"Water."}]};
+  const catalog=getCatalog([...builtinPacks,legacy]);
+  expect(catalog.find(e=>e.id===legacy.id)?.category).toBe("dutch");
+  expect(catalog.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
+  expect(legacy.category).toBe("nature");
+ });
  it("retains all embedded math IDs and answer keys while translating everything",()=>{
   for(const pack of builtinPacks.filter(p=>p.id==="mathematiques"||p.id==="nombres")){
    expect(pack.version).toBe(2);
