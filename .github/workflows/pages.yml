@@ -5,6 +5,8 @@ on:
     paths:
       - 'site/packs/**'
       - 'site/catalog.json'
+      - 'site/activities/**'
+      - 'scripts/sync-activity-media.mjs'
       - 'scripts/generate-manifest.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -21,11 +23,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Download documented CC0 media into activity folders
+        run: node scripts/sync-activity-media.mjs
       - name: Generate content manifest with SHA-256
         run: node scripts/generate-manifest.mjs
       - name: Publish manifest into the public repository
         run: |
-          git add site/manifest.json
+          git add site/manifest.json site/activities/**/assets
           if git diff --cached --quiet; then
             echo "Content manifest already current"
           else
