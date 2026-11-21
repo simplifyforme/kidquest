@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 2,
+  "version": 3,
   "categories": [
     {
       "id": "math",
@@ -23,7 +23,7 @@
     {
       "id": "dutch",
       "title": "Nederlands",
-      "emoji": "🇳🇱",
+      "emoji": "💬",
       "subtitle": "Découvre la langue, les mots et les plantes",
       "colorClass": "dutch",
       "language": "fr-BE",
@@ -51,17 +51,20 @@
     {
       "id": "chess-beginner",
       "category": "chess",
-      "order": 50
+      "order": 50,
+      "emoji": "♟️"
     },
     {
       "id": "dutch-numbers-1000",
       "category": "math",
-      "order": 70
+      "order": 70,
+      "emoji": "🔢"
     },
     {
       "id": "french-verb-hunt",
       "category": "french",
-      "order": 80
+      "order": 80,
+      "emoji": "🔎"
     },
     {
       "id": "dieren-nl",
@@ -70,6 +73,38 @@
       "subtitle": "8 foto's · Welk dier zie je?",
       "emoji": "🐾",
       "order": 91
+    },
+    {
+      "id": "mathematiques",
+      "emoji": "🧮"
+    },
+    {
+      "id": "nombres",
+      "emoji": "🔤"
+    },
+    {
+      "id": "francais",
+      "emoji": "📝"
+    },
+    {
+      "id": "neerlandais",
+      "emoji": "👋"
+    },
+    {
+      "id": "neerlandais-debutant",
+      "emoji": "🃏"
+    },
+    {
+      "id": "neerlandais-verbes-a1",
+      "emoji": "🏃"
+    },
+    {
+      "id": "tables-multiplication-1-10",
+      "emoji": "✖️"
+    },
+    {
+      "id": "groenten-fruit-nl",
+      "emoji": "🥕"
     }
   ]
 }

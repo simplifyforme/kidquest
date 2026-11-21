@@ -143,6 +143,12 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Les identifiants de cours, `hidden_activities`, les points, `attempts` et `completed_sessions` restent inchangés. Les activités neuves restent **visibles par défaut** jusqu'au masquage parental.
 - **Ne jamais prétendre qu'un nouveau moteur de jeu ou une nouvelle animation exécutable peut arriver par catalogue JSON** : l'ajout de code React/Rust/Three.js nécessite toujours un nouvel installateur tant que Tauri Updater signé n'est pas activé.
 
+## Icônes des cartes d’activité
+
+- Pour chaque nouvel exercice, cours ou jeu, ajouter une entrée dans `site/catalog.json` avec son ID et un champ `emoji` qui évoque son sujet ou l’action réalisée. Par exemple 🇳🇱 indique une langue, tandis que 🐾 indique qu’on va reconnaître des animaux.
+- Choisir un emoji simple, reconnaissable par un enfant à la taille d’une carte et affichable dans Windows/WebView2. Éviter les drapeaux, les initiales ou les décorations génériques comme seul repère. Comparer les cartes d’une même matière pour distinguer les activités voisines.
+- Vérifier l’icône sur la carte et dans les listes compactes de KidQuest. Incrémenter la version du catalogue lors de tout changement d’icône.
+
 ## Version 0.9.0 — Chaque nouvelle activité possède son propre dossier de médias
 
 - **Lire `docs/ACTIVITY_BUNDLES.md` avant de créer une activité.** Le chemin standard des nouvelles activités téléchargeables est `site/activities/<id>/pack.json`, avec les ressources facultatives `site/activities/<id>/assets/*`. Les formats autorisés sont JPG/PNG/WebP/GIF/MP4/WebM/MP3/OGG/WAV. Les noms de fichiers et IDs doivent être stables.

@@ -323,3 +323,13 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** modification documentaire, aucune mise à jour de KidQuest nécessaire.
 - **Validation :** `git diff --check` en local et contrôle GitHub du journal avant fusion.
 - **Traçabilité :** branche `docs/verification-avant-cloture`.
+
+### 2026-11-22 — Catalogue — Icônes reconnaissables par activité
+- **Type :** présentation et documentation.
+- **Pourquoi :** plusieurs cartes de Nederlands affichaient le même drapeau, rendu sous forme des lettres NL sur le PC Windows, et certaines icônes évoquaient peu le sujet.
+- **Changements :** catalogue version 3 avec un pictogramme propre à chacune des 13 activités existantes et une bulle de dialogue pour la matière Nederlands. Les consignes ajoutent des critères de choix et de lisibilité pour les futures cartes.
+- **Fichiers principaux :** `site/catalog.json`, `AGENTS.md`, `src/lib/catalogConfig.test.ts`.
+- **Données et compatibilité :** le catalogue utilise le champ emoji existant et conserve les ID d’activité, les médias et la progression. La mise à jour du catalogue suffit.
+- **Validation :** test de couverture des icônes sur l’ensemble des activités, compilation, tests et génération du manifeste.
+- **Traçabilité :** branche `feat/activity-icons`. Le manifeste sera régénéré par GitHub après fusion.
+- **Suite :** vérifier le rendu sur le PC Windows cible.

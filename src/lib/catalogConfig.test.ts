@@ -4,16 +4,31 @@ import {getCatalog} from "./catalog";
 import {isValidRemoteCatalog,resolveCategories} from "./catalogConfig";
 import type {RemoteCatalog} from "./catalogConfig";
 import publishedCatalog from "../../site/catalog.json";
+import beginnerDutch from "../../site/packs/neerlandais-debutant.json";
+import dutchVerbs from "../../site/packs/neerlandais-verbes-a1.json";
+import multiplication from "../../site/packs/tables-multiplication-1-10.json";
+import animals from "../../site/activities/dieren-nl/pack.json";
+import produce from "../../site/activities/groenten-fruit-nl/pack.json";
+import type {ContentPack} from "../types";
 
 const remote=publishedCatalog as RemoteCatalog;
 describe("versioned remote presentation catalog",()=>{
  it("accepts the published catalog and preserves the four established subjects",()=>{
   expect(isValidRemoteCatalog(remote)).toBe(true);
-  expect(remote.version).toBe(2);
   expect(resolveCategories(remote).map(c=>c.id)).toEqual(["math","french","dutch","chess"]);
   const entries=getCatalog(builtinPacks,remote);
   expect(entries.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(entries.find(e=>e.id==="chess-beginner")?.kind).toBe("lesson");
+ });
+ it("assigns a distinct icon to every built-in and published activity",()=>{
+  const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce] as ContentPack[];
+  const entries=getCatalog([...builtinPacks,...downloadedPacks],remote);
+  const icons=new Map(remote.activities.map(entry=>[entry.id,entry.emoji]));
+  for(const entry of entries){
+   expect(icons.get(entry.id),entry.id).toBeTruthy();
+   expect(entry.emoji,entry.id).toBe(icons.get(entry.id));
+  }
+  expect(new Set(entries.map(entry=>entry.emoji)).size).toBe(entries.length);
  });
  it("can change subjects, titles, icons and sorting using JSON only, without touching IDs",()=>{
   const version2:RemoteCatalog={
