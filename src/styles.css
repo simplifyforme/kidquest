@@ -66,3 +66,20 @@
 @media(max-width:920px){.lesson-content{grid-template-columns:1fr}.lesson-board-area{max-width:560px;width:100%;margin:auto}.chess-piece>span{font-size:clamp(28px,7vw,55px)}}
 @media(max-width:620px){.chess-course-card{padding:17px;gap:13px}.chess-course-figure{min-width:90px;font-size:22px;letter-spacing:-2px;padding:24px 8px}.chess-course-card h3{font-size:18px}.chess-course-card p{font-size:11px}.lesson-explanation{padding:21px}.lesson-explanation h1{font-size:24px}.lesson-narration{font-size:16px;min-height:95px}.lesson-content{gap:14px}.lesson-board-area{padding:12px}.lesson-navigation button{padding:12px}.chess-piece>span{font-size:clamp(23px,7vw,48px)}}
 @media(prefers-reduced-motion:reduce){.chess-piece{transition-duration:0ms}.speaking-now{transition:none}}
+
+
+/* Cartoon 3D chess viewport — integrated with existing narrated lessons */
+.chess-view-controls{display:flex;flex-direction:column;gap:9px;margin-bottom:12px}
+.chess-view-switch,.chess-camera-controls{display:flex;flex-wrap:wrap;gap:7px}
+.chess-view-switch button,.chess-camera-controls button{border:1px solid #dcd4f5;background:#f5f1ff;color:#62539d;border-radius:11px;padding:9px 12px;font-size:12px;font-weight:900;min-height:39px}
+.chess-view-switch button.chess-view-selected{background:#6854d9;color:white;border-color:#6854d9}
+.chess-view-switch button:disabled{opacity:.5;cursor:not-allowed}
+.chess-camera-controls button{background:#fcfaff;font-size:11px}
+.chess-camera-controls button:hover:not(:disabled){background:#e7e0fb}
+.cartoon-3d-viewport{width:100%;aspect-ratio:1 / 1;min-height:315px;max-height:550px;overflow:hidden;background:radial-gradient(ellipse at 55% 40%,#f7efff,#e9e7fe);border:2px solid #ded4fa;border-radius:19px;position:relative}
+.cartoon-3d-viewport canvas{display:block;width:100%;height:100%;outline:none;cursor:grab}
+.cartoon-3d-viewport canvas:active{cursor:grabbing}
+.chess-loading{width:100%;aspect-ratio:1;display:grid;place-items:center;background:#f1ebff;border-radius:17px;color:#6654ba;font-size:13px;font-weight:900}
+.chess-3d-help{font-size:11px;color:#776b96;line-height:1.65;margin:11px 0}
+.chess-3d-warning{background:#fff4db;border:1px solid #eed194;color:#785b29;padding:11px;border-radius:11px;font-size:12px}
+@media(max-width:620px){.cartoon-3d-viewport{min-height:280px}.chess-view-switch button{font-size:11px;padding:8px}.chess-camera-controls button{font-size:10px}}
