@@ -1,9 +1,0 @@
-export type Subject="math"|"numbers"|"french"|"dutch";
-export type Answer={id:string;label:string};
-export type Question={id:string;subject:Subject;skill:string;prompt:string;hint?:string;answers:Answer[];correctAnswerId:string;explanation:string;emoji?:string};
-export type ContentPack={id:string;version:number;title:string;questions:Question[]};
-export type Progress={points:number;correct:number;attempted:number;streak:number;bestStreak:number;lastPlayed:string|null};
-export type Attempt={questionId:string;correct:boolean;answerId:string;date:string;packId:string};
-export type ManifestPack={id:string;version:number;url:string;sha256:string;minAppVersion?:string};
-export type ContentManifest={schemaVersion:1;packs:ManifestPack[]};
-export type Result={kind:"success"|"info"|"error";message:string};
