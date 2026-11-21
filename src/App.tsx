@@ -3,7 +3,7 @@ import { ArrowLeft,ArrowRight,BookOpen,ChevronRight,Download,Home,Medal,RefreshC
 import { builtinPacks } from "./data/builtin";
 import { getPacks,getProgress,saveAnswer,DEFAULT_PROGRESS } from "./lib/storage";
 import { checkAppUpdate,checkContentUpdates,findPackId } from "./lib/updates";
-import { getActivities,getActivityQuestions,baseActivities } from "./lib/activities";
+import { getActivityQuestions,baseActivities } from "./lib/activities";
 import type { Activity } from "./lib/activities";
 import type { ContentPack,Progress,Question,Result } from "./types";
 import ExercisePlay from "./components/ExercisePlay";
@@ -41,7 +41,6 @@ export default function App(){
  const level=Math.floor(progress.points/100)+1;
  const progressInLevel=progress.points%100;
  const allQuestions=useMemo(()=>packs.flatMap(p=>p.questions),[packs]);
- const activities=useMemo(()=>getActivities(packs),[packs]);
  const catalog=useMemo(()=>getCatalog(packs),[packs]);
  const currentCategory=CATEGORIES.find(cat=>cat.id===categoryId)??CATEGORIES[0];
  const categoryEntries=catalog.filter(entry=>entry.category===categoryId);
