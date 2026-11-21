@@ -57,3 +57,13 @@ Choix d'une matière -> filtrage des questions installées -> mélange des quest
 - Ressources construites à partir de primitives géométriques, **sans modèles 3D externes ni téléchargement réseau**. Three.js est empaqueté dans l'installateur et fonctionnera hors ligne.
 - L'interaction caméra 3D utilise la souris/le tactile. Pour la navigation par clavier entre les cases, préférer la vue 2D existante. Éviter d'imposer WebGL pour lancer KidQuest.
 - Les leçons animées restent intégrées dans l'installateur ; il n'existe pas encore de mise à jour distante automatique pour les nouvelles leçons.
+
+
+## Version 0.5.0 — catalogue par catégories et maths en néerlandais
+
+- \`src/lib/catalog.ts\` : quatre catégories affichées sur l'accueil : **Wiskunde**, Français, Nederlands et Échecs. Les packs sont organisés dynamiquement par catégorie (nouvelle métadonnée facultative \`category\`) ou par matière \`subject\`. Les cours animés et exercices sont distincts dans chaque catégorie. Il n'y a plus de liste exhaustive de missions à l'accueil.
+- \`src/App.tsx\` : navigation Accueil → Catégorie → Cours/Exercice, retour vers la catégorie, accès « Continuer mon aventure » conservé localement. L'enfant ne choisit pas la méthode de quiz.
+- \`src/data/builtin.ts\` : les vingt exercices intégrés de maths (calcul et nombres en lettres) sont entièrement en néerlandais belge. Les identifiants de questions et réponses correctes sont inchangés. Les nombres précédemment en français sont désormais écrits en néerlandais.
+- \`site/packs/tables-multiplication-1-10.json\` version 2 : 100 questions de multiplication en néerlandais (IDs et bonnes réponses conservés), distribuées automatiquement via le manifeste GitHub recalculé après fusion. Une compatibilité hors ligne traduit aussi les libellés de l'ancien pack v1 en attendant le téléchargement de la v2.
+- \`src/lib/exerciseLocale.ts\` et \`src/components/ExercisePlay.tsx\` : libellés et consignes néerlandais des dix modes, de la validation, de la lecture vocale et des retours dans les quiz de \`math\` et \`numbers\`. Les autres matières restent en français. La voix des questions de maths est définie sur \`nl-BE\`, selon les voix disponibles sur le PC.
+- \`ContentPack.category\` et \`ContentPack.locale\` sont des métadonnées **optionnelles** et rétrocompatibles ; validation d'énumération dans \`src/lib/updates.ts\`. Les points et données SQLite ne sont pas migrés ou effacés.
