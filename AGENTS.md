@@ -26,3 +26,25 @@ Tu travailles sur une application Windows 11 Tauri 2 / React 19 / TypeScript en 
 - Préserver accessibilité clavier, gros boutons, et messages encourageants.
 - Favoriser les Pull Requests et les tests CI avant fusion sur main.
 - Ne jamais ajouter de clés de signature aux sources ou logs.
+
+## Coordination multi-agents — obligatoire avant chaque modification
+
+Le dépôt GitHub **fait foi**, jamais la copie locale, un précédent chat ou une ancienne description du projet.
+
+1. Avant de proposer ou écrire du code, lire la branche `main` actuelle, `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/STATUS.md`, et les fichiers concernés.
+2. Inspecter les derniers commits, les Pull Requests ouvertes et les branches en cours. Identifier les modifications d'autres agents qui touchent aux mêmes fichiers ou interfaces.
+3. Faire une comparaison entre la version de travail et `origin/main` (par exemple `git fetch origin && git log --oneline -10 origin/main && git diff origin/main...HEAD`). Ne jamais supposer que le dépôt est resté dans l'état où on l'a laissé.
+4. Créer une branche dédiée depuis `main` à jour (`feat/*`, `fix/*`, `docs/*`). Ne pas écrire directement sur `main` ; travailler avec une Pull Request. Ne jamais forcer un push, ni écraser ou réinitialiser les changements d'un autre agent.
+5. Si les contrats, le schéma SQLite, la logique de points, les packs ou le mécanisme de mise à jour ont changé, examiner les impacts et adapter le plan avant de coder. Préserver autant que possible la rétrocompatibilité et les données existantes.
+6. Avant de fusionner, synchroniser à nouveau avec `main`, résoudre les conflits en comprenant les deux changements, lancer `npm run build`, `npm test` et vérifier la CI Windows. Confirmer les résultats réels, sans les inventer.
+7. Mettre à jour la documentation si une fonctionnalité, une interface, un workflow ou une limitation change. Expliquer dans la PR ce qui a changé, pourquoi, les tests effectués et les points restant ouverts.
+8. Ne jamais modifier ou déployer silencieusement une release déjà publiée sur le PC enfant. Ne jamais effacer SQLite ni les packs téléchargés lors d'une mise à jour.
+
+En cas de modifications simultanées, éviter les conflits : travailler dans des fichiers distincts si possible ; sinon coordonner via les Pull Requests et adapter le code à l'état GitHub le plus récent.
+
+## Architecture à respecter lors des extensions
+
+- Ajouter des **questions uniquement** ? Ajouter ou versionner un pack JSON dans `site/packs/` ; le workflow `.github/workflows/pages.yml` régénère `site/manifest.json` sur `main`. L'application lit `https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/manifest.json`.
+- Ajouter un **moteur de jeu ou une nouvelle fonctionnalité native** ? Modifier l'application, compiler un nouvel installateur et conserver les contrats de progression existants.
+- Mises à jour de l'application via Tauri Updater : **encore désactivées**, ne pas prétendre qu'elles fonctionnent tant que les clés, la signature et la release publique ne sont pas configurées et testées.
+- Garder l'interface « Académie ludique », adaptée à un enfant de 8 ans, et l'expérience entièrement utilisable hors ligne pour les packs installés.
