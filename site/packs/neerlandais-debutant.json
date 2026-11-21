@@ -1,0 +1,169 @@
+{
+  "id": "neerlandais-debutant",
+  "version": 1,
+  "title": "Les premiers mots néerlandais — bonus",
+  "questions": [
+    {
+      "id": "bonus-nl-01",
+      "subject": "dutch",
+      "skill": "animaux",
+      "prompt": "Comment dit-on « chat » en néerlandais ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "kat"
+        },
+        {
+          "id": "b",
+          "label": "hond"
+        },
+        {
+          "id": "c",
+          "label": "vis"
+        },
+        {
+          "id": "d",
+          "label": "vogel"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Kat = chat.",
+      "emoji": "🐱"
+    },
+    {
+      "id": "bonus-nl-02",
+      "subject": "dutch",
+      "skill": "animaux",
+      "prompt": "Que signifie « hond » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Oiseau"
+        },
+        {
+          "id": "b",
+          "label": "Chien"
+        },
+        {
+          "id": "c",
+          "label": "Poisson"
+        },
+        {
+          "id": "d",
+          "label": "Chat"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Hond = chien.",
+      "emoji": "🐶"
+    },
+    {
+      "id": "bonus-nl-03",
+      "subject": "dutch",
+      "skill": "nourriture",
+      "prompt": "Comment dire « pomme » en néerlandais ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "melk"
+        },
+        {
+          "id": "b",
+          "label": "water"
+        },
+        {
+          "id": "c",
+          "label": "appel"
+        },
+        {
+          "id": "d",
+          "label": "brood"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Appel = pomme.",
+      "emoji": "🍎"
+    },
+    {
+      "id": "bonus-nl-04",
+      "subject": "dutch",
+      "skill": "nourriture",
+      "prompt": "Que signifie « water » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Lait"
+        },
+        {
+          "id": "b",
+          "label": "Pain"
+        },
+        {
+          "id": "c",
+          "label": "Jus"
+        },
+        {
+          "id": "d",
+          "label": "Eau"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Water = eau.",
+      "emoji": "💧"
+    },
+    {
+      "id": "bonus-nl-05",
+      "subject": "dutch",
+      "skill": "salutations",
+      "prompt": "Comment dire « Bonjour » le matin ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Goedemorgen"
+        },
+        {
+          "id": "b",
+          "label": "Goedenavond"
+        },
+        {
+          "id": "c",
+          "label": "Welterusten"
+        },
+        {
+          "id": "d",
+          "label": "Dank je"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Goedemorgen = bonjour le matin.",
+      "emoji": "🌞"
+    },
+    {
+      "id": "bonus-nl-06",
+      "subject": "dutch",
+      "skill": "presentations",
+      "prompt": "Que signifie « Ik ben acht jaar » ?",
+      "answers": [
+        {
+          "id": "a",
+          "label": "Je suis à l'école"
+        },
+        {
+          "id": "b",
+          "label": "J'ai huit ans"
+        },
+        {
+          "id": "c",
+          "label": "J'habite ici"
+        },
+        {
+          "id": "d",
+          "label": "Je suis fatigué"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Ik ben acht jaar = J'ai huit ans.",
+      "emoji": "🎂"
+    }
+  ]
+}
