@@ -1,6 +1,6 @@
 import { readdir,readFile,writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-const base="https://simplifyforme.github.io/kidquest/";
+const base="https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/";
 const files=(await readdir("site/packs")).filter(x=>x.endsWith(".json")).sort();
 const packs=[];
 for(const file of files){

@@ -1,34 +1,35 @@
-name: Publish exercise packs
+name: Publish exercise catalog
 on:
   push:
     branches: [main]
     paths:
-      - 'site/**'
+      - 'site/packs/**'
       - 'scripts/generate-manifest.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: content-catalog
+  cancel-in-progress: true
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  catalog:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
         with:
-          enablement: true
-      - name: Generate content manifest and SHA-256 checksums
+          node-version: '22'
+      - name: Generate content manifest with SHA-256
         run: node scripts/generate-manifest.mjs
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish manifest into the public repository
+        run: |
+          git add site/manifest.json
+          if git diff --cached --quiet; then
+            echo "Content manifest already current"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(content): regenerate verified pack manifest"
+            git push origin HEAD:main
+          fi

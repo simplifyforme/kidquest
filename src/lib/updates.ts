@@ -4,7 +4,7 @@ import type { ContentManifest,ContentPack,Question,Result } from "../types";
 import { getPacks,installPack } from "./storage";
 
 // Content distribution repository to be created and enabled separately.
-const MANIFEST_URL="https://simplifyforme.github.io/kidquest/manifest.json";
+const MANIFEST_URL="https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/manifest.json";
 const APP_UPDATE_ENABLED=false; // Enable only AFTER adding the signed updater public key and a public release endpoint.
 
 export function isValidQuestion(q:unknown):q is Question{
