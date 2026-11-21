@@ -266,3 +266,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** nouveau pack `dieren-nl` version 1, sans migration SQLite ni perte d'historique ; première installation automatique une fois le manifeste multimédia publié et KidQuest 0.9.0 installé. Les versions antérieures ignorent le nouveau champ `activities`.
 - **Validation :** huit questions, choix corrects et sécurité des références multimédias vérifiés par tests ; compilation Windows à confirmer.
 - **Traçabilité :** même PR que l'architecture 0.9.0.
+
+### 2026-11-21 — 0.9.0 — Ajustement TypeScript après première validation CI des médias
+- **Type :** correction / validation.
+- **Pourquoi :** le premier workflow Windows a téléchargé correctement les huit photographies CC0, généré le manifeste des dossiers, puis TypeScript a détecté que le champ facultatif `bytes` n'était pas encore affiné comme nombre lors de la vérification de taille.
+- **Changements :** vérification explicite `typeof a.bytes === "number"` avant les bornes dans `src/lib/activityAssets.ts`.
+- **Fichiers principaux :** `src/lib/activityAssets.ts`.
+- **Données et compatibilité :** aucune migration ; mêmes images, SHA, formats et limites.
+- **Validation :** téléchargement de huit photos et génération du manifeste réussis ; première compilation TypeScript en échec (`TS18048`) corrigée ; nouveau workflow à contrôler.
+- **Traçabilité :** PR #19, workflow initial `44950765180`.
