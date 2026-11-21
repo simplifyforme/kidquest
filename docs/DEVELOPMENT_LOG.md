@@ -172,3 +172,14 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** modification documentaire, vérification GitHub du workflow de contrôle à confirmer après création de la PR.
 - **Traçabilité :** branche `docs/mandatory-development-log`, [PR #14](https://github.com/simplifyforme/kidquest/pull/14).
 - **Suite :** chaque agent doit ajouter **une nouvelle entrée à la fin de ce journal** dans **chaque** PR future ; ne jamais supprimer les entrées existantes.
+
+### 2026-11-21 — 0.6.1 — Accueil compact et quiz adaptés aux PC 13 pouces
+- **Type :** correction visuelle et ergonomie responsive.
+- **Pourquoi :** le bandeau violet « Prêt pour une nouvelle aventure ? » occupait environ 350 px à l'écran ; sur les PC portables de 13 pouces, notamment en 1366×768, les jeux de type associations et memory nécessitaient beaucoup trop de défilement pour voir les réponses.
+- **Changements :** réduction de la hauteur minimale de l'accueil de 297 à 168 px, diminution des espacements verticaux et de la mascotte ; adaptation du titre, des badges et des marges. Compactage des écrans quiz : navigation, progression, image de question, carte, réponse, association de 3 paires, memory, duel, saisie, réglette, feedback et bouton « suivant ». Règles spécifiques aux fenêtres dont la hauteur est inférieure ou égale à 850 px, et ajustements aux largeurs de 1050, 700 et 590 px.
+- **Fichiers principaux :** `src/styles.css`, `src/App.tsx` (libellé de version), `package.json`, `src-tauri/Cargo.toml`, `src-tauri/tauri.conf.json`.
+- **Décisions techniques :** correction CSS responsive sans modification du moteur de questions ; conserver les textes entiers et les choix cliquables ; aucun conteneur à hauteur fixe qui couperait les propositions, ni scroll imbriqué imposé ; conserver la vue mobile en une colonne pour les réponses.
+- **Données et compatibilité :** aucun changement du contenu JSON, des questions, des points ou de SQLite ; installation Windows 0.6.1 nécessaire pour voir la nouvelle interface. Les packs hors ligne existants restent compatibles.
+- **Validation :** vérifications TypeScript, tests unitaires et compilation Windows via CI de la Pull Request, puis essai visuel sur un écran 13 pouces/1366×768 à confirmer sur le PC de l'enfant.
+- **Traçabilité :** branche `fix/compact-13inch-responsive-0-6-1`, PR ajoutée à l'ouverture.
+- **Suite / points ouverts :** valider sur l'appareil cible la lisibilité des propositions longues et le comportement avec les paramètres d'agrandissement Windows.
