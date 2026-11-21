@@ -20,3 +20,11 @@
 
 ## Installation
 Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer réussi, puis télécharger l'artefact kidquest-windows-installer. Décompresser et ouvrir l'exécutable .exe NSIS. La base SQLite est locale et préservée lors des mises à jour normales.
+
+## Correctif 0.1.1 — lancement Windows
+
+- Signalement : installation réussie mais application ne démarre pas sur Windows 10 et 11.
+- Cause probable vérifiée dans le code : le plugin Rust Tauri Updater était enregistré dès le démarrage sans `plugins.updater.pubkey`. La configuration manquante peut provoquer un panic dans Tauri.
+- Correctif : retirer l'enregistrement du plugin updater tant qu'il n'est pas configuré, en conservant la mise à jour des packs JSON.
+- Ne pas réintroduire `.plugin(tauri_plugin_updater::Builder::new().build())` avant d'avoir créé la clé publique, les endpoints et des releases signées.
+- Il faudra tester le lancement effectif sur Windows et, si l'application ne démarre toujours pas, collecter un journal de crash.
