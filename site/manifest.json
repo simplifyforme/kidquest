@@ -21,9 +21,9 @@
     }
   ],
   "catalog": {
-    "version": 2,
+    "version": 3,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "5afb5eb76b33a04a639ea69184399fba2677fac97310ab5556ee040101cf03ec"
+    "sha256": "9f4d7b0bfd1df94d591424b05883bdc2a2325cf591e8d8d9658d1d65c4deab00"
   },
   "activities": [
     {
