@@ -1,5 +1,19 @@
 # KidQuest — Consignes aux futurs agents IA
 
+## RÈGLE PRIORITAIRE — journal de développement obligatoire pour CHAQUE modification
+
+**Avant toute intervention, lire `docs/DEVELOPMENT_LOG.md` en entier**, puis `docs/ARCHITECTURE.md`, `docs/STATUS.md`, les fichiers concernés et les PR/commits récents.
+
+**Pour chaque changement (fonctionnalité, correction, nouveau pack JSON, interface, SQL, test, workflow ou documentation), ajouter une NOUVELLE entrée datée à la FIN du journal `docs/DEVELOPMENT_LOG.md` dans la MÊME branche et la MÊME Pull Request.** Cette entrée précise : besoin, modifications, fichiers, décisions techniques, compatibilité, tests réellement exécutés, liens de traçabilité et limites. Même un changement mineur doit avoir son entrée. **Ne jamais effacer, réécrire, écraser, résumer ni remplacer les entrées antérieures** : préserver tout l'historique.
+
+Le workflow `.github/workflows/require-development-log.yml` **vérifie automatiquement** que chaque PR modifie ce fichier et ajoute une nouvelle entrée sans changer l'historique précédent. **Ne fusionner aucune PR qui échoue à ce contrôle.**
+
+**Exception :** la régénération automatique du seul `site/manifest.json` par GitHub Actions après fusion est documentée dans l'entrée du pack correspondant, sans entrée séparée pour le commit du bot.
+
+Les détails complets et le modèle d'entrée sont dans **[`docs/DEVELOPMENT_LOG.md`](docs/DEVELOPMENT_LOG.md)**.
+
+---
+
 Tu travailles sur une application Windows 11 Tauri 2 / React 19 / TypeScript en français, **offline-first**, pour un enfant d'environ 8 ans.
 
 ## Architecture obligatoire
