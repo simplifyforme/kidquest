@@ -5,6 +5,7 @@
 - `src/data/builtin.ts` : 4 packs intégrés et jouables hors ligne.
 - `src/types.ts` : contrats Question, ContentPack, Progress, Manifest.
 - `src/App.tsx` : UI React, missions, quiz, résultats, paramètres.
+- `src/lib/activities.ts` : génère les cartes de missions à partir des packs installés. Les quatre missions initiales restent visibles ; chaque nouveau pack distinct apparaît automatiquement comme une carte, avec des questions filtrées par pack.
 - `src/lib/storage.ts` : persistance SQLite (Tauri), localStorage (navigateur).
 - `src/lib/updates.ts` : lecture manifest HTTPS, validation SHA-256 et version, téléchargement et installation de packs, futur updater signé.
 - `src-tauri` : shell Windows Tauri et plugins.
