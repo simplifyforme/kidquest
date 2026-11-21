@@ -70,3 +70,12 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Les dix moteurs d'exercices sont désormais entièrement localisés en néerlandais lorsqu'ils présentent des questions mathématiques. Les matières français, néerlandais et échecs conservent leurs contenus.
 - Les packs existants restent compatibles ; les question IDs, les réponses valides et la progression SQLite sont conservés.
 - L'installation de KidQuest 0.5.0 est nécessaire pour la nouvelle organisation et l'interface mathématique localisée. La v2 des multiplications est téléchargée automatiquement après publication du manifeste.
+
+
+## Version 0.6.0 — statistiques d'apprentissage
+
+- Nombre de réalisations affiché pour chaque exercice et leçon dans leur catégorie.
+- Paramètres → Historique : chaque contenu a un panneau dépliable avec nombre de sessions, score maximal, moyenne, meilleur temps et liste de toutes les sessions (date, résultat, durée).
+- Début/fin mesurés pour chaque partie terminée, sur Windows dans la nouvelle table \`completed_sessions\`. Aucune partie abandonnée n'est comptabilisée.
+- Les points et anciennes tentatives ne changent pas ; les sessions antérieures à 0.6.0 n'ont pas de durée calculable et ne sont donc pas artificiellement ajoutées aux nouveaux compteurs.
+- Nouveau moteur d'historique compatible avec toutes les matières et les cours d'échecs 2D/3D.
