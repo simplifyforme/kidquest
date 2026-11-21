@@ -20,7 +20,7 @@ export function validActivityAsset(activityId:string,item:unknown):item is Activ
     typeof a.mime!=="string"||knownExtensions[a.file.split(".").pop()||""]!==a.mime||
     typeof a.url!=="string"||
     a.url!==repoBase+activityId+"/assets/"+a.file||
-    !Number.isSafeInteger(a.bytes)||a.bytes!<=0||a.bytes>maxAsset||
+    typeof a.bytes!=="number"||!Number.isSafeInteger(a.bytes)||a.bytes<=0||a.bytes>maxAsset||
     typeof a.sha256!=="string"||!/^[a-f0-9]{64}$/i.test(a.sha256))return false;
  return true;
 }
