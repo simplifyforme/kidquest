@@ -12,8 +12,8 @@ export type Activity = {
 };
 
 export const baseActivities: Activity[] = [
-  { subject: "math", packId: "mathematiques", title: "Défis maths", subtitle: "Calcule et deviens champion !", emoji: "🧮", className: "math", tag: "Calcul" },
-  { subject: "numbers", packId: "nombres", title: "Nombres magiques", subtitle: "Les nombres en toutes lettres", emoji: "🔢", className: "numbers", tag: "Écriture" },
+  { subject: "math", packId: "mathematiques", title: "Rekenavonturen", subtitle: "Reken en word een kampioen!", emoji: "🧮", className: "math", tag: "Rekenen" },
+  { subject: "numbers", packId: "nombres", title: "Getallen in woorden", subtitle: "Leer getallen schrijven", emoji: "🔢", className: "numbers", tag: "Getallen" },
   { subject: "french", packId: "francais", title: "Mots malins", subtitle: "Joue avec le français", emoji: "📚", className: "french", tag: "Français" },
   { subject: "dutch", packId: "neerlandais", title: "Hallo, vriend !", subtitle: "Découvre tes premiers mots", emoji: "🚀", className: "dutch", tag: "Néerlandais" }
 ];
@@ -46,11 +46,11 @@ export function getActivities(packs: ContentPack[]): Activity[] {
       return {
         subject,
         packId: pack.id,
-        title: pack.title,
-        subtitle: `${pack.questions.length} questions à découvrir`,
+        title: pack.id === "tables-multiplication-1-10" ? "Maaltafels van 1 tot 10" : pack.title,
+        subtitle: subject === "math" || subject === "numbers" ? `${pack.questions.length} oefeningen om te ontdekken` : `${pack.questions.length} questions à découvrir`,
         emoji: pack.id === "neerlandais-verbes-a1" ? "🗣️" : subjectEmojis[subject],
         className: subjectStyles[subject],
-        tag: "Nouveau pack"
+        tag: subject === "math" || subject === "numbers" ? "Oefeningen" : "Nouveau pack"
       };
     });
   return [...baseActivities, ...extra];
@@ -58,5 +58,14 @@ export function getActivities(packs: ContentPack[]): Activity[] {
 
 export function getActivityQuestions(packs: ContentPack[], activity: Activity): Question[] {
   const pack = packs.find(item => item.id === activity.packId);
-  return pack?.questions.filter(question => question.subject === activity.subject) ?? [];
+  if(!pack)return [];
+  return pack.questions.filter(question=>question.subject===activity.subject).map(question=>{
+    // A previously downloaded v1 pack can be cached while the Dutch v2 arrives.
+    // Preserve all IDs and answers offline.
+    if(pack.id==="tables-multiplication-1-10" && pack.version<2){
+      const match=/^Combien font (\d+) × (\d+) \?$/.exec(question.prompt);
+      if(match)return {...question,prompt:`Hoeveel is ${match[1]} × ${match[2]} ?`};
+    }
+    return question;
+  });
 }
