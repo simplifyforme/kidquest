@@ -9,6 +9,7 @@ type Props = {
   lesson: AnimatedLesson;
   onClose: () => void;
   onAttempt: (questionId: string, success: boolean) => Promise<void>;
+  onComplete: (correct: number, total: number) => Promise<void>;
 };
 
 type VoiceState = "idle" | "speaking" | "unavailable";
@@ -27,7 +28,7 @@ function chooseFrenchVoice(voices: SpeechSynthesisVoice[]): {voice:SpeechSynthes
   return {voice:male??french.find(v=>v.lang.toLowerCase()==="fr-be")??french[0]??null,male:!!male};
 }
 
-export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
+export default function AnimatedLessonPlayer({lesson,onClose,onAttempt,onComplete}:Props) {
   const [index,setIndex]=useState(0);
   const [boardMode,setBoardMode]=useState<"2d"|"3d">(()=>{try{return localStorage.getItem("kidquest.chess.view.v1")==="2d"?"2d":"3d"}catch{return "3d"}});
   const [cameraView,setCameraView]=useState<"angled"|"top">("angled");
@@ -42,6 +43,8 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
   const [wrong,setWrong]=useState(false);
   const [saving,setSaving]=useState(false);
   const [awarded,setAwarded]=useState(0);
+  const [finishedScenes,setFinishedScenes]=useState<Set<string>>(()=>new Set());
+  const [finishing,setFinishing]=useState(false);
   const [utteranceVersion,setUtteranceVersion]=useState(0);
   const [voiceAvailable,setVoiceAvailable]=useState(typeof window!=="undefined" && "speechSynthesis" in window);
   const versionRef=useRef(0);
@@ -97,9 +100,12 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
     if(!scene.challenge.validTargets.includes(square)){setWrong(true);return}
     setSaving(true);setAnswer(square);
     try{
-      const success=!wrong;
-      await onAttempt(lesson.id+":"+scene.id,success);
-      if(success)setAwarded(v=>v+1);
+      if(!finishedScenes.has(scene.id)){
+        const success=!wrong;
+        await onAttempt(lesson.id+":"+scene.id,success);
+        setFinishedScenes(previous=>new Set(previous).add(scene.id));
+        if(success)setAwarded(v=>v+1);
+      }
     }catch {
       // The child can still advance if persistent storage is temporarily unavailable.
       setVoiceWarning("La réponse est correcte, mais l'enregistrement des points a échoué.");
@@ -108,6 +114,12 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
   function advance(step:number){stopSpeaking();setIndex(i=>Math.max(0,Math.min(lesson.scenes.length-1,i+step)))}
   function replay(){setActionIndex(0);setPlaying(true)}
   const finished=index===lesson.scenes.length-1;
+  async function finishLesson(){
+    if(finishing)return;
+    setFinishing(true);
+    try{await onComplete(awarded,totalChallenges);stopSpeaking();onClose();}
+    catch{setVoiceWarning("Impossible d’enregistrer ce cours terminé. Réessaie.");setFinishing(false)}
+  }
   function changeBoardMode(mode:"2d"|"3d"){
     setBoardMode(mode);
     try{localStorage.setItem("kidquest.chess.view.v1",mode)}catch{/* storage optional */}
@@ -138,7 +150,7 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
           <div className="lesson-challenge">
             <h2>🎯 À toi de jouer !</h2>
             <p>{scene.challenge.prompt}</p>
-            {answer!==null?<p className="lesson-correct" role="status"><CheckCircle2 size={19}/> {scene.challenge.feedback} {wrong?"Tu as trouvé après un essai.":"⭐ +10 points !"}</p>
+            {answer!==null?<p className="lesson-correct" role="status"><CheckCircle2 size={19}/> {scene.challenge.feedback} {wrong||finishedScenes.has(scene.id)?"Tu as trouvé la bonne case.":"⭐ +10 points !"}</p>
               :wrong?<p className="lesson-try-again" role="status">Essaie une autre case. Regarde les cases éclairées !</p>
               :<p className="lesson-instruction">Clique sur la bonne case de l'échiquier.</p>}
           </div>:<div className="lesson-animation-controls">
@@ -149,7 +161,7 @@ export default function AnimatedLessonPlayer({lesson,onClose,onAttempt}:Props) {
         <div className="lesson-navigation">
           <button type="button" className="secondary" onClick={()=>advance(-1)} disabled={index===0}><ArrowLeft size={17}/> Précédent</button>
           {finished?
-            <button type="button" className="primary" onClick={()=>{stopSpeaking();onClose()}}>Terminer le cours 🎉</button>:
+            <button type="button" className="primary" disabled={finishing} onClick={()=>{void finishLesson()}}>{finishing?"Enregistrement…":"Terminer le cours 🎉"}</button>:
             <button type="button" className="primary" disabled={!!scene.challenge && answer===null} onClick={()=>advance(1)}>Suivant <ArrowRight size={17}/></button>}
         </div>
       </div>

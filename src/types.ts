@@ -7,3 +7,4 @@ export type Attempt={questionId:string;correct:boolean;answerId:string;date:stri
 export type ManifestPack={id:string;version:number;url:string;sha256:string;minAppVersion?:string};
 export type ContentManifest={schemaVersion:1;packs:ManifestPack[]};
 export type Result={kind:"success"|"info"|"error";message:string};
+export type CompletedSession={id:string;activityId:string;kind:"quiz"|"lesson";startedAt:string;completedAt:string;durationSeconds:number;correct:number;total:number};
