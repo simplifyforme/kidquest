@@ -64,3 +64,12 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Les réponses libres sont comparées après normalisation Unicode (casse, accents, ponctuation). Ne pas modifier silencieusement le contenu attendu d'une question.
 - Garder une seule tentative et une seule écriture SQLite par défi ; les puzzles de 3 paires ne comptent qu'une seule tentative et 10 points uniquement si tous les appariements réussissent sans erreur.
 - Chaque mode doit être utilisable au clavier, sans dépendre d'un serveur et avec retour visuel explicite.
+
+## Moteur de leçons animées (à partir de 0.3.0)
+
+- `src/lessons/chessTypes.ts` définit le schéma typé d'une leçon animée et les mouvements de pièces sur un plateau de 8×8. `src/lessons/chessBeginner.ts` est un premier cours complet autonome, sans réseau.
+- `src/components/AnimatedChessBoard.tsx` affiche le plateau avec mouvement CSS fluide, coordonnées et cases cliquables. `src/components/AnimatedLessonPlayer.tsx` gère les scènes, la narration et les défis.
+- Les diapositives, objets et actions sont **des données**. Réutiliser le modèle `AnimatedLesson` pour de futurs cours (mathématiques, formes, horloge) en construisant de nouveaux moteurs visuels sans modifier les exercices existants.
+- La synthèse vocale utilise le moteur local du système via Web Speech API, si disponible ; privilégier une voix française masculine si Windows en fournit une. Ne jamais annoncer qu'une voix masculine ou des événements de synchronisation mot par mot sont garantis sur tous les PC.
+- Les `speechSynthesis.onboundary` permettent le surlignage d'un mot à la fois quand le moteur les fournit. L'enfant peut rejouer la narration et les mouvements. Les tentatives d'exercices sont persistées dans la même table SQLite existante, **sans migration destructrice**.
+- Pour ajouter des leçons téléchargeables à distance à l'avenir : introduire un manifeste versionné et un validateur de schéma strict, sans code arbitraire dans les packs ; ne pas prétendre que cela est déjà disponible en 0.3.0.
