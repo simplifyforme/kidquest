@@ -20,18 +20,22 @@ export async function getProgress():Promise<Progress>{
  if(!isTauri()){
   try {const raw=localStorage.getItem(storageKey);return raw?{...DEFAULT_PROGRESS,...JSON.parse(raw)}:DEFAULT_PROGRESS;}catch{return DEFAULT_PROGRESS;}
  }
- const db=await database();const rows=await db.select<{json:string}[]>("SELECT json FROM progress WHERE id=1");
- return rows.length?{...DEFAULT_PROGRESS,...JSON.parse(rows[0].json)}:DEFAULT_PROGRESS;
+ const db=await database();
+ // The append-only attempt table is the source of truth: a single successful INSERT
+ // persists both an answer and its future points, without cross-IPC transactions.
+ const attempts=await db.select<{correct:number;date:string}[]>("SELECT correct,date FROM attempts ORDER BY id ASC");
+ let points=0,correct=0,streak=0,bestStreak=0,lastPlayed:string|null=null;
+ for(const attempt of attempts){
+  if(attempt.correct){points+=10;correct++;streak++;bestStreak=Math.max(bestStreak,streak)}
+  else streak=0;
+  lastPlayed=attempt.date;
+ }
+ return {points,correct,attempted:attempts.length,streak,bestStreak,lastPlayed};
 }
 export async function saveAnswer(progress:Progress, attempt:Attempt):Promise<void>{
  if(!isTauri()){localStorage.setItem(storageKey,JSON.stringify(progress));return;}
  const db=await database();
- await db.execute("BEGIN TRANSACTION");
- try{
-  await db.execute("INSERT INTO attempts (question_id,correct,answer_id,date,pack_id) VALUES ($1,$2,$3,$4,$5)",[attempt.questionId,attempt.correct?1:0,attempt.answerId,attempt.date,attempt.packId]);
-  await db.execute("INSERT INTO progress (id,json) VALUES (1,$1) ON CONFLICT(id) DO UPDATE SET json=excluded.json",[JSON.stringify(progress)]);
-  await db.execute("COMMIT");
- }catch(e){await db.execute("ROLLBACK");throw e}
+ await db.execute("INSERT INTO attempts (question_id,correct,answer_id,date,pack_id) VALUES ($1,$2,$3,$4,$5)",[attempt.questionId,attempt.correct?1:0,attempt.answerId,attempt.date,attempt.packId]);
 }
 export async function getPacks():Promise<ContentPack[]>{
  if(!isTauri()){
