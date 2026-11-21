@@ -21,8 +21,74 @@
     }
   ],
   "catalog": {
-    "version": 1,
+    "version": 2,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "67315f0b50aa8d9efc8b6ba2f35bdb22fadf716d5257a411ad8f67c7c20e6f66"
-  }
+    "sha256": "5afb5eb76b33a04a639ea69184399fba2677fac97310ab5556ee040101cf03ec"
+  },
+  "activities": [
+    {
+      "id": "dieren-nl",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/pack.json",
+      "sha256": "55a586e4c4ba8982819d2c0870706058a795fb0af21e314448d985f79ad2fb66",
+      "assets": [
+        {
+          "file": "hond.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/hond.jpg",
+          "sha256": "5294368cc1ae13d3c77468b5673c23394f8a999d632bbcbea764f4af8c038c53",
+          "bytes": 81374,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "kat.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/kat.jpg",
+          "sha256": "d7e4d3aece481b65b5dd7dc40afca9ce28b397b476a7bea1f143aa0d9963a360",
+          "bytes": 8450,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "koe.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/koe.jpg",
+          "sha256": "a418ca1607d94ef66301bcbc0e72eac3d165bd726be8f0d091015ad33011e442",
+          "bytes": 53331,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "konijn.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/konijn.jpg",
+          "sha256": "9bcac5a0f883411cca448b892116a4b9f2e7d908ebd2ecc832005645e4c98d2d",
+          "bytes": 127421,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "leeuw.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/leeuw.jpg",
+          "sha256": "460769e960703e9530f02f7c467ea5532be9b66ad413455cd1695a1fb4647013",
+          "bytes": 64331,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "olifant.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/olifant.jpg",
+          "sha256": "64e5036f0b446816a949780a748746967a7c9332cd6cff82c9feeeb0761c5cd8",
+          "bytes": 230440,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "paard.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/paard.jpg",
+          "sha256": "7e7bea02aa233dbf5b64dfe2e61f0f450756fcfcafd10c66e0fcfc586cd3897a",
+          "bytes": 28506,
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "schaap.jpg",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/dieren-nl/assets/schaap.jpg",
+          "sha256": "142e006ccbdaee261fc197ed3eca8f94abb05ff70d3cf4db6f8d0de72354892d",
+          "bytes": 59173,
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  ]
 }
