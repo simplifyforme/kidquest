@@ -18,7 +18,7 @@ export default function DutchNumbersPlay({onClose,onAttempt,onComplete,onRoundSt
  function start(items?:NumberQuestion[]){
   onRoundStart();
   setSession(items??makeDutchNumberSession(level,direction,count,practice));
-  setIndex(0);setCorrect(0);setStars(0);setMistakes([]);setScreen("play");
+  setIndex(0);setCorrect(0);setMistakes([]);setScreen("play");
   reset();
  }
  function reset(){setTyped("");setAnswered(false);setFailed(false);setHadHint(false);setFeedback("");setError("");setBusy(false);lock.current=false}
