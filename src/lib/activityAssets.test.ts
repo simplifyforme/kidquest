@@ -1,5 +1,7 @@
 import {describe,expect,it} from "vitest";
 import animals from "../../site/activities/dieren-nl/pack.json";
+import type {ContentPack} from "../types";
+const pack=animals as unknown as ContentPack;
 import {eligibleModes} from "./exerciseModes";
 import {isValidPack} from "./updates";
 import {validQuestionMedia,validActivityAsset,validateActivityAssets,activityMime} from "./activityAssets";
@@ -7,17 +9,17 @@ import {validQuestionMedia,validActivityAsset,validateActivityAssets,activityMim
 describe("self-contained educational activity bundles",()=>{
  it("contains eight complete animal photograph questions in Dutch",()=>{
   expect(isValidPack(animals)).toBe(true);
-  expect(animals.id).toBe("dieren-nl");
-  expect(animals.locale).toBe("nl-BE");
-  expect(animals.category).toBe("dutch");
-  expect(animals.questions).toHaveLength(8);
-  expect(new Set(animals.questions.map(q=>q.id)).size).toBe(8);
-  for(const q of animals.questions){
+  expect(pack.id).toBe("dieren-nl");
+  expect(pack.locale).toBe("nl-BE");
+  expect(pack.category).toBe("dutch");
+  expect(pack.questions).toHaveLength(8);
+  expect(new Set(pack.questions.map(q=>q.id)).size).toBe(8);
+  for(const q of pack.questions){
    expect(validQuestionMedia(q.media)).toBe(true);
    expect(q.answers).toHaveLength(4);
    expect(q.answers.some(a=>a.id===q.correctAnswerId)).toBe(true);
-   expect(q.media.file).toMatch(/^[a-z]+\.jpg$/);
-   expect(eligibleModes(q,animals.questions as never)).toEqual(["choice"]);
+   expect(q.media!.file).toMatch(/^[a-z]+\.jpg$/);
+   expect(eligibleModes(q,pack.questions)).toEqual(["choice"]);
   }
  });
  it("accepts safe image, gif, video and audio resources, but rejects scripts and traversal",()=>{
