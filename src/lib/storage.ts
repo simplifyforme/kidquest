@@ -35,7 +35,7 @@ export async function saveAnswer(progress:Progress, attempt:Attempt):Promise<voi
 }
 export async function getPacks():Promise<ContentPack[]>{
  if(!isTauri()){
-  try{return [...builtinPacks,...JSON.parse(localStorage.getItem("kidquest.packs.v1")||"[]")]}catch{return builtinPacks}
+  try{const downloaded=JSON.parse(localStorage.getItem("kidquest.packs.v1")||"[]") as ContentPack[];const ids=new Set(downloaded.map(p=>p.id));return [...builtinPacks.filter(p=>!ids.has(p.id)),...downloaded]}catch{return builtinPacks}
  }
  const db=await database();const rows=await db.select<{json:string}[]>("SELECT json FROM packs");
  const downloaded:ContentPack[]=rows.map(r=>JSON.parse(r.json));
