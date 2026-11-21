@@ -59,3 +59,12 @@ Voir [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md), [docs/ARCHITECTURE.md](docs/ARCHI
 ## Statut
 
 **MVP développé — compilation Windows/installation réelle à valider dans GitHub Actions.** Le workflow de compilation ne constitue pas une preuve qu'un .exe a déjà été construit.
+
+## Activités autonomes avec photos, GIF, vidéos et audio (0.9.0+)
+
+Pour **chaque nouvelle activité téléchargeable**, utiliser un dossier GitHub indépendant `site/activities/<id>/` contenant `pack.json` et `assets/`. KidQuest télécharge les ressources dont il a besoin et les conserve dans un dossier local propre à cette activité pour le jeu hors ligne.
+
+Le premier exemple est `site/activities/dieren-nl/`, un quiz de vocabulaire néerlandais avec des photographies d'animaux. Les futurs contenus compatibles arrivent par le manifeste GitHub **sans nouvel installateur** après l'installation initiale de 0.9.0. Les moteurs interactifs programmés restent intégrés à Windows et nécessitent encore une compilation.
+
+**Guide pour les prochains agents IA :** [Dossiers et ressources d'activité](docs/ACTIVITY_BUNDLES.md). Ajouter aussi une entrée datée à [l'historique permanent](docs/DEVELOPMENT_LOG.md) pour chaque changement.
+
