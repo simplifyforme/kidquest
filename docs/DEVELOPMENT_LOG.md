@@ -284,3 +284,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** aucun impact sur les anciens packs, les données SQLite ni le pack photographique.
 - **Validation :** nouvelle CI Windows à confirmer après cette correction.
 - **Traçabilité :** PR #19.
+
+### 2026-11-21 — 0.9.0 — Localisation complète du nouveau quiz animalier néerlandais
+- **Type :** adaptation de l'interface pédagogique.
+- **Pourquoi :** les questions et réponses du pack « Dieren » étaient déjà en néerlandais, mais certains libellés génériques de navigation et de résultats demeuraient français lorsque la matière n'était pas Wiskunde.
+- **Changements :** l'interface des quiz utilise maintenant la langue `nl-BE` indiquée par le pack pour les titres de questions, points, feedback, boutons et résultats ; le retour mène à Nederlands pour ce pack.
+- **Fichiers principaux :** `src/App.tsx`.
+- **Données et compatibilité :** aucune modification des questions ni du stockage ; les autres activités en français restent inchangées.
+- **Validation :** nouvelle compilation TypeScript et tests Windows à confirmer.
+- **Traçabilité :** PR #19.
