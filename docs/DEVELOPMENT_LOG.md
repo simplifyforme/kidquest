@@ -302,3 +302,14 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Données et compatibilité :** aucune modification des données ni du moteur de mise à jour.
 - **Validation :** deuxième CI : génération média et build TypeScript réussis, 52 tests sur 54 validés, deux échecs de numérotation détectés et corrigés ; nouveau workflow à confirmer.
 - **Traçabilité :** PR #19, workflow `44950982832`.
+
+### 2026-11-22 — Contenu uniquement — Groenten en fruit herkennen
+- **Type :** contenu pédagogique.
+- **Pourquoi :** apprendre à reconnaître et à nommer les fruits et légumes en néerlandais belge.
+- **Changements :** huit QCM illustrés, avec quatre fruits et quatre légumes au sens culinaire. Chaque réponse indique le nom avec son article.
+- **Fichiers principaux :** `site/activities/groenten-fruit-nl/pack.json`, `README.md` et `assets/*.jpg` dans le dossier de l’activité.
+- **Décisions techniques :** huit images générées pour KidQuest avec OpenAI ImageGen, recadrées et livrées en JPEG. Le moteur de quiz photo classe l’activité dans Nederlands à partir du pack.
+- **Données et compatibilité :** pack v1 avec identifiants stables, téléchargeable sur KidQuest 0.9.0 et utilisable hors ligne après installation du contenu.
+- **Validation :** compilation et 54 tests réussis en local. Génération du manifeste, correspondance des huit JPEG et empreintes SHA-256 vérifiées localement.
+- **Traçabilité :** branche `feat/groenten-en-fruit-nl`. Le workflow de publication reconstruit le manifeste après fusion.
+- **Suite :** vérifier la CI et le téléchargement dans KidQuest sur Windows.
