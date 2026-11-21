@@ -26,6 +26,8 @@ jobs:
           workspaces: src-tauri -> target
       - name: Install dependencies
         run: npm install
+      - name: Download public-domain educational media for bundle validation
+        run: node scripts/sync-activity-media.mjs
       - name: Validate and regenerate content + catalog manifest
         run: node scripts/generate-manifest.mjs
       - name: Typecheck and build frontend
