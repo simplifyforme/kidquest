@@ -37,6 +37,11 @@ describe("Animated chess beginner curriculum", () => {
     }
     expect(challenges.find(s=>s.id==="knight-test")!.challenge!.validTargets).toEqual(["e6"]);
   });
+  it("promotes a pawn to a queen on the final rank", () => {
+    const scene=chessBeginnerLesson.scenes.find(s=>s.id==="promotion")!;
+    const final=playActions(scene.pieces,scene.actions);
+    expect(final[0]).toMatchObject({square:"a8",kind:"Q"});
+  });
   it("demonstrates castling with both rook and king moving", () => {
     const castle=chessBeginnerLesson.scenes.find(s=>s.id==="castle")!;
     const end=playActions(castle.pieces,castle.actions);
