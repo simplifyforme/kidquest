@@ -125,3 +125,9 @@ Le client `src/lib/updates.ts` valide les chemins, types, taille, version, ident
 ## 0.9.1 — Réponses illustrées au clavier et en lettres
 
 `Question.responseMode?: "choice" | "write" | "letters"` est une donnée facultative validée uniquement pour `media.type=image`. `eligibleModes` applique ce choix explicite aux images ; aucun changement de rendu n’est nécessaire puisque `QuestionMedia` reste dans le parent pendant tous les modes. Les anciens packs photo restent en QCM. Les images ne sont pas reprises dans les associations/memory. La persistance des essais et sessions reste la même, sans migration. La première installation 0.9.1 est nécessaire pour ces modes ; 0.9.0 reste capable de télécharger le pack mais l’affiche en QCM.
+
+## 0.10.0 — Aventures natives inspirées des modèles HTML
+
+`docs/CHILD_FRIENDLY_ACTIVITIES.md` décrit les mécaniques et les limites. `BodyAdventurePlay.tsx` utilise les données séparées de `bodyAdventure.ts` et 24 PNG intégrés par Vite. `getCatalog` remplace la carte quiz `lichaamsdelen-nl` par une seule carte interactive sous le même ID et disponible hors ligne ; App reconnaît son ancien raccourci. Les JSON publiés demeurent inchangés pour les anciens clients.
+
+`VerbPlay` et `verbData` conservent les 37 questions initiales et ajoutent formes, prédicat, grand défi équilibré, mots cliquables en phrase, cinq astuces courtes et rejouages. Les IDs des questions restent attachés aux données lorsqu’on les mélange. `createAdventureRecorder` coalesce les écritures concurrentes par défi et par fin de manche, garde les réussites enregistrées, puis libère les clés après erreur pour permettre une reprise. Aucun changement SQL. Une installation 0.10.0 est nécessaire ; le catalogue v10 ne télécharge aucun code.

@@ -158,3 +158,11 @@ En cas de modifications simultanées, éviter les conflits : travailler dans des
 - Le premier exemple est `site/activities/dieren-nl` : huit photographies animalières CC0, et huit questions néerlandaises `subject: "dutch"`. Les références et licences sont consignées dans `photo-sources.json`, les photographies sont copiées et publiées dans `assets/` par le workflow.
 - **Augmenter la version** de `pack.json` pour modifier les questions ou les fichiers ; préserver les IDs de questions et le statut Visible/Masqué. Tout nouveau contenu est visible par défaut. Pour un nouveau moteur interactif React/Rust, une mise à jour de l'application reste nécessaire.
 - Toute modification d'activité ou de schéma doit être documentée dans la même PR en ajoutant à la fin de `docs/DEVELOPMENT_LOG.md` une entrée datée, sans toucher aux entrées précédentes.
+
+## Aventures adaptées aux débutants — 0.10.0
+
+Pour les prochaines activités, suivre `docs/CHILD_FRIENDLY_ACTIVITIES.md` et les deux modèles pédagogiques fournis par le parent : découverte avant les défis, actions concrètes, consignes courtes, indices, nouveaux essais, manches courtes et révision des difficultés. Les aventures natives permettent de choisir leurs missions ; les quiz JSON conservent le choix automatique des modes.
+
+Le corps humain utilise maintenant le moteur natif `BodyAdventurePlay` sous le même ID `lichaamsdelen-nl` et avec des images embarquées. Ne pas recréer une deuxième carte sous cet ID ni perdre le raccourci legacy `quiz:lichaamsdelen-nl`. Les 120 questions JSON restent compatibles avec les anciens clients. Le vocabulaire natif est dans `src/games/bodyAdventure.ts` ; une extension de cette liste nécessite un build.
+
+La chasse aux verbes conserve ses quatre missions et 37 questions initiales ; les formes, le prédicat et le grand défi sont ajoutés. Préserver les identifiants stables attachés aux questions, même lorsqu’un rejouage les mélange. Les écritures de score et de session utilisent `createAdventureRecorder` pour éviter les doublons et permettre de réessayer après un échec de stockage.

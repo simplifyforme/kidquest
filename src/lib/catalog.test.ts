@@ -15,7 +15,7 @@ describe("category-first catalog and Dutch maths",()=>{
   const catalog=getCatalog(builtinPacks);
   expect(countCategory(catalog,"math")).toBe(3);
   expect(countCategory(catalog,"french")).toBe(2);
-  expect(countCategory(catalog,"dutch")).toBe(2);
+  expect(countCategory(catalog,"dutch")).toBe(3);
   expect(countCategory(catalog,"chess")).toBe(1);
   expect(catalog.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(catalog.find(e=>e.category==="chess")?.kind).toBe("lesson");
@@ -31,7 +31,7 @@ describe("category-first catalog and Dutch maths",()=>{
   expect(catalog.map(c=>c.id)).toEqual([
    "mathematiques","nombres","francais","neerlandais",
    "tables-multiplication-1-10","chess-beginner",
-   "plant-playground","dutch-numbers-1000","french-verb-hunt"
+   "plant-playground","dutch-numbers-1000","french-verb-hunt","lichaamsdelen-nl"
   ]);
  });
  it("routes downloaded legacy nature content to Nederlands without changing its identifiers",()=>{

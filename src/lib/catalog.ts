@@ -8,7 +8,7 @@ export type CatalogEntry=
  | {kind:"quiz";id:string;category:CategoryId;title:string;subtitle:string;emoji:string;activity:Activity}
  | {kind:"lesson";id:string;category:CategoryId;title:string;subtitle:string;emoji:string}
  | {kind:"interactive";id:ImportedGameId;category:CategoryId;title:string;subtitle:string;emoji:string};
-export type ImportedGameId="plant-playground"|"dutch-numbers-1000"|"french-verb-hunt";
+export type ImportedGameId="plant-playground"|"dutch-numbers-1000"|"french-verb-hunt"|"lichaamsdelen-nl";
 export type CategoryInfo={id:CategoryId;title:string;emoji:string;subtitle:string;colorClass:string;language:"nl-BE"|"fr-BE"};
 
 export const CATEGORIES:CategoryInfo[]=[
@@ -31,7 +31,7 @@ export function getCategoryForActivity(activity:Activity,packs:ContentPack[]):Ca
 
 /** Data driven. Every new pack automatically appears under its subject/category. */
 export function getCatalog(packs:ContentPack[],remote:RemoteCatalog|null=null):CatalogEntry[]{
- const quizEntries:CatalogEntry[]=getActivities(packs).map(a=>({
+ const quizEntries:CatalogEntry[]=getActivities(packs).filter(a=>a.packId!=="lichaamsdelen-nl").map(a=>({
    kind:"quiz" as const,id:a.packId,category:getCategoryForActivity(a,packs),
    title:a.title,subtitle:a.subtitle,emoji:a.emoji,activity:a
  }));
@@ -41,7 +41,8 @@ export function getCatalog(packs:ContentPack[],remote:RemoteCatalog|null=null):C
  },
  {kind:"interactive",id:"plant-playground",category:"dutch",title:"De plant · Speeltuin",subtitle:"6 spellen: plantendelen, groei en woorden",emoji:"🌱"},
  {kind:"interactive",id:"dutch-numbers-1000",category:"math",title:"Getallenheld · 0 tot 1000",subtitle:"Schrijf getallen en oefen lastige woorden",emoji:"⭐"},
- {kind:"interactive",id:"french-verb-hunt",category:"french",title:"La chasse aux verbes",subtitle:"4 missions : repérer, retrouver et classer",emoji:"🔎"}
+ {kind:"interactive",id:"french-verb-hunt",category:"french",title:"La chasse aux verbes",subtitle:"Astuces, mots à toucher, infinitif, groupes et prédicat",emoji:"🔎"},
+ {kind:"interactive",id:"lichaamsdelen-nl",category:"dutch",title:"Mission corps humain · Aventure",subtitle:"24 mots · écouter, écrire et memory illustré",emoji:"🧍"}
  ];
  if(!remote)return entries;
  const overrides=new Map(remote.activities.map(a=>[a.id,a]));

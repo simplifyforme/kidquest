@@ -119,3 +119,10 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - « Mijn lichaam · Kijk, schrijf en speel! » v2 : 24 illustrations ciblées, noms français très courts, 72 défis (QCM, saisie, lettres) dans Nederlands — École.
 - Installer 0.9.1 une fois pour conserver l’image pendant l’écriture et les lettres ; la v2 du contenu s’obtient par « Vérifier les mises à jour ». Les anciens 0.9.0 gardent les QCM visuels.
 - Les autres quiz photo, points, historiques et préférences restent compatibles. Updater binaire signé toujours désactivé.
+
+## Version 0.10.0 — Aventures débutant inspirées des HTML fournis
+
+- Même carte Corps humain, maintenant un atelier natif : découverte avec écoute, choix, écriture, mots troués, lettres, memory image–mot et grand défi. 24 mots sans articles, images embarquées dès l’installation, essais et révision.
+- La chasse aux verbes : cinq astuces courtes, sept missions, 53 questions distinctes avec formes et prédicats, mots directement cliquables et grand défi de dix questions. Les 37 questions et quatre missions initiales sont conservées.
+- Installer **0.10.0 une fois**, puis récupérer le catalogue v10. Même progression, historique et masquage. Les clients anciens gardent leurs quiz ; l’updater binaire signé reste désactivé.
+- Compilation et tests locaux réussis ; validation graphique sur le vrai PC de l’enfant encore nécessaire.

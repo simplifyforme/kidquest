@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 9,
+  "version": 10,
   "categories": [
     {
       "id": "math",
@@ -82,7 +82,8 @@
       "id": "french-verb-hunt",
       "category": "french",
       "order": 80,
-      "emoji": "🔎"
+      "emoji": "🔎",
+      "subtitle": "7 missions · verbes, infinitif, groupes et prédicat"
     },
     {
       "id": "dieren-nl",
@@ -140,8 +141,8 @@
     {
       "id": "lichaamsdelen-nl",
       "category": "dutch",
-      "title": "Mijn lichaam · Kijk, schrijf en speel!",
-      "subtitle": "120 uitdagingen · beelden, woorden en geheugenspelletjes",
+      "title": "Mission corps humain · Aventure",
+      "subtitle": "24 mots · découvrir, écouter, écrire et memory",
       "emoji": "🧍",
       "order": 61
     },

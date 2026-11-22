@@ -22,7 +22,7 @@ describe("downloadable school Dutch body parts", () => {
   expect(isValidPack(pack)).toBe(true);
   expect(pack.locale).toBe("nl-BE");
   expect(getCatalog([pack], catalog as RemoteCatalog).find(e => e.id === pack.id))
-   .toMatchObject({category:"dutch", kind:"quiz", emoji:"🧍"});
+   .toMatchObject({category:"dutch", kind:"interactive", emoji:"🧍"});
  });
 
  it("covers precisely the 24 requested words without articles in three illustrated challenges", () => {
