@@ -13,7 +13,7 @@ const APP_UPDATE_ENABLED=false; // Enable only AFTER adding the signed updater p
 export function isValidQuestion(q:unknown):q is Question{
  if(!q||typeof q!=="object")return false;
  const x=q as Partial<Question>;
- return typeof x.id==="string"&&x.id.length<120&&typeof x.subject==="string"&&["math","numbers","french","dutch"].includes(x.subject)&&typeof x.prompt==="string"&&x.prompt.length<=500&&typeof x.correctAnswerId==="string"&&Array.isArray(x.answers)&&x.answers.length>=2&&x.answers.length<=6&&x.answers.every(a=>typeof a.id==="string"&&typeof a.label==="string"&&a.label.length<=200)&&x.answers.some(a=>a.id===x.correctAnswerId)&&typeof x.explanation==="string"&&(x.media===undefined||validQuestionMedia(x.media));
+ return typeof x.id==="string"&&x.id.length<120&&typeof x.subject==="string"&&["math","numbers","french","dutch"].includes(x.subject)&&typeof x.prompt==="string"&&x.prompt.length<=500&&typeof x.correctAnswerId==="string"&&Array.isArray(x.answers)&&x.answers.length>=2&&x.answers.length<=6&&x.answers.every(a=>typeof a.id==="string"&&typeof a.label==="string"&&a.label.length<=200)&&x.answers.some(a=>a.id===x.correctAnswerId)&&typeof x.explanation==="string"&&(x.media===undefined||validQuestionMedia(x.media))&&(x.promptLocale===undefined||["fr-BE","nl-BE"].includes(x.promptLocale))&&(x.responseMode===undefined||(["choice","write","letters"].includes(x.responseMode)&&x.media?.type==="image"));
 }
 export function isValidPack(p:unknown):p is ContentPack{
  if(!p||typeof p!=="object")return false;

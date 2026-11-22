@@ -121,3 +121,7 @@ Le client `src/lib/updates.ts` valide les chemins, types, taille, version, ident
 `src/components/QuestionMedia.tsx` lit les fichiers locaux et crée une URL Blob temporaire pour afficher une image, GIF animé, vidéo ou audio, sans accès réseau. `src/lib/exerciseModes.ts` force temporairement le mode QCM pour les questions possédant un média, afin que la photographie ne soit pas perdue dans un moteur de lettres/memory. Les identifiants de réponses, les points, les sessions et la visibilité parentale restent inchangés.
 
 **Limitation** : le système télécharge du contenu et des médias, mais ne peut pas introduire arbitrairement du code ou un nouveau moteur. L'installation unique de KidQuest 0.9.0 ajoute le support de média ; les futurs dossiers d'activités adaptés aux moteurs présents pourront ensuite être publiés par GitHub sans nouvelle installation.
+
+## 0.9.1 — Réponses illustrées au clavier et en lettres
+
+`Question.responseMode?: "choice" | "write" | "letters"` est une donnée facultative validée uniquement pour `media.type=image`. `eligibleModes` applique ce choix explicite aux images ; aucun changement de rendu n’est nécessaire puisque `QuestionMedia` reste dans le parent pendant tous les modes. Les anciens packs photo restent en QCM. Les images ne sont pas reprises dans les associations/memory. La persistance des essais et sessions reste la même, sans migration. La première installation 0.9.1 est nécessaire pour ces modes ; 0.9.0 reste capable de télécharger le pack mais l’affiche en QCM.

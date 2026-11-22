@@ -217,6 +217,6 @@ export default function ExercisePlay({ question, pool, mode, locale="fr-BE", loc
         onClick={()=>onAnswer(range===Number(expected),"range:"+range)}><Check size={17}/> {copy.validate} {range}</button>
     </div>}
 
-    {mode === "write" && question.subject==="dutch" && <button type="button" className="listen-btn" onClick={()=>speak(question.prompt,true)}><Volume2 size={17}/> {copy.listenQuestion}</button>}
+    {mode === "write" && question.subject==="dutch" && <button type="button" className="listen-btn" onClick={()=>speak(question.prompt,question.promptLocale!=="fr-BE")}><Volume2 size={17}/> {copy.listenQuestion}</button>}
   </section>;
 }
