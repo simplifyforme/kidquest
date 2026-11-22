@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 8,
+  "version": 9,
   "categories": [
     {
       "id": "math",
@@ -141,7 +141,7 @@
       "id": "lichaamsdelen-nl",
       "category": "dutch",
       "title": "Mijn lichaam · Kijk, schrijf en speel!",
-      "subtitle": "24 beelden · kiezen, schrijven en letterpuzzels",
+      "subtitle": "120 uitdagingen · beelden, woorden en geheugenspelletjes",
       "emoji": "🧍",
       "order": 61
     },

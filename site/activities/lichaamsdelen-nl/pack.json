@@ -1,6 +1,6 @@
 {
   "id": "lichaamsdelen-nl",
-  "version": 2,
+  "version": 3,
   "title": "Mijn lichaam · Kijk, schrijf en speel!",
   "category": "dutch",
   "locale": "nl-BE",
@@ -13,23 +13,23 @@
       "answers": [
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         }
       ],
       "correctAnswerId": "voet",
-      "explanation": "de voet = le pied. 🌟",
+      "explanation": "voet = pied. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -47,23 +47,23 @@
       "answers": [
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         }
       ],
       "correctAnswerId": "voet",
-      "explanation": "de voet = le pied. 🌟",
+      "explanation": "voet = pied. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -81,23 +81,23 @@
       "answers": [
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         }
       ],
       "correctAnswerId": "voet",
-      "explanation": "de voet = le pied. 🌟",
+      "explanation": "voet = pied. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -115,23 +115,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "teen",
-      "explanation": "de teen = l’orteil. 🌟",
+      "explanation": "teen = orteil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -149,23 +149,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "teen",
-      "explanation": "de teen = l’orteil. 🌟",
+      "explanation": "teen = orteil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -183,23 +183,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "teen",
-      "explanation": "de teen = l’orteil. 🌟",
+      "explanation": "teen = orteil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -217,23 +217,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         }
       ],
       "correctAnswerId": "knie",
-      "explanation": "de knie = le genou. 🌟",
+      "explanation": "knie = genou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -251,23 +251,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         }
       ],
       "correctAnswerId": "knie",
-      "explanation": "de knie = le genou. 🌟",
+      "explanation": "knie = genou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -285,23 +285,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         }
       ],
       "correctAnswerId": "knie",
-      "explanation": "de knie = le genou. 🌟",
+      "explanation": "knie = genou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -319,23 +319,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         }
       ],
       "correctAnswerId": "been",
-      "explanation": "het been = la jambe. 🌟",
+      "explanation": "been = jambe. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -353,23 +353,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         }
       ],
       "correctAnswerId": "been",
-      "explanation": "het been = la jambe. 🌟",
+      "explanation": "been = jambe. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -387,23 +387,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         }
       ],
       "correctAnswerId": "been",
-      "explanation": "het been = la jambe. 🌟",
+      "explanation": "been = jambe. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -421,23 +421,23 @@
       "answers": [
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         }
       ],
       "correctAnswerId": "enkel",
-      "explanation": "de enkel = la cheville. 🌟",
+      "explanation": "enkel = cheville. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -455,23 +455,23 @@
       "answers": [
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         }
       ],
       "correctAnswerId": "enkel",
-      "explanation": "de enkel = la cheville. 🌟",
+      "explanation": "enkel = cheville. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -489,23 +489,23 @@
       "answers": [
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         }
       ],
       "correctAnswerId": "enkel",
-      "explanation": "de enkel = la cheville. 🌟",
+      "explanation": "enkel = cheville. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -523,23 +523,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "heup",
-      "explanation": "de heup = la hanche. 🌟",
+      "explanation": "heup = hanche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -557,23 +557,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "heup",
-      "explanation": "de heup = la hanche. 🌟",
+      "explanation": "heup = hanche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -591,23 +591,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "heup",
-      "explanation": "de heup = la hanche. 🌟",
+      "explanation": "heup = hanche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -625,23 +625,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         }
       ],
       "correctAnswerId": "haar",
-      "explanation": "het haar = les cheveux. 🌟",
+      "explanation": "haar = cheveux. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -659,23 +659,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         }
       ],
       "correctAnswerId": "haar",
-      "explanation": "het haar = les cheveux. 🌟",
+      "explanation": "haar = cheveux. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -693,23 +693,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         }
       ],
       "correctAnswerId": "haar",
-      "explanation": "het haar = les cheveux. 🌟",
+      "explanation": "haar = cheveux. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -727,23 +727,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "hand",
-      "explanation": "de hand = la main. 🌟",
+      "explanation": "hand = main. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -761,23 +761,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "hand",
-      "explanation": "de hand = la main. 🌟",
+      "explanation": "hand = main. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -795,23 +795,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "voet",
-          "label": "de voet"
+          "label": "voet"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "hand",
-      "explanation": "de hand = la main. 🌟",
+      "explanation": "hand = main. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -829,23 +829,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         }
       ],
       "correctAnswerId": "vinger",
-      "explanation": "de vinger = le doigt. 🌟",
+      "explanation": "vinger = doigt. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -863,23 +863,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         }
       ],
       "correctAnswerId": "vinger",
-      "explanation": "de vinger = le doigt. 🌟",
+      "explanation": "vinger = doigt. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -897,23 +897,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         }
       ],
       "correctAnswerId": "vinger",
-      "explanation": "de vinger = le doigt. 🌟",
+      "explanation": "vinger = doigt. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -931,23 +931,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         }
       ],
       "correctAnswerId": "duim",
-      "explanation": "de duim = le pouce. 🌟",
+      "explanation": "duim = pouce. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -965,23 +965,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         }
       ],
       "correctAnswerId": "duim",
-      "explanation": "de duim = le pouce. 🌟",
+      "explanation": "duim = pouce. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -999,23 +999,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "duim",
-          "label": "de duim"
+          "label": "duim"
         }
       ],
       "correctAnswerId": "duim",
-      "explanation": "de duim = le pouce. 🌟",
+      "explanation": "duim = pouce. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1033,23 +1033,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         }
       ],
       "correctAnswerId": "elleboog",
-      "explanation": "de elleboog = le coude. 🌟",
+      "explanation": "elleboog = coude. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1067,23 +1067,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         }
       ],
       "correctAnswerId": "elleboog",
-      "explanation": "de elleboog = le coude. 🌟",
+      "explanation": "elleboog = coude. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1101,23 +1101,23 @@
       "answers": [
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "enkel",
-          "label": "de enkel"
+          "label": "enkel"
         },
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "knie",
-          "label": "de knie"
+          "label": "knie"
         }
       ],
       "correctAnswerId": "elleboog",
-      "explanation": "de elleboog = le coude. 🌟",
+      "explanation": "elleboog = coude. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1135,23 +1135,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "rug",
-      "explanation": "de rug = le dos. 🌟",
+      "explanation": "rug = dos. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1169,23 +1169,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "rug",
-      "explanation": "de rug = le dos. 🌟",
+      "explanation": "rug = dos. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1203,23 +1203,23 @@
       "answers": [
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "rug",
-      "explanation": "de rug = le dos. 🌟",
+      "explanation": "rug = dos. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1237,23 +1237,23 @@
       "answers": [
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "borst",
-      "explanation": "de borst = la poitrine. 🌟",
+      "explanation": "borst = poitrine. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1271,23 +1271,23 @@
       "answers": [
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "borst",
-      "explanation": "de borst = la poitrine. 🌟",
+      "explanation": "borst = poitrine. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1305,23 +1305,23 @@
       "answers": [
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "rug",
-          "label": "de rug"
+          "label": "rug"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "borst",
-      "explanation": "de borst = la poitrine. 🌟",
+      "explanation": "borst = poitrine. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1339,23 +1339,23 @@
       "answers": [
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "arm",
-      "explanation": "de arm = le bras. 🌟",
+      "explanation": "arm = bras. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1373,23 +1373,23 @@
       "answers": [
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "arm",
-      "explanation": "de arm = le bras. 🌟",
+      "explanation": "arm = bras. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1407,23 +1407,23 @@
       "answers": [
         {
           "id": "been",
-          "label": "het been"
+          "label": "been"
         },
         {
           "id": "hand",
-          "label": "de hand"
+          "label": "hand"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "arm",
-          "label": "de arm"
+          "label": "arm"
         }
       ],
       "correctAnswerId": "arm",
-      "explanation": "de arm = le bras. 🌟",
+      "explanation": "arm = bras. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1441,23 +1441,23 @@
       "answers": [
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "schouder",
-      "explanation": "de schouder = l’épaule. 🌟",
+      "explanation": "schouder = épaule. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1475,23 +1475,23 @@
       "answers": [
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "schouder",
-      "explanation": "de schouder = l’épaule. 🌟",
+      "explanation": "schouder = épaule. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1509,23 +1509,23 @@
       "answers": [
         {
           "id": "elleboog",
-          "label": "de elleboog"
+          "label": "elleboog"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "heup",
-          "label": "de heup"
+          "label": "heup"
         }
       ],
       "correctAnswerId": "schouder",
-      "explanation": "de schouder = l’épaule. 🌟",
+      "explanation": "schouder = épaule. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1543,23 +1543,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         }
       ],
       "correctAnswerId": "hals",
-      "explanation": "de hals = le cou. 🌟",
+      "explanation": "hals = cou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1577,23 +1577,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         }
       ],
       "correctAnswerId": "hals",
-      "explanation": "de hals = le cou. 🌟",
+      "explanation": "hals = cou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1611,23 +1611,23 @@
       "answers": [
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "schouder",
-          "label": "de schouder"
+          "label": "schouder"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         }
       ],
       "correctAnswerId": "hals",
-      "explanation": "de hals = le cou. 🌟",
+      "explanation": "hals = cou. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1645,23 +1645,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         }
       ],
       "correctAnswerId": "mond",
-      "explanation": "de mond = la bouche. 🌟",
+      "explanation": "mond = bouche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1679,23 +1679,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         }
       ],
       "correctAnswerId": "mond",
-      "explanation": "de mond = la bouche. 🌟",
+      "explanation": "mond = bouche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1713,23 +1713,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         }
       ],
       "correctAnswerId": "mond",
-      "explanation": "de mond = la bouche. 🌟",
+      "explanation": "mond = bouche. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1747,23 +1747,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         }
       ],
       "correctAnswerId": "neus",
-      "explanation": "de neus = le nez. 🌟",
+      "explanation": "neus = nez. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1781,23 +1781,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         }
       ],
       "correctAnswerId": "neus",
-      "explanation": "de neus = le nez. 🌟",
+      "explanation": "neus = nez. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1815,23 +1815,23 @@
       "answers": [
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         }
       ],
       "correctAnswerId": "neus",
-      "explanation": "de neus = le nez. 🌟",
+      "explanation": "neus = nez. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1849,23 +1849,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         }
       ],
       "correctAnswerId": "oor",
-      "explanation": "het oor = l’oreille. 🌟",
+      "explanation": "oor = oreille. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1883,23 +1883,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         }
       ],
       "correctAnswerId": "oor",
-      "explanation": "het oor = l’oreille. 🌟",
+      "explanation": "oor = oreille. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1917,23 +1917,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         }
       ],
       "correctAnswerId": "oor",
-      "explanation": "het oor = l’oreille. 🌟",
+      "explanation": "oor = oreille. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1951,23 +1951,23 @@
       "answers": [
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "wenkbrauw",
-      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "explanation": "wenkbrauw = sourcil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -1985,23 +1985,23 @@
       "answers": [
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "wenkbrauw",
-      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "explanation": "wenkbrauw = sourcil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2019,23 +2019,23 @@
       "answers": [
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "haar",
-          "label": "het haar"
+          "label": "haar"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "wenkbrauw",
-      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "explanation": "wenkbrauw = sourcil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2053,23 +2053,23 @@
       "answers": [
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "tand",
-      "explanation": "de tand = la dent. 🌟",
+      "explanation": "tand = dent. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2087,23 +2087,23 @@
       "answers": [
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "tand",
-      "explanation": "de tand = la dent. 🌟",
+      "explanation": "tand = dent. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2121,23 +2121,23 @@
       "answers": [
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         },
         {
           "id": "teen",
-          "label": "de teen"
+          "label": "teen"
         }
       ],
       "correctAnswerId": "tand",
-      "explanation": "de tand = la dent. 🌟",
+      "explanation": "tand = dent. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2155,23 +2155,23 @@
       "answers": [
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "voorhoofd",
-      "explanation": "het voorhoofd = le front. 🌟",
+      "explanation": "voorhoofd = front. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2189,23 +2189,23 @@
       "answers": [
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "voorhoofd",
-      "explanation": "het voorhoofd = le front. 🌟",
+      "explanation": "voorhoofd = front. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2223,23 +2223,23 @@
       "answers": [
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "hals",
-          "label": "de hals"
+          "label": "hals"
         },
         {
           "id": "borst",
-          "label": "de borst"
+          "label": "borst"
         },
         {
           "id": "voorhoofd",
-          "label": "het voorhoofd"
+          "label": "voorhoofd"
         }
       ],
       "correctAnswerId": "voorhoofd",
-      "explanation": "het voorhoofd = le front. 🌟",
+      "explanation": "voorhoofd = front. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2257,23 +2257,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         }
       ],
       "correctAnswerId": "oog",
-      "explanation": "het oog = l’œil. 🌟",
+      "explanation": "oog = œil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2291,23 +2291,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         }
       ],
       "correctAnswerId": "oog",
-      "explanation": "het oog = l’œil. 🌟",
+      "explanation": "oog = œil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2325,23 +2325,23 @@
       "answers": [
         {
           "id": "neus",
-          "label": "de neus"
+          "label": "neus"
         },
         {
           "id": "wenkbrauw",
-          "label": "de wenkbrauw"
+          "label": "wenkbrauw"
         },
         {
           "id": "oog",
-          "label": "het oog"
+          "label": "oog"
         },
         {
           "id": "oor",
-          "label": "het oor"
+          "label": "oor"
         }
       ],
       "correctAnswerId": "oog",
-      "explanation": "het oog = l’œil. 🌟",
+      "explanation": "oog = œil. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2359,23 +2359,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         }
       ],
       "correctAnswerId": "tong",
-      "explanation": "de tong = la langue. 🌟",
+      "explanation": "tong = langue. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2393,23 +2393,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         }
       ],
       "correctAnswerId": "tong",
-      "explanation": "de tong = la langue. 🌟",
+      "explanation": "tong = langue. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2427,23 +2427,23 @@
       "answers": [
         {
           "id": "vinger",
-          "label": "de vinger"
+          "label": "vinger"
         },
         {
           "id": "tong",
-          "label": "de tong"
+          "label": "tong"
         },
         {
           "id": "tand",
-          "label": "de tand"
+          "label": "tand"
         },
         {
           "id": "mond",
-          "label": "de mond"
+          "label": "mond"
         }
       ],
       "correctAnswerId": "tong",
-      "explanation": "de tong = la langue. 🌟",
+      "explanation": "tong = langue. 🌟",
       "emoji": "🧍",
       "media": {
         "type": "image",
@@ -2451,6 +2451,1350 @@
         "alt": "la langue : la partie entourée en rouge."
       },
       "responseMode": "letters",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-voet",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "voet → FR",
+      "answers": [
+        {
+          "id": "voet",
+          "label": "pied"
+        },
+        {
+          "id": "teen",
+          "label": "orteil"
+        },
+        {
+          "id": "enkel",
+          "label": "cheville"
+        },
+        {
+          "id": "been",
+          "label": "jambe"
+        }
+      ],
+      "correctAnswerId": "voet",
+      "explanation": "voet = pied. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-voet",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "vo_t · Pied",
+      "answers": [
+        {
+          "id": "voet",
+          "label": "voet"
+        },
+        {
+          "id": "teen",
+          "label": "teen"
+        },
+        {
+          "id": "enkel",
+          "label": "enkel"
+        },
+        {
+          "id": "been",
+          "label": "been"
+        }
+      ],
+      "correctAnswerId": "voet",
+      "explanation": "voet = pied. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-teen",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "teen → FR",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "doigt"
+        },
+        {
+          "id": "voet",
+          "label": "pied"
+        },
+        {
+          "id": "duim",
+          "label": "pouce"
+        },
+        {
+          "id": "teen",
+          "label": "orteil"
+        }
+      ],
+      "correctAnswerId": "teen",
+      "explanation": "teen = orteil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-teen",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "te_n · Orteil",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "vinger"
+        },
+        {
+          "id": "voet",
+          "label": "voet"
+        },
+        {
+          "id": "duim",
+          "label": "duim"
+        },
+        {
+          "id": "teen",
+          "label": "teen"
+        }
+      ],
+      "correctAnswerId": "teen",
+      "explanation": "teen = orteil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-knie",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "knie → FR",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "hanche"
+        },
+        {
+          "id": "elleboog",
+          "label": "coude"
+        },
+        {
+          "id": "knie",
+          "label": "genou"
+        },
+        {
+          "id": "enkel",
+          "label": "cheville"
+        }
+      ],
+      "correctAnswerId": "knie",
+      "explanation": "knie = genou. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-knie",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "kn_e · Genou",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "heup"
+        },
+        {
+          "id": "elleboog",
+          "label": "elleboog"
+        },
+        {
+          "id": "knie",
+          "label": "knie"
+        },
+        {
+          "id": "enkel",
+          "label": "enkel"
+        }
+      ],
+      "correctAnswerId": "knie",
+      "explanation": "knie = genou. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-been",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "been → FR",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "hanche"
+        },
+        {
+          "id": "been",
+          "label": "jambe"
+        },
+        {
+          "id": "arm",
+          "label": "bras"
+        },
+        {
+          "id": "voet",
+          "label": "pied"
+        }
+      ],
+      "correctAnswerId": "been",
+      "explanation": "been = jambe. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-been",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "be_n · Jambe",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "heup"
+        },
+        {
+          "id": "been",
+          "label": "been"
+        },
+        {
+          "id": "arm",
+          "label": "arm"
+        },
+        {
+          "id": "voet",
+          "label": "voet"
+        }
+      ],
+      "correctAnswerId": "been",
+      "explanation": "been = jambe. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-enkel",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "enkel → FR",
+      "answers": [
+        {
+          "id": "enkel",
+          "label": "cheville"
+        },
+        {
+          "id": "knie",
+          "label": "genou"
+        },
+        {
+          "id": "voet",
+          "label": "pied"
+        },
+        {
+          "id": "elleboog",
+          "label": "coude"
+        }
+      ],
+      "correctAnswerId": "enkel",
+      "explanation": "enkel = cheville. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-enkel",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "en_el · Cheville",
+      "answers": [
+        {
+          "id": "enkel",
+          "label": "enkel"
+        },
+        {
+          "id": "knie",
+          "label": "knie"
+        },
+        {
+          "id": "voet",
+          "label": "voet"
+        },
+        {
+          "id": "elleboog",
+          "label": "elleboog"
+        }
+      ],
+      "correctAnswerId": "enkel",
+      "explanation": "enkel = cheville. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-heup",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "heup → FR",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "épaule"
+        },
+        {
+          "id": "knie",
+          "label": "genou"
+        },
+        {
+          "id": "borst",
+          "label": "poitrine"
+        },
+        {
+          "id": "heup",
+          "label": "hanche"
+        }
+      ],
+      "correctAnswerId": "heup",
+      "explanation": "heup = hanche. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-heup",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "he_p · Hanche",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "schouder"
+        },
+        {
+          "id": "knie",
+          "label": "knie"
+        },
+        {
+          "id": "borst",
+          "label": "borst"
+        },
+        {
+          "id": "heup",
+          "label": "heup"
+        }
+      ],
+      "correctAnswerId": "heup",
+      "explanation": "heup = hanche. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-haar",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "haar → FR",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "front"
+        },
+        {
+          "id": "hals",
+          "label": "cou"
+        },
+        {
+          "id": "haar",
+          "label": "cheveux"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "sourcil"
+        }
+      ],
+      "correctAnswerId": "haar",
+      "explanation": "haar = cheveux. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-haar",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "ha_r · Cheveux",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "voorhoofd"
+        },
+        {
+          "id": "hals",
+          "label": "hals"
+        },
+        {
+          "id": "haar",
+          "label": "haar"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "wenkbrauw"
+        }
+      ],
+      "correctAnswerId": "haar",
+      "explanation": "haar = cheveux. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-hand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "hand → FR",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "doigt"
+        },
+        {
+          "id": "hand",
+          "label": "main"
+        },
+        {
+          "id": "voet",
+          "label": "pied"
+        },
+        {
+          "id": "arm",
+          "label": "bras"
+        }
+      ],
+      "correctAnswerId": "hand",
+      "explanation": "hand = main. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-hand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "ha_d · Main",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "vinger"
+        },
+        {
+          "id": "hand",
+          "label": "hand"
+        },
+        {
+          "id": "voet",
+          "label": "voet"
+        },
+        {
+          "id": "arm",
+          "label": "arm"
+        }
+      ],
+      "correctAnswerId": "hand",
+      "explanation": "hand = main. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-vinger",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "vinger → FR",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "doigt"
+        },
+        {
+          "id": "teen",
+          "label": "orteil"
+        },
+        {
+          "id": "duim",
+          "label": "pouce"
+        },
+        {
+          "id": "hand",
+          "label": "main"
+        }
+      ],
+      "correctAnswerId": "vinger",
+      "explanation": "vinger = doigt. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-vinger",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "vin_er · Doigt",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "vinger"
+        },
+        {
+          "id": "teen",
+          "label": "teen"
+        },
+        {
+          "id": "duim",
+          "label": "duim"
+        },
+        {
+          "id": "hand",
+          "label": "hand"
+        }
+      ],
+      "correctAnswerId": "vinger",
+      "explanation": "vinger = doigt. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-duim",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "duim → FR",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "doigt"
+        },
+        {
+          "id": "teen",
+          "label": "orteil"
+        },
+        {
+          "id": "hand",
+          "label": "main"
+        },
+        {
+          "id": "duim",
+          "label": "pouce"
+        }
+      ],
+      "correctAnswerId": "duim",
+      "explanation": "duim = pouce. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-duim",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "du_m · Pouce",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "vinger"
+        },
+        {
+          "id": "teen",
+          "label": "teen"
+        },
+        {
+          "id": "hand",
+          "label": "hand"
+        },
+        {
+          "id": "duim",
+          "label": "duim"
+        }
+      ],
+      "correctAnswerId": "duim",
+      "explanation": "duim = pouce. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-elleboog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "elleboog → FR",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "épaule"
+        },
+        {
+          "id": "enkel",
+          "label": "cheville"
+        },
+        {
+          "id": "elleboog",
+          "label": "coude"
+        },
+        {
+          "id": "knie",
+          "label": "genou"
+        }
+      ],
+      "correctAnswerId": "elleboog",
+      "explanation": "elleboog = coude. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-elleboog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "elle_oog · Coude",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "schouder"
+        },
+        {
+          "id": "enkel",
+          "label": "enkel"
+        },
+        {
+          "id": "elleboog",
+          "label": "elleboog"
+        },
+        {
+          "id": "knie",
+          "label": "knie"
+        }
+      ],
+      "correctAnswerId": "elleboog",
+      "explanation": "elleboog = coude. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-rug",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "rug → FR",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "hanche"
+        },
+        {
+          "id": "rug",
+          "label": "dos"
+        },
+        {
+          "id": "borst",
+          "label": "poitrine"
+        },
+        {
+          "id": "arm",
+          "label": "bras"
+        }
+      ],
+      "correctAnswerId": "rug",
+      "explanation": "rug = dos. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-rug",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "r_g · Dos",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "heup"
+        },
+        {
+          "id": "rug",
+          "label": "rug"
+        },
+        {
+          "id": "borst",
+          "label": "borst"
+        },
+        {
+          "id": "arm",
+          "label": "arm"
+        }
+      ],
+      "correctAnswerId": "rug",
+      "explanation": "rug = dos. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-borst",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "borst → FR",
+      "answers": [
+        {
+          "id": "borst",
+          "label": "poitrine"
+        },
+        {
+          "id": "rug",
+          "label": "dos"
+        },
+        {
+          "id": "hals",
+          "label": "cou"
+        },
+        {
+          "id": "heup",
+          "label": "hanche"
+        }
+      ],
+      "correctAnswerId": "borst",
+      "explanation": "borst = poitrine. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-borst",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "bo_st · Poitrine",
+      "answers": [
+        {
+          "id": "borst",
+          "label": "borst"
+        },
+        {
+          "id": "rug",
+          "label": "rug"
+        },
+        {
+          "id": "hals",
+          "label": "hals"
+        },
+        {
+          "id": "heup",
+          "label": "heup"
+        }
+      ],
+      "correctAnswerId": "borst",
+      "explanation": "borst = poitrine. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-arm",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "arm → FR",
+      "answers": [
+        {
+          "id": "been",
+          "label": "jambe"
+        },
+        {
+          "id": "hand",
+          "label": "main"
+        },
+        {
+          "id": "schouder",
+          "label": "épaule"
+        },
+        {
+          "id": "arm",
+          "label": "bras"
+        }
+      ],
+      "correctAnswerId": "arm",
+      "explanation": "arm = bras. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-arm",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "a_m · Bras",
+      "answers": [
+        {
+          "id": "been",
+          "label": "been"
+        },
+        {
+          "id": "hand",
+          "label": "hand"
+        },
+        {
+          "id": "schouder",
+          "label": "schouder"
+        },
+        {
+          "id": "arm",
+          "label": "arm"
+        }
+      ],
+      "correctAnswerId": "arm",
+      "explanation": "arm = bras. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-schouder",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "schouder → FR",
+      "answers": [
+        {
+          "id": "elleboog",
+          "label": "coude"
+        },
+        {
+          "id": "hals",
+          "label": "cou"
+        },
+        {
+          "id": "schouder",
+          "label": "épaule"
+        },
+        {
+          "id": "heup",
+          "label": "hanche"
+        }
+      ],
+      "correctAnswerId": "schouder",
+      "explanation": "schouder = épaule. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-schouder",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "scho_der · Épaule",
+      "answers": [
+        {
+          "id": "elleboog",
+          "label": "elleboog"
+        },
+        {
+          "id": "hals",
+          "label": "hals"
+        },
+        {
+          "id": "schouder",
+          "label": "schouder"
+        },
+        {
+          "id": "heup",
+          "label": "heup"
+        }
+      ],
+      "correctAnswerId": "schouder",
+      "explanation": "schouder = épaule. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-hals",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "hals → FR",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "front"
+        },
+        {
+          "id": "hals",
+          "label": "cou"
+        },
+        {
+          "id": "schouder",
+          "label": "épaule"
+        },
+        {
+          "id": "borst",
+          "label": "poitrine"
+        }
+      ],
+      "correctAnswerId": "hals",
+      "explanation": "hals = cou. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-hals",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "ha_s · Cou",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "voorhoofd"
+        },
+        {
+          "id": "hals",
+          "label": "hals"
+        },
+        {
+          "id": "schouder",
+          "label": "schouder"
+        },
+        {
+          "id": "borst",
+          "label": "borst"
+        }
+      ],
+      "correctAnswerId": "hals",
+      "explanation": "hals = cou. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-mond",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "mond → FR",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "bouche"
+        },
+        {
+          "id": "neus",
+          "label": "nez"
+        },
+        {
+          "id": "tong",
+          "label": "langue"
+        },
+        {
+          "id": "tand",
+          "label": "dent"
+        }
+      ],
+      "correctAnswerId": "mond",
+      "explanation": "mond = bouche. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-mond",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "mo_d · Bouche",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "mond"
+        },
+        {
+          "id": "neus",
+          "label": "neus"
+        },
+        {
+          "id": "tong",
+          "label": "tong"
+        },
+        {
+          "id": "tand",
+          "label": "tand"
+        }
+      ],
+      "correctAnswerId": "mond",
+      "explanation": "mond = bouche. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-neus",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "neus → FR",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "bouche"
+        },
+        {
+          "id": "oor",
+          "label": "oreille"
+        },
+        {
+          "id": "oog",
+          "label": "oeil"
+        },
+        {
+          "id": "neus",
+          "label": "nez"
+        }
+      ],
+      "correctAnswerId": "neus",
+      "explanation": "neus = nez. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-neus",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "ne_s · Nez",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "mond"
+        },
+        {
+          "id": "oor",
+          "label": "oor"
+        },
+        {
+          "id": "oog",
+          "label": "oog"
+        },
+        {
+          "id": "neus",
+          "label": "neus"
+        }
+      ],
+      "correctAnswerId": "neus",
+      "explanation": "neus = nez. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-oor",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "oor → FR",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "nez"
+        },
+        {
+          "id": "mond",
+          "label": "bouche"
+        },
+        {
+          "id": "oor",
+          "label": "oreille"
+        },
+        {
+          "id": "oog",
+          "label": "oeil"
+        }
+      ],
+      "correctAnswerId": "oor",
+      "explanation": "oor = oreille. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-oor",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "o_r · Oreille",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "neus"
+        },
+        {
+          "id": "mond",
+          "label": "mond"
+        },
+        {
+          "id": "oor",
+          "label": "oor"
+        },
+        {
+          "id": "oog",
+          "label": "oog"
+        }
+      ],
+      "correctAnswerId": "oor",
+      "explanation": "oor = oreille. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-wenkbrauw",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "wenkbrauw → FR",
+      "answers": [
+        {
+          "id": "oog",
+          "label": "oeil"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "sourcil"
+        },
+        {
+          "id": "haar",
+          "label": "cheveux"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "front"
+        }
+      ],
+      "correctAnswerId": "wenkbrauw",
+      "explanation": "wenkbrauw = sourcil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-wenkbrauw",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "wenk_rauw · Sourcil",
+      "answers": [
+        {
+          "id": "oog",
+          "label": "oog"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "wenkbrauw"
+        },
+        {
+          "id": "haar",
+          "label": "haar"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "voorhoofd"
+        }
+      ],
+      "correctAnswerId": "wenkbrauw",
+      "explanation": "wenkbrauw = sourcil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-tand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "tand → FR",
+      "answers": [
+        {
+          "id": "tand",
+          "label": "dent"
+        },
+        {
+          "id": "tong",
+          "label": "langue"
+        },
+        {
+          "id": "mond",
+          "label": "bouche"
+        },
+        {
+          "id": "teen",
+          "label": "orteil"
+        }
+      ],
+      "correctAnswerId": "tand",
+      "explanation": "tand = dent. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-tand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "ta_d · Dent",
+      "answers": [
+        {
+          "id": "tand",
+          "label": "tand"
+        },
+        {
+          "id": "tong",
+          "label": "tong"
+        },
+        {
+          "id": "mond",
+          "label": "mond"
+        },
+        {
+          "id": "teen",
+          "label": "teen"
+        }
+      ],
+      "correctAnswerId": "tand",
+      "explanation": "tand = dent. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-voorhoofd",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "voorhoofd → FR",
+      "answers": [
+        {
+          "id": "wenkbrauw",
+          "label": "sourcil"
+        },
+        {
+          "id": "hals",
+          "label": "cou"
+        },
+        {
+          "id": "borst",
+          "label": "poitrine"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "front"
+        }
+      ],
+      "correctAnswerId": "voorhoofd",
+      "explanation": "voorhoofd = front. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-voorhoofd",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "voor_oofd · Front",
+      "answers": [
+        {
+          "id": "wenkbrauw",
+          "label": "wenkbrauw"
+        },
+        {
+          "id": "hals",
+          "label": "hals"
+        },
+        {
+          "id": "borst",
+          "label": "borst"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "voorhoofd"
+        }
+      ],
+      "correctAnswerId": "voorhoofd",
+      "explanation": "voorhoofd = front. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-oog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "oog → FR",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "nez"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "sourcil"
+        },
+        {
+          "id": "oog",
+          "label": "oeil"
+        },
+        {
+          "id": "oor",
+          "label": "oreille"
+        }
+      ],
+      "correctAnswerId": "oog",
+      "explanation": "oog = œil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-oog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "o_g · Œil",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "neus"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "wenkbrauw"
+        },
+        {
+          "id": "oog",
+          "label": "oog"
+        },
+        {
+          "id": "oor",
+          "label": "oor"
+        }
+      ],
+      "correctAnswerId": "oog",
+      "explanation": "oog = œil. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "fr-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-terug-tong",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-terug",
+      "prompt": "tong → FR",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "doigt"
+        },
+        {
+          "id": "tong",
+          "label": "langue"
+        },
+        {
+          "id": "tand",
+          "label": "dent"
+        },
+        {
+          "id": "mond",
+          "label": "bouche"
+        }
+      ],
+      "correctAnswerId": "tong",
+      "explanation": "tong = langue. 🌟",
+      "emoji": "🧍",
+      "promptLocale": "nl-BE"
+    },
+    {
+      "id": "lichaamsdelen-nl-gat-tong",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-gat",
+      "prompt": "to_g · Langue",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "vinger"
+        },
+        {
+          "id": "tong",
+          "label": "tong"
+        },
+        {
+          "id": "tand",
+          "label": "tand"
+        },
+        {
+          "id": "mond",
+          "label": "mond"
+        }
+      ],
+      "correctAnswerId": "tong",
+      "explanation": "tong = langue. 🌟",
+      "emoji": "🧍",
       "promptLocale": "fr-BE"
     }
   ]
