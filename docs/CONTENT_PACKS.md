@@ -71,3 +71,11 @@ Pour les nouveaux contenus, ne pas continuer à déposer des ressources éparses
 Le mécanisme de publication, le contrat `Question.media`, les limites des médias, le cache Windows, les règles de validation, et l'exemple « Dieren » sont documentés dans **[`docs/ACTIVITY_BUNDLES.md`](ACTIVITY_BUNDLES.md)**.
 
 À chaque modification, augmenter `pack.json.version` et ajouter une entrée datée append-only dans `docs/DEVELOPMENT_LOG.md`. `pages.yml` recalculera automatiquement le manifeste et publiera seulement les dossiers/ressources modifiés. Pas de nouvel installateur si le moteur requis est déjà présent dans KidQuest.
+
+## Classement des langues : École et Autre (catalogue version 5)
+
+L’accueil distingue **Français — École**, **Français — Autre**, **Nederlands — École** et **Nederlands — Autre**, en plus de Wiskunde et Échecs. Les IDs historiques `french` et `dutch` désignent les catégories École ; `french-other` et `dutch-other` accueillent les jeux et le vocabulaire complémentaires.
+
+Dans `site/catalog.json`, donner explicitement une catégorie à chaque nouvelle activité de langue. Les packs conservent leur matière et leurs IDs : cette catégorie de présentation ne change ni leur contenu ni leur progression. Sans surcharge, un futur pack français ou néerlandais conserve le classement par défaut dans École.
+
+Les verbes et les plantes sont rangés dans École. Mots malins, les salutations, le vocabulaire débutant, les animaux, les fruits et légumes et les couleurs sont rangés dans Autre. Le catalogue est téléchargeable sur KidQuest 0.8.0+ ; les activités multimédias nécessitent le moteur 0.9.0+. Aucune nouvelle installation n’est nécessaire pour ce classement.

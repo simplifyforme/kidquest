@@ -14,12 +14,33 @@ import type {ContentPack} from "../types";
 
 const remote=publishedCatalog as RemoteCatalog;
 describe("versioned remote presentation catalog",()=>{
- it("accepts the published catalog and preserves the four established subjects",()=>{
+ it("accepts the published catalog and splits languages into school and other while preserving established IDs",()=>{
   expect(isValidRemoteCatalog(remote)).toBe(true);
-  expect(resolveCategories(remote).map(c=>c.id)).toEqual(["math","french","dutch","chess"]);
+  expect(resolveCategories(remote).map(c=>c.id)).toEqual(["math","french","french-other","dutch","dutch-other","chess"]);
   const entries=getCatalog(builtinPacks,remote);
   expect(entries.find(e=>e.id==="plant-playground")?.category).toBe("dutch");
   expect(entries.find(e=>e.id==="chess-beginner")?.kind).toBe("lesson");
+ });
+ it("places every language activity in its school or other category without changing activity data",()=>{
+  const packs=[...builtinPacks,beginnerDutch,dutchVerbs,multiplication,animals,produce,colors] as ContentPack[];
+  const expected:Record<string,string>={
+   "french-verb-hunt":"french",francais:"french-other",
+   "plant-playground":"dutch","neerlandais-verbes-a1":"dutch",
+   neerlandais:"dutch-other","neerlandais-debutant":"dutch-other",
+   "dieren-nl":"dutch-other","groenten-fruit-nl":"dutch-other","kleuren-nl":"dutch-other"
+  };
+  const original=getCatalog(packs);
+  const entries=getCatalog(packs,remote);
+  expect(entries.map(e=>e.id).sort()).toEqual(original.map(e=>e.id).sort());
+  for(const [id,category] of Object.entries(expected)){
+   const entry=entries.find(e=>e.id===id)!;
+   expect(entry.category,id).toBe(category);
+   const previous=original.find(e=>e.id===id)!;
+   if(entry.kind==="quiz" && previous.kind==="quiz")expect(entry.activity).toEqual(previous.activity);
+  }
+  for(const category of resolveCategories(remote)){
+   expect(entries.some(e=>e.category===category.id),category.id).toBe(true);
+  }
  });
  it("assigns a distinct icon to every built-in and published activity",()=>{
   const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce,colors] as ContentPack[];

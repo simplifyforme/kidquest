@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 4,
+  "version": 5,
   "categories": [
     {
       "id": "math",
@@ -13,21 +13,39 @@
     },
     {
       "id": "french",
-      "title": "Français",
+      "title": "Français — École",
       "emoji": "📖",
-      "subtitle": "Mots, vocabulaire et orthographe",
+      "subtitle": "Les leçons et exercices de français pour l’école",
       "colorClass": "french",
       "language": "fr-BE",
       "order": 1
     },
     {
-      "id": "dutch",
-      "title": "Nederlands",
+      "id": "french-other",
+      "title": "Français — Autre",
       "emoji": "💬",
-      "subtitle": "Découvre la langue, les mots et les plantes",
-      "colorClass": "dutch",
+      "subtitle": "Vocabulaire, découvertes et jeux en français",
+      "colorClass": "french",
       "language": "fr-BE",
       "order": 2
+    },
+    {
+      "id": "dutch",
+      "title": "Nederlands — École",
+      "emoji": "📚",
+      "subtitle": "Les leçons et exercices de néerlandais pour l’école",
+      "colorClass": "dutch",
+      "language": "fr-BE",
+      "order": 3
+    },
+    {
+      "id": "dutch-other",
+      "title": "Nederlands — Autre",
+      "emoji": "🌍",
+      "subtitle": "Vocabulaire, découvertes et jeux en néerlandais",
+      "colorClass": "dutch",
+      "language": "fr-BE",
+      "order": 4
     },
     {
       "id": "chess",
@@ -36,7 +54,7 @@
       "subtitle": "Apprends les règles et les pièces",
       "colorClass": "chess",
       "language": "fr-BE",
-      "order": 3
+      "order": 5
     }
   ],
   "activities": [
@@ -68,7 +86,7 @@
     },
     {
       "id": "dieren-nl",
-      "category": "dutch",
+      "category": "dutch-other",
       "title": "Dieren herkennen met foto’s",
       "subtitle": "8 foto's · Welk dier zie je?",
       "emoji": "🐾",
@@ -84,19 +102,23 @@
     },
     {
       "id": "francais",
-      "emoji": "📝"
+      "emoji": "📝",
+      "category": "french-other"
     },
     {
       "id": "neerlandais",
-      "emoji": "👋"
+      "emoji": "👋",
+      "category": "dutch-other"
     },
     {
       "id": "neerlandais-debutant",
-      "emoji": "🃏"
+      "emoji": "🃏",
+      "category": "dutch-other"
     },
     {
       "id": "neerlandais-verbes-a1",
-      "emoji": "🏃"
+      "emoji": "🏃",
+      "category": "dutch"
     },
     {
       "id": "tables-multiplication-1-10",
@@ -104,11 +126,12 @@
     },
     {
       "id": "groenten-fruit-nl",
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "category": "dutch-other"
     },
     {
       "id": "kleuren-nl",
-      "category": "dutch",
+      "category": "dutch-other",
       "title": "Kleurenheld · Leer de kleuren",
       "subtitle": "11 kleuren · kijken, onthouden en schrijven",
       "emoji": "🎨",
