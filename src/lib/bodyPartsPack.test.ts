@@ -5,16 +5,16 @@ import type {ContentPack} from "../types";
 import type {RemoteCatalog} from "./catalogConfig";
 import {getCatalog} from "./catalog";
 import {isValidPack} from "./updates";
-import {correctLabel, eligibleModes, isCorrectText, planModes} from "./exerciseModes";
+import {correctLabel, eligibleModes, isCorrectText, planModes, matchingPairs, normalizeAnswer} from "./exerciseModes";
 
 const pack = bodyParts as ContentPack;
 const expected = {
- voet:"de voet", teen:"de teen", knie:"de knie", been:"het been",
- enkel:"de enkel", heup:"de heup", haar:"het haar", hand:"de hand",
- vinger:"de vinger", duim:"de duim", elleboog:"de elleboog", rug:"de rug",
- borst:"de borst", arm:"de arm", schouder:"de schouder", hals:"de hals",
- mond:"de mond", neus:"de neus", oor:"het oor", wenkbrauw:"de wenkbrauw",
- tand:"de tand", voorhoofd:"het voorhoofd", oog:"het oog", tong:"de tong"
+ voet:"voet", teen:"teen", knie:"knie", been:"been",
+ enkel:"enkel", heup:"heup", haar:"haar", hand:"hand",
+ vinger:"vinger", duim:"duim", elleboog:"elleboog", rug:"rug",
+ borst:"borst", arm:"arm", schouder:"schouder", hals:"hals",
+ mond:"mond", neus:"neus", oor:"oor", wenkbrauw:"wenkbrauw",
+ tand:"tand", voorhoofd:"voorhoofd", oog:"oog", tong:"tong"
 };
 
 describe("downloadable school Dutch body parts", () => {
@@ -25,13 +25,13 @@ describe("downloadable school Dutch body parts", () => {
    .toMatchObject({category:"dutch", kind:"quiz", emoji:"🧍"});
  });
 
- it("covers precisely the 24 requested words with articles in three illustrated challenges", () => {
-  expect(pack.questions).toHaveLength(72);
-  expect(new Set(pack.questions.map(q => q.id)).size).toBe(72);
+ it("covers precisely the 24 requested words without articles in three illustrated challenges", () => {
+  expect(pack.questions).toHaveLength(120);
+  expect(new Set(pack.questions.map(q => q.id)).size).toBe(120);
   expect(new Set(pack.questions.map(q => q.correctAnswerId)))
    .toEqual(new Set(Object.keys(expected)));
   for (const [word, label] of Object.entries(expected)) {
-   const questions = pack.questions.filter(q => q.correctAnswerId === word);
+   const questions = pack.questions.filter(q => q.correctAnswerId === word && q.media);
    expect(questions, word).toHaveLength(3);
    expect(new Set(questions.map(q => q.skill)))
     .toEqual(new Set(["lichaamsdelen-kijk", "lichaamsdelen-schrijf", "lichaamsdelen-bouw"]));
@@ -53,21 +53,50 @@ describe("downloadable school Dutch body parts", () => {
   }
   const tongue = pack.questions.find(q => q.id === "lichaamsdelen-nl-woord-tong")!;
   expect(tongue.prompt).toBe("La langue");
-  expect(isCorrectText(tongue, "de tang")).toBe(false);
+  expect(isCorrectText(tongue, "tang")).toBe(false);
+  expect(isCorrectText(tongue, "tong")).toBe(true);
  });
 
  it("preserves every published question ID and keeps the image in all three interactions", () => {
   for(const word of Object.keys(expected)){
-   for(const oldKind of ["woord","raadsel"]){
+   for(const oldKind of ["woord","raadsel","bouw"]){
     expect(pack.questions.some(q=>q.id===`lichaamsdelen-nl-${oldKind}-${word}`)).toBe(true);
    }
   }
-  expect(pack.version).toBe(2);
-  for(const q of pack.questions){
+  expect(pack.version).toBe(3);
+  for(const q of pack.questions.filter(q=>q.media)){
    expect(q.media).toMatchObject({type:"image",file:q.correctAnswerId+".png"});
-   expect(q.media!.alt).not.toContain(correctLabel(q));
+   expect(q.media!.alt).not.toContain("de "+correctLabel(q));
    expect(eligibleModes(q,pack.questions)).toEqual([q.responseMode]);
    for(let session=0;session<5;session++)expect(planModes([q],pack.questions,session)).toEqual([q.responseMode]);
   }
  });
+ it("adds 48 short word games and reaches eight different interactions without a new engine",()=>{
+  const text=pack.questions.filter(q=>!q.media);
+  expect(text).toHaveLength(48);
+  expect(text.filter(q=>q.skill==="lichaamsdelen-terug")).toHaveLength(24);
+  expect(text.filter(q=>q.skill==="lichaamsdelen-gat")).toHaveLength(24);
+  for(const q of pack.questions){
+   expect(q.prompt.length).toBeLessThan(30);
+   expect(q.explanation.length).toBeLessThan(45);
+   expect(q.answers.every(a=>! /^(de|het) /i.test(a.label))).toBe(true);
+   expect(new Set(q.answers.map(a=>normalizeAnswer(a.label))).size).toBe(4);
+   expect(q.explanation).not.toMatch(/\b(de|het)\b/i);
+  }
+  for(const q of text){
+   expect(q.responseMode).toBeUndefined();
+   expect(eligibleModes(q,pack.questions)).toEqual(expect.arrayContaining(["choice","write","letters","truefalse","duel","matching","memory"]));
+   const pairs=matchingPairs(q,pack.questions);
+   expect(new Set(pairs.map(p=>p.prompt)).size).toBe(3);
+   expect(new Set(pairs.map(correctLabel)).size).toBe(3);
+  }
+  const modes=new Set(Array.from({length:12},(_,session)=>planModes(pack.questions,pack.questions,session)).flat());
+  expect([...modes].sort()).toEqual(["choice","write","letters","missing","truefalse","duel","matching","memory"].sort());
+  const reverse=text.find(q=>q.id==="lichaamsdelen-nl-terug-arm")!;
+  expect(reverse.prompt).toBe("arm → FR");expect(correctLabel(reverse)).toBe("bras");expect(reverse.promptLocale).toBe("nl-BE");
+  expect(isCorrectText(text.find(q=>q.id==="lichaamsdelen-nl-terug-oog")!,"oeil")).toBe(true);
+  const hole=text.find(q=>q.id==="lichaamsdelen-nl-gat-arm")!;
+  expect(hole.prompt).toBe("a_m · Bras");expect(correctLabel(hole)).toBe("arm");
+ });
+
 });
