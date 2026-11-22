@@ -21,9 +21,9 @@
     }
   ],
   "catalog": {
-    "version": 6,
+    "version": 7,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "cd8480610b005be85fca3302ad591acb34dd9782c62c64669f52007df42bae17"
+    "sha256": "a675d86b47edcda40b9f359b5e5842aa8555cfdec1e9aece1dc55d19d0165d61"
   },
   "activities": [
     {
@@ -244,6 +244,13 @@
       "version": 1,
       "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/pack.json",
       "sha256": "a3131d2f1f48c18d406a80d9d16853fe3c4ca8878e254dc20d2d744d0945c15c",
+      "assets": []
+    },
+    {
+      "id": "verbe-predicat-fr",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/verbe-predicat-fr/pack.json",
+      "sha256": "682a400343707af92dbbfdda3a6de840e2f67cdbc98e5dc8e88d840cbf874286",
       "assets": []
     }
   ]
