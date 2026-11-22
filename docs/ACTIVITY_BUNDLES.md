@@ -74,3 +74,9 @@ Types de média acceptés : `image` (jpg, jpeg, png, webp), `gif` (gif animé), 
 - Le manifeste et les médias sont récupérés depuis HTTPS/GitHub ; l'empreinte SHA-256 garantit leur intégrité par rapport au manifeste (pas une signature d'éditeur indépendante).
 - Taille maximale par média : 20 Mo. Taille maximale totale des médias d'une activité : 60 Mo. Maximum 80 ressources par activité.
 - Les corrections d'une activité existante requièrent d'augmenter le numéro `version` pour être appliquées ; ce processus ne touche jamais à `attempts`, `completed_sessions` ou `hidden_activities`.
+
+## Questions illustrées : écrire et reconstruire (0.9.1)
+
+Le champ facultatif `Question.responseMode` accepte `choice`, `write` ou `letters` **avec un média de type image**. Sans ce champ, les anciens quiz photo restent en QCM. Chaque question choisit son interaction, sans sélecteur pour l’enfant. `QuestionMedia` reste au-dessus de `ExercisePlay`, donc l’image est visible pendant la saisie et le puzzle. Les modes memory et association ne sont pas utilisés pour ces questions : ils n’affichent pas les images des autres cartes.
+
+Un puzzle de lettres avec une réponse trop longue (plus de 15 caractères hors espaces) ou trop courte revient à l’écriture. Les modes inconnus, sans image ou associés à de l’audio/vidéo sont rejetés à la validation. Les anciens clients 0.9.0 ignorent ce champ et restent en QCM. Installer **0.9.1 une fois** pour obtenir la saisie et les lettres illustrées. Le format des médias, les empreintes, les points et les sessions restent inchangés.

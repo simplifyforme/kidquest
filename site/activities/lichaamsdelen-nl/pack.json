@@ -1,15 +1,15 @@
 {
   "id": "lichaamsdelen-nl",
-  "version": 1,
-  "title": "Mijn lichaam · Ken jij de lichaamsdelen?",
+  "version": 2,
+  "title": "Mijn lichaam · Kijk, schrijf en speel!",
   "category": "dutch",
   "locale": "nl-BE",
   "questions": [
     {
       "id": "lichaamsdelen-nl-woord-voet",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le pied » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le pied",
       "answers": [
         {
           "id": "voet",
@@ -29,14 +29,20 @@
         }
       ],
       "correctAnswerId": "voet",
-      "explanation": "De voet = le pied. Je schoen zit om je voet.",
-      "emoji": "🧍"
+      "explanation": "de voet = le pied. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voet.png",
+        "alt": "le pied : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-voet",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit onder je enkel. Je draagt een schoen om mij. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le pied",
       "answers": [
         {
           "id": "voet",
@@ -56,14 +62,53 @@
         }
       ],
       "correctAnswerId": "voet",
-      "explanation": "De voet = le pied. Je schoen zit om je voet.",
-      "emoji": "🧍"
+      "explanation": "de voet = le pied. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voet.png",
+        "alt": "le pied : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-voet",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le pied",
+      "answers": [
+        {
+          "id": "voet",
+          "label": "de voet"
+        },
+        {
+          "id": "teen",
+          "label": "de teen"
+        },
+        {
+          "id": "enkel",
+          "label": "de enkel"
+        },
+        {
+          "id": "been",
+          "label": "het been"
+        }
+      ],
+      "correctAnswerId": "voet",
+      "explanation": "de voet = le pied. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voet.png",
+        "alt": "le pied : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-teen",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « l’orteil » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "L’orteil",
       "answers": [
         {
           "id": "vinger",
@@ -83,14 +128,20 @@
         }
       ],
       "correctAnswerId": "teen",
-      "explanation": "De teen = l’orteil. Een voet heeft vijf tenen. Eén daarvan is een teen.",
-      "emoji": "🧍"
+      "explanation": "de teen = l’orteil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "teen.png",
+        "alt": "l’orteil : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-teen",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben een van de vijf kleine delen aan je voet. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "L’orteil",
       "answers": [
         {
           "id": "vinger",
@@ -110,14 +161,53 @@
         }
       ],
       "correctAnswerId": "teen",
-      "explanation": "De teen = l’orteil. Een voet heeft vijf tenen. Eén daarvan is een teen.",
-      "emoji": "🧍"
+      "explanation": "de teen = l’orteil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "teen.png",
+        "alt": "l’orteil : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-teen",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "L’orteil",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "de vinger"
+        },
+        {
+          "id": "voet",
+          "label": "de voet"
+        },
+        {
+          "id": "duim",
+          "label": "de duim"
+        },
+        {
+          "id": "teen",
+          "label": "de teen"
+        }
+      ],
+      "correctAnswerId": "teen",
+      "explanation": "de teen = l’orteil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "teen.png",
+        "alt": "l’orteil : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-knie",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le genou » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le genou",
       "answers": [
         {
           "id": "heup",
@@ -137,14 +227,20 @@
         }
       ],
       "correctAnswerId": "knie",
-      "explanation": "De knie = le genou. Bij je knie kun je je been buigen.",
-      "emoji": "🧍"
+      "explanation": "de knie = le genou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "knie.png",
+        "alt": "le genou : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-knie",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit midden in je been. Hier buig je je been als je gaat zitten. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le genou",
       "answers": [
         {
           "id": "heup",
@@ -164,14 +260,53 @@
         }
       ],
       "correctAnswerId": "knie",
-      "explanation": "De knie = le genou. Bij je knie kun je je been buigen.",
-      "emoji": "🧍"
+      "explanation": "de knie = le genou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "knie.png",
+        "alt": "le genou : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-knie",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le genou",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "de heup"
+        },
+        {
+          "id": "elleboog",
+          "label": "de elleboog"
+        },
+        {
+          "id": "knie",
+          "label": "de knie"
+        },
+        {
+          "id": "enkel",
+          "label": "de enkel"
+        }
+      ],
+      "correctAnswerId": "knie",
+      "explanation": "de knie = le genou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "knie.png",
+        "alt": "le genou : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-been",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la jambe » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La jambe",
       "answers": [
         {
           "id": "heup",
@@ -191,14 +326,20 @@
         }
       ],
       "correctAnswerId": "been",
-      "explanation": "Het been = la jambe. Je been loopt van je heup tot je enkel.",
-      "emoji": "🧍"
+      "explanation": "het been = la jambe. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "been.png",
+        "alt": "la jambe : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-been",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit tussen je heup en je voet. Je staat en loopt op mij. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La jambe",
       "answers": [
         {
           "id": "heup",
@@ -218,14 +359,53 @@
         }
       ],
       "correctAnswerId": "been",
-      "explanation": "Het been = la jambe. Je been loopt van je heup tot je enkel.",
-      "emoji": "🧍"
+      "explanation": "het been = la jambe. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "been.png",
+        "alt": "la jambe : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-been",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La jambe",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "de heup"
+        },
+        {
+          "id": "been",
+          "label": "het been"
+        },
+        {
+          "id": "arm",
+          "label": "de arm"
+        },
+        {
+          "id": "voet",
+          "label": "de voet"
+        }
+      ],
+      "correctAnswerId": "been",
+      "explanation": "het been = la jambe. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "been.png",
+        "alt": "la jambe : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-enkel",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la cheville » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La cheville",
       "answers": [
         {
           "id": "enkel",
@@ -245,14 +425,20 @@
         }
       ],
       "correctAnswerId": "enkel",
-      "explanation": "De enkel = la cheville. Je enkel verbindt je onderbeen met je voet.",
-      "emoji": "🧍"
+      "explanation": "de enkel = la cheville. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "enkel.png",
+        "alt": "la cheville : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-enkel",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben het gewricht tussen je onderbeen en je voet. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La cheville",
       "answers": [
         {
           "id": "enkel",
@@ -272,14 +458,53 @@
         }
       ],
       "correctAnswerId": "enkel",
-      "explanation": "De enkel = la cheville. Je enkel verbindt je onderbeen met je voet.",
-      "emoji": "🧍"
+      "explanation": "de enkel = la cheville. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "enkel.png",
+        "alt": "la cheville : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-enkel",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La cheville",
+      "answers": [
+        {
+          "id": "enkel",
+          "label": "de enkel"
+        },
+        {
+          "id": "knie",
+          "label": "de knie"
+        },
+        {
+          "id": "voet",
+          "label": "de voet"
+        },
+        {
+          "id": "elleboog",
+          "label": "de elleboog"
+        }
+      ],
+      "correctAnswerId": "enkel",
+      "explanation": "de enkel = la cheville. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "enkel.png",
+        "alt": "la cheville : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-heup",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la hanche » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La hanche",
       "answers": [
         {
           "id": "schouder",
@@ -299,14 +524,20 @@
         }
       ],
       "correctAnswerId": "heup",
-      "explanation": "De heup = la hanche. Je heup zit aan de zijkant, bovenaan je been.",
-      "emoji": "🧍"
+      "explanation": "de heup = la hanche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "heup.png",
+        "alt": "la hanche : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-heup",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit aan de zijkant van je lichaam, waar je been aan je romp vastzit. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La hanche",
       "answers": [
         {
           "id": "schouder",
@@ -326,14 +557,53 @@
         }
       ],
       "correctAnswerId": "heup",
-      "explanation": "De heup = la hanche. Je heup zit aan de zijkant, bovenaan je been.",
-      "emoji": "🧍"
+      "explanation": "de heup = la hanche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "heup.png",
+        "alt": "la hanche : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-heup",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La hanche",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "de schouder"
+        },
+        {
+          "id": "knie",
+          "label": "de knie"
+        },
+        {
+          "id": "borst",
+          "label": "de borst"
+        },
+        {
+          "id": "heup",
+          "label": "de heup"
+        }
+      ],
+      "correctAnswerId": "heup",
+      "explanation": "de heup = la hanche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "heup.png",
+        "alt": "la hanche : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-haar",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « les cheveux » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Les cheveux",
       "answers": [
         {
           "id": "voorhoofd",
@@ -353,14 +623,20 @@
         }
       ],
       "correctAnswerId": "haar",
-      "explanation": "Het haar = les cheveux. Je kamt het haar op je hoofd.",
-      "emoji": "🧍"
+      "explanation": "het haar = les cheveux. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "haar.png",
+        "alt": "les cheveux : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-haar",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik groei op je hoofd. Je kunt mij kammen. Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Les cheveux",
       "answers": [
         {
           "id": "voorhoofd",
@@ -380,14 +656,53 @@
         }
       ],
       "correctAnswerId": "haar",
-      "explanation": "Het haar = les cheveux. Je kamt het haar op je hoofd.",
-      "emoji": "🧍"
+      "explanation": "het haar = les cheveux. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "haar.png",
+        "alt": "les cheveux : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-haar",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Les cheveux",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "het voorhoofd"
+        },
+        {
+          "id": "hals",
+          "label": "de hals"
+        },
+        {
+          "id": "haar",
+          "label": "het haar"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "de wenkbrauw"
+        }
+      ],
+      "correctAnswerId": "haar",
+      "explanation": "het haar = les cheveux. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "haar.png",
+        "alt": "les cheveux : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-hand",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la main » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La main",
       "answers": [
         {
           "id": "vinger",
@@ -407,14 +722,20 @@
         }
       ],
       "correctAnswerId": "hand",
-      "explanation": "De hand = la main. Aan je hand zitten je vingers en je duim.",
-      "emoji": "🧍"
+      "explanation": "de hand = la main. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hand.png",
+        "alt": "la main : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-hand",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit aan het einde van je arm en heb vingers. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La main",
       "answers": [
         {
           "id": "vinger",
@@ -434,14 +755,53 @@
         }
       ],
       "correctAnswerId": "hand",
-      "explanation": "De hand = la main. Aan je hand zitten je vingers en je duim.",
-      "emoji": "🧍"
+      "explanation": "de hand = la main. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hand.png",
+        "alt": "la main : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-hand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La main",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "de vinger"
+        },
+        {
+          "id": "hand",
+          "label": "de hand"
+        },
+        {
+          "id": "voet",
+          "label": "de voet"
+        },
+        {
+          "id": "arm",
+          "label": "de arm"
+        }
+      ],
+      "correctAnswerId": "hand",
+      "explanation": "de hand = la main. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hand.png",
+        "alt": "la main : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-vinger",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le doigt » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le doigt",
       "answers": [
         {
           "id": "vinger",
@@ -461,14 +821,20 @@
         }
       ],
       "correctAnswerId": "vinger",
-      "explanation": "De vinger = le doigt. Met een vinger kun je wijzen of op een toets drukken.",
-      "emoji": "🧍"
+      "explanation": "de vinger = le doigt. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "vinger.png",
+        "alt": "le doigt : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-vinger",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben een van de lange, beweeglijke delen aan je hand, naast je duim. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le doigt",
       "answers": [
         {
           "id": "vinger",
@@ -488,14 +854,53 @@
         }
       ],
       "correctAnswerId": "vinger",
-      "explanation": "De vinger = le doigt. Met een vinger kun je wijzen of op een toets drukken.",
-      "emoji": "🧍"
+      "explanation": "de vinger = le doigt. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "vinger.png",
+        "alt": "le doigt : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-vinger",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le doigt",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "de vinger"
+        },
+        {
+          "id": "teen",
+          "label": "de teen"
+        },
+        {
+          "id": "duim",
+          "label": "de duim"
+        },
+        {
+          "id": "hand",
+          "label": "de hand"
+        }
+      ],
+      "correctAnswerId": "vinger",
+      "explanation": "de vinger = le doigt. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "vinger.png",
+        "alt": "le doigt : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-duim",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le pouce » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le pouce",
       "answers": [
         {
           "id": "vinger",
@@ -515,14 +920,20 @@
         }
       ],
       "correctAnswerId": "duim",
-      "explanation": "De duim = le pouce. Je duim is de korte, dikke vinger aan de zijkant van je hand.",
-      "emoji": "🧍"
+      "explanation": "de duim = le pouce. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "duim.png",
+        "alt": "le pouce : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-duim",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben de korte, dikke vinger aan de zijkant van je hand. Je steekt mij op om te zeggen: goed zo! Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le pouce",
       "answers": [
         {
           "id": "vinger",
@@ -542,14 +953,53 @@
         }
       ],
       "correctAnswerId": "duim",
-      "explanation": "De duim = le pouce. Je duim is de korte, dikke vinger aan de zijkant van je hand.",
-      "emoji": "🧍"
+      "explanation": "de duim = le pouce. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "duim.png",
+        "alt": "le pouce : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-duim",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le pouce",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "de vinger"
+        },
+        {
+          "id": "teen",
+          "label": "de teen"
+        },
+        {
+          "id": "hand",
+          "label": "de hand"
+        },
+        {
+          "id": "duim",
+          "label": "de duim"
+        }
+      ],
+      "correctAnswerId": "duim",
+      "explanation": "de duim = le pouce. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "duim.png",
+        "alt": "le pouce : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-elleboog",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le coude » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le coude",
       "answers": [
         {
           "id": "schouder",
@@ -569,14 +1019,20 @@
         }
       ],
       "correctAnswerId": "elleboog",
-      "explanation": "De elleboog = le coude. Bij je elleboog kun je je arm buigen.",
-      "emoji": "🧍"
+      "explanation": "de elleboog = le coude. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "elleboog.png",
+        "alt": "le coude : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-elleboog",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit midden in je arm. Hier buig je je arm. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le coude",
       "answers": [
         {
           "id": "schouder",
@@ -596,14 +1052,53 @@
         }
       ],
       "correctAnswerId": "elleboog",
-      "explanation": "De elleboog = le coude. Bij je elleboog kun je je arm buigen.",
-      "emoji": "🧍"
+      "explanation": "de elleboog = le coude. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "elleboog.png",
+        "alt": "le coude : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-elleboog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le coude",
+      "answers": [
+        {
+          "id": "schouder",
+          "label": "de schouder"
+        },
+        {
+          "id": "enkel",
+          "label": "de enkel"
+        },
+        {
+          "id": "elleboog",
+          "label": "de elleboog"
+        },
+        {
+          "id": "knie",
+          "label": "de knie"
+        }
+      ],
+      "correctAnswerId": "elleboog",
+      "explanation": "de elleboog = le coude. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "elleboog.png",
+        "alt": "le coude : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-rug",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le dos » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le dos",
       "answers": [
         {
           "id": "heup",
@@ -623,14 +1118,20 @@
         }
       ],
       "correctAnswerId": "rug",
-      "explanation": "De rug = le dos. Je draagt een rugzak tegen je rug.",
-      "emoji": "🧍"
+      "explanation": "de rug = le dos. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "rug.png",
+        "alt": "le dos : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-rug",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben de achterkant van je romp. Een rugzak rust tegen mij. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le dos",
       "answers": [
         {
           "id": "heup",
@@ -650,14 +1151,53 @@
         }
       ],
       "correctAnswerId": "rug",
-      "explanation": "De rug = le dos. Je draagt een rugzak tegen je rug.",
-      "emoji": "🧍"
+      "explanation": "de rug = le dos. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "rug.png",
+        "alt": "le dos : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-rug",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le dos",
+      "answers": [
+        {
+          "id": "heup",
+          "label": "de heup"
+        },
+        {
+          "id": "rug",
+          "label": "de rug"
+        },
+        {
+          "id": "borst",
+          "label": "de borst"
+        },
+        {
+          "id": "arm",
+          "label": "de arm"
+        }
+      ],
+      "correctAnswerId": "rug",
+      "explanation": "de rug = le dos. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "rug.png",
+        "alt": "le dos : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-borst",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la poitrine » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La poitrine",
       "answers": [
         {
           "id": "borst",
@@ -677,14 +1217,20 @@
         }
       ],
       "correctAnswerId": "borst",
-      "explanation": "De borst = la poitrine. Je borst zit boven je buik, aan de voorkant van je lichaam.",
-      "emoji": "🧍"
+      "explanation": "de borst = la poitrine. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "borst.png",
+        "alt": "la poitrine : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-borst",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit aan de voorkant van je romp, onder je hals en boven je buik. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La poitrine",
       "answers": [
         {
           "id": "borst",
@@ -704,14 +1250,53 @@
         }
       ],
       "correctAnswerId": "borst",
-      "explanation": "De borst = la poitrine. Je borst zit boven je buik, aan de voorkant van je lichaam.",
-      "emoji": "🧍"
+      "explanation": "de borst = la poitrine. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "borst.png",
+        "alt": "la poitrine : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-borst",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La poitrine",
+      "answers": [
+        {
+          "id": "borst",
+          "label": "de borst"
+        },
+        {
+          "id": "rug",
+          "label": "de rug"
+        },
+        {
+          "id": "hals",
+          "label": "de hals"
+        },
+        {
+          "id": "heup",
+          "label": "de heup"
+        }
+      ],
+      "correctAnswerId": "borst",
+      "explanation": "de borst = la poitrine. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "borst.png",
+        "alt": "la poitrine : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-arm",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le bras » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le bras",
       "answers": [
         {
           "id": "been",
@@ -731,14 +1316,20 @@
         }
       ],
       "correctAnswerId": "arm",
-      "explanation": "De arm = le bras. Je arm loopt van je schouder tot je pols.",
-      "emoji": "🧍"
+      "explanation": "de arm = le bras. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "arm.png",
+        "alt": "le bras : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-arm",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik verbind je schouder met je hand. Je kunt mij omhoogsteken. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le bras",
       "answers": [
         {
           "id": "been",
@@ -758,14 +1349,53 @@
         }
       ],
       "correctAnswerId": "arm",
-      "explanation": "De arm = le bras. Je arm loopt van je schouder tot je pols.",
-      "emoji": "🧍"
+      "explanation": "de arm = le bras. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "arm.png",
+        "alt": "le bras : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-arm",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le bras",
+      "answers": [
+        {
+          "id": "been",
+          "label": "het been"
+        },
+        {
+          "id": "hand",
+          "label": "de hand"
+        },
+        {
+          "id": "schouder",
+          "label": "de schouder"
+        },
+        {
+          "id": "arm",
+          "label": "de arm"
+        }
+      ],
+      "correctAnswerId": "arm",
+      "explanation": "de arm = le bras. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "arm.png",
+        "alt": "le bras : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-schouder",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « l’épaule » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "L’épaule",
       "answers": [
         {
           "id": "elleboog",
@@ -785,14 +1415,20 @@
         }
       ],
       "correctAnswerId": "schouder",
-      "explanation": "De schouder = l’épaule. Je schouder zit bovenaan je arm, naast je hals.",
-      "emoji": "🧍"
+      "explanation": "de schouder = l’épaule. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "schouder.png",
+        "alt": "l’épaule : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-schouder",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit bovenaan je arm, naast je hals. Een bandje van je rugzak ligt op mij. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "L’épaule",
       "answers": [
         {
           "id": "elleboog",
@@ -812,14 +1448,53 @@
         }
       ],
       "correctAnswerId": "schouder",
-      "explanation": "De schouder = l’épaule. Je schouder zit bovenaan je arm, naast je hals.",
-      "emoji": "🧍"
+      "explanation": "de schouder = l’épaule. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "schouder.png",
+        "alt": "l’épaule : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-schouder",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "L’épaule",
+      "answers": [
+        {
+          "id": "elleboog",
+          "label": "de elleboog"
+        },
+        {
+          "id": "hals",
+          "label": "de hals"
+        },
+        {
+          "id": "schouder",
+          "label": "de schouder"
+        },
+        {
+          "id": "heup",
+          "label": "de heup"
+        }
+      ],
+      "correctAnswerId": "schouder",
+      "explanation": "de schouder = l’épaule. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "schouder.png",
+        "alt": "l’épaule : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-hals",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le cou » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le cou",
       "answers": [
         {
           "id": "voorhoofd",
@@ -839,14 +1514,20 @@
         }
       ],
       "correctAnswerId": "hals",
-      "explanation": "De hals = le cou. Je hals zit tussen je hoofd en je romp.",
-      "emoji": "🧍"
+      "explanation": "de hals = le cou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hals.png",
+        "alt": "le cou : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-hals",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik verbind je hoofd met je romp. Een sjaal zit om mij. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le cou",
       "answers": [
         {
           "id": "voorhoofd",
@@ -866,14 +1547,53 @@
         }
       ],
       "correctAnswerId": "hals",
-      "explanation": "De hals = le cou. Je hals zit tussen je hoofd en je romp.",
-      "emoji": "🧍"
+      "explanation": "de hals = le cou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hals.png",
+        "alt": "le cou : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-hals",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le cou",
+      "answers": [
+        {
+          "id": "voorhoofd",
+          "label": "het voorhoofd"
+        },
+        {
+          "id": "hals",
+          "label": "de hals"
+        },
+        {
+          "id": "schouder",
+          "label": "de schouder"
+        },
+        {
+          "id": "borst",
+          "label": "de borst"
+        }
+      ],
+      "correctAnswerId": "hals",
+      "explanation": "de hals = le cou. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "hals.png",
+        "alt": "le cou : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-mond",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la bouche » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La bouche",
       "answers": [
         {
           "id": "mond",
@@ -893,14 +1613,20 @@
         }
       ],
       "correctAnswerId": "mond",
-      "explanation": "De mond = la bouche. Je doet je mond open om een hap te nemen.",
-      "emoji": "🧍"
+      "explanation": "de mond = la bouche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "mond.png",
+        "alt": "la bouche : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-mond",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben de opening in je gezicht waarmee je eet en praat. Je lippen zitten om mij heen. Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La bouche",
       "answers": [
         {
           "id": "mond",
@@ -920,14 +1646,53 @@
         }
       ],
       "correctAnswerId": "mond",
-      "explanation": "De mond = la bouche. Je doet je mond open om een hap te nemen.",
-      "emoji": "🧍"
+      "explanation": "de mond = la bouche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "mond.png",
+        "alt": "la bouche : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-mond",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La bouche",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "de mond"
+        },
+        {
+          "id": "neus",
+          "label": "de neus"
+        },
+        {
+          "id": "tong",
+          "label": "de tong"
+        },
+        {
+          "id": "tand",
+          "label": "de tand"
+        }
+      ],
+      "correctAnswerId": "mond",
+      "explanation": "de mond = la bouche. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "mond.png",
+        "alt": "la bouche : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-neus",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le nez » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le nez",
       "answers": [
         {
           "id": "mond",
@@ -947,14 +1712,20 @@
         }
       ],
       "correctAnswerId": "neus",
-      "explanation": "De neus = le nez. Met je neus ruik je geuren.",
-      "emoji": "🧍"
+      "explanation": "de neus = le nez. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "neus.png",
+        "alt": "le nez : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-neus",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit midden in je gezicht, boven je mond. Met mij kun je ruiken. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le nez",
       "answers": [
         {
           "id": "mond",
@@ -974,14 +1745,53 @@
         }
       ],
       "correctAnswerId": "neus",
-      "explanation": "De neus = le nez. Met je neus ruik je geuren.",
-      "emoji": "🧍"
+      "explanation": "de neus = le nez. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "neus.png",
+        "alt": "le nez : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-neus",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le nez",
+      "answers": [
+        {
+          "id": "mond",
+          "label": "de mond"
+        },
+        {
+          "id": "oor",
+          "label": "het oor"
+        },
+        {
+          "id": "oog",
+          "label": "het oog"
+        },
+        {
+          "id": "neus",
+          "label": "de neus"
+        }
+      ],
+      "correctAnswerId": "neus",
+      "explanation": "de neus = le nez. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "neus.png",
+        "alt": "le nez : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-oor",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « l’oreille » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "L’oreille",
       "answers": [
         {
           "id": "neus",
@@ -1001,14 +1811,20 @@
         }
       ],
       "correctAnswerId": "oor",
-      "explanation": "Het oor = l’oreille. Met je oor hoor je geluiden.",
-      "emoji": "🧍"
+      "explanation": "het oor = l’oreille. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oor.png",
+        "alt": "l’oreille : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-oor",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit aan de zijkant van je hoofd. Met mij hoor je geluiden. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "L’oreille",
       "answers": [
         {
           "id": "neus",
@@ -1028,14 +1844,53 @@
         }
       ],
       "correctAnswerId": "oor",
-      "explanation": "Het oor = l’oreille. Met je oor hoor je geluiden.",
-      "emoji": "🧍"
+      "explanation": "het oor = l’oreille. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oor.png",
+        "alt": "l’oreille : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-oor",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "L’oreille",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "de neus"
+        },
+        {
+          "id": "mond",
+          "label": "de mond"
+        },
+        {
+          "id": "oor",
+          "label": "het oor"
+        },
+        {
+          "id": "oog",
+          "label": "het oog"
+        }
+      ],
+      "correctAnswerId": "oor",
+      "explanation": "het oor = l’oreille. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oor.png",
+        "alt": "l’oreille : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-wenkbrauw",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le sourcil » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le sourcil",
       "answers": [
         {
           "id": "oog",
@@ -1055,14 +1910,20 @@
         }
       ],
       "correctAnswerId": "wenkbrauw",
-      "explanation": "De wenkbrauw = le sourcil. Een wenkbrauw is een boogje van haartjes boven een oog.",
-      "emoji": "🧍"
+      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "wenkbrauw.png",
+        "alt": "le sourcil : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-wenkbrauw",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben een boogje van haartjes boven je oog. Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le sourcil",
       "answers": [
         {
           "id": "oog",
@@ -1082,14 +1943,53 @@
         }
       ],
       "correctAnswerId": "wenkbrauw",
-      "explanation": "De wenkbrauw = le sourcil. Een wenkbrauw is een boogje van haartjes boven een oog.",
-      "emoji": "🧍"
+      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "wenkbrauw.png",
+        "alt": "le sourcil : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-wenkbrauw",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le sourcil",
+      "answers": [
+        {
+          "id": "oog",
+          "label": "het oog"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "de wenkbrauw"
+        },
+        {
+          "id": "haar",
+          "label": "het haar"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "het voorhoofd"
+        }
+      ],
+      "correctAnswerId": "wenkbrauw",
+      "explanation": "de wenkbrauw = le sourcil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "wenkbrauw.png",
+        "alt": "le sourcil : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-tand",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la dent » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La dent",
       "answers": [
         {
           "id": "tand",
@@ -1109,14 +2009,20 @@
         }
       ],
       "correctAnswerId": "tand",
-      "explanation": "De tand = la dent. Met een tand bijt je in je eten.",
-      "emoji": "🧍"
+      "explanation": "de tand = la dent. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tand.png",
+        "alt": "la dent : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-tand",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben hard en wit en zit in je mond. Je gebruikt mij om te bijten. Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La dent",
       "answers": [
         {
           "id": "tand",
@@ -1136,14 +2042,53 @@
         }
       ],
       "correctAnswerId": "tand",
-      "explanation": "De tand = la dent. Met een tand bijt je in je eten.",
-      "emoji": "🧍"
+      "explanation": "de tand = la dent. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tand.png",
+        "alt": "la dent : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-tand",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La dent",
+      "answers": [
+        {
+          "id": "tand",
+          "label": "de tand"
+        },
+        {
+          "id": "tong",
+          "label": "de tong"
+        },
+        {
+          "id": "mond",
+          "label": "de mond"
+        },
+        {
+          "id": "teen",
+          "label": "de teen"
+        }
+      ],
+      "correctAnswerId": "tand",
+      "explanation": "de tand = la dent. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tand.png",
+        "alt": "la dent : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-voorhoofd",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « le front » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "Le front",
       "answers": [
         {
           "id": "wenkbrauw",
@@ -1163,14 +2108,20 @@
         }
       ],
       "correctAnswerId": "voorhoofd",
-      "explanation": "Het voorhoofd = le front. Je voorhoofd zit boven je wenkbrauwen.",
-      "emoji": "🧍"
+      "explanation": "het voorhoofd = le front. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voorhoofd.png",
+        "alt": "le front : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-voorhoofd",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit boven je wenkbrauwen en onder je haar. Welk deel van je gezicht ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "Le front",
       "answers": [
         {
           "id": "wenkbrauw",
@@ -1190,14 +2141,53 @@
         }
       ],
       "correctAnswerId": "voorhoofd",
-      "explanation": "Het voorhoofd = le front. Je voorhoofd zit boven je wenkbrauwen.",
-      "emoji": "🧍"
+      "explanation": "het voorhoofd = le front. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voorhoofd.png",
+        "alt": "le front : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-voorhoofd",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "Le front",
+      "answers": [
+        {
+          "id": "wenkbrauw",
+          "label": "de wenkbrauw"
+        },
+        {
+          "id": "hals",
+          "label": "de hals"
+        },
+        {
+          "id": "borst",
+          "label": "de borst"
+        },
+        {
+          "id": "voorhoofd",
+          "label": "het voorhoofd"
+        }
+      ],
+      "correctAnswerId": "voorhoofd",
+      "explanation": "het voorhoofd = le front. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "voorhoofd.png",
+        "alt": "le front : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-oog",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « l’œil » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "L’œil",
       "answers": [
         {
           "id": "neus",
@@ -1217,14 +2207,20 @@
         }
       ],
       "correctAnswerId": "oog",
-      "explanation": "Het oog = l’œil. Met je oog kun je zien.",
-      "emoji": "🧍"
+      "explanation": "het oog = l’œil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oog.png",
+        "alt": "l’œil : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-oog",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik zit in je gezicht. Met mij zie je kleuren, vormen en licht. Welk lichaamsdeel ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "L’œil",
       "answers": [
         {
           "id": "neus",
@@ -1244,14 +2240,53 @@
         }
       ],
       "correctAnswerId": "oog",
-      "explanation": "Het oog = l’œil. Met je oog kun je zien.",
-      "emoji": "🧍"
+      "explanation": "het oog = l’œil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oog.png",
+        "alt": "l’œil : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-oog",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "L’œil",
+      "answers": [
+        {
+          "id": "neus",
+          "label": "de neus"
+        },
+        {
+          "id": "wenkbrauw",
+          "label": "de wenkbrauw"
+        },
+        {
+          "id": "oog",
+          "label": "het oog"
+        },
+        {
+          "id": "oor",
+          "label": "het oor"
+        }
+      ],
+      "correctAnswerId": "oog",
+      "explanation": "het oog = l’œil. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "oog.png",
+        "alt": "l’œil : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     },
     {
       "id": "lichaamsdelen-nl-woord-tong",
       "subject": "dutch",
-      "skill": "lichaamsdelen-woord",
-      "prompt": "Hoe zeg je « la langue (dans la bouche) » in het Nederlands? Antwoord met de of het.",
+      "skill": "lichaamsdelen-kijk",
+      "prompt": "La langue",
       "answers": [
         {
           "id": "vinger",
@@ -1271,14 +2306,20 @@
         }
       ],
       "correctAnswerId": "tong",
-      "explanation": "De tong = la langue (dans la bouche). Met je tong proef je smaken. Je tong helpt ook bij het praten.",
-      "emoji": "🧍"
+      "explanation": "de tong = la langue. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tong.png",
+        "alt": "la langue : la partie entourée en rouge."
+      },
+      "responseMode": "choice"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-tong",
       "subject": "dutch",
-      "skill": "lichaamsdelen-raadsel",
-      "prompt": "Ik ben zacht en beweeglijk en zit in je mond. Met mij proef je smaken. Wat ben ik? Antwoord met de of het.",
+      "skill": "lichaamsdelen-schrijf",
+      "prompt": "La langue",
       "answers": [
         {
           "id": "vinger",
@@ -1298,8 +2339,47 @@
         }
       ],
       "correctAnswerId": "tong",
-      "explanation": "De tong = la langue (dans la bouche). Met je tong proef je smaken. Je tong helpt ook bij het praten.",
-      "emoji": "🧍"
+      "explanation": "de tong = la langue. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tong.png",
+        "alt": "la langue : la partie entourée en rouge."
+      },
+      "responseMode": "write"
+    },
+    {
+      "id": "lichaamsdelen-nl-bouw-tong",
+      "subject": "dutch",
+      "skill": "lichaamsdelen-bouw",
+      "prompt": "La langue",
+      "answers": [
+        {
+          "id": "vinger",
+          "label": "de vinger"
+        },
+        {
+          "id": "tong",
+          "label": "de tong"
+        },
+        {
+          "id": "tand",
+          "label": "de tand"
+        },
+        {
+          "id": "mond",
+          "label": "de mond"
+        }
+      ],
+      "correctAnswerId": "tong",
+      "explanation": "de tong = la langue. 🌟",
+      "emoji": "🧍",
+      "media": {
+        "type": "image",
+        "file": "tong.png",
+        "alt": "la langue : la partie entourée en rouge."
+      },
+      "responseMode": "letters"
     }
   ]
 }

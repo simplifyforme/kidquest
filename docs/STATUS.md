@@ -113,3 +113,9 @@ Ouvrir l'onglet Actions du dépôt, choisir le dernier run Windows installer ré
 - Les nouvelles activités sont visibles par défaut, peuvent être masquées depuis Paramètres et utilisent le score/historique des packs existants.
 - Une première installation Windows **0.9.0** est nécessaire pour le moteur multimédia ; les nouveaux contenus compatibles et leurs médias s'installent ensuite sans reconstruire l'application. Les anciens packs et jeux intégrés sont conservés.
 - Types et tailles sont restreints : pas de script distant, HTML/JS exécutable ni extension arbitraire. Les nouveaux moteurs programmés requièrent toujours un nouvel installateur.
+
+## Version 0.9.1 — Corps humain illustré, écriture et puzzles
+
+- « Mijn lichaam · Kijk, schrijf en speel! » v2 : 24 illustrations ciblées, noms français très courts, 72 défis (QCM, saisie, lettres) dans Nederlands — École.
+- Installer 0.9.1 une fois pour conserver l’image pendant l’écriture et les lettres ; la v2 du contenu s’obtient par « Vérifier les mises à jour ». Les anciens 0.9.0 gardent les QCM visuels.
+- Les autres quiz photo, points, historiques et préférences restent compatibles. Updater binaire signé toujours désactivé.

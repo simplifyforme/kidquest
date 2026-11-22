@@ -5,7 +5,7 @@ import type {ContentPack} from "../types";
 import type {RemoteCatalog} from "./catalogConfig";
 import {getCatalog} from "./catalog";
 import {isValidPack} from "./updates";
-import {correctLabel, eligibleModes, isCorrectText, matchingPairs} from "./exerciseModes";
+import {correctLabel, eligibleModes, isCorrectText, planModes} from "./exerciseModes";
 
 const pack = bodyParts as ContentPack;
 const expected = {
@@ -25,20 +25,22 @@ describe("downloadable school Dutch body parts", () => {
    .toMatchObject({category:"dutch", kind:"quiz", emoji:"🧍"});
  });
 
- it("covers precisely the 24 requested words with articles in vocabulary and riddle questions", () => {
-  expect(pack.questions).toHaveLength(48);
-  expect(new Set(pack.questions.map(q => q.id)).size).toBe(48);
+ it("covers precisely the 24 requested words with articles in three illustrated challenges", () => {
+  expect(pack.questions).toHaveLength(72);
+  expect(new Set(pack.questions.map(q => q.id)).size).toBe(72);
   expect(new Set(pack.questions.map(q => q.correctAnswerId)))
    .toEqual(new Set(Object.keys(expected)));
   for (const [word, label] of Object.entries(expected)) {
    const questions = pack.questions.filter(q => q.correctAnswerId === word);
-   expect(questions, word).toHaveLength(2);
+   expect(questions, word).toHaveLength(3);
    expect(new Set(questions.map(q => q.skill)))
-    .toEqual(new Set(["lichaamsdelen-woord", "lichaamsdelen-raadsel"]));
+    .toEqual(new Set(["lichaamsdelen-kijk", "lichaamsdelen-schrijf", "lichaamsdelen-bouw"]));
    for (const q of questions) {
     expect(q.subject).toBe("dutch");
     expect(correctLabel(q), q.id).toBe(label);
-    expect(q.prompt).toContain("Antwoord met de of het.");
+    expect(q.prompt.length).toBeLessThan(25);
+    expect(q.prompt).not.toMatch(/Antwoord|Welk|Hoe|Ik /);
+    expect(q.explanation.length).toBeLessThan(65);
     expect(q.explanation.toLowerCase()).toContain(label);
     expect(q.answers).toHaveLength(4);
     expect(new Set(q.answers.map(a => a.id)).size).toBe(4);
@@ -49,20 +51,22 @@ describe("downloadable school Dutch body parts", () => {
    }
   }
   const tongue = pack.questions.find(q => q.id === "lichaamsdelen-nl-woord-tong")!;
-  expect(tongue.prompt).toContain("la langue (dans la bouche)");
+  expect(tongue.prompt).toBe("La langue");
   expect(isCorrectText(tongue, "de tang")).toBe(false);
  });
 
- it("supports writing and word games with three distinct, self-contained matching pairs", () => {
-  for (const q of pack.questions) {
-   expect(eligibleModes(q, pack.questions)).toEqual(expect.arrayContaining([
-    "choice", "write", "letters", "missing", "matching", "memory"
-   ]));
-   const pairs = matchingPairs(q, pack.questions);
-   expect(pairs).toHaveLength(3);
-   expect(new Set(pairs.map(correctLabel)).size).toBe(3);
-   expect(new Set(pairs.map(p => p.prompt)).size).toBe(3);
-   expect(q.media).toBeUndefined();
+ it("preserves every published question ID and keeps the image in all three interactions", () => {
+  for(const word of Object.keys(expected)){
+   for(const oldKind of ["woord","raadsel"]){
+    expect(pack.questions.some(q=>q.id===`lichaamsdelen-nl-${oldKind}-${word}`)).toBe(true);
+   }
+  }
+  expect(pack.version).toBe(2);
+  for(const q of pack.questions){
+   expect(q.media).toMatchObject({type:"image",file:q.correctAnswerId+".png"});
+   expect(q.media!.alt).not.toContain(correctLabel(q));
+   expect(eligibleModes(q,pack.questions)).toEqual([q.responseMode]);
+   for(let session=0;session<5;session++)expect(planModes([q],pack.questions,session)).toEqual([q.responseMode]);
   }
  });
 });

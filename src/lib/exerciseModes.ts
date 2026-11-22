@@ -72,8 +72,15 @@ export function matchingPairs(question: Question, pool: Question[]): Question[] 
 }
 
 export function eligibleModes(question: Question, pool: Question[]): ExerciseMode[] {
-  // Visual questions stay in a photo-aware choice mode, not a text-only memory or letter puzzle.
-  if(question.media)return ["choice"];
+  // Images remain above ExercisePlay in all three modes; legacy photo packs stay in choice.
+  if(question.media){
+    if(question.responseMode==="write")return ["write"];
+    if(question.responseMode==="letters"){
+      const length=Array.from(correctLabel(question).replace(/\s+/g," ").replace(/ /g,"")).length;
+      return length>=2&&length<=15?["letters"]:["write"];
+    }
+    return ["choice"];
+  }
   const answer = correctLabel(question);
   const characters = Array.from(answer.replace(/\s+/g, ""));
   const words = answer.trim().split(/\s+/);

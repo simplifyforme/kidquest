@@ -202,7 +202,7 @@ export default function App(){
          </div>
        </details>;
       })}</div>
-     </section><div className="small-note">Version 0.9.0 · Les données de progression restent sur cet ordinateur. Aucun compte enfant n'est nécessaire.</div></section>}
+     </section><div className="small-note">Version 0.9.1 · Les données de progression restent sur cet ordinateur. Aucun compte enfant n'est nécessaire.</div></section>}
   </main>
   <footer className="footer"><span>KidQuest ✦ Apprendre est une aventure</span><span>Fait avec 💜 pour les petits curieux</span></footer>
  </div>;

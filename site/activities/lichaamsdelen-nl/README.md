@@ -1,47 +1,27 @@
-# Mijn lichaam · Ken jij de lichaamsdelen?
+# Mijn lichaam · Kijk, schrijf en speel!
 
-Activité téléchargeable dans **Nederlands — École** sur KidQuest 0.9.0+.
+Dans **Nederlands — École**, 24 parties du corps pour un débutant de 8 ans.
 
-48 questions, deux par mot : traduction français → néerlandais et devinette en néerlandais belge. Les réponses demandent explicitement le nom avec **de** ou **het**. Les corrections bilingues donnent la traduction et un repère simple de localisation ou de fonction.
+## Trois défis visuels par mot
 
-Les moteurs existants alternent automatiquement QCM, saisie au clavier, lettres, lettres manquantes, mots à ordonner, vrai/faux, duel, associations et memory quand ils sont compatibles. Chaque partie tire huit questions ; rejouer permet de rencontrer d’autres mots sans garantir une couverture complète en une partie. Les consignes sont autonomes et restent compréhensibles dans les modes d’association.
+- 👀 **Choisir** le mot néerlandais parmi quatre propositions.
+- ✏️ **Écrire** le mot néerlandais avec de/het.
+- 🧩 **Reconstruire** le mot avec des lettres.
 
-Le mot « tang » de la demande est interprété comme **tong** (la langue dans la bouche). **Tang** signifie « pince » et ne fait pas partie de ce vocabulaire du corps. **Het haar** désigne ici les cheveux ; **het been** désigne ici la jambe.
+Chaque question montre un schéma illustré et son nom en français, par exemple **Le bras**. Le cercle rouge et la flèche indiquent précisément la partie à nommer. La consigne est le nom français seul ; le moteur affiche le type de défi en néerlandais. Pas de devinette longue, ni de paragraphe à lire. La correction tient en une ligne : « de arm = le bras. 🌟 ».
 
-## Vocabulaire demandé
+Les trois défis conservent l’image pendant la réponse. Les parties de huit questions sont mélangées automatiquement. Les 72 défis couvrent trois fois les 24 mots ; une partie ne garantit pas de rencontrer toutes les notions. Les articles sont appris avec le nom. Les réponses exactes rapportent les points habituels et chaque session terminée reste enregistrée.
 
-| Nederlands | Français |
-|---|---|
-| de voet | le pied |
-| de teen | l’orteil |
-| de knie | le genou |
-| het been | la jambe |
-| de enkel | la cheville |
-| de heup | la hanche |
-| het haar | les cheveux |
-| de hand | la main |
-| de vinger | le doigt |
-| de duim | le pouce |
-| de elleboog | le coude |
-| de rug | le dos |
-| de borst | la poitrine |
-| de arm | le bras |
-| de schouder | l’épaule |
-| de hals | le cou |
-| de mond | la bouche |
-| de neus | le nez |
-| het oor | l’oreille |
-| de wenkbrauw | le sourcil |
-| de tand | la dent |
-| het voorhoofd | le front |
-| het oog | l’œil |
-| de tong | la langue (dans la bouche) |
+## Illustrations et mots
 
-## Distribution et suivi
+24 schémas anatomiques originaux, dessinés pour KidQuest, exportés en PNG. Ce sont des illustrations, pas des photographies. Les sources vectorielles sont conservées dans `illustrations-source.json` ; aucun SVG exécutable n’est téléchargé par l’application. Les PNG sont dans `assets/` et sont disponibles hors ligne après téléchargement.
 
-- Pack de données uniquement, sans nouveau moteur, sans média externe ni script téléchargé.
-- Aucun nouvel installateur sur KidQuest 0.9.0+ : « Vérifier les mises à jour » suffit.
-- Utilisable hors ligne après téléchargement. Lecture de la question via la synthèse vocale existante, selon les voix système disponibles.
-- Identifiant permanent `lichaamsdelen-nl` ; IDs des 48 questions à conserver dans les versions suivantes.
-- Même enregistrement des points et sessions, visibilité par défaut et masquage parental que les autres quiz.
-- Le manifeste et les SHA-256 sont générés par GitHub Actions après fusion.
+Vocabulaire : voet, teen, knie, been, enkel, heup, haar, hand, vinger, duim, elleboog, rug, borst, arm, schouder, hals, mond, neus, oor, wenkbrauw, tand, voorhoofd, oog, tong. « tong » = la langue dans la bouche ; « tang » = une pince, exclu du jeu. « haar » désigne ici les cheveux, « been » la jambe.
+
+## Version et compatibilité
+
+- Pack `lichaamsdelen-nl` **v2**, catalogue v8. Les 48 IDs publiés sont conservés ; 24 nouveaux IDs `lichaamsdelen-nl-bouw-*` ajoutent les puzzles.
+- **KidQuest 0.9.1** est requis pour les trois modes avec image. Installer cette version une fois, puis cliquer sur « Vérifier les mises à jour ». Les anciennes versions 0.9.0 affichent les images mais utilisent seulement le QCM ; elles ignorent le nouveau champ de données facultatif `responseMode`.
+- Aucun effacement de SQLite, des points, des sessions ni de la visibilité parentale. Les autres packs photo gardent leur QCM existant.
+- Pas de sélection de méthode par l’enfant ; chaque question précise son interaction. Aucun script téléchargé. Les tailles et empreintes SHA-256 sont vérifiées avant installation du pack.
+- Le manifeste est régénéré par GitHub Actions après fusion.
