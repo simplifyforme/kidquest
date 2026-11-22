@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 6,
+  "version": 7,
   "categories": [
     {
       "id": "math",
@@ -144,6 +144,14 @@
       "subtitle": "24 lichaamsdelen · woorden, raadsels en schrijven",
       "emoji": "🧍",
       "order": 61
+    },
+    {
+      "id": "verbe-predicat-fr",
+      "category": "french",
+      "title": "Les détectives de la phrase · Verbe et prédicat",
+      "subtitle": "Débutant · infinitif, verbe conjugué et prédicat",
+      "emoji": "🕵️",
+      "order": 81
     }
   ]
 }
