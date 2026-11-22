@@ -21,9 +21,9 @@
     }
   ],
   "catalog": {
-    "version": 5,
+    "version": 6,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "3f6155fe1bef5d02269db7bd1fcfc8e6207232e2569b54db1a29a2929a3f1635"
+    "sha256": "cd8480610b005be85fca3302ad591acb34dd9782c62c64669f52007df42bae17"
   },
   "activities": [
     {
@@ -238,6 +238,13 @@
           "mime": "image/png"
         }
       ]
+    },
+    {
+      "id": "lichaamsdelen-nl",
+      "version": 1,
+      "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/pack.json",
+      "sha256": "a3131d2f1f48c18d406a80d9d16853fe3c4ca8878e254dc20d2d744d0945c15c",
+      "assets": []
     }
   ]
 }
