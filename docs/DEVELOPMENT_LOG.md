@@ -399,3 +399,12 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** `npm run build`, `npm test` (67 tests réussis), génération du manifeste et `git diff --check` réussis. Vérification de 24 PNG valides/distincts, des 72 références et des anciens IDs ; contrôle visuel de la planche des 24 schémas et recadrages précis (dent, langue, œil, sourcil, pied). Tests des trois modes, du planificateur, du rejet des modes inconnus/sans image/audio, du repli pour réponses longues et des anciens quiz photo restés en QCM. CI Windows et contrôle du journal à vérifier avant fusion.
 - **Traçabilité :** branche `feat/lichaam-visuele-uitdagingen`. Le manifeste et les empreintes des 24 ressources seront régénérés par `pages.yml` après fusion ; ce commit automatique est couvert par cette entrée.
 - **Limites / suite :** huit défis mélangés par session, couverture complète non garantie en une seule partie. Articles de/het attendus avec le nom. Vérifier fusion, publication effective, accès et empreintes des PNG, puis essai sur le vrai PC de l’enfant après installation 0.9.1.
+
+### 2026-11-22 — 0.9.1 — Lire les repères français dans la bonne langue
+- **Type :** accessibilité / localisation.
+- **Pourquoi :** les nouvelles questions illustrées affichent uniquement un nom français, qui ne doit pas être lu avec la voix néerlandaise de l’interface.
+- **Changements :** champ facultatif validé `Question.promptLocale` (`fr-BE` / `nl-BE`) ; les boutons de lecture dans App et dans le mode écriture respectent cette langue. Les 72 repères du corps humain sont marqués `fr-BE`, sans révéler la réponse néerlandaise avant validation. Interface et réponses restent en nl-BE.
+- **Fichiers principaux :** types, validateur, `src/App.tsx`, `src/components/ExercisePlay.tsx`, pack du corps humain, documentation des bundles et tests associés.
+- **Données et compatibilité :** même version 0.9.1 et pack v2 non encore fusionnés. Champs absents : comportement précédent conservé, sans modification de stockage ni des identifiants. Voix disponibles selon le système.
+- **Validation :** compilation, 68 tests, génération du manifeste et contrôle de diff réussis après cet ajustement ; la nouvelle CI devra valider le dernier commit avant fusion.
+- **Traçabilité :** PR #27. Publication de la v2 et des PNG à vérifier après fusion.

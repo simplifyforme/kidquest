@@ -1,7 +1,7 @@
 export type Subject="math"|"numbers"|"french"|"dutch";
 export type Answer={id:string;label:string};
 export type QuestionMedia={type:"image"|"gif"|"video"|"audio";file:string;alt:string};
-export type Question={id:string;subject:Subject;skill:string;prompt:string;hint?:string;responseMode?:"choice"|"write"|"letters";answers:Answer[];correctAnswerId:string;explanation:string;emoji?:string;media?:QuestionMedia};
+export type Question={id:string;subject:Subject;skill:string;prompt:string;hint?:string;promptLocale?:"fr-BE"|"nl-BE";responseMode?:"choice"|"write"|"letters";answers:Answer[];correctAnswerId:string;explanation:string;emoji?:string;media?:QuestionMedia};
 export type ContentPack={id:string;version:number;title:string;questions:Question[];category?: "math"|"french"|"dutch"|"chess"|"nature";locale?: "fr-BE"|"nl-BE"};
 export type Progress={points:number;correct:number;attempted:number;streak:number;bestStreak:number;lastPlayed:string|null};
 export type Attempt={questionId:string;correct:boolean;answerId:string;date:string;packId:string};

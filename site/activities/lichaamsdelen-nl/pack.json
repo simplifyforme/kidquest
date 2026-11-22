@@ -36,7 +36,8 @@
         "file": "voet.png",
         "alt": "le pied : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-voet",
@@ -69,7 +70,8 @@
         "file": "voet.png",
         "alt": "le pied : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-voet",
@@ -102,7 +104,8 @@
         "file": "voet.png",
         "alt": "le pied : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-teen",
@@ -135,7 +138,8 @@
         "file": "teen.png",
         "alt": "l’orteil : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-teen",
@@ -168,7 +172,8 @@
         "file": "teen.png",
         "alt": "l’orteil : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-teen",
@@ -201,7 +206,8 @@
         "file": "teen.png",
         "alt": "l’orteil : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-knie",
@@ -234,7 +240,8 @@
         "file": "knie.png",
         "alt": "le genou : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-knie",
@@ -267,7 +274,8 @@
         "file": "knie.png",
         "alt": "le genou : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-knie",
@@ -300,7 +308,8 @@
         "file": "knie.png",
         "alt": "le genou : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-been",
@@ -333,7 +342,8 @@
         "file": "been.png",
         "alt": "la jambe : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-been",
@@ -366,7 +376,8 @@
         "file": "been.png",
         "alt": "la jambe : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-been",
@@ -399,7 +410,8 @@
         "file": "been.png",
         "alt": "la jambe : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-enkel",
@@ -432,7 +444,8 @@
         "file": "enkel.png",
         "alt": "la cheville : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-enkel",
@@ -465,7 +478,8 @@
         "file": "enkel.png",
         "alt": "la cheville : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-enkel",
@@ -498,7 +512,8 @@
         "file": "enkel.png",
         "alt": "la cheville : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-heup",
@@ -531,7 +546,8 @@
         "file": "heup.png",
         "alt": "la hanche : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-heup",
@@ -564,7 +580,8 @@
         "file": "heup.png",
         "alt": "la hanche : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-heup",
@@ -597,7 +614,8 @@
         "file": "heup.png",
         "alt": "la hanche : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-haar",
@@ -630,7 +648,8 @@
         "file": "haar.png",
         "alt": "les cheveux : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-haar",
@@ -663,7 +682,8 @@
         "file": "haar.png",
         "alt": "les cheveux : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-haar",
@@ -696,7 +716,8 @@
         "file": "haar.png",
         "alt": "les cheveux : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-hand",
@@ -729,7 +750,8 @@
         "file": "hand.png",
         "alt": "la main : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-hand",
@@ -762,7 +784,8 @@
         "file": "hand.png",
         "alt": "la main : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-hand",
@@ -795,7 +818,8 @@
         "file": "hand.png",
         "alt": "la main : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-vinger",
@@ -828,7 +852,8 @@
         "file": "vinger.png",
         "alt": "le doigt : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-vinger",
@@ -861,7 +886,8 @@
         "file": "vinger.png",
         "alt": "le doigt : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-vinger",
@@ -894,7 +920,8 @@
         "file": "vinger.png",
         "alt": "le doigt : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-duim",
@@ -927,7 +954,8 @@
         "file": "duim.png",
         "alt": "le pouce : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-duim",
@@ -960,7 +988,8 @@
         "file": "duim.png",
         "alt": "le pouce : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-duim",
@@ -993,7 +1022,8 @@
         "file": "duim.png",
         "alt": "le pouce : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-elleboog",
@@ -1026,7 +1056,8 @@
         "file": "elleboog.png",
         "alt": "le coude : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-elleboog",
@@ -1059,7 +1090,8 @@
         "file": "elleboog.png",
         "alt": "le coude : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-elleboog",
@@ -1092,7 +1124,8 @@
         "file": "elleboog.png",
         "alt": "le coude : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-rug",
@@ -1125,7 +1158,8 @@
         "file": "rug.png",
         "alt": "le dos : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-rug",
@@ -1158,7 +1192,8 @@
         "file": "rug.png",
         "alt": "le dos : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-rug",
@@ -1191,7 +1226,8 @@
         "file": "rug.png",
         "alt": "le dos : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-borst",
@@ -1224,7 +1260,8 @@
         "file": "borst.png",
         "alt": "la poitrine : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-borst",
@@ -1257,7 +1294,8 @@
         "file": "borst.png",
         "alt": "la poitrine : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-borst",
@@ -1290,7 +1328,8 @@
         "file": "borst.png",
         "alt": "la poitrine : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-arm",
@@ -1323,7 +1362,8 @@
         "file": "arm.png",
         "alt": "le bras : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-arm",
@@ -1356,7 +1396,8 @@
         "file": "arm.png",
         "alt": "le bras : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-arm",
@@ -1389,7 +1430,8 @@
         "file": "arm.png",
         "alt": "le bras : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-schouder",
@@ -1422,7 +1464,8 @@
         "file": "schouder.png",
         "alt": "l’épaule : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-schouder",
@@ -1455,7 +1498,8 @@
         "file": "schouder.png",
         "alt": "l’épaule : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-schouder",
@@ -1488,7 +1532,8 @@
         "file": "schouder.png",
         "alt": "l’épaule : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-hals",
@@ -1521,7 +1566,8 @@
         "file": "hals.png",
         "alt": "le cou : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-hals",
@@ -1554,7 +1600,8 @@
         "file": "hals.png",
         "alt": "le cou : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-hals",
@@ -1587,7 +1634,8 @@
         "file": "hals.png",
         "alt": "le cou : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-mond",
@@ -1620,7 +1668,8 @@
         "file": "mond.png",
         "alt": "la bouche : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-mond",
@@ -1653,7 +1702,8 @@
         "file": "mond.png",
         "alt": "la bouche : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-mond",
@@ -1686,7 +1736,8 @@
         "file": "mond.png",
         "alt": "la bouche : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-neus",
@@ -1719,7 +1770,8 @@
         "file": "neus.png",
         "alt": "le nez : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-neus",
@@ -1752,7 +1804,8 @@
         "file": "neus.png",
         "alt": "le nez : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-neus",
@@ -1785,7 +1838,8 @@
         "file": "neus.png",
         "alt": "le nez : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-oor",
@@ -1818,7 +1872,8 @@
         "file": "oor.png",
         "alt": "l’oreille : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-oor",
@@ -1851,7 +1906,8 @@
         "file": "oor.png",
         "alt": "l’oreille : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-oor",
@@ -1884,7 +1940,8 @@
         "file": "oor.png",
         "alt": "l’oreille : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-wenkbrauw",
@@ -1917,7 +1974,8 @@
         "file": "wenkbrauw.png",
         "alt": "le sourcil : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-wenkbrauw",
@@ -1950,7 +2008,8 @@
         "file": "wenkbrauw.png",
         "alt": "le sourcil : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-wenkbrauw",
@@ -1983,7 +2042,8 @@
         "file": "wenkbrauw.png",
         "alt": "le sourcil : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-tand",
@@ -2016,7 +2076,8 @@
         "file": "tand.png",
         "alt": "la dent : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-tand",
@@ -2049,7 +2110,8 @@
         "file": "tand.png",
         "alt": "la dent : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-tand",
@@ -2082,7 +2144,8 @@
         "file": "tand.png",
         "alt": "la dent : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-voorhoofd",
@@ -2115,7 +2178,8 @@
         "file": "voorhoofd.png",
         "alt": "le front : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-voorhoofd",
@@ -2148,7 +2212,8 @@
         "file": "voorhoofd.png",
         "alt": "le front : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-voorhoofd",
@@ -2181,7 +2246,8 @@
         "file": "voorhoofd.png",
         "alt": "le front : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-oog",
@@ -2214,7 +2280,8 @@
         "file": "oog.png",
         "alt": "l’œil : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-oog",
@@ -2247,7 +2314,8 @@
         "file": "oog.png",
         "alt": "l’œil : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-oog",
@@ -2280,7 +2348,8 @@
         "file": "oog.png",
         "alt": "l’œil : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-woord-tong",
@@ -2313,7 +2382,8 @@
         "file": "tong.png",
         "alt": "la langue : la partie entourée en rouge."
       },
-      "responseMode": "choice"
+      "responseMode": "choice",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-raadsel-tong",
@@ -2346,7 +2416,8 @@
         "file": "tong.png",
         "alt": "la langue : la partie entourée en rouge."
       },
-      "responseMode": "write"
+      "responseMode": "write",
+      "promptLocale": "fr-BE"
     },
     {
       "id": "lichaamsdelen-nl-bouw-tong",
@@ -2379,7 +2450,8 @@
         "file": "tong.png",
         "alt": "la langue : la partie entourée en rouge."
       },
-      "responseMode": "letters"
+      "responseMode": "letters",
+      "promptLocale": "fr-BE"
     }
   ]
 }

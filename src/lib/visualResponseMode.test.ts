@@ -17,6 +17,11 @@ describe("explicit image response modes",()=>{
    expect(q.media).toBe(base.media);
   }
  });
+ it("validates the language of the French cue independently of the Dutch game interface",()=>{
+  expect(isValidQuestion({...base,promptLocale:"fr-BE"})).toBe(true);
+  expect(isValidQuestion({...base,promptLocale:"nl-BE"})).toBe(true);
+  expect(isValidQuestion({...base,promptLocale:"unknown"})).toBe(false);
+ });
  it("rejects invalid or unsupported image modes and modes without images",()=>{
   expect(isValidQuestion({...base,responseMode:"memory"})).toBe(false);
   expect(isValidQuestion({...base,responseMode:"write",media:undefined})).toBe(false);

@@ -37,6 +37,7 @@ describe("downloadable school Dutch body parts", () => {
     .toEqual(new Set(["lichaamsdelen-kijk", "lichaamsdelen-schrijf", "lichaamsdelen-bouw"]));
    for (const q of questions) {
     expect(q.subject).toBe("dutch");
+    expect(q.promptLocale).toBe("fr-BE");
     expect(correctLabel(q), q.id).toBe(label);
     expect(q.prompt.length).toBeLessThan(25);
     expect(q.prompt).not.toMatch(/Antwoord|Welk|Hoe|Ik /);
