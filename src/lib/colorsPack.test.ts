@@ -13,7 +13,7 @@ describe("downloadable Dutch colours", () => {
   expect(isValidPack(pack)).toBe(true);
   expect(pack.locale).toBe("nl-BE");
   expect(getCatalog([pack], catalog as RemoteCatalog).find(a => a.id === pack.id))
-   .toMatchObject({category:"dutch", emoji:"🎨", kind:"quiz"});
+   .toMatchObject({category:"dutch-other", emoji:"🎨", kind:"quiz"});
  });
  it("keeps the swatch visible and gives vocabulary questions varied compatible modes", () => {
   const visual = pack.questions.filter(q => q.media);

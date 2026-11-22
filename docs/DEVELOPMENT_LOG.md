@@ -355,3 +355,14 @@ Ajouter en fin de section **5. Journal des changements**, en conservant les entr
 - **Validation :** compilation, 57 tests et génération du manifeste réussis après ajustement ; test de présence du repère français. Nouvelle CI requise sur la PR.
 - **Traçabilité :** PR #23 ; manifeste généré par Actions après fusion.
 - **Limites :** les pastilles sont accompagnées d’un indice français pour favoriser l’apprentissage.
+
+### 2026-11-22 — Catalogue — Français et Nederlands : École / Autre
+- **Type :** organisation pédagogique / présentation.
+- **Pourquoi :** séparer les activités scolaires et complémentaires pour chacune des deux langues.
+- **Changements :** catalogue version 5 : Français — École, Français — Autre, Nederlands — École, Nederlands — Autre. La chasse aux verbes, les verbes néerlandais et les plantes sont dans École ; Mots malins et le vocabulaire général (salutations, débutant, animaux, fruits/légumes, couleurs) sont dans Autre. Wiskunde et Échecs sont conservés.
+- **Fichiers principaux :** `site/catalog.json`, `src/lib/catalogConfig.test.ts`, `src/lib/catalogDownload.test.ts`, `src/lib/colorsPack.test.ts`, `docs/CONTENT_PACKS.md`.
+- **Décisions techniques :** réutilisation des catégories distantes existantes sans nouveau moteur ni schéma. IDs historiques `french` et `dutch` conservés pour École ; ajout de `french-other` et `dutch-other`. Les nouvelles activités doivent préciser leur classement dans le catalogue. Correction du test de version invalide pour utiliser une version différente du catalogue publié plutôt que le nombre fixe 5.
+- **Données et compatibilité :** aucun changement des packs, questions, IDs d’activité, points, historique ou préférences de visibilité. Catalogue hors ligne après téléchargement ; « Vérifier les mises à jour » suffit sur KidQuest 0.8.0+ (0.9.0+ pour les médias). Aucun nouvel installateur requis.
+- **Validation :** `npm run build`, `npm test` (58 tests), `node scripts/generate-manifest.mjs`, `git diff --check` réussis en local. Test du classement de toutes les activités de langue, conservation des IDs et données des quiz, et présence de contenu dans les six catégories. CI Windows et contrôle du journal à vérifier avant fusion.
+- **Traçabilité :** branche `feat/language-school-other`. Le workflow `pages.yml` régénère le manifeste après fusion ; son commit automatique est couvert par cette entrée.
+- **Suite / points ouverts :** vérifier la fusion et le catalogue version 5 avec son SHA-256 dans le manifeste public.

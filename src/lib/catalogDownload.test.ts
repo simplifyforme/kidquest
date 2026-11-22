@@ -13,7 +13,7 @@ describe("secure remote catalog distribution",()=>{
   await expect(verifyRemoteCatalog(raw.replace("Wiskunde","Maths"),descriptor)).rejects.toThrow("empreinte");
  });
  it("rejects an incorrect version even with a matching hash",async()=>{
-  const descriptor={version:5,url:"https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",sha256:await sha256(raw)};
+  const descriptor={version:publishedCatalog.version+1,url:"https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",sha256:await sha256(raw)};
   await expect(verifyRemoteCatalog(raw,descriptor)).rejects.toThrow("format");
  });
  it("rejects oversized files before SHA check",async()=>{
