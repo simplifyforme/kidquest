@@ -1,9 +1,9 @@
 export type VerbQuestion={
- prompt:string;options:string[]|null;answer:string;explanation:string;hint:string;question:string
+ id?:string;interaction?:"sentence";prompt:string;options:string[]|null;answer:string;explanation:string;hint:string;question:string
 };
 export type VerbMission={id:string;name:string;title:string;intro:string;memory:string;questions:VerbQuestion[]};
 const choice=(prompt:string,options:string[]|null,answer:string,explanation:string,hint:string,question:string):VerbQuestion=>({prompt,options,answer,explanation,hint,question});
-const verb=(sentence:string,word:string,explanation:string,hint:string)=>choice(sentence,sentence.replace(/[.!?]$/,"").split(" "),word,explanation,hint,"Clique sur le verbe conjugué.");
+const verb=(sentence:string,word:string,explanation:string,hint:string)=>( {...choice(sentence,sentence.replace(/[.!?]$/,"").split(" "),word,explanation,hint,"Touche le verbe conjugué !"),interaction:"sentence" as const});
 const classify=(sentence:string,word:string,isVerb:boolean,explanation:string,hint:string)=>choice(sentence.replace("{mot}","<mark>"+word+"</mark>"),["C’est un verbe","C’est un autre mot"],isVerb?"C’est un verbe":"C’est un autre mot",explanation,hint,"Le mot surligné est-il un verbe ?");
 const inf=(prompt:string,answer:string,options:string[]|null,explanation:string,hint="Essaie la phrase « Il faut… » avec le même verbe.")=>choice(prompt,options,answer,explanation,hint,"Retrouve l’infinitif du verbe surligné.");
 const forms=(prompt:string,answer:string,explanation:string,hint:string)=>choice(prompt,["Verbe conjugué","Verbe à l’infinitif"],answer,explanation,hint,"Quelle est la forme du verbe surligné ?");
@@ -75,5 +75,57 @@ export const verbLessonNotes=[
  "Être et avoir sont deux auxiliaires particuliers que ce jeu met à part."
 ];
 export function normalizeVerbAnswer(value:string):string{
- return value.trim().toLocaleLowerCase("fr").replace(/[.!?]+$/,"").trim();
+ return value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toLocaleLowerCase("fr").replace(/[.!?]+$/,"").trim();
+}
+
+
+// Additional beginner missions inspired by la_chasse_aux_verbes_aventure.html.
+const formRows:[string,string,boolean][]=[
+ ["Le chat {mot}.","dort",false],["Il faut {mot}.","dormir",true],
+ ["Lina {mot} une pomme.","mange",false],["Il faut {mot}.","manger",true],
+ ["Tu {mot} ton puzzle.","finis",false],["Il faut {mot}.","finir",true],
+ ["Le bébé {mot} calme.","est",false],["Il faut {mot} calme.","être",true]
+];
+verbMissions.push({id:"forms",name:"🎭 Les formes",title:"Les deux costumes du verbe",
+ intro:"Un infinitif est le nom du verbe. Un verbe conjugué va avec son sujet.",
+ memory:"Manger est l’infinitif. Dans « Lina mange », mange est conjugué.",
+ questions:formRows.map(([sentence,word,isInf])=>forms(sentence.replace("{mot}","<mark>"+word+"</mark>"),isInf?"Verbe à l’infinitif":"Verbe conjugué",
+  isInf?`« ${word} » est l’infinitif : il faut ${word}.`:`« ${word} » est conjugué avec le sujet de la phrase.`,"Essaie « Il faut… » ou change la personne."))
+});
+const predRows:[string,string,string][]=[
+ ["Lina","mange","une pomme"],["Le chat","dort",""],["Le bébé","est","calme"],
+ ["Tu","finis","ton puzzle"],["Raed","regarde","un dessin"],["Papa","prend","son sac"],
+ ["Tu","as","un vélo"],["Nous","choisissons","un livre"]
+];
+verbMissions.push({id:"predicate",name:"🧩 Le prédicat",title:"Le duo sujet et prédicat",
+ intro:"Le prédicat dit ce qu’on dit du sujet. Garde le verbe et les mots qui vont avec lui.",
+ memory:"Lina | mange une pomme. Sujet | prédicat. Dans « Le chat dort », le prédicat est dort.",
+ questions:predRows.map(([subject,word,tail])=>{const answer=[word,tail].filter(Boolean).join(" ");return choice(`${subject} ${answer}.`,
+  [...new Set([answer,subject,...(tail?[word,tail]:[])])],answer,
+  `Sujet : « ${subject} ». Prédicat : « ${answer} ».`+(word==="est"?" Garde aussi « calme ».":""),
+  "Retire le sujet. Garde le verbe et ce qui va avec.","Trouve le prédicat !")})
+});
+// The original four mission IDs and original question positions remain their storage keys.
+for(const mission of verbMissions)mission.questions.forEach((q,i)=>{q.id=`verbs-${mission.id}-${i}`});
+export const verbAdventureTips=[
+ {title:"Un verbe, c’est quoi ?",text:"Il peut dire une action ou comment on est.",example:"Le chat dort. Le chat est calme."},
+ {title:"Trouve le verbe conjugué",text:"Change la personne ou le temps : quel mot change ?",example:"Lina mange → Nous mangeons.\nAujourd’hui, Lina mange → Demain, Lina mangera."},
+ {title:"L’infinitif : le nom du verbe",text:"Essaie « Il faut… ».",example:"Tu finis → Il faut finir."},
+ {title:"Les trois groupes",text:"-er sauf aller : groupe 1. -ir et nous… -issons : groupe 2. Les autres : groupe 3. Être et avoir sont étudiés à part.",example:"Jouer : 1. Finir → finissons : 2. Dormir → dormons : 3."},
+ {title:"Le prédicat",text:"Ce qu’on dit du sujet : le verbe et les mots qui vont avec lui.",example:"Lina | mange une pomme.\nLe chat | dort.\nLe bébé | est calme."}
+];
+function shuffleVerb<T>(items:readonly T[],random:()=>number=Math.random):T[]{
+ const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a;
+}
+export function mixedVerbRound(random:()=>number=Math.random):VerbQuestion[]{
+ return shuffleVerb(["spot","infinitive","groups","forms","predicate"].flatMap(id=>
+  shuffleVerb(verbMissions.find(m=>m.id===id)!.questions,random).slice(0,2)),random);
+}
+verbMissions.push({id:"mixed",name:"🏆 Grand défi",title:"Le grand défi du détective",intro:"Dix petits défis mélangés. À toi de jouer !",
+ memory:"Je repère le verbe, son infinitif, sa forme, son groupe et le prédicat.",questions:mixedVerbRound(()=>.4)});
+
+export function makeVerbAdventureRound(mission:VerbMission,random:()=>number=Math.random):VerbQuestion[]{
+ if(mission.id==="mixed")return mixedVerbRound(random);
+ // The legacy final keeps its three linked questions per sentence in order.
+ return mission.id==="final"?[...mission.questions]:shuffleVerb(mission.questions,random);
 }

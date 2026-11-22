@@ -14,6 +14,7 @@ import { resolveCategories } from "./lib/catalogConfig";
 import type { RemoteCatalog } from "./lib/catalogConfig";
 import type { CatalogEntry, CategoryId, ImportedGameId } from "./lib/catalog";
 import PlantPlay from "./components/PlantPlay";
+import BodyAdventurePlay from "./components/BodyAdventurePlay";
 import VerbPlay from "./components/VerbPlay";
 import DutchNumbersPlay from "./components/DutchNumbersPlay";
 import { activityStats,formatDuration } from "./lib/activityHistory";
@@ -62,7 +63,7 @@ export default function App(){
  const currentCategory=categories.find(cat=>cat.id===categoryId)??categories[0];
  const visibleCatalog=filterVisibleActivities(catalog,hiddenIds);
  const categoryEntries=visibleCatalog.filter(entry=>entry.category===categoryId);
- const recentEntry=visibleCatalog.find(entry=>entry.kind+":"+entry.id===lastOpened);
+ const recentEntry=visibleCatalog.find(entry=>entry.kind+":"+entry.id===lastOpened||(entry.id==="lichaamsdelen-nl"&&lastOpened==="quiz:lichaamsdelen-nl"));
  const dutchMath=isMathSubject(activity.subject);
  const quizDutch=dutchMath||(activity.subject==="dutch"&&packs.some(p=>p.id===activity.packId&&p.locale==="nl-BE"));
  const question=questions[index];
@@ -181,6 +182,7 @@ export default function App(){
     <section className="quiz-panel"><div className="question-top"><span className="question-number">{quizDutch?"VRAAG":"QUESTION"} {index+1}</span><span className="question-points"><Star size={16} fill="currentColor"/> +10 {quizDutch?"punten":"points"}</span></div>{question.media?<QuestionMedia activityId={activity.packId} media={question.media}/>:<div className="question-emoji">{question.emoji||"✨"}</div>}<h1>{question.prompt}</h1>{(activity.subject==="dutch"||dutchMath)&&<button className="listen-btn" onClick={()=>speech(question.prompt,question.promptLocale??(quizDutch?"nl-BE":undefined))}><Volume2 size={17}/> {quizDutch?"Luister naar de vraag":"Écouter la phrase"}</button>}<ExercisePlay key={question.id + ":" + mode} question={question} pool={sessionPool} mode={mode} locale={quizDutch?"nl-BE":"fr-BE"} locked={selected!==null||busy} onAnswer={(right,answerId)=>{void choose(right,answerId)}} />{selected!==null&&<div className={`feedback ${correct?"feedback-good":"feedback-bad"}`} role="status"><span className="feedback-icon">{correct?"🎉":"💪"}</span><div><b>{correct?(quizDutch?"Goed gedaan! +10 sterren!":"Bravo ! +10 étoiles !"):(quizDutch?"Goed geprobeerd!":"Continue, tu progresses !")}</b><p>{question.explanation}</p></div></div>}{selected!==null&&<button className="primary next-btn" onClick={()=>{void next()}} disabled={busy}>{index+1===questions.length?(quizDutch?"Bekijk mijn resultaat":"Voir mes résultats"):(quizDutch?"Volgende vraag":"Question suivante")} <ArrowRight size={19}/></button>}</section>
    </>}
    {!loading&&screen==="imported"&&(
+     importedGame==="lichaamsdelen-nl"?<BodyAdventurePlay onClose={returnToCategory} onRoundStart={newSession} onAttempt={(questionId,right)=>recordImportedAttempt(importedGame,questionId,right)} onComplete={(correctCount,total)=>recordCompletion(importedGame,"quiz",correctCount,total)}/>:
      importedGame==="plant-playground"?<PlantPlay onClose={returnToCategory} onRoundStart={newSession} onAttempt={(questionId,right)=>recordImportedAttempt(importedGame,questionId,right)} onComplete={(correctCount,total)=>recordCompletion(importedGame,"quiz",correctCount,total)}/>:
      importedGame==="dutch-numbers-1000"?<DutchNumbersPlay onClose={returnToCategory} onRoundStart={newSession} onAttempt={(questionId,right)=>recordImportedAttempt(importedGame,questionId,right)} onComplete={(correctCount,total)=>recordCompletion(importedGame,"quiz",correctCount,total)}/>:
      <VerbPlay onClose={returnToCategory} onRoundStart={newSession} onAttempt={(questionId,right)=>recordImportedAttempt(importedGame,questionId,right)} onComplete={(correctCount,total)=>recordCompletion(importedGame,"quiz",correctCount,total)}/>
@@ -202,7 +204,7 @@ export default function App(){
          </div>
        </details>;
       })}</div>
-     </section><div className="small-note">Version 0.9.1 · Les données de progression restent sur cet ordinateur. Aucun compte enfant n'est nécessaire.</div></section>}
+     </section><div className="small-note">Version 0.10.0 · Les données de progression restent sur cet ordinateur. Aucun compte enfant n'est nécessaire.</div></section>}
   </main>
   <footer className="footer"><span>KidQuest ✦ Apprendre est une aventure</span><span>Fait avec 💜 pour les petits curieux</span></footer>
  </div>;

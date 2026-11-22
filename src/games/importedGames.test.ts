@@ -20,7 +20,7 @@ describe("imported original HTML educational activities",()=>{
   expect(written.items.every(i=>!!i.hint)).toBe(true);
  });
  it("preserves all four verb missions, 37 questions and lessons",()=>{
-  expect(verbMissions.map(m=>m.questions.length)).toEqual([8,10,10,9]);
+  expect(verbMissions.slice(0,4).map(m=>m.questions.length)).toEqual([8,10,10,9]);
   expect(verbLessonNotes).toHaveLength(7);
   const all=verbMissions.flatMap(m=>m.questions);
   expect(all.every(q=>q.question&&q.prompt&&q.answer&&q.explanation&&q.hint)).toBe(true);
