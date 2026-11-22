@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 5,
+  "version": 6,
   "categories": [
     {
       "id": "math",
@@ -136,6 +136,14 @@
       "subtitle": "11 kleuren · kijken, onthouden en schrijven",
       "emoji": "🎨",
       "order": 93
+    },
+    {
+      "id": "lichaamsdelen-nl",
+      "category": "dutch",
+      "title": "Mijn lichaam · Ken jij de lichaamsdelen?",
+      "subtitle": "24 lichaamsdelen · woorden, raadsels en schrijven",
+      "emoji": "🧍",
+      "order": 61
     }
   ]
 }
