@@ -1,0 +1,809 @@
+{
+  "id": "verbe-predicat-fr",
+  "version": 1,
+  "title": "Les détectives de la phrase · Verbe et prédicat",
+  "category": "french",
+  "locale": "fr-BE",
+  "questions": [
+    {
+      "id": "verbe-predicat-fr-pomme-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Lina mange une pomme. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "mange"
+        },
+        {
+          "id": "a1",
+          "label": "Lina"
+        },
+        {
+          "id": "a2",
+          "label": "manger"
+        },
+        {
+          "id": "a3",
+          "label": "une pomme"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « mange ». Le verbe « mange » dit ce que fait Lina. Son infinitif est « manger ».",
+      "emoji": "🍎"
+    },
+    {
+      "id": "verbe-predicat-fr-pomme-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Lina mange une pomme. » Trouve l’infinitif de « mange ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "manger"
+        },
+        {
+          "id": "a1",
+          "label": "mange"
+        },
+        {
+          "id": "a2",
+          "label": "balle"
+        },
+        {
+          "id": "a3",
+          "label": "dormir"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « manger » : on dit « il faut manger ». C’est le nom du verbe. Dans la phrase, « mange » est conjugué.",
+      "emoji": "🍎"
+    },
+    {
+      "id": "verbe-predicat-fr-pomme-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Lina mange une pomme. » Trouve le prédicat : ce qu’on dit de « Lina ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "mange une pomme"
+        },
+        {
+          "id": "a1",
+          "label": "Lina"
+        },
+        {
+          "id": "a2",
+          "label": "mange"
+        },
+        {
+          "id": "a3",
+          "label": "une pomme"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Lina ». Le prédicat est « mange une pomme » : il dit ce que fait Lina. Garde le verbe et son complément.",
+      "emoji": "🍎"
+    },
+    {
+      "id": "verbe-predicat-fr-chat-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Le chat dort. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "dort"
+        },
+        {
+          "id": "a1",
+          "label": "Le chat"
+        },
+        {
+          "id": "a2",
+          "label": "dormir"
+        },
+        {
+          "id": "a3",
+          "label": "le"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « dort ». Le verbe « dort » dit ce que fait le chat. Son infinitif est « dormir ».",
+      "emoji": "🐱"
+    },
+    {
+      "id": "verbe-predicat-fr-chat-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Le chat dort. » Trouve l’infinitif de « dort ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "dormir"
+        },
+        {
+          "id": "a1",
+          "label": "dort"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "lancer"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « dormir » : on dit « il faut dormir ». C’est le nom du verbe. Dans la phrase, « dort » est conjugué.",
+      "emoji": "🐱"
+    },
+    {
+      "id": "verbe-predicat-fr-chat-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Le chat dort. » Trouve le prédicat : ce qu’on dit de « Le chat ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "dort"
+        },
+        {
+          "id": "a1",
+          "label": "Le chat"
+        },
+        {
+          "id": "a2",
+          "label": "Le chat dort"
+        },
+        {
+          "id": "a3",
+          "label": "dormir"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Le chat ». Le prédicat est « dort » : il dit ce que fait le chat. Ici, le verbe « dort » suffit.",
+      "emoji": "🐱"
+    },
+    {
+      "id": "verbe-predicat-fr-balle-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Tom lance la balle. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "lance"
+        },
+        {
+          "id": "a1",
+          "label": "Tom"
+        },
+        {
+          "id": "a2",
+          "label": "lancer"
+        },
+        {
+          "id": "a3",
+          "label": "la balle"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « lance ». Le verbe « lance » dit ce que fait Tom. Son infinitif est « lancer ».",
+      "emoji": "⚽"
+    },
+    {
+      "id": "verbe-predicat-fr-balle-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Tom lance la balle. » Trouve l’infinitif de « lance ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "lancer"
+        },
+        {
+          "id": "a1",
+          "label": "lance"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "préparer"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « lancer » : on dit « il faut lancer ». C’est le nom du verbe. Dans la phrase, « lance » est conjugué.",
+      "emoji": "⚽"
+    },
+    {
+      "id": "verbe-predicat-fr-balle-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Tom lance la balle. » Trouve le prédicat : ce qu’on dit de « Tom ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "lance la balle"
+        },
+        {
+          "id": "a1",
+          "label": "Tom"
+        },
+        {
+          "id": "a2",
+          "label": "lance"
+        },
+        {
+          "id": "a3",
+          "label": "la balle"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Tom ». Le prédicat est « lance la balle » : il dit ce que fait Tom. Garde le verbe et son complément.",
+      "emoji": "⚽"
+    },
+    {
+      "id": "verbe-predicat-fr-repas-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Papa prépare le repas. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "prépare"
+        },
+        {
+          "id": "a1",
+          "label": "Papa"
+        },
+        {
+          "id": "a2",
+          "label": "préparer"
+        },
+        {
+          "id": "a3",
+          "label": "le repas"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « prépare ». Le verbe « prépare » dit ce que fait Papa. Son infinitif est « préparer ».",
+      "emoji": "🍲"
+    },
+    {
+      "id": "verbe-predicat-fr-repas-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Papa prépare le repas. » Trouve l’infinitif de « prépare ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "préparer"
+        },
+        {
+          "id": "a1",
+          "label": "prépare"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "être"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « préparer » : on dit « il faut préparer ». C’est le nom du verbe. Dans la phrase, « prépare » est conjugué.",
+      "emoji": "🍲"
+    },
+    {
+      "id": "verbe-predicat-fr-repas-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Papa prépare le repas. » Trouve le prédicat : ce qu’on dit de « Papa ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "prépare le repas"
+        },
+        {
+          "id": "a1",
+          "label": "Papa"
+        },
+        {
+          "id": "a2",
+          "label": "prépare"
+        },
+        {
+          "id": "a3",
+          "label": "le repas"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Papa ». Le prédicat est « prépare le repas » : il dit ce que fait Papa. Garde le verbe et son complément.",
+      "emoji": "🍲"
+    },
+    {
+      "id": "verbe-predicat-fr-chien-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Le chien est petit. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "est"
+        },
+        {
+          "id": "a1",
+          "label": "Le chien"
+        },
+        {
+          "id": "a2",
+          "label": "être"
+        },
+        {
+          "id": "a3",
+          "label": "petit"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « est ». Le verbe « est » dit comment est le chien. Un verbe peut aussi dire un état. Son infinitif est « être ».",
+      "emoji": "🐶"
+    },
+    {
+      "id": "verbe-predicat-fr-chien-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Le chien est petit. » Trouve l’infinitif de « est ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "être"
+        },
+        {
+          "id": "a1",
+          "label": "est"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "regarder"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « être » : on dit « il faut être ». C’est le nom du verbe. Dans la phrase, « est » est conjugué.",
+      "emoji": "🐶"
+    },
+    {
+      "id": "verbe-predicat-fr-chien-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Le chien est petit. » Trouve le prédicat : ce qu’on dit de « Le chien ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "est petit"
+        },
+        {
+          "id": "a1",
+          "label": "Le chien"
+        },
+        {
+          "id": "a2",
+          "label": "est"
+        },
+        {
+          "id": "a3",
+          "label": "petit"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Le chien ». Le prédicat est « est petit » : il dit comment est le chien. « est » seul ne suffit pas ; garde aussi « petit ».",
+      "emoji": "🐶"
+    },
+    {
+      "id": "verbe-predicat-fr-livre-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Nous regardons un livre. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "regardons"
+        },
+        {
+          "id": "a1",
+          "label": "Nous"
+        },
+        {
+          "id": "a2",
+          "label": "regarder"
+        },
+        {
+          "id": "a3",
+          "label": "un livre"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « regardons ». Le verbe « regardons » dit ce que fait Nous. Son infinitif est « regarder ».",
+      "emoji": "📖"
+    },
+    {
+      "id": "verbe-predicat-fr-livre-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Nous regardons un livre. » Trouve l’infinitif de « regardons ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "regarder"
+        },
+        {
+          "id": "a1",
+          "label": "regardons"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "ranger"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « regarder » : on dit « il faut regarder ». C’est le nom du verbe. Dans la phrase, « regardons » est conjugué.",
+      "emoji": "📖"
+    },
+    {
+      "id": "verbe-predicat-fr-livre-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Nous regardons un livre. » Trouve le prédicat : ce qu’on dit de « Nous ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "regardons un livre"
+        },
+        {
+          "id": "a1",
+          "label": "Nous"
+        },
+        {
+          "id": "a2",
+          "label": "regardons"
+        },
+        {
+          "id": "a3",
+          "label": "un livre"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Nous ». Le prédicat est « regardons un livre » : il dit ce que fait Nous. Garde le verbe et son complément.",
+      "emoji": "📖"
+    },
+    {
+      "id": "verbe-predicat-fr-jouets-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Tu ranges tes jouets. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "ranges"
+        },
+        {
+          "id": "a1",
+          "label": "Tu"
+        },
+        {
+          "id": "a2",
+          "label": "ranger"
+        },
+        {
+          "id": "a3",
+          "label": "tes jouets"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « ranges ». Le verbe « ranges » dit ce que fait Tu. Son infinitif est « ranger ».",
+      "emoji": "🧸"
+    },
+    {
+      "id": "verbe-predicat-fr-jouets-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Tu ranges tes jouets. » Trouve l’infinitif de « ranges ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "ranger"
+        },
+        {
+          "id": "a1",
+          "label": "ranges"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "jouer"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « ranger » : on dit « il faut ranger ». C’est le nom du verbe. Dans la phrase, « ranges » est conjugué.",
+      "emoji": "🧸"
+    },
+    {
+      "id": "verbe-predicat-fr-jouets-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Tu ranges tes jouets. » Trouve le prédicat : ce qu’on dit de « Tu ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "ranges tes jouets"
+        },
+        {
+          "id": "a1",
+          "label": "Tu"
+        },
+        {
+          "id": "a2",
+          "label": "ranges"
+        },
+        {
+          "id": "a3",
+          "label": "tes jouets"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Tu ». Le prédicat est « ranges tes jouets » : il dit ce que fait Tu. Garde le verbe et son complément.",
+      "emoji": "🧸"
+    },
+    {
+      "id": "verbe-predicat-fr-enfants-conjugue",
+      "subject": "french",
+      "skill": "verbe-conjugue",
+      "prompt": "« Les enfants jouent. » Trouve le verbe conjugué. Il va avec le sujet.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "jouent"
+        },
+        {
+          "id": "a1",
+          "label": "Les enfants"
+        },
+        {
+          "id": "a2",
+          "label": "jouer"
+        },
+        {
+          "id": "a3",
+          "label": "le"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Bien repéré ! Le verbe conjugué est « jouent ». Le verbe « jouent » dit ce que fait Les enfants. Son infinitif est « jouer ».",
+      "emoji": "🛝"
+    },
+    {
+      "id": "verbe-predicat-fr-enfants-infinitif",
+      "subject": "french",
+      "skill": "infinitif",
+      "prompt": "« Les enfants jouent. » Trouve l’infinitif de « jouent ». Astuce : « il faut… »",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "jouer"
+        },
+        {
+          "id": "a1",
+          "label": "jouent"
+        },
+        {
+          "id": "a2",
+          "label": "pomme"
+        },
+        {
+          "id": "a3",
+          "label": "manger"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "L’infinitif est « jouer » : on dit « il faut jouer ». C’est le nom du verbe. Dans la phrase, « jouent » est conjugué.",
+      "emoji": "🛝"
+    },
+    {
+      "id": "verbe-predicat-fr-enfants-predicat",
+      "subject": "french",
+      "skill": "predicat",
+      "prompt": "« Les enfants jouent. » Trouve le prédicat : ce qu’on dit de « Les enfants ». Garde le verbe et les mots qui vont avec lui.",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "jouent"
+        },
+        {
+          "id": "a1",
+          "label": "Les enfants"
+        },
+        {
+          "id": "a2",
+          "label": "Les enfants jouent"
+        },
+        {
+          "id": "a3",
+          "label": "jouer"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "Le sujet est « Les enfants ». Le prédicat est « jouent » : il dit ce que fait Les enfants. Ici, le verbe « jouent » suffit.",
+      "emoji": "🛝"
+    },
+    {
+      "id": "verbe-predicat-fr-pomme-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "On dit « il faut manger ». « manger » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "infinitif"
+        },
+        {
+          "id": "a1",
+          "label": "verbe conjugué"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« manger » est un infinitif. L’infinitif est le nom du verbe : « manger ». On peut dire « il faut manger ».",
+      "emoji": "🍎"
+    },
+    {
+      "id": "verbe-predicat-fr-chat-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "Dans « Le chat dort ». « dort » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "verbe conjugué"
+        },
+        {
+          "id": "a1",
+          "label": "infinitif"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« dort » est un verbe conjugué. Il va avec le sujet « Le chat ». Son infinitif est « dormir ».",
+      "emoji": "🐱"
+    },
+    {
+      "id": "verbe-predicat-fr-balle-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "On dit « il faut lancer ». « lancer » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "infinitif"
+        },
+        {
+          "id": "a1",
+          "label": "verbe conjugué"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« lancer » est un infinitif. L’infinitif est le nom du verbe : « lancer ». On peut dire « il faut lancer ».",
+      "emoji": "⚽"
+    },
+    {
+      "id": "verbe-predicat-fr-repas-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "Dans « Papa prépare le repas ». « prépare » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "verbe conjugué"
+        },
+        {
+          "id": "a1",
+          "label": "infinitif"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« prépare » est un verbe conjugué. Il va avec le sujet « Papa ». Son infinitif est « préparer ».",
+      "emoji": "🍲"
+    },
+    {
+      "id": "verbe-predicat-fr-chien-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "On dit « il faut être ». « être » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "infinitif"
+        },
+        {
+          "id": "a1",
+          "label": "verbe conjugué"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« être » est un infinitif. L’infinitif est le nom du verbe : « être ». On peut dire « il faut être ».",
+      "emoji": "🐶"
+    },
+    {
+      "id": "verbe-predicat-fr-livre-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "Dans « Nous regardons un livre ». « regardons » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "verbe conjugué"
+        },
+        {
+          "id": "a1",
+          "label": "infinitif"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« regardons » est un verbe conjugué. Il va avec le sujet « Nous ». Son infinitif est « regarder ».",
+      "emoji": "📖"
+    },
+    {
+      "id": "verbe-predicat-fr-jouets-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "On dit « il faut ranger ». « ranger » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "infinitif"
+        },
+        {
+          "id": "a1",
+          "label": "verbe conjugué"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« ranger » est un infinitif. L’infinitif est le nom du verbe : « ranger ». On peut dire « il faut ranger ».",
+      "emoji": "🧸"
+    },
+    {
+      "id": "verbe-predicat-fr-enfants-forme",
+      "subject": "french",
+      "skill": "reconnaitre-forme",
+      "prompt": "Dans « Les enfants jouent ». « jouent » : infinitif ou verbe conjugué ?",
+      "answers": [
+        {
+          "id": "a0",
+          "label": "verbe conjugué"
+        },
+        {
+          "id": "a1",
+          "label": "infinitif"
+        }
+      ],
+      "correctAnswerId": "a0",
+      "explanation": "« jouent » est un verbe conjugué. Il va avec le sujet « Les enfants ». Son infinitif est « jouer ».",
+      "emoji": "🛝"
+    }
+  ]
+}

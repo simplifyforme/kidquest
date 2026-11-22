@@ -10,6 +10,7 @@ import multiplication from "../../site/packs/tables-multiplication-1-10.json";
 import animals from "../../site/activities/dieren-nl/pack.json";
 import produce from "../../site/activities/groenten-fruit-nl/pack.json";
 import colors from "../../site/activities/kleuren-nl/pack.json";
+import frenchPredicate from "../../site/activities/verbe-predicat-fr/pack.json";
 import bodyParts from "../../site/activities/lichaamsdelen-nl/pack.json";
 import type {ContentPack} from "../types";
 
@@ -23,9 +24,9 @@ describe("versioned remote presentation catalog",()=>{
   expect(entries.find(e=>e.id==="chess-beginner")?.kind).toBe("lesson");
  });
  it("places every language activity in its school or other category without changing activity data",()=>{
-  const packs=[...builtinPacks,beginnerDutch,dutchVerbs,multiplication,animals,produce,colors,bodyParts] as ContentPack[];
+  const packs=[...builtinPacks,beginnerDutch,dutchVerbs,multiplication,animals,produce,colors,bodyParts,frenchPredicate] as ContentPack[];
   const expected:Record<string,string>={
-   "french-verb-hunt":"french",francais:"french-other",
+   "verbe-predicat-fr":"french","french-verb-hunt":"french",francais:"french-other",
    "plant-playground":"dutch","neerlandais-verbes-a1":"dutch","lichaamsdelen-nl":"dutch",
    neerlandais:"dutch-other","neerlandais-debutant":"dutch-other",
    "dieren-nl":"dutch-other","groenten-fruit-nl":"dutch-other","kleuren-nl":"dutch-other"
@@ -44,7 +45,7 @@ describe("versioned remote presentation catalog",()=>{
   }
  });
  it("assigns a distinct icon to every built-in and published activity",()=>{
-  const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce,colors,bodyParts] as ContentPack[];
+  const downloadedPacks=[beginnerDutch,dutchVerbs,multiplication,animals,produce,colors,bodyParts,frenchPredicate] as ContentPack[];
   const entries=getCatalog([...builtinPacks,...downloadedPacks],remote);
   const icons=new Map(remote.activities.map(entry=>[entry.id,entry.emoji]));
   for(const entry of entries){
