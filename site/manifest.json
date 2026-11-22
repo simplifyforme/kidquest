@@ -21,9 +21,9 @@
     }
   ],
   "catalog": {
-    "version": 7,
+    "version": 8,
     "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/catalog.json",
-    "sha256": "a675d86b47edcda40b9f359b5e5842aa8555cfdec1e9aece1dc55d19d0165d61"
+    "sha256": "a9786a629c41780c1ccd3555f4e7b79336bef00743c03effc245d984e62d41cd"
   },
   "activities": [
     {
@@ -241,10 +241,179 @@
     },
     {
       "id": "lichaamsdelen-nl",
-      "version": 1,
+      "version": 2,
       "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/pack.json",
-      "sha256": "a3131d2f1f48c18d406a80d9d16853fe3c4ca8878e254dc20d2d744d0945c15c",
-      "assets": []
+      "sha256": "db115a11878c54502317b31208b113d914210f851997ffca6951b69dc6dcae30",
+      "assets": [
+        {
+          "file": "arm.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/arm.png",
+          "sha256": "b999c505d869534cd7cbc294b6f72dbb2b813b6bf20c0ac82d4157166880610a",
+          "bytes": 16093,
+          "mime": "image/png"
+        },
+        {
+          "file": "been.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/been.png",
+          "sha256": "5db6c92273681e5117565982fc36706c1445f3799f067c120f4c883904933ea0",
+          "bytes": 13841,
+          "mime": "image/png"
+        },
+        {
+          "file": "borst.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/borst.png",
+          "sha256": "61b39b9cb2db005ad65aacd62df3baca756976cd523595ea05615c6e69458f2a",
+          "bytes": 16320,
+          "mime": "image/png"
+        },
+        {
+          "file": "duim.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/duim.png",
+          "sha256": "1c563f2a68123b13828ee9f84c1e9b6e48afa887886e3806df8c77b0ea834c11",
+          "bytes": 16441,
+          "mime": "image/png"
+        },
+        {
+          "file": "elleboog.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/elleboog.png",
+          "sha256": "702dc3a71f157be58b8372d54da1da10cfa4b913963bbb6447ab9402e549e997",
+          "bytes": 15552,
+          "mime": "image/png"
+        },
+        {
+          "file": "enkel.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/enkel.png",
+          "sha256": "d08de531ca205b0d57101035974e403c0388c245a6985b31d2823ef229711ea4",
+          "bytes": 16900,
+          "mime": "image/png"
+        },
+        {
+          "file": "haar.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/haar.png",
+          "sha256": "20c708c8d1e734fee983460cec6f434e9ef51cfce8b14ece4e702e35f534eaa9",
+          "bytes": 17525,
+          "mime": "image/png"
+        },
+        {
+          "file": "hals.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/hals.png",
+          "sha256": "8c2d60f4dd0ad6f9bd89dab19f8f4ff1d3779c4087e16f6e59ecb0a14888b714",
+          "bytes": 18283,
+          "mime": "image/png"
+        },
+        {
+          "file": "hand.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/hand.png",
+          "sha256": "3396c86d370a153104f5c41d2f849158e0a3116901b2a45453ddcd7da278882e",
+          "bytes": 15510,
+          "mime": "image/png"
+        },
+        {
+          "file": "heup.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/heup.png",
+          "sha256": "41f3fb9c49093fd5c3b6d79df5f79868dc4e080a83ffeb2e08328429fa3cfcbd",
+          "bytes": 17451,
+          "mime": "image/png"
+        },
+        {
+          "file": "knie.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/knie.png",
+          "sha256": "a7fe9b738f804013936ae449fd08c757909391d9a329fd73f3f03ca621e754d3",
+          "bytes": 16939,
+          "mime": "image/png"
+        },
+        {
+          "file": "mond.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/mond.png",
+          "sha256": "cff80a58fe565cae2da90e80623f187e711b88d51391f423677cdda23a703648",
+          "bytes": 18439,
+          "mime": "image/png"
+        },
+        {
+          "file": "neus.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/neus.png",
+          "sha256": "22fd6f6dfecb238d4a2b1d095d2d080c6a7a8908a464057fc0f6396a72067bf6",
+          "bytes": 17574,
+          "mime": "image/png"
+        },
+        {
+          "file": "oog.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/oog.png",
+          "sha256": "b85f759360802372464130a574ce4d5e4c5c70292ebcd8f43662df33d2d3ab2c",
+          "bytes": 16139,
+          "mime": "image/png"
+        },
+        {
+          "file": "oor.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/oor.png",
+          "sha256": "8e72715374e30a611982b105d2e4533c2f5e07dbabcffdc68112cc4a9210e0c6",
+          "bytes": 16411,
+          "mime": "image/png"
+        },
+        {
+          "file": "rug.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/rug.png",
+          "sha256": "bdc6db5bf80bfe1baa812b8bd4eaef11015304cd32b28ba03ff278a76863834c",
+          "bytes": 17897,
+          "mime": "image/png"
+        },
+        {
+          "file": "schouder.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/schouder.png",
+          "sha256": "bd5c452dc7a49716bc291cf3032abed21923de1b7b1afdcc5511d36c85877228",
+          "bytes": 17322,
+          "mime": "image/png"
+        },
+        {
+          "file": "tand.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/tand.png",
+          "sha256": "b857454dc4e8cc6f37fd4a6c52a2b921457a0e03492fd75e213e10bb66853b4f",
+          "bytes": 20495,
+          "mime": "image/png"
+        },
+        {
+          "file": "teen.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/teen.png",
+          "sha256": "3308a8f6a08f1a4e75094acf1ec50a7d75ee5589f8307405955b59013f37bb02",
+          "bytes": 12502,
+          "mime": "image/png"
+        },
+        {
+          "file": "tong.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/tong.png",
+          "sha256": "941dee4ef090b81ef3dbd05fa1eb64b2d00ccae7a865251e13261f8bca2fec0e",
+          "bytes": 20811,
+          "mime": "image/png"
+        },
+        {
+          "file": "vinger.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/vinger.png",
+          "sha256": "96146954fd805a60853517613381e8a0f2ac90b59ff31099bf6640c93e946f9a",
+          "bytes": 15910,
+          "mime": "image/png"
+        },
+        {
+          "file": "voet.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/voet.png",
+          "sha256": "ba628fe5635c9a6b154cd5f8d3710de14771cb1ee59f6d75680d03659cdcf64c",
+          "bytes": 14398,
+          "mime": "image/png"
+        },
+        {
+          "file": "voorhoofd.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/voorhoofd.png",
+          "sha256": "5b9181dcccd5e233f85fbc021ff071e4f7c63e96dbc491a2057ba873ed0d3a3f",
+          "bytes": 18381,
+          "mime": "image/png"
+        },
+        {
+          "file": "wenkbrauw.png",
+          "url": "https://raw.githubusercontent.com/simplifyforme/kidquest/main/site/activities/lichaamsdelen-nl/assets/wenkbrauw.png",
+          "sha256": "c0194e8c1e27d37e92884052ebba04596168c3db46bb9f582f4af576f0d13529",
+          "bytes": 17074,
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "verbe-predicat-fr",
